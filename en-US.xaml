@@ -1,0 +1,1210 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"
+    xmlns:laitis="clr-namespace:Laitis">
+
+    <!--#region App Initialization-->
+    <s:String x:Key="s_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
+    <s:String x:Key="s_Load_Data">Downloading Data</s:String>
+    <s:String x:Key="s_Load_UpdateCancelledByUser">You are rejected a critical update. Please press yes, to update the application.</s:String>
+    <s:String x:Key="s_Load_UpdaterFailRestart">Update failed. Application restart.</s:String>
+    <s:String x:Key="s_Load_PerformingUpdate">Updating</s:String>
+    <s:String x:Key="s_Load_AppLoaded">started</s:String>
+    <s:String x:Key="s_Load_MandatoryUpdateNeeded">Critical application load failure. Download the latest version of Laitis on laitis.ru, if it will not help - send a message into vk.com/mikolaytis or vk.com/laitisgroup.</s:String>
+    
+    <s:String x:Key="s_Load_SettingsFail">Fail of user's data loading</s:String>
+    <s:String x:Key="s_Load_SettingsFail_Retry">Try again</s:String>
+    <s:String x:Key="s_Load_SettingsFail_OpenApp">Open application with default data</s:String>
+    <s:String x:Key="s_Load_SettingsFail_LoadBackup">Load previous data save from storage</s:String>
+    <s:String x:Key="s_Load_SettingsFail_CloseApp">Close app</s:String>
+    <!--#endregion-->
+
+    <!--#region Account-->
+    <s:String x:Key="s_Account_LogIn">Log In</s:String>
+    <s:String x:Key="s_Account_Registration">Registration</s:String>
+    <s:String x:Key="s_Account_SymbolsMin">{0} symbols min</s:String>
+    <s:String x:Key="s_Account_SymbolsMax">{0} symbols max</s:String>
+    <s:String x:Key="s_Account_InvalidEmail">Invalid Email</s:String>
+    <s:String x:Key="s_Account_EnterEmail">Enter Email</s:String>
+    <s:String x:Key="s_Account_EnterPassword">Enter password</s:String>
+    <s:String x:Key="s_Account_AlreadyExists">Already exists</s:String>
+    <s:String x:Key="s_Account_EmailCorrect">Email is correct</s:String>
+    <s:String x:Key="s_Account_EnterNickName">Enter Nick Name</s:String>
+    <s:String x:Key="s_Account_NickNameCorrect">Nick Name is correct</s:String>
+    <s:String x:Key="s_Account_PaswordsMatch">Passwords match</s:String>
+    <s:String x:Key="s_Account_PasswordsDoNotMatch">Passwords missmatch</s:String>
+    <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Only latin chars and numerics are available</s:String>
+    <!--#endregion-->
+    
+    <!--#region PublicApiHost-->
+    <s:String x:Key="s_PublicApiHost_SettingsIsEnabled">Enable External API channel for third-party Laitis extensions</s:String>
+    <s:String x:Key="s_PublicApiHost_HostOpened">External API channel is started</s:String>
+    <s:String x:Key="s_PublicApiHost_HostOpenError">Error occured on starting external API channel</s:String>
+    <s:String x:Key="s_PublicApiHost_HostClosed">External API channel is stopped</s:String>
+    <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
+    <s:String x:Key="s_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
+    <!--#endregion-->
+    
+    <!--#region UIAutomation-->
+    <s:String x:Key="s_UIAutomation_ElementFoundInActiveWindow">Element {0} is found in active windows</s:String>
+    <s:String x:Key="s_UIAutomation_ElementFoundInTaskBar">Element {0} is found in taskbar</s:String>
+    <s:String x:Key="s_UIAutomation_ElementFoundInWebsite">Element {0} is found on a website</s:String>
+    <s:String x:Key="s_UIAutomation_ElementNotFound">Element {0} is not found</s:String>
+    <!--#endregion-->
+
+    <!--#region FUE-->
+    <s:String x:Key="s_FUE_Initial_HelloDearUser">Hello, dear user!</s:String>
+    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Thanks for install of </s:String>
+    <s:String x:Key="s_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- app that provides voice control over PC and voice text typing</s:String>
+    <s:String x:Key="s_FUE_Initial_TakeMicrophoneAndSayHello">Bring to your microphone and say &quot;Hello&quot;</s:String>
+    <s:String x:Key="s_FUE_Initial_ThanksMaybeNextTime">Thanks, maybe next time</s:String>
+
+    <s:String x:Key="s_FUE_Browser_Setup">Browser configuration</s:String>
+    <s:String x:Key="s_FUE_Browser_Info">You need to install a browser extension to allow Laitis perform web-site actions</s:String>
+    <s:String x:Key="s_FUE_Browser_Skip">Skip</s:String>
+    
+    <s:String x:Key="s_FUE_QA_Header">This section contains the structure of communication with the voice bot</s:String>
+    <s:String x:Key="s_FUE_QA_YouAskQuestions">You asking questions</s:String>
+    <s:String x:Key="s_FUE_QA_BotAnswersThem">Bot responds to them</s:String>
+    <s:String x:Key="s_FUE_QA_Talk1">Hi</s:String>
+    <s:String x:Key="s_FUE_QA_Talk2">Hello!</s:String>
+    <s:String x:Key="s_FUE_QA_Talk3">How are you doing</s:String>
+    <s:String x:Key="s_FUE_QA_Talk4">I'm fine, and you?</s:String>
+    <s:String x:Key="s_FUE_QA_Talk5">Fine too</s:String>
+    <s:String x:Key="s_FUE_QA_Talk6">Great!</s:String>
+
+    <s:String x:Key="s_FUE_Commands_Header">This section contains voice commands</s:String>
+    <s:String x:Key="s_FUE_Commands_CommandIsConsistsOf">Command consist of:</s:String>
+    <s:String x:Key="s_FUE_Commands_Phrases">Phrases</s:String>
+    <s:String x:Key="s_FUE_Commands_Actions">Actions</s:String>
+    <s:String x:Key="s_FUE_Commands_OpenNotepad">Open notepad</s:String>
+    <s:String x:Key="s_FUE_Commands_RunNotepad">Run notepad</s:String>
+    <s:String x:Key="s_FUE_Commands_ShowNotepad">Show notepad</s:String>
+    <s:String x:Key="s_FUE_Commands_NotepadIsOpen">Notepad is open!</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip1">The program automatically supports cases of commonly used words.</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip2">Instead of &quot;Open notepad&quot; you can say &quot;Run notepad&quot;, &quot;Start notepad&quot;...</s:String>
+    <s:String x:Key="s_FUE_Commands_VariableSupport">Variables support</s:String>
+    <s:String x:Key="s_FUE_Commands_Phrase">Phrase</s:String>
+    <s:String x:Key="s_FUE_Commands_Action">Action</s:String>
+    <s:String x:Key="s_FUE_Commands_SayWord">Say word</s:String>
+    <s:String x:Key="s_FUE_Commands_Word">{word}</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip3">Explain: If you say &quot;Say word Hello&quot;, the program will say &quot;Hello&quot;.</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip4">All the commands are created by the users of the program and have been tested for security</s:String>
+    <!--#endregion-->
+
+    <!--#region QA-->
+    <s:String x:Key="s_QA_AddRootQuestion">Add root question</s:String>
+    <s:String x:Key="s_QA_RemoveSelection">Deselect</s:String>
+    
+    <s:String x:Key="s_QA_Education_Add">Add</s:String>
+    <s:String x:Key="s_QA_Education_AddRootQuestion">Add root question</s:String>
+    <s:String x:Key="s_QA_Education_RootQuestionAdded">Root question added: &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_QuestionAdded">Question added: &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_AnswerAdded">Answer added: &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_ToAddRootQuestionSayAdd">To add root question &quot;{0}&quot; say Add</s:String>
+    <s:String x:Key="s_QA_Education_ToAddQuestionSayAdd">To add question &quot;{0}&quot; for answer &quot;{1}&quot; say Add</s:String>
+    <s:String x:Key="s_QA_Education_ToAddAnswerSayAdd">To add answer &quot;{0}&quot; for question &quot;{1}&quot; say Add</s:String>
+
+    <s:String x:Key="s_QA_Details_Creator">Creator:</s:String>
+    <s:String x:Key="s_QA_Details_Local">It's not on the server yet</s:String>
+    <s:String x:Key="s_QA_Details_AddToPublication">Add to publication</s:String>
+    <s:String x:Key="s_QA_Details_RemoveFromPublication">Remove from publication</s:String>
+    <s:String x:Key="s_QA_Details_SendPublicationTooltip">Send publication with selected questions and answers</s:String>
+    <s:String x:Key="s_QA_Details_AddQuestionToPublicationErrorMessage">First, add changes of parent answer</s:String>
+    <s:String x:Key="s_QA_Details_AddAnswerToPublicationErrorMessage">First, add changes of parent question</s:String>
+    <s:String x:Key="s_QA_Details_RemoveQuestionFromPublicationErrorMessage">First, remove the changes of child answer</s:String>
+    <s:String x:Key="s_QA_Details_RemoveAnswerFromPublicationErrorMessage">First, remove the changes of child question</s:String>
+    <!--#endregion-->
+
+    <!--#region  Exceptions -->
+    <s:String x:Key="s_DownloadSaveError">ЗDownload save error</s:String>
+    <s:String x:Key="s_ServerError">Server error</s:String>
+    <s:String x:Key="s_Error">Error</s:String>
+    <s:String x:Key="s_DataUploadError">Data upload error</s:String>
+    <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
+    <s:String x:Key="s_UnknownErrorOccured">Oops! Unknown error occured!</s:String>
+    <s:String x:Key="s_SendingInfoAndRestarting">Sending info, saving everything and restarting</s:String>
+    <s:String x:Key="s_OutOfMemoryException">Out of memory to continue work of Laitis</s:String>
+    <s:String x:Key="s_DiskIsFull">Disk is full to continue work of Laitis</s:String>
+    <s:String x:Key="s_UIAutomationDllMissing">UIAutomation.dll library not found. ACtion will not work.</s:String>
+    <s:String x:Key="s_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
+    <!--#endregion-->
+
+    <!--#region Main Tabs and Buttons-->
+    <s:String x:Key="s_Profile">Profile</s:String>
+    <s:String x:Key="s_Community">Community</s:String>
+    <s:String x:Key="s_Commands">Commands</s:String>
+    <s:String x:Key="s_Communication">Communication</s:String>
+    <s:String x:Key="s_Help">Help</s:String>
+    <s:String x:Key="s_About">About</s:String>
+    <s:String x:Key="s_Editor">Editor</s:String>
+    <s:String x:Key="s_Publisher">Publisher</s:String>
+    
+    <s:String x:Key="s_Hide">Hide</s:String>
+    <s:String x:Key="s_Pause">Pause</s:String>
+    <s:String x:Key="s_Buttons_Hide">Hide</s:String>
+    <s:String x:Key="s_Buttons_Pause">Temporarily disable voice commands</s:String>
+    <s:String x:Key="s_Buttons_Unpause">Enable voice commands</s:String>
+    <!--#endregion-->
+
+    <!--#region Commands List-->
+    <s:String x:Key="s_CommandCopied">Command is copied</s:String>
+    <s:String x:Key="s_CommandCutted">Command is cutted</s:String>
+    <s:String x:Key="s_CommandPasted">Command is pasted</s:String>
+    <s:String x:Key="s_CommandDeleted">Command is removed</s:String>
+    <s:String x:Key="s_CategoryCopied">Category is copied</s:String>
+    <s:String x:Key="s_CategoryCutted">Category is cutted</s:String>
+    <s:String x:Key="s_CategoryPasted">Category is pasted</s:String>
+    <s:String x:Key="s_CategoryDeleted">Category is removed</s:String>
+    <s:String x:Key="s_PackCopied">Collection is copied</s:String>
+    <s:String x:Key="s_PackCutted">Collection is cutted</s:String>
+    <s:String x:Key="s_PackPasted">Collection is pasted</s:String>
+    <s:String x:Key="s_PackDeleted">Collection is removed</s:String>
+
+    <s:String x:Key="s_CopyPack">Copy pack</s:String>
+    <s:String x:Key="s_CopyCommand">Copy command</s:String>
+    <s:String x:Key="s_CopyCategory">Copy category</s:String>
+    <s:String x:Key="s_CutCommand">Cut command</s:String>
+    <s:String x:Key="s_CutCategory">Cut category</s:String>
+    <s:String x:Key="s_PasteCommand">Paste command</s:String>
+    <s:String x:Key="s_PasteCategory">Paste category</s:String>
+    <s:String x:Key="s_PastePack">Paste collection</s:String>
+    
+    <s:String x:Key="s_DeleteCommand">Remove command</s:String>
+    <s:String x:Key="s_EditCommand">Edit command</s:String>
+    <s:String x:Key="s_CommandImport">Import command from text</s:String>
+    <s:String x:Key="s_CommandExport">Export command to text</s:String>
+    <s:String x:Key="s_CommandImported">Command is imported</s:String>
+    <s:String x:Key="s_CommandUpdate">Update command</s:String>
+    <s:String x:Key="s_CreateSame">Create same command</s:String>
+    <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
+    
+    <s:String x:Key="s_PackActivity">Pack activity</s:String>
+    <!--#endregion-->
+    
+    <!--#region Notifications -->
+    <s:String x:Key="s_Details">Details</s:String>
+    <s:String x:Key="s_EndRecieve">Data recieve ended</s:String>
+    <s:String x:Key="s_ConnectionDrop">Connection drop</s:String>
+    <s:String x:Key="s_RecordEnded">Record ended</s:String>
+    <s:String x:Key="s_RecordStarted">Record started</s:String>
+    <s:String x:Key="s_StartToSend">Record sending started</s:String>
+    <s:String x:Key="s_EndSend">Record sending ended</s:String>
+    <s:String x:Key="s_TooLongRecordIsEnded">Record was stopped because its too long</s:String>
+    <s:String x:Key="s_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
+    
+    <s:String x:Key="s_DownloadOfUpdate">Downloading update</s:String>
+    <s:String x:Key="s_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis succesfully updated from version</s:String>
+    <s:String x:Key="s_ToVersion">to version</s:String>
+
+    <s:String x:Key="s_YandexKeyEmpty">Yandex key is empty. Trying Google</s:String>
+    <s:String x:Key="s_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
+    <s:String x:Key="s_FailToPlayPhrase">Fail to play phrase</s:String>
+    <s:String x:Key="s_FailToFindRecordingDevice">Fail to find recording device</s:String>
+    <s:String x:Key="s_RecordingStartedOnDeviceNumber">Recording is started from device #</s:String>
+    <s:String x:Key="s_RecordingStoppedOnDeviceNumber">Recording is stopped from device #</s:String>
+    
+    <s:String x:Key="s_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
+    <s:String x:Key="s_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
+
+    <s:String x:Key="s_SettingsDownloadSuccess">Settigns download success!</s:String>
+    <s:String x:Key="s_SettingsDownloadFail">Settings download fail.</s:String>
+    <s:String x:Key="s_SettingsUploadSuccess">Settings upload success</s:String>
+    <s:String x:Key="s_SettingsUploadFail">Settings upload fail</s:String>
+    
+    <s:String x:Key="s_PackUpdated">Update of pack </s:String>
+    <s:String x:Key="s_ApplicationVersion">Application version</s:String>
+    <s:String x:Key="s_UnderstoodText">understood text</s:String>
+    <s:String x:Key="s_UnderstoodCommand">understood command</s:String>
+    <s:String x:Key="s_CommandNotStartsWithKeyword">Command is not started with keyword</s:String>
+    <s:String x:Key="s_TextNotStartsWithKeyword">Text is not started with keyword</s:String>
+    <s:String x:Key="s_CommandDone">Command executed</s:String>
+    <s:String x:Key="s_TypingText">Typing text</s:String>
+    <s:String x:Key="s_ThatRecordNeedsPlay">That record is playing because &quot;Listen yourself&quot; option is enabled</s:String>
+    
+    <s:String x:Key="s_RemovingErrorTyping">Removing previous error typing</s:String>
+    <s:String x:Key="s_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
+    <s:String x:Key="s_ComaWaitTime">Adding coma, becaise wait time was short</s:String>
+    <s:String x:Key="s_DotWaitTime">Adding dot, because there was a long wait time</s:String>
+    <s:String x:Key="s_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
+    <!--#endregion-->
+    
+    <!--#region  Community -->
+    <s:String x:Key="s_ServiceBlockedException">Pronounce service temporarily blocked requests from your PC. Select another service in settings.</s:String>
+    <s:String x:Key="s_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
+    <s:String x:Key="s_UsersPublications">Users publications:</s:String>
+    <s:String x:Key="s_Downloads">Downloads</s:String>
+    <s:String x:Key="s_LaitisDescription">Laitis donation: Controlling PC with your voice</s:String>
+    <s:String x:Key="s_Like">Like</s:String>
+    <s:String x:Key="s_Dislike">Dislike</s:String>
+    <s:String x:Key="s_RecieveDate">Recieve date</s:String>
+    <!--#endregion-->
+
+    <!--#region Publisher-->
+    <s:String x:Key="s_AutorizationNeeded">Authorization needed</s:String>
+    <s:String x:Key="s_CollectionNameIsTooShort">Collection name is too short</s:String>
+    <s:String x:Key="s_NoCommandsInPack">Pack is empty</s:String>
+    <s:String x:Key="s_ChangesNotFound">0 changes found</s:String>
+    <s:String x:Key="s_PublicationSendedToTheServer">Your publication is sended to the server</s:String>
+    <s:String x:Key="s_DownloadingAdditionalDataFromServer">Downloading additional information from server...</s:String>
+    <s:String x:Key="s_PublishNewCollection">Publish new collection</s:String>
+    <s:String x:Key="s_PublishSomeChanges">Publish some changes</s:String>
+    <s:String x:Key="s_CommandsToRemove">Commands to remove:</s:String>
+    <s:String x:Key="s_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
+    <!--#endregion-->
+
+    <!--#region Variables-->
+    <s:String x:Key="s_Custom">Custom</s:String>
+    <s:String x:Key="s_DateTime">DateTime</s:String>
+    <s:String x:Key="s_Account">Account</s:String>
+    <s:String x:Key="s_Environment">Environment</s:String>
+    
+    <s:String x:Key="s_SetVariable">Set variable</s:String>
+    <s:String x:Key="s_Value">value</s:String>
+    <s:String x:Key="s_IfVariableValue">If variable value is</s:String>
+    <s:String x:Key="s_IfWebsiteNavValue">If website selection is</s:String>
+
+    <s:String x:Key="s_VariableOperator_Exists">exists</s:String>
+    <s:String x:Key="s_VariableOperator_Equals">equals</s:String>
+    <s:String x:Key="s_VariableOperator_NotEquals">not equals</s:String>
+    <s:String x:Key="s_VariableOperator_Bigger">bigger than</s:String>
+    <s:String x:Key="s_VariableOperator_Smaller">smaller than</s:String>
+    <s:String x:Key="s_VariableOperator_BiggerOrEquals">bigger or equals</s:String>
+    <s:String x:Key="s_VariableOperator_SmallerOrEquals">smaller of equals</s:String>
+
+    <s:String x:Key="s_Second">Second</s:String>
+    <s:String x:Key="s_Minute">Minute</s:String>
+    <s:String x:Key="s_Hour">Hour</s:String>
+    <s:String x:Key="s_Day">Day</s:String>
+    <s:String x:Key="s_Month">Month</s:String>
+    <s:String x:Key="s_Year">Year</s:String>
+    <s:String x:Key="s_DayOfWeek">DayOfWeek</s:String>
+    <s:String x:Key="s_Date">Date</s:String>
+    <s:String x:Key="s_Time">Time</s:String>
+    <s:String x:Key="s_Version">Version</s:String>
+    <s:String x:Key="s_VKURL">VKURL</s:String>
+    <!--#endregion-->
+
+    <!--#region Common Labels-->
+    <s:String x:Key="s_Images">Images</s:String>
+    <s:String x:Key="s_SelectImage">Select image</s:String>
+    <s:String x:Key="s_In">in</s:String>
+    <s:String x:Key="s_Ms">ms</s:String>
+    <s:String x:Key="s_And">and</s:String>
+    <s:String x:Key="s_Hello">Hello</s:String>
+    <s:String x:Key="s_Understand">Understand</s:String>
+    <s:String x:Key="s_Well">Well</s:String>
+    <s:String x:Key="s_Say">Say</s:String>
+    <s:String x:Key="s_Cut">Cut</s:String>
+    <s:String x:Key="s_Type">Type</s:String>
+    <s:String x:Key="s_Stop">Stop</s:String>
+    <s:String x:Key="s_Send">Send</s:String>
+    <s:String x:Key="s_Play">Play</s:String>
+    <s:String x:Key="s_Word">Word</s:String>
+    <s:String x:Key="s_Wait">Wait</s:String>
+    <s:String x:Key="s_Open">Open</s:String>
+    <s:String x:Key="s_Exit">Exit</s:String>
+    <s:String x:Key="s_Copy">Copy</s:String>
+    <s:String x:Key="s_Edit">Edit</s:String>
+    <s:String x:Key="s_Name">Name</s:String>
+    <s:String x:Key="s_Times">times</s:String>
+    <s:String x:Key="s_Email">Email</s:String>
+    <s:String x:Key="s_Opera">Opera</s:String>
+    <s:String x:Key="s_Chrome">Chrome</s:String>
+    <s:String x:Key="s_FireFox">Firefox</s:String>
+    <s:String x:Key="s_Yandex">Yandex</s:String>
+    <s:String x:Key="s_Vivaldi">Vivaldi</s:String>
+    <s:String x:Key="s_Password">Password</s:String>
+    <s:String x:Key="s_RepeatPassword">Repeat password</s:String>
+    <s:String x:Key="s_NickName">Nickname</s:String>
+    <s:String x:Key="s_Today">today</s:String>
+    <s:String x:Key="s_Paste">Paste</s:String>
+    <s:String x:Key="s_Rules">Autoreplace</s:String>
+    <s:String x:Key="s_Voice">Voice</s:String>
+    <s:String x:Key="s_Top10">Top 10</s:String>
+    <s:String x:Key="s_Rub">$</s:String>
+    <s:String x:Key="s_Donate">Donate</s:String>
+    <s:String x:Key="s_Search">Search</s:String>
+    <s:String x:Key="s_Browse">Browse</s:String>
+    <s:String x:Key="s_Remove">Remove</s:String>
+    <s:String x:Key="s_Removed">Removed</s:String>
+    <s:String x:Key="s_Tester">Tester</s:String>
+    <s:String x:Key="s_Execute">Execute</s:String>
+    <s:String x:Key="s_Refresh">Refresh</s:String>
+    <s:String x:Key="s_Loading">Loading</s:String>
+    <s:String x:Key="s_Donated">Donated</s:String>
+    <s:String x:Key="s_NewPack">New pack</s:String>
+    <s:String x:Key="s_Unknown">Unknown</s:String>
+    <s:String x:Key="s_YouSaid">You said</s:String>
+    <s:String x:Key="s_AddPack">Add pack</s:String>
+    <s:String x:Key="s_Settings">Settings</s:String>
+    <s:String x:Key="s_OnServer">On server</s:String>
+    <s:String x:Key="s_Defaults">Set defaults</s:String>
+    <s:String x:Key="s_Close">Close</s:String>
+    <s:String x:Key="s_Messages">messages</s:String>
+    <s:String x:Key="s_Vkontakte">Vkontakte</s:String>
+    <s:String x:Key="s_Confidant">Confidant</s:String>
+    <s:String x:Key="s_Dublicate">Duplicate</s:String>
+    <s:String x:Key="s_Executing">Executing</s:String>
+    <s:String x:Key="s_DaysWithUs">days with us</s:String>
+    <s:String x:Key="s_HttpWebRequest">Web-request</s:String>
+    <s:String x:Key="s_Responding">Responding</s:String>
+    <s:String x:Key="s_Categories">categories</s:String>
+    <s:String x:Key="s_Collection">Pack</s:String>
+    <s:String x:Key="s_Reputation">Reputation</s:String>
+    <s:String x:Key="s_AddCommand">Add command</s:String>
+    <s:String x:Key="s_Replacement">replacement</s:String>
+    <s:String x:Key="s_Publish">Publish</s:String>
+    <s:String x:Key="s_Publication">Publication</s:String>
+    <s:String x:Key="s_AddCategory">Add category</s:String>
+    <s:String x:Key="s_NewCategory">New category</s:String>
+    <s:String x:Key="s_SaveChanges">Save changes</s:String>
+    <s:String x:Key="s_Achievements">Achievements</s:String>
+    <s:String x:Key="s_UsersInvited">Users invited</s:String>
+    <s:String x:Key="s_IfProcessOpen">If process is open</s:String>
+    <s:String x:Key="s_IfWebsiteOpen">If web-site is open</s:String>
+    <s:String x:Key="s_WithParameters">with parameters</s:String>
+    <s:String x:Key="w_IfProcessActive">If process is active</s:String>
+    <s:String x:Key="s_NothingSelected">Nothing selected</s:String>
+    <s:String x:Key="s_RegistrationDate">Registration date</s:String>
+    <s:String x:Key="s_ConnectionProblems">Connection problems</s:String>
+    <s:String x:Key="s_DataTransferCompleted">Data transfer is completed</s:String>
+    <s:String x:Key="s_ShareLaitisWithYourFriends">Share Laitis with your friends!</s:String>
+    
+    <s:String x:Key="s_Questions">Questions</s:String>
+    <s:String x:Key="s_Answers">Answers</s:String>
+    <s:String x:Key="s_MouseMoveOn">Move mouse on element</s:String>
+    <s:String x:Key="s_DonationValueInvalid">НDonation value is invalid</s:String>
+    <s:String x:Key="s_DonateToLaitis">Donate to Laitis</s:String>
+
+
+    <s:String x:Key="s_AccessDenied">Access denied</s:String>
+    <s:String x:Key="s_Size">Size</s:String>
+    <s:String x:Key="s_Download">Download</s:String>
+    <s:String x:Key="s_HoldToConfirm">Press and hold to confirm</s:String>
+    <s:String x:Key="s_Cancel">Cancel</s:String>
+
+
+    <s:String x:Key="s_CustomVariables">Custom variables</s:String>
+
+    <s:String x:Key="s_ProcessName">Process name</s:String>
+    <s:String x:Key="s_FilePath">File path</s:String>
+
+    <s:String x:Key="s_Command_Select_Difference_Command">Select new command</s:String>
+    <s:String x:Key="s_Command_Select_Difference_Order">Select order difference</s:String>
+    <s:String x:Key="s_Command_Select_Difference_Actions">Select actions difference</s:String>
+    <s:String x:Key="s_Command_Select_Difference_VoiceCommands">Select voice commands difference</s:String>
+    <!--#endregion-->
+
+    <!--#region Common Tooltips-->
+    <TextBlock x:Key="s_Tooltip_CancelButton">
+        <Run Text="{StaticResource s_Cancel}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_RemoveButton">
+        <Run Text="{StaticResource s_Remove}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_DownloadButton">
+        <Run Text="{StaticResource s_Download}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_ApplyChangeToMyCollection">
+        <Run Text="Apply that change to my collection" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <!--#endregion-->
+
+    <!--#region Browser Controller-->
+    <s:String x:Key="s_BrowserController">Browser controller</s:String>
+    <!--#endregion-->
+
+    <!--#region Command Editor-->
+    <s:String x:Key="s_CommandEditor_Default_Category_Name">Common</s:String>
+    <s:String x:Key="s_CommandEditor_Default_Pack_Name">New pack</s:String>
+    <s:String x:Key="s_CommandEditor_Open_ErrorText">Cannot open editor. Details in the event log.</s:String>
+    <s:String x:Key="s_CommandEditor_DublicateFounded">Dublicate voice command found</s:String>
+    <s:String x:Key="s_CommandEditor_DublicateTooltip">Application automatically recognizes word cases.</s:String>
+    <s:String x:Key="s_CommandEditor_VoiceCommandExists">That voice command already exists in that command</s:String>
+    <s:String x:Key="s_CommandEditor_VoiceCommands">Voice commands:</s:String>
+    <s:String x:Key="s_CommandEditor_Actions">Actions:</s:String>
+    <s:String x:Key="s_CommandEditor_Variables">Variables:</s:String>
+    <s:String x:Key="s_CommandEditor_SelectProcess">Select process</s:String>
+
+    <s:String x:Key="s_CommandAction_AddCondition">Condition</s:String>
+    <s:String x:Key="s_CommandAction_AddAction">Action</s:String>
+    <s:String x:Key="s_CommandAction_AddWebAction">Web-Action</s:String>
+
+    <s:String x:Key="s_CommandAction_Label_OpenFile0">Open file:</s:String>
+    <s:String x:Key="s_CommandAction_Label_OpenFile1">Parameters:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Hotkeys">Hotkeys:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Say">Say:</s:String>
+    <s:String x:Key="s_CommandAction_Label_PlayAudio">Play audio:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Pause">Wait:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfProcessSelected">If active process is:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfProcessExists">If process exists:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfWebsiteSelected">If active website is:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseButton">Mouse button:</s:String>
+    <s:String x:Key="s_CommandAction_Label_HttpWebRequest">Web-request:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn">Mouse move on:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Action">Action:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Element">Element:</s:String>
+
+    <s:String x:Key="s_CommandAction_Label_OpenURL">Open URL:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageClick">Click on web-page:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageFocus">Focus on web-page:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageRead">Read on web-page:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageNavigate">Select on web-page:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageNavClick">Click on web-page selection:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Open web-page popup window:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseScroll">on:</s:String>
+
+    <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
+    <TextBlock x:Key="s_CommandAction_Tooltip_HotkeysManualInput">
+        Free hotkeys input
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Allows enter hotkeys with Win button
+            <LineBreak />
+            Allows enter some hotkeys over coma
+        </Span>
+    </TextBlock>
+    
+    <s:String x:Key="s_Click">Click</s:String>
+    <s:String x:Key="s_Focus">Focus</s:String>
+    <s:String x:Key="s_Navigate">Select</s:String>
+    <s:String x:Key="s_NavClick">Click on selection</s:String>
+    <s:String x:Key="s_OpenPopup">Open popup</s:String>
+    
+    <s:String x:Key="s_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Example: http://ya.ru</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Pause">Time in milliseconds</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_IfWebsiteSelected">Web-site url part</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_HttpWebRequest">Send web-request without using a browser</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. If you do not know what CSS is - you cannot create that kind of commands</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_NavClick">You can leave that field empty or enter CSS-selector</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Else">Logical Else for If condition</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_EndIf">Ending for If condition. Not required, if there is no actions below.</s:String>
+    <!--#endregion-->
+
+    <!--#region Enums-->
+    <!--  HttpWebRequestMethod -->
+    <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
+    <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
+    <!--  YandexMoneyPaymentType -->
+    <s:String x:Key="s_YandexMoneyPaymentType_YandexMoney">Yandex money</s:String>
+    <s:String x:Key="s_YandexMoneyPaymentType_CreditCard">Credit card</s:String>
+    <s:String x:Key="s_YandexMoneyPaymentType_MobileBalance">Mobile balance</s:String>
+    <!--  CommandState -->
+    <s:String x:Key="s_CommandState_ModifiedByUser">You modified that command</s:String>
+    <s:String x:Key="s_CommandState_CreatedByUser">You created that command</s:String>
+    <s:String x:Key="s_CommandState_UpdateAvailable">Update available</s:String>
+    <!--  SpeechState -->
+    <s:String x:Key="s_SpeechState_Normal">Disabled</s:String>
+    <s:String x:Key="s_SpeechState_Working">Enabled</s:String>
+    <s:String x:Key="s_SpeechState_Recording">Recording</s:String>
+    <s:String x:Key="s_SpeechState_Saying">Saying</s:String>
+    <s:String x:Key="s_SpeechState_Paused">Paused</s:String>
+    <!--  MouseMoveType -->
+    <s:String x:Key="s_MouseMoveType_Point">Point</s:String>
+    <s:String x:Key="s_MouseMoveType_Relative">Relative</s:String>
+    <!--  MouseScrollType -->
+    <s:String x:Key="s_MouseScrollType_Vertical">Vertically</s:String>
+    <s:String x:Key="s_MouseScrollType_Horizontal">Horizontally</s:String>
+    <!--  ActionType -->
+    <s:String x:Key="s_ActionType_OpenFile">Oper file or app</s:String>
+    <s:String x:Key="s_ActionType_CloseApp">Close app</s:String>
+    <s:String x:Key="s_ActionType_Hotkeys">Press hotkeys</s:String>
+    <s:String x:Key="s_ActionType_MouseMove">Move mouse cursor</s:String>
+    <s:String x:Key="s_ActionType_Say">Say</s:String>
+    <s:String x:Key="s_ActionType_Type">Type text</s:String>
+    <s:String x:Key="s_ActionType_PlayAudio">Play audio</s:String>
+    <s:String x:Key="s_ActionType_OpenURL">Open web-page</s:String>
+    <s:String x:Key="s_ActionType_WebPageScript">Execute javascript</s:String>
+    <s:String x:Key="s_ActionType_Pause">Wait</s:String>
+    <s:String x:Key="s_ActionType_IfProcessSelected">If active program is</s:String>
+    <s:String x:Key="s_ActionType_IfProcessExists">If progrun running</s:String>
+    <s:String x:Key="s_ActionType_IfWebsiteSelected">If active web-site is</s:String>
+    <s:String x:Key="s_ActionType_MouseButton">Press mouse button</s:String>
+    <s:String x:Key="s_ActionType_HttpWebRequest">Web-request</s:String>
+    <s:String x:Key="s_ActionType_SetUserVariable">Set variable value</s:String>
+    <s:String x:Key="s_ActionType_IfVariableValue">If variable value is</s:String>
+    <s:String x:Key="s_ActionType_IfWebsiteNavValue">If web-site selection is</s:String>
+    <s:String x:Key="s_ActionType_ShowWindow">Show window</s:String>
+    <s:String x:Key="s_ActionType_WebPageFocus">Focus</s:String>
+    <s:String x:Key="s_ActionType_WebPageClick">Click</s:String>
+    <s:String x:Key="s_ActionType_WebPageRead">Read</s:String>
+    <s:String x:Key="s_ActionType_WebPageNavigate">Select</s:String>
+    <s:String x:Key="s_ActionType_WebPageNavClick">Click on selection</s:String>
+    <s:String x:Key="s_ActionType_WebPagePopupOpen">Open web-page popup</s:String>
+    <s:String x:Key="s_ActionType_MouseMoveOn">Move mouse on element</s:String>
+    <s:String x:Key="s_ActionType_Else">Else</s:String>
+    <s:String x:Key="s_ActionType_EndIf">EndIf</s:String>
+    <s:String x:Key="s_ActionType_Comment">Comment</s:String>
+    <s:String x:Key="s_ActionType_MouseScroll">Wheel Mouse Scroll</s:String>
+    <!--  WebNavigateAction-->
+    <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
+    <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
+    <s:String x:Key="s_WebPageNavigateAction_SubstractIndex">Decrease position</s:String>
+    <!--  CloseAppBehaviour -->
+    <s:String x:Key="s_CloseAppBehaviour_Close">Close</s:String>
+    <s:String x:Key="s_CloseAppBehaviour_Kill">Kill</s:String>
+    <!--  Mouse Button-->
+    <s:String x:Key="s_MouseButton_Left">Left mouse button</s:String>
+    <s:String x:Key="s_MouseButton_Right">Right mouse button</s:String>
+    <s:String x:Key="s_MouseButton_Middle">Middle mouse button</s:String>
+    <s:String x:Key="s_MouseButton_XButton1">Х1 mouse button</s:String>
+    <s:String x:Key="s_MouseButton_XButton2">Х2 mouse button</s:String>
+    <!--  Mouse Action-->
+    <s:String x:Key="s_ButtonAction_Click">Click</s:String>
+    <s:String x:Key="s_ButtonAction_Press">Press</s:String>
+    <s:String x:Key="s_ButtonAction_Release">Release</s:String>
+    <s:String x:Key="s_ButtonAction_LongClick">Long click</s:String>
+    <!--  Show Window Commands-->
+    <s:String x:Key="s_ShowWindowCommandType_Show">Show</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Maximize">Maximize</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Minimize">Minimize</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Hide">Hide</s:String>
+    <!--  Day of Week-->
+    <s:String x:Key="s_Monday">Monday</s:String>
+    <s:String x:Key="s_Tuesday">Tuesday</s:String>
+    <s:String x:Key="s_Wednesday">Wednesday</s:String>
+    <s:String x:Key="s_Thursday">Thursday</s:String>
+    <s:String x:Key="s_Friday">Friday</s:String>
+    <s:String x:Key="s_Saturday">Saturday</s:String>
+    <s:String x:Key="s_Sunday">Sunday</s:String>
+    <!--  Month-->
+    <s:String x:Key="s_January">January</s:String>
+    <s:String x:Key="s_February">February</s:String>
+    <s:String x:Key="s_March">March</s:String>
+    <s:String x:Key="s_April">April</s:String>
+    <s:String x:Key="s_May">May</s:String>
+    <s:String x:Key="s_June">June</s:String>
+    <s:String x:Key="s_July">July</s:String>
+    <s:String x:Key="s_August">August</s:String>
+    <s:String x:Key="s_September">September</s:String>
+    <s:String x:Key="s_October">October</s:String>
+    <s:String x:Key="s_November">November</s:String>
+    <s:String x:Key="s_December">December</s:String>
+    <!--#endregion-->
+
+    <!--#region Settings-->
+
+    <!--#region Settings Categories-->
+    <s:String x:Key="s_Settings_Category_Common">Common</s:String>
+    <s:String x:Key="s_Settings_Category_VoiceCommands">Speech services</s:String>
+    <s:String x:Key="s_Settings_Category_Website">Web-site control</s:String>
+    <s:String x:Key="s_Settings_Category_Assistant">Assistant</s:String>
+    <s:String x:Key="s_Settings_Category_Typing">Text typing</s:String>
+    <s:String x:Key="s_Settings_Category_Variables">Variables</s:String>
+    <s:String x:Key="s_Settings_Category_Rules">Autoreplace</s:String>
+    <s:String x:Key="s_Settings_Category_Logger">Event log</s:String>
+    <!--#endregion-->
+    <s:String x:Key="s_Service_Online">online</s:String>
+    <s:String x:Key="s_Service_Offline">offline</s:String>
+    <s:String x:Key="s_Service_Authorize">authorize</s:String>
+    <s:String x:Key="s_Service_BadQuality">bad quality</s:String>
+    <s:String x:Key="s_Service_GoodQuality">good quality</s:String>
+    <s:String x:Key="s_Service_Install">install</s:String>
+    <s:String x:Key="s_Service_Limited">limits</s:String>
+    
+    <s:String x:Key="s_Logger_Clear">Clear event log</s:String>
+    <s:String x:Key="s_Logger_ItemsCopied">Event log items are copied</s:String>
+    <s:String x:Key="s_Logger_ExtendedMode">Extended mode</s:String>
+    
+    <!--#region Settings Labels-->
+    <s:String x:Key="s_Settings_Label_IsRecordEnabled">Is record enabled</s:String>
+    <s:String x:Key="s_Settings_Label_VoiceCommands">Voice commands</s:String>
+    <s:String x:Key="s_Settings_Label_VoiceDialing">Voice text typing</s:String>
+    <s:String x:Key="s_Settings_Label_IsPauseRecordingOnLoudSound">Pause recording on loud sound</s:String>
+    <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
+    <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
+    <s:String x:Key="s_Settings_Label_IsListenYourself">Listen yourself</s:String>
+    <s:String x:Key="s_Settings_Label_UseSpecialWordCommandStarter">Run commands only if they are starts with</s:String>
+    <s:String x:Key="s_Settings_Label_UseSpecialWordTextInputStarter">Type text only if it starts with</s:String>
+    <s:String x:Key="s_Settings_Label_IsQAEducationEnabled">Enable communication learning</s:String>
+    <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
+    <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
+    <s:String x:Key="s_Settings_Label_IsStartMinimized">Minimize Laitis on app start</s:String>
+    <s:String x:Key="s_Settings_Label_RecognitionService">Recognition service</s:String>
+    <s:String x:Key="s_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
+    <s:String x:Key="s_Settings_Label_TextToSpeechService">Text to Speech Service</s:String>
+    <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Is website control enabled</s:String>
+    <s:String x:Key="s_Settings_Label_UseAssistant">Communication</s:String>
+    <s:String x:Key="s_Settings_Label_UseTranslit">Use translit</s:String>
+    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Automatically insert dots, comas, uppercase chars</s:String>
+    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Type text using keyboard, rather than clipboard</s:String>
+    <s:String x:Key="s_Settings_Label_ComaWaitTime">Coma insert timeout</s:String>
+    <s:String x:Key="s_Settings_Label_DotWaitTime">Dot insert timeout</s:String>
+    <s:String x:Key="s_Settings_Label_RuleServerSync">Sync autoreplace list with server</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFues">Show Hints (Browsers configuuration, Commands, Communication)</s:String>
+    <s:String x:Key="s_Settings_Label_ShowLogger">Show Event Logger</s:String>
+    <s:String x:Key="s_Settings_Label_HideLogger">Hide Event Logger</s:String>
+    <!--#endregion-->
+
+    <!--#region Template Texts-->
+    <ControlTemplate x:Key="s_Settings_Text_YandexService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Yandex service you need:
+  1) Yandex account <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
+  2) Enter into developer account and recieve private SpeechKit key <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
+  3) Paste key into textbox below</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_BingService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Bing service you need:
+  1) Open link <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
+  2) Select Speech, Bing Speech API, log in by one of available methods                  
+  3) Paste first key into textbox below</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_WindowsService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">To add languages you need to download and install Windows language packs</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_WindowsTtsService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">To add some voices you need to download and install Windows language packs or thirt-party voice engines, like Ivona</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_AcapelaService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Acapela you need:
+  1) Open link <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
+  2) Press Sign up for free in right top corner
+  3) Enter requested data (name, email, pass) and register
+  4) You'll recieve an email with data you need to insert in textboxes below</TextBlock>
+    </ControlTemplate>
+    <!--#endregion-->
+
+    <!--#region Settings Tooltips-->
+    
+    <TextBlock x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
+        To stop Laitis from recognizing audio from speakers (video, music)
+    </TextBlock>
+    
+    <TextBlock x:Key="s_Settings_Tooltip_NoiseProgress">
+        That indicator displays noise volume in microphone
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_TooLoud">
+        PC sound volume exceeds 30% limit
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Voice recording is stopped
+            <LineBreak />
+            You can disable this feature in settings
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_VoiceDialing">
+        That option enables text typing using your voice
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            You can type text in apy text field in Windows
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_RecordStarter">
+        Select key
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsMuteOnCtrlClick">
+        Mutes Windows sound on pressing start record button
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            That is used to not record music or video sound
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsListenYourself">
+        Allows you to listen yourself
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            To verify recording quality.
+            <LineBreak />
+            Enabling this feature disables all recognition features.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseSpecialWordCommandStarter">
+        All commands will start with keyword/phrase prefix
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            To execute command &quot;accept&quot;, you'll need to say &quot;&lt;keyword&gt; accept&quot;
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseSpecialWordTextInputStarter">
+        Text dictation will only work if it starts with keyword
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            To type &quot;hello&quot;, you'll need to say &quot;&lt;keyword&gt; hello&quot;
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseTranslit">
+        Это опция включает автозамену кириллических символов на латинские
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Понадобится для использования программ, не поддерживающих Юникод.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
+        Works only with automatic voice recording
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Текст будет писаться с большой буквы при смене текстового поля и при наборе нового предложения;
+            <LineBreak />
+            Запятая ставится, если вы сделаете паузу на промежуток от 2 до 4 секунд(стандартные значения);
+            <LineBreak />
+            Точка ставится, если вы сделаете паузу на 4 секунды(стандартное значение) и более.
+        </Span>
+    </TextBlock>
+    
+    <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
+        Бета версия. Включать на свой страх и риск.
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Поддерживаются раскладки клавиатуры: US, Russian, Ukrainian.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsTypingAutoReplace">
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Срабатывает только при точном совпадении строки
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
+        Корневой ли вопрос
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Разговор начинается только с корневого вопроса.
+            <LineBreak />
+            Если вопрос не корневой - к нему можно перейти только после выбранных ответов.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_AddChildQuestion">
+        Add question to this answer
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_AddChildAnswer">
+        Add answer to this question
+    </TextBlock>
+
+    <s:String x:Key="s_Settings_Text_GoogleService">
+        Stop's working after 10-20 requests
+    </s:String>
+    
+    <!--#endregion-->
+
+    <!--#endregion-->
+
+    <!--#region Help-->
+
+    <s:String x:Key="s_Help_Updates">Updates</s:String>
+    <s:String x:Key="s_Help_Statistics">Statistics</s:String>
+    <s:String x:Key="s_Help_Introduction">Introduction</s:String>
+    <s:String x:Key="s_Help_Prepare">Preparation</s:String>
+    <s:String x:Key="s_Help_Settings">Settings</s:String>
+    <s:String x:Key="s_Help_Commands">Commands</s:String>
+    <s:String x:Key="s_Help_Dictation">Text dictation</s:String>
+    <s:String x:Key="s_Help_Community">Community</s:String>
+    <s:String x:Key="s_Help_IOT">IOT and services (for developers)</s:String>
+    <s:String x:Key="s_Help_FAQ">FAQ</s:String>
+    <s:String x:Key="s_Help_Extra">Extras</s:String>
+
+    <FlowDocument x:Key="s_HelpDocument">
+
+        <Section Margin="0,0,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Prepare}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Вам нужен <Run TextDecorations="Underline">хороший микрофон</Run>.
+                Он должен записывать звук без лишнего шума и треска. Больше подходят настольные микрофоны,
+                микрофоны с наушниками.
+                Микрофон, который находится в дешевой веб-камере в полуметре от Вас
+                не сможет обеспечить достаточное качество записи звука.</Paragraph>
+            <Paragraph TextIndent="40">
+                У Вас должно быть <Run TextDecorations="Underline">хорошее интернет соединение</Run>.
+                Скорость должна быть более 1 мегабита и задержка(пинг) не более 200 миллисекунд.
+                Задержка играет очень важную роль, если вы скажете словосочетание и оно напишется через 100-600мс - то это будет приемлемо,
+                но задержка в 1000 мс и более оказывает огромное неудобство работы с программой.
+                Скорости и задержки интернета через модем абсолютно недостаточно для комфортной работы программы.</Paragraph>
+            <Paragraph TextIndent="40">
+                Вы должны находиться в <Run TextDecorations="Underline">относительно тихом месте</Run>.
+                Если у вас в комнате включен телевизор или с вами разговаривает собеседник,
+                или в стереоколонках играет громкая музыка, то сервис распознавания будет некорректно распознавать ваш голос.
+                Решить это можно либо микрофоном с шумоподавлением, либо уединением в тихом месте.</Paragraph>
+        </Section>
+        
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Settings}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если у Вас к компьютеру подключено несколько микрофонов, то в настройках Вам нужно указать микрофон,
+                который вы хотите использовать.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                В программе запись идет автоматически, в зависимости от уровня шума в микрофоне.
+                Если вас этот вариант не устраивает,
+                то можно включить запись звука при зажатии определенной клавиши в настройках.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                В настройках вы заметите список автозамены. Автозамена работает только в том случае, если идет полное совпадение фразы.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                В разделе &quot;Набор текста&quot; находятся выключатели автоматической расстановки точек и запятых при
+                записи голоса в автоматическом режиме. А так же настройки длительностей пауз, перед их установкой.
+                Изменение этих настроек может повлиять на качество набора текста.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Программа не привязана к конкретному алгоритму или сервису распознавания/воспроизведения голоса.
+                В настройках можно выбрать один из доступных сервисов распознавания.
+                Поддерживаются все крупные игроки в области: Google, Yandex, Microsoft и т.д.
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Commands}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Список голосовых команд находится во вкладке “Команды”.
+                Команда выполняет действие, если была произнесена одна из предложенных в ней голосовых команд запуска.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                При нажатии на кнопку редактирования или создания команды открывается Редактор Команд.
+                В нем без труда можно создать действия любой сложности.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы создали собственную коллекцию команд, или внесли поправки в существующую -
+                вы можете опубликовать ее, нажав на кнопку &quot;Опубликовать&quot;.
+                После этого ваша публикация будет отображена в вашем профиле.
+                Если вашу публикацию оценят другие пользователи и она будет полезна, администратор ее
+                одобрит и она появится в &quot;Сообществе&quot;.
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Dictation}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы что-то произнесли и это не является командой, а также включена опция голосового набора, то текст
+                вставится в текстовое поле на компьютере, которое имеет фокус.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Программа автоматически расставляет точки и запятые в зависимости от пауз в вашей речи.
+                Если вы выберете другое текстовое поле, либо где-то кликните мышкой, либо нажмете одну из клавиш :
+                Tab, Left, Right, Up, Down, Home, End - то программа подумает,
+                что вы сменили текстовое поле и стоит начать с большой буквы и не ставить точку/запятую в начало предложения.
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Community}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Весь функционал данного раздела будет доступен только после регистрации и входа.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                В этом разделе можно закачивать новые коллекции команд и оценивать их. Все коллекции бесплатные.
+                В вашем профиле вы можете указать ваш аватар и ссылку на страничку ВКонтакте.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                После регистрации вам будет доступен функционал публикаций.
+                Вы можете опубликовать новые команды и/или изменения в коллекциях. 
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                После авторизации Laitis будет автоматически синхронизировать ваши команды между вашими устройствами.
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Laitis умеет отправлять веб запросы и выполнять команды, которые вернет сервер.
+                Благодаря этому можно настроить Laitis для:
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        Управления умным домом
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Создания чат-бота
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Общения в вашем мессенджере
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Подключения вашего сервиса доставки пиццы/записи к доктору
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Подключения информационных сервисов погоды/анекдотов/новостей
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph TextIndent="40">
+                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration">Дополнительная информация находится в репозитории gitHub</controls:Hyperlink>
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_FAQ}" />
+            </Paragraph>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему распознавание голоса не работает?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Ваш микрофон не подключен/не работает/выключен/сильно скрипит
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы не включили в настройках &quot;голосовые команды&quot; либо &quot;голосовой набор&quot;.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Установленная антивирусная программа блокирует работу приложения.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        У вас нет подключения к интернету, либо оно слишком медленное.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему распознавание голоса работает отвратительно?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы плохо выговариваете слова
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        У вас что-то с микрофоном. Может быть он тарахтит/скрипит/слишком тихий.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы находитесь в шумной обстановке и алгоритму распознавания трудно отличить ваш голос от посторонних шумов.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему требуется постоянное подключение к интернету?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Потому что для распознавания вашего голоса используется сервис распознавания от Google или Yandex и оно работает только в режиме Online.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Качественное распознавание голоса - это очень сложная задача, которую не может осилить стационарный компьютер.
+                        Требуются мощности датацентров и самообучающиеся алгоритмы.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Все реализации оффлайн распознавания голоса работают отвратительно.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему не работают команды управления веб-сайтами?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Проверьте, установлено ли в вашем браузере расширение Laitis. Без расширения команды управления веб-сайтами работать не будут.
+                        Скачать их можно тут: 
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Chrome</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Yandex</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Vivaldi</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/?display=en">Opera</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Что такое журнал событий и где его найти?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Это журнал в который Laitis записывает свои действия и ошибки.
+                        Открыть его можно нажав на кнопку в правом верхнем углу Настроек.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему нет поддержки Windows XP?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Потому что это старая операционная система, которая не поддерживает последние .NET Framework.
+                        Поддержка этой ОС требует больших усилий и того не стоит.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему нет поддержки OS X, IOS, Android, Linux, Windows Phone, XBOX?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Потому что проект не кроссплатформенный и им не может быть. Т.к. управление компьютером на всех ОС разное.
+                        Возможно в будущем выйдет версия под *nix. Про остальное в списке - разработки точно не будет.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Будет ли эта программа воровать мои пароли?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Нет. В ней нет троянов, вирусов и т.п.
+                        Программа управляет компьютерам и некоторым антивирусам это может не нравится.
+                        Добавляйте программу в исключения.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему так мало команд управления компьютером?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Потому что разработчик не может самостоятельно придумать и реализовать все возможные команды управления компьютером.
+                        Вы можете ему помочь, добавляя недостающие команды и публикуя их.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я отказаться от автоматических обновлений программы?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Нет. Все обновления весят менее 1 мегабайта. Они могут выходить по несколько штук в день. Чтобы не утруждать пользователя
+                        надоедливыми вопросами о обновлении, они будут применяться автоматически.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я получить исходный код программы?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Нет. Так же напоминаем Вам, что &quot;запрещено дешифровать, эмулировать, изменять, декомпилировать, дизассемблировать
+                        исходный код «Laitis» и его компонентов с целью несанкционированного использования и/или получения информации о
+                        реализации используемых в них алгоритмов. Незаконное использование указанных в пользовательском соглашении объектов
+                        интеллектуальной собственности влечет гражданскую, административную и уголовную ответственность.&quot;
+                        - отрывок из пользовательского соглашения.
+                    </Paragraph>
+                </ListItem>
+            </List>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Extra}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Я надеюсь, вы ознакомились с
+                <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">пользовательским соглашением</controls:Hyperlink>
+                перед установкой программы. Если вы не согласны с соглашением, то удалите эту программу.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы хотите отблагодарить меня или посоветовать мне что-то, вы можете сделать это лично, отправив мне сообщение
+                <controls:Hyperlink NavigateUri="https://vk.com/im?sel=16663300">Вконтакте</controls:Hyperlink>.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы хотите отблагодарить меня денежным вознаграждением, то воспользуйтесь любым способом, из перечисленных ниже:
+            </Paragraph>
+            <List>
+                <ListItem Margin="0,10,0,0">
+                    <BlockUIContainer>
+                        <laitis:YandexMoneyDonation Width="240" HorizontalAlignment="Left"/>
+                    </BlockUIContainer>
+                    <Paragraph></Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Sberbank:</Run>
+                        5469300309812623 Миколайтис Сергей</Paragraph>
+                </ListItem>
+                <ListItem Margin="0,10,0,0">
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Webmoney:</Run>
+                        R340805744805(рубли), X128078209734(биткоины), Z152356853702(доллары), E471475057900(евро), U248920972085(гривны)</Paragraph>
+                </ListItem>
+                <ListItem Margin="0,10,0,0">
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Qiwi:</Run>
+                        можно отправить ваучер на blasterloremaster@gmail.com</Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph TextIndent="40">
+                Все пожертвования идут на оплату хостинга, на котором запущен сервер программы.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Используемые сервисы:
+                <controls:Hyperlink NavigateUri="http://google.com/">Google Web Speech API</controls:Hyperlink>,
+                <controls:Hyperlink NavigateUri="https://tech.yandex.ru/speechkit/cloud/"><Image Source="{Binding YandexLogo}" Height="11"></Image> SpeechKit Cloud</controls:Hyperlink>
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Updates}" />
+            </Paragraph>
+        </Section>
+
+    </FlowDocument>
+    <!--#endregion-->
+
+</ResourceDictionary>
