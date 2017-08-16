@@ -321,7 +321,7 @@
     <s:String x:Key="s_NickName">Nickname</s:String>
     <s:String x:Key="s_Today">today</s:String>
     <s:String x:Key="s_Paste">Paste</s:String>
-    <s:String x:Key="s_Rules">Autoreplace</s:String>
+    <s:String x:Key="s_Rules">AutoCorrect</s:String>
     <s:String x:Key="s_Voice">Voice</s:String>
     <s:String x:Key="s_Top10">Top 10</s:String>
     <s:String x:Key="s_Rub">$</s:String>
@@ -540,11 +540,11 @@
     <s:String x:Key="s_ActionType_WebPageScript">Execute javascript</s:String>
     <s:String x:Key="s_ActionType_Pause">Wait</s:String>
     <s:String x:Key="s_ActionType_IfProcessSelected">If active program is</s:String>
-    <s:String x:Key="s_ActionType_IfProcessExists">If progrun running</s:String>
+    <s:String x:Key="s_ActionType_IfProcessExists">If program running</s:String>
     <s:String x:Key="s_ActionType_IfWebsiteSelected">If active web-site is</s:String>
     <s:String x:Key="s_ActionType_MouseButton">Press mouse button</s:String>
     <s:String x:Key="s_ActionType_HttpWebRequest">Web-request</s:String>
-    <s:String x:Key="s_ActionType_SetUserVariable">Set variable value</s:String>
+    <s:String x:Key="s_ActionType_SetCustomVariable">Set variable value</s:String>
     <s:String x:Key="s_ActionType_IfVariableValue">If variable value is</s:String>
     <s:String x:Key="s_ActionType_IfWebsiteNavValue">If web-site selection is</s:String>
     <s:String x:Key="s_ActionType_ShowWindow">Show window</s:String>
@@ -614,7 +614,7 @@
     <s:String x:Key="s_Settings_Category_Assistant">Assistant</s:String>
     <s:String x:Key="s_Settings_Category_Typing">Text typing</s:String>
     <s:String x:Key="s_Settings_Category_Variables">Variables</s:String>
-    <s:String x:Key="s_Settings_Category_Rules">Autoreplace</s:String>
+    <s:String x:Key="s_Settings_Category_Rules">AutoCorrect</s:String>
     <s:String x:Key="s_Settings_Category_Logger">Event log</s:String>
     <!--#endregion-->
     <s:String x:Key="s_Service_Online">online</s:String>
@@ -653,7 +653,7 @@
     <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Type text using keyboard, rather than clipboard</s:String>
     <s:String x:Key="s_Settings_Label_ComaWaitTime">Coma insert timeout</s:String>
     <s:String x:Key="s_Settings_Label_DotWaitTime">Dot insert timeout</s:String>
-    <s:String x:Key="s_Settings_Label_RuleServerSync">Sync autoreplace list with server</s:String>
+    <s:String x:Key="s_Settings_Label_RuleServerSync">Sync AutoCorrect list with server</s:String>
     <s:String x:Key="s_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
     <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
@@ -718,6 +718,8 @@
         </Span>
     </TextBlock>
 
+    
+    
     <TextBlock x:Key="s_Settings_Tooltip_RecordStarter">
         Select key
     </TextBlock>
@@ -757,13 +759,13 @@
     </TextBlock>
 
     <TextBlock x:Key="s_Settings_Tooltip_UseTranslit">
-        Это опция включает автозамену кириллических символов на латинские
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Понадобится для использования программ, не поддерживающих Юникод.
-        </Span>
+        Translit from russian to english
     </TextBlock>
 
+    
+    
+    
+    
     <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Works only with automatic voice recording
         <LineBreak />
@@ -777,26 +779,26 @@
     </TextBlock>
     
     <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
-        Бета версия. Включать на свой страх и риск.
+        Beta version. Use at your own risk.
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Поддерживаются раскладки клавиатуры: US, Russian, Ukrainian.
+            Supported keyboard layouts: US, Russian, Ukrainian.
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_IsTypingAutoReplace">
+    <TextBlock x:Key="s_Settings_Tooltip_IsTypingAutoCorrect">
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Срабатывает только при точном совпадении строки
+            Only works if the string exactly matches 
         </Span>
     </TextBlock>
 
     <TextBlock x:Key="s_Question_Tooltip_IsRoot">
-        Корневой ли вопрос
+        Is root question
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Разговор начинается только с корневого вопроса.
+            Conversation can start only from root question.
             <LineBreak />
-            Если вопрос не корневой - к нему можно перейти только после выбранных ответов.
+            If question is not root question - you can come to it only after connected answers.
         </Span>
     </TextBlock>
 
@@ -819,13 +821,7 @@
     <!--#region Help-->
 
     <s:String x:Key="s_Help_Updates">Updates</s:String>
-    <s:String x:Key="s_Help_Statistics">Statistics</s:String>
-    <s:String x:Key="s_Help_Introduction">Introduction</s:String>
     <s:String x:Key="s_Help_Prepare">Preparation</s:String>
-    <s:String x:Key="s_Help_Settings">Settings</s:String>
-    <s:String x:Key="s_Help_Commands">Commands</s:String>
-    <s:String x:Key="s_Help_Dictation">Text dictation</s:String>
-    <s:String x:Key="s_Help_Community">Community</s:String>
     <s:String x:Key="s_Help_IOT">IOT and services (for developers)</s:String>
     <s:String x:Key="s_Help_FAQ">FAQ</s:String>
     <s:String x:Key="s_Help_Extra">Extras</s:String>
@@ -837,227 +833,86 @@
                 <Run FontSize="20" Text="{StaticResource s_Help_Prepare}" />
             </Paragraph>
             <Paragraph TextIndent="40">
-                Вам нужен <Run TextDecorations="Underline">хороший микрофон</Run>.
-                Он должен записывать звук без лишнего шума и треска. Больше подходят настольные микрофоны,
-                микрофоны с наушниками.
-                Микрофон, который находится в дешевой веб-камере в полуметре от Вас
-                не сможет обеспечить достаточное качество записи звука.</Paragraph>
+                You need a <Run TextDecorations="Underline">good microphone</Run>.
+                It must record the sound without much noise and crackling. More suitable is desktop microphones and
+                microphones with headphones.
+                The microphone, which is located in a cheap webcam far from you
+                can not provide sufficient quality of sound recording.</Paragraph>
             <Paragraph TextIndent="40">
-                У Вас должно быть <Run TextDecorations="Underline">хорошее интернет соединение</Run>.
-                Скорость должна быть более 1 мегабита и задержка(пинг) не более 200 миллисекунд.
-                Задержка играет очень важную роль, если вы скажете словосочетание и оно напишется через 100-600мс - то это будет приемлемо,
-                но задержка в 1000 мс и более оказывает огромное неудобство работы с программой.
-                Скорости и задержки интернета через модем абсолютно недостаточно для комфортной работы программы.</Paragraph>
+                You need to have a <Run TextDecorations="Underline">good internet connection</Run>.
+                The speed should be more than 1mbps and ping should be lower than 200 milliseconds.
+                Latency is very important, if you say the phrase and it will be written in 100-600ms - then it will be acceptable,
+                But the delay of 1000+ms makes a huge inconvenience to work with the program.
+                The speed and latency of Internet via modem is absolutely not enough for comfortable work.</Paragraph>
             <Paragraph TextIndent="40">
-                Вы должны находиться в <Run TextDecorations="Underline">относительно тихом месте</Run>.
-                Если у вас в комнате включен телевизор или с вами разговаривает собеседник,
-                или в стереоколонках играет громкая музыка, то сервис распознавания будет некорректно распознавать ваш голос.
-                Решить это можно либо микрофоном с шумоподавлением, либо уединением в тихом месте.</Paragraph>
+                You need to be in a <Run TextDecorations="Underline">quiet place</Run>.
+                If your TV is on, or somebody is talking to you
+                or stereo speakers make loud music, the recognition of the service will not correctly recognize your voice.
+                You can solve this problem by either a microphone with noise reduction, or seclusion.</Paragraph>
         </Section>
         
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Settings}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Если у Вас к компьютеру подключено несколько микрофонов, то в настройках Вам нужно указать микрофон,
-                который вы хотите использовать.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                В программе запись идет автоматически, в зависимости от уровня шума в микрофоне.
-                Если вас этот вариант не устраивает,
-                то можно включить запись звука при зажатии определенной клавиши в настройках.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                В настройках вы заметите список автозамены. Автозамена работает только в том случае, если идет полное совпадение фразы.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                В разделе &quot;Набор текста&quot; находятся выключатели автоматической расстановки точек и запятых при
-                записи голоса в автоматическом режиме. А так же настройки длительностей пауз, перед их установкой.
-                Изменение этих настроек может повлиять на качество набора текста.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Программа не привязана к конкретному алгоритму или сервису распознавания/воспроизведения голоса.
-                В настройках можно выбрать один из доступных сервисов распознавания.
-                Поддерживаются все крупные игроки в области: Google, Yandex, Microsoft и т.д.
-            </Paragraph>
-        </Section>
-
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Commands}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Список голосовых команд находится во вкладке “Команды”.
-                Команда выполняет действие, если была произнесена одна из предложенных в ней голосовых команд запуска.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                При нажатии на кнопку редактирования или создания команды открывается Редактор Команд.
-                В нем без труда можно создать действия любой сложности.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Если вы создали собственную коллекцию команд, или внесли поправки в существующую -
-                вы можете опубликовать ее, нажав на кнопку &quot;Опубликовать&quot;.
-                После этого ваша публикация будет отображена в вашем профиле.
-                Если вашу публикацию оценят другие пользователи и она будет полезна, администратор ее
-                одобрит и она появится в &quot;Сообществе&quot;.
-            </Paragraph>
-        </Section>
-
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Dictation}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Если вы что-то произнесли и это не является командой, а также включена опция голосового набора, то текст
-                вставится в текстовое поле на компьютере, которое имеет фокус.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Программа автоматически расставляет точки и запятые в зависимости от пауз в вашей речи.
-                Если вы выберете другое текстовое поле, либо где-то кликните мышкой, либо нажмете одну из клавиш :
-                Tab, Left, Right, Up, Down, Home, End - то программа подумает,
-                что вы сменили текстовое поле и стоит начать с большой буквы и не ставить точку/запятую в начало предложения.
-            </Paragraph>
-        </Section>
-
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Community}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Весь функционал данного раздела будет доступен только после регистрации и входа.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                В этом разделе можно закачивать новые коллекции команд и оценивать их. Все коллекции бесплатные.
-                В вашем профиле вы можете указать ваш аватар и ссылку на страничку ВКонтакте.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                После регистрации вам будет доступен функционал публикаций.
-                Вы можете опубликовать новые команды и/или изменения в коллекциях. 
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                После авторизации Laitis будет автоматически синхронизировать ваши команды между вашими устройствами.
-            </Paragraph>
-        </Section>
-
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                Laitis умеет отправлять веб запросы и выполнять команды, которые вернет сервер.
-                Благодаря этому можно настроить Laitis для:
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph>
-                        Управления умным домом
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph>
-                        Создания чат-бота
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph>
-                        Общения в вашем мессенджере
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph>
-                        Подключения вашего сервиса доставки пиццы/записи к доктору
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph>
-                        Подключения информационных сервисов погоды/анекдотов/новостей
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph TextIndent="40">
-                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration">Дополнительная информация находится в репозитории gitHub</controls:Hyperlink>
-            </Paragraph>
-        </Section>
-
         <Section Margin="0,100,0,0">
             <Paragraph>
                 <Run FontSize="20" Text="{StaticResource s_Help_FAQ}" />
             </Paragraph>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему распознавание голоса не работает?
+                Why voice recognition does not work?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Ваш микрофон не подключен/не работает/выключен/сильно скрипит
+                        Your microphone is not connected/not working/turned off.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Вы не включили в настройках &quot;голосовые команды&quot; либо &quot;голосовой набор&quot;.
+                        You did not enabled &quot;voice commands&quot; or &quot;voice text typing&quot; in the settings.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Установленная антивирусная программа блокирует работу приложения.
+                        The installed antivirus program blocks the application.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        У вас нет подключения к интернету, либо оно слишком медленное.
+                        You do not have an internet connection, or it is too slow.
                     </Paragraph>
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему распознавание голоса работает отвратительно?
+                Why does voice recognition work bad?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Вы плохо выговариваете слова
+                        You pronounce the words poorly.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        У вас что-то с микрофоном. Может быть он тарахтит/скрипит/слишком тихий.
+                        You have something with a microphone. Maybe he's scratching/creaking/too quiet.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Вы находитесь в шумной обстановке и алгоритму распознавания трудно отличить ваш голос от посторонних шумов.
+                        You are in a noisy environment and the recognition algorithm is difficult to distinguish your voice from extraneous noise.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        You have selected a poor-quality recognition service.
                     </Paragraph>
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему требуется постоянное подключение к интернету?
+                Why website control commands do not work?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Потому что для распознавания вашего голоса используется сервис распознавания от Google или Yandex и оно работает только в режиме Online.
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Качественное распознавание голоса - это очень сложная задача, которую не может осилить стационарный компьютер.
-                        Требуются мощности датацентров и самообучающиеся алгоритмы.
-                    </Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Все реализации оффлайн распознавания голоса работают отвратительно.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему не работают команды управления веб-сайтами?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Проверьте, установлено ли в вашем браузере расширение Laitis. Без расширения команды управления веб-сайтами работать не будут.
-                        Скачать их можно тут: 
+                        Check if your browser has the Laitis extension installed. Without extension website control voice commands will not work. 
+                        You can download it here: 
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Chrome</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Yandex</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Vivaldi</controls:Hyperlink>,
@@ -1067,83 +922,49 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Что такое журнал событий и где его найти?
+                What is an event log and where to find it?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Это журнал в который Laitis записывает свои действия и ошибки.
-                        Открыть его можно нажав на кнопку в правом верхнем углу Настроек.
+                        This is the дщп in which Laitis цкшеуы its actions and errors. 
+                        Open it by clicking on the Open Event Log button at the bottom of the Settings.
                     </Paragraph>
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему нет поддержки Windows XP?
+                Why there is no support for OS X, iOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Потому что это старая операционная система, которая не поддерживает последние .NET Framework.
-                        Поддержка этой ОС требует больших усилий и того не стоит.
+                        Because the project is not cross-platform and can not be. Because Computer management on all operating systems is different. 
+                        There will not be any development for other OS's.
                     </Paragraph>
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему нет поддержки OS X, IOS, Android, Linux, Windows Phone, XBOX?
+                Can I disable automatic updates?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Потому что проект не кроссплатформенный и им не может быть. Т.к. управление компьютером на всех ОС разное.
-                        Возможно в будущем выйдет версия под *nix. Про остальное в списке - разработки точно не будет.
+                        No. All updates weigh less than 1 megabyte. They can go out a few times a day. 
+                        In order not to bother the user with annoying questions about the update, they will be applied automatically.
                     </Paragraph>
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
-                Будет ли эта программа воровать мои пароли?
+                Can I get the source code of the program?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph FontStyle="Italic">
-                        Нет. В ней нет троянов, вирусов и т.п.
-                        Программа управляет компьютерам и некоторым антивирусам это может не нравится.
-                        Добавляйте программу в исключения.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Почему так мало команд управления компьютером?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Потому что разработчик не может самостоятельно придумать и реализовать все возможные команды управления компьютером.
-                        Вы можете ему помочь, добавляя недостающие команды и публикуя их.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Могу ли я отказаться от автоматических обновлений программы?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Нет. Все обновления весят менее 1 мегабайта. Они могут выходить по несколько штук в день. Чтобы не утруждать пользователя
-                        надоедливыми вопросами о обновлении, они будут применяться автоматически.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Могу ли я получить исходный код программы?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Нет. Так же напоминаем Вам, что &quot;запрещено дешифровать, эмулировать, изменять, декомпилировать, дизассемблировать
-                        исходный код «Laitis» и его компонентов с целью несанкционированного использования и/или получения информации о
-                        реализации используемых в них алгоритмов. Незаконное использование указанных в пользовательском соглашении объектов
-                        интеллектуальной собственности влечет гражданскую, административную и уголовную ответственность.&quot;
-                        - отрывок из пользовательского соглашения.
+                        No. &quot;It is forbidden to decrypt, emulate, modify, decompile, disassemble 
+                        the source code of «Laitis» and its components for the purpose of unauthorized use and/or obtaining 
+                        information about the implementation of the algorithms used in them. The illegal use of intellectual 
+                        property objects specified in the user agreement Entails civil, 
+                        administrative and criminal liability.&quot; - an excerpt from the user agreement.
                     </Paragraph>
                 </ListItem>
             </List>
@@ -1151,19 +972,58 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Laitis is able to send Web requests and execute commands that will be returned the server. 
+                This allows you to adjust Laitis for:
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        Controlling a smart house
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Creating a chat bot
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Communicating in your messenger
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Connecting your pizza delivery service
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Connecting of information services of weather/jokes/news
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph TextIndent="40">
+                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration">Additional information is in the gitHub repository</controls:Hyperlink>
+            </Paragraph>
+        </Section>
+        
+        <Section Margin="0,100,0,0">
+            <Paragraph>
                 <Run FontSize="20" Text="{StaticResource s_Help_Extra}" />
             </Paragraph>
             <Paragraph TextIndent="40">
-                Я надеюсь, вы ознакомились с
-                <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">пользовательским соглашением</controls:Hyperlink>
-                перед установкой программы. Если вы не согласны с соглашением, то удалите эту программу.
+                If you have not read the
+                <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">user agreement</controls:Hyperlink>
+                before installing the program, then do it now. If you do not agree with the agreement, then delete this program.
             </Paragraph>
             <Paragraph TextIndent="40">
-                Если вы хотите отблагодарить меня или посоветовать мне что-то, вы можете сделать это лично, отправив мне сообщение
-                <controls:Hyperlink NavigateUri="https://vk.com/im?sel=16663300">Вконтакте</controls:Hyperlink>.
+                If you want to thank the developer or advise him something, you can do it personally by sending a message to blasterloremaster@gmail.com email.
             </Paragraph>
             <Paragraph TextIndent="40">
-                Если вы хотите отблагодарить меня денежным вознаграждением, то воспользуйтесь любым способом, из перечисленных ниже:
+                If you want to thank the developer and give him money, then use any of the methods listed below:
             </Paragraph>
             <List>
                 <ListItem Margin="0,10,0,0">
@@ -1174,25 +1034,25 @@
                 </ListItem>
                 <ListItem>
                     <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Sberbank:</Run>
-                        5469300309812623 Миколайтис Сергей</Paragraph>
+                        <Run FontWeight="Bold">Credit card:</Run>
+                        5469300309812623 Mikolaytis Sergey</Paragraph>
                 </ListItem>
                 <ListItem Margin="0,10,0,0">
                     <Paragraph TextAlignment="Left">
                         <Run FontWeight="Bold">Webmoney:</Run>
-                        R340805744805(рубли), X128078209734(биткоины), Z152356853702(доллары), E471475057900(евро), U248920972085(гривны)</Paragraph>
+                        X128078209734(bitcoins), Z152356853702(dollars), E471475057900(euros))</Paragraph>
                 </ListItem>
                 <ListItem Margin="0,10,0,0">
                     <Paragraph TextAlignment="Left">
                         <Run FontWeight="Bold">Qiwi:</Run>
-                        можно отправить ваучер на blasterloremaster@gmail.com</Paragraph>
+                        you can send a voucher to the blasterloremaster@gmail.com</Paragraph>
                 </ListItem>
             </List>
             <Paragraph TextIndent="40">
-                Все пожертвования идут на оплату хостинга, на котором запущен сервер программы.
+                All donations go to the hosting and code sign of the program.
             </Paragraph>
             <Paragraph TextIndent="40">
-                Используемые сервисы:
+                Used services:
                 <controls:Hyperlink NavigateUri="http://google.com/">Google Web Speech API</controls:Hyperlink>,
                 <controls:Hyperlink NavigateUri="https://tech.yandex.ru/speechkit/cloud/"><Image Source="{Binding YandexLogo}" Height="11"></Image> SpeechKit Cloud</controls:Hyperlink>
             </Paragraph>
