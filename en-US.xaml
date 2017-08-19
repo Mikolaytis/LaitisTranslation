@@ -209,7 +209,7 @@
     <s:String x:Key="s_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
     <s:String x:Key="s_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
 
-    <s:String x:Key="s_SettingsDownloadSuccess">Settigns download success!</s:String>
+    <s:String x:Key="s_SettingsDownloadSuccess">Settings download success!</s:String>
     <s:String x:Key="s_SettingsDownloadFail">Settings download fail.</s:String>
     <s:String x:Key="s_SettingsUploadSuccess">Settings upload success</s:String>
     <s:String x:Key="s_SettingsUploadFail">Settings upload fail</s:String>
@@ -629,6 +629,10 @@
     <s:String x:Key="s_Logger_ItemsCopied">Event log items are copied</s:String>
     <s:String x:Key="s_Logger_ExtendedMode">Extended mode</s:String>
     
+    <s:String x:Key="s_Settings_Default_CommandStarter">Hey Siri/ОК Google/Hey bro</s:String>
+    <s:String x:Key="s_Settings_Default_TextInputStarter">type</s:String>
+    <s:String x:Key="s_Settings_Default_Language">en-US</s:String>
+    
     <!--#region Settings Labels-->
     <s:String x:Key="s_Settings_Label_IsRecordEnabled">Is record enabled</s:String>
     <s:String x:Key="s_Settings_Label_VoiceCommands">Voice commands</s:String>
@@ -637,14 +641,15 @@
     <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
     <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
     <s:String x:Key="s_Settings_Label_IsListenYourself">Listen yourself</s:String>
-    <s:String x:Key="s_Settings_Label_UseSpecialWordCommandStarter">Run commands only if they are starts with</s:String>
-    <s:String x:Key="s_Settings_Label_UseSpecialWordTextInputStarter">Type text only if it starts with</s:String>
+    <s:String x:Key="s_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
+    <s:String x:Key="s_Settings_Label_UseTypeStarter">Type text only if it starts with</s:String>
     <s:String x:Key="s_Settings_Label_IsQAEducationEnabled">Enable communication learning</s:String>
     <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
     <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
     <s:String x:Key="s_Settings_Label_IsStartMinimized">Minimize Laitis on app start</s:String>
-    <s:String x:Key="s_Settings_Label_RecognitionService">Recognition service</s:String>
+    <s:String x:Key="s_Settings_Label_RecognitionService">Recognition Service</s:String>
     <s:String x:Key="s_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
+    <s:String x:Key="s_Settings_Label_ApplicationLanguage">Application Language</s:String>
     <s:String x:Key="s_Settings_Label_TextToSpeechService">Text to Speech Service</s:String>
     <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Is website control enabled</s:String>
     <s:String x:Key="s_Settings_Label_UseAssistant">Communication</s:String>
@@ -742,7 +747,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_UseSpecialWordCommandStarter">
+    <TextBlock x:Key="s_Settings_Tooltip_UseCommandStarter">
         All commands will start with keyword/phrase prefix
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -750,7 +755,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_UseSpecialWordTextInputStarter">
+    <TextBlock x:Key="s_Settings_Tooltip_UseTypeStarter">
         Text dictation will only work if it starts with keyword
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">

@@ -1,0 +1,1076 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"
+    xmlns:laitis="clr-namespace:Laitis">
+
+    <!--#region App Initialization-->
+    <s:String x:Key="s_Load_WaitForOtherInstanceClosing">Ожидание закрытия другой копии программы</s:String>
+    <s:String x:Key="s_Load_Data">Загрузка данных</s:String>
+    <s:String x:Key="s_Load_UpdateCancelledByUser">Вы отменили критическое обновление. Пожалуйста нажмите да, чтобы обновить программу.</s:String>
+    <s:String x:Key="s_Load_UpdaterFailRestart">Обновление не удалось. Перезапуск обновления.</s:String>
+    <s:String x:Key="s_Load_PerformingUpdate">Обновление программы</s:String>
+    <s:String x:Key="s_Load_AppLoaded">запущен</s:String>
+    <s:String x:Key="s_Load_MandatoryUpdateNeeded">Критическая ошибка загрузки программы. Скачайте последнюю версию программы на веб-сайте laitis.ru, если не поможет - пишите в vk.com/mikolaytis или vk.com/laitisgroup.</s:String>
+    
+    <s:String x:Key="s_Load_SettingsFail">Сбой загрузки пользовательских данных</s:String>
+    <s:String x:Key="s_Load_SettingsFail_Retry">Попробовать еще</s:String>
+    <s:String x:Key="s_Load_SettingsFail_OpenApp">Открыть программу с данными по умолчанию</s:String>
+    <s:String x:Key="s_Load_SettingsFail_LoadBackup">Загрузить предыдущее сохранение из хранилища</s:String>
+    <s:String x:Key="s_Load_SettingsFail_CloseApp">Закрыть программу</s:String>
+    <!--#endregion-->
+
+    <!--#region Account-->
+    <s:String x:Key="s_Account_LogIn">Вход</s:String>
+    <s:String x:Key="s_Account_Registration">Регистрация</s:String>
+    <s:String x:Key="s_Account_SymbolsMin">Не менее {0} символов</s:String>
+    <s:String x:Key="s_Account_SymbolsMax">Не более {0} символов</s:String>
+    <s:String x:Key="s_Account_InvalidEmail">Не правильный Email</s:String>
+    <s:String x:Key="s_Account_EnterEmail">Введите Email</s:String>
+    <s:String x:Key="s_Account_EnterPassword">Введите пароль</s:String>
+    <s:String x:Key="s_Account_AlreadyExists">Уже используется</s:String>
+    <s:String x:Key="s_Account_EmailCorrect">Email корректен</s:String>
+    <s:String x:Key="s_Account_EnterNickName">Введите Ник</s:String>
+    <s:String x:Key="s_Account_NickNameCorrect">Ник корректен</s:String>
+    <s:String x:Key="s_Account_PaswordsMatch">Пароли совпадают</s:String>
+    <s:String x:Key="s_Account_PasswordsDoNotMatch">Пароли не совпадают</s:String>
+    <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Доступны только буквы латинского алфавита и цифры</s:String>
+    <!--#endregion-->
+    
+    <!--#region PublicApiHost-->
+    <s:String x:Key="s_PublicApiHost_SettingsIsEnabled">Включить канал API для сторонних внешних расширений Laitis</s:String>
+    <s:String x:Key="s_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
+    <s:String x:Key="s_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
+    <s:String x:Key="s_PublicApiHost_HostClosed">Канал API остановлен</s:String>
+    <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">Канал API получил голосовую команду</s:String>
+    <s:String x:Key="s_PublicApiHost_RecievedAction">Канал API получил действие</s:String>
+    <!--#endregion-->
+    
+    <!--#region UIAutomation-->
+    <s:String x:Key="s_UIAutomation_ElementFoundInActiveWindow">Элемент {0} найден в активном окне</s:String>
+    <s:String x:Key="s_UIAutomation_ElementFoundInTaskBar">Элемент {0} найден в панели задач</s:String>
+    <s:String x:Key="s_UIAutomation_ElementFoundInWebsite">Элемент {0} найден в веб-сайте</s:String>
+    <s:String x:Key="s_UIAutomation_ElementNotFound">Элемент {0} не найден</s:String>
+    <!--#endregion-->
+
+    <!--#region FUE-->
+    <s:String x:Key="s_FUE_Initial_HelloDearUser">Здравствуйте, дорогой пользователь!</s:String>
+    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Cпасибо за установку</s:String>
+    <s:String x:Key="s_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- программы голосового управления компьютером и набора текста</s:String>
+    <s:String x:Key="s_FUE_Initial_TakeMicrophoneAndSayHello">Поднесите к себе микрофон и скажите &quot;Привет&quot;</s:String>
+    <s:String x:Key="s_FUE_Initial_ThanksMaybeNextTime">Спасибо, в другой раз</s:String>
+
+    <s:String x:Key="s_FUE_Browser_Setup">Настройка браузера</s:String>
+    <s:String x:Key="s_FUE_Browser_Info">Для того чтобы работали команды управления веб-сайтами, требуется установить расширение для вашего браузера</s:String>
+    <s:String x:Key="s_FUE_Browser_Skip">Пропустить</s:String>
+    
+    <s:String x:Key="s_FUE_QA_Header">Этот раздел содержит структуру общения с голосовым ботом</s:String>
+    <s:String x:Key="s_FUE_QA_YouAskQuestions">Вы задаете вопросы</s:String>
+    <s:String x:Key="s_FUE_QA_BotAnswersThem">Бот на них отвечает</s:String>
+    <s:String x:Key="s_FUE_QA_Talk1">Привет</s:String>
+    <s:String x:Key="s_FUE_QA_Talk2">Здравствуйте!</s:String>
+    <s:String x:Key="s_FUE_QA_Talk3">Как дела</s:String>
+    <s:String x:Key="s_FUE_QA_Talk4">Замечательно, а у вас?</s:String>
+    <s:String x:Key="s_FUE_QA_Talk5">Тоже</s:String>
+    <s:String x:Key="s_FUE_QA_Talk6">Отлично!</s:String>
+
+    <s:String x:Key="s_FUE_Commands_Header">Этот раздел содержит голосовые команды</s:String>
+    <s:String x:Key="s_FUE_Commands_CommandIsConsistsOf">Команда состоит из:</s:String>
+    <s:String x:Key="s_FUE_Commands_Phrases">Фраз</s:String>
+    <s:String x:Key="s_FUE_Commands_Actions">Действий</s:String>
+    <s:String x:Key="s_FUE_Commands_OpenNotepad">Открыть блокнот</s:String>
+    <s:String x:Key="s_FUE_Commands_RunNotepad">Запустить блокнот</s:String>
+    <s:String x:Key="s_FUE_Commands_ShowNotepad">Показать блокнот</s:String>
+    <s:String x:Key="s_FUE_Commands_NotepadIsOpen">Блокнот открыт!</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip1">Программа автоматически поддерживает падежи часто используемых слов.</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip2">Вместо &quot;Открыть блокнот&quot; можно сказать &quot;Открой блокнот&quot;, &quot;Откройте блокнот&quot;...</s:String>
+    <s:String x:Key="s_FUE_Commands_VariableSupport">Поддержка переменных</s:String>
+    <s:String x:Key="s_FUE_Commands_Phrase">Фразa</s:String>
+    <s:String x:Key="s_FUE_Commands_Action">Действие</s:String>
+    <s:String x:Key="s_FUE_Commands_SayWord">Сказать слово</s:String>
+    <s:String x:Key="s_FUE_Commands_Word">{слово}</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip3">Расшифровка команды: Если вы произнесете &quot;Скажи слово Привет&quot;, то программа скажет &quot;Привет&quot;.</s:String>
+    <s:String x:Key="s_FUE_Commands_Tip4">Все команды созданы пользователями программы и прошли проверку на безопасность</s:String>
+    <!--#endregion-->
+
+    <!--#region QA-->
+    <s:String x:Key="s_QA_AddRootQuestion">Добавить корневой вопрос</s:String>
+    <s:String x:Key="s_QA_RemoveSelection">Убрать выделение</s:String>
+    
+    <s:String x:Key="s_QA_Education_Add">Добавить</s:String>
+    <s:String x:Key="s_QA_Education_AddRootQuestion">Добавить корневой вопрос</s:String>
+    <s:String x:Key="s_QA_Education_RootQuestionAdded">Добавлен корневой вопрос &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_QuestionAdded">Добавлен ответ &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_AnswerAdded">Добавлен вопрос &quot;{0}&quot;</s:String>
+    <s:String x:Key="s_QA_Education_ToAddRootQuestionSayAdd">Чтобы добавить корневой вопрос &quot;{0}&quot; скажите Добавить</s:String>
+    <s:String x:Key="s_QA_Education_ToAddQuestionSayAdd">Чтобы добавить вопрос &quot;{0}&quot; на ответ &quot;{1}&quot; скажите Добавить</s:String>
+    <s:String x:Key="s_QA_Education_ToAddAnswerSayAdd">Чтобы добавить ответ &quot;{0}&quot; на вопрос &quot;{1}&quot; скажите Добавить</s:String>
+
+    <s:String x:Key="s_QA_Details_Creator">Создатель:</s:String>
+    <s:String x:Key="s_QA_Details_Local">Этого еще нет на сервере</s:String>
+    <s:String x:Key="s_QA_Details_AddToPublication">Добавить в публикацию</s:String>
+    <s:String x:Key="s_QA_Details_RemoveFromPublication">Убрать из публикации</s:String>
+    <s:String x:Key="s_QA_Details_SendPublicationTooltip">Отправить публикацию с выделенными вопросами и ответами</s:String>
+    <s:String x:Key="s_QA_Details_AddQuestionToPublicationErrorMessage">Сначала добавьте изменения родителького ответа</s:String>
+    <s:String x:Key="s_QA_Details_AddAnswerToPublicationErrorMessage">Сначала добавьте изменения родителького вопроса</s:String>
+    <s:String x:Key="s_QA_Details_RemoveQuestionFromPublicationErrorMessage">Сначала уберите изменения дочернего ответа</s:String>
+    <s:String x:Key="s_QA_Details_RemoveAnswerFromPublicationErrorMessage">Сначала добавьте изменения родителького ответа</s:String>
+    <!--#endregion-->
+
+    <!--#region  Exceptions -->
+    <s:String x:Key="s_DownloadSaveError">Загрузка сохранения с сервера не удалась</s:String>
+    <s:String x:Key="s_ServerError">Сервер не доступен</s:String>
+    <s:String x:Key="s_Error">Ошибка</s:String>
+    <s:String x:Key="s_DataUploadError">Ошибка загрузки данных</s:String>
+    <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
+    <s:String x:Key="s_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
+    <s:String x:Key="s_SendingInfoAndRestarting">Отправляем данные, все сохраняем и перезапускаем</s:String>
+    <s:String x:Key="s_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis</s:String>
+    <s:String x:Key="s_DiskIsFull">Недостаточно места на диске для работы Laitis</s:String>
+    <s:String x:Key="s_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
+    <s:String x:Key="s_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
+    <!--#endregion-->
+
+    <!--#region Main Tabs and Buttons-->
+    <s:String x:Key="s_Profile">Профиль</s:String>
+    <s:String x:Key="s_Community">Сообщество</s:String>
+    <s:String x:Key="s_Commands">Команды</s:String>
+    <s:String x:Key="s_Communication">Общение</s:String>
+    <s:String x:Key="s_Help">Помощь</s:String>
+    <s:String x:Key="s_About">О программе</s:String>
+    <s:String x:Key="s_Editor">Редактор</s:String>
+    <s:String x:Key="s_Publisher">Публикация</s:String>
+    
+    <s:String x:Key="s_Hide">Свернуть</s:String>
+    <s:String x:Key="s_Pause">Пауза</s:String>
+    <s:String x:Key="s_Buttons_Hide">Свернуть</s:String>
+    <s:String x:Key="s_Buttons_Pause">Приостановить выполнение команд</s:String>
+    <s:String x:Key="s_Buttons_Unpause">Возобновить выполнение команд</s:String>
+    <!--#endregion-->
+
+    <!--#region Commands List-->
+    <s:String x:Key="s_CommandCopied">Команда скопирована</s:String>
+    <s:String x:Key="s_CommandCutted">Команда вырезана</s:String>
+    <s:String x:Key="s_CommandPasted">Команда вставлена</s:String>
+    <s:String x:Key="s_CommandDeleted">Команда удалена</s:String>
+    <s:String x:Key="s_CategoryCopied">Категория скопирована</s:String>
+    <s:String x:Key="s_CategoryCutted">Категория вырезана</s:String>
+    <s:String x:Key="s_CategoryPasted">Категория вставлена</s:String>
+    <s:String x:Key="s_CategoryDeleted">Категория удалена</s:String>
+    <s:String x:Key="s_PackCopied">Коллекция скопирована</s:String>
+    <s:String x:Key="s_PackCutted">Коллекция вырезана</s:String>
+    <s:String x:Key="s_PackPasted">Коллекция вставлена</s:String>
+    <s:String x:Key="s_PackDeleted">Коллекция удалена</s:String>
+
+    <s:String x:Key="s_CopyPack">Копировать коллекцию</s:String>
+    <s:String x:Key="s_CopyCommand">Копировать команду</s:String>
+    <s:String x:Key="s_CopyCategory">Копировать категорию</s:String>
+    <s:String x:Key="s_CutCommand">Вырезать команду</s:String>
+    <s:String x:Key="s_CutCategory">Вырезать категорию</s:String>
+    <s:String x:Key="s_PasteCommand">Вставить команду</s:String>
+    <s:String x:Key="s_PasteCategory">Вставить категорию</s:String>
+    <s:String x:Key="s_PastePack">Вставить коллекцию</s:String>
+    
+    <s:String x:Key="s_DeleteCommand">Удалить команду</s:String>
+    <s:String x:Key="s_EditCommand">Редактировать команду</s:String>
+    <s:String x:Key="s_CommandImport">Импорт команды из текста</s:String>
+    <s:String x:Key="s_CommandExport">Экспорт команды в текст</s:String>
+    <s:String x:Key="s_CommandImported">Команда импортирована</s:String>
+    <s:String x:Key="s_CommandUpdate">Обновить команду</s:String>
+    <s:String x:Key="s_CreateSame">Создать похожую команду</s:String>
+    <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Выполнить команду через 2 секунды</s:String>
+    
+    <s:String x:Key="s_PackActivity">Активность Коллекции</s:String>
+    <!--#endregion-->
+    
+    <!--#region Notifications -->
+    <s:String x:Key="s_Details">Подробнее</s:String>
+    <s:String x:Key="s_EndRecieve">Завершение получения данных</s:String>
+    <s:String x:Key="s_ConnectionDrop">Подключение разорвано</s:String>
+    <s:String x:Key="s_RecordEnded">Завершена запись голоса</s:String>
+    <s:String x:Key="s_RecordStarted">Начата запись голоса</s:String>
+    <s:String x:Key="s_StartToSend">Начата отправка голоса</s:String>
+    <s:String x:Key="s_EndSend">Завершена отправка голоса</s:String>
+    <s:String x:Key="s_TooLongRecordIsEnded">Запись была завершена потому что она была слишком длинной</s:String>
+    <s:String x:Key="s_TooShortRecordIsEnded">Запись была завершена потому что она была слишком короткой</s:String>
+    
+    <s:String x:Key="s_DownloadOfUpdate">Загружается обновление</s:String>
+    <s:String x:Key="s_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успешно обновлен с версии</s:String>
+    <s:String x:Key="s_ToVersion">до версии</s:String>
+
+    <s:String x:Key="s_YandexKeyEmpty">Ключ от Яндекса пуст. Пробуем Google</s:String>
+    <s:String x:Key="s_AcapelaKeyEmpty">Ключ от Acapela пуст. Пробуем Google</s:String>
+    <s:String x:Key="s_FailToPlayPhrase">Не удалось воспроизвести фразу</s:String>
+    <s:String x:Key="s_FailToFindRecordingDevice">Не найдено устройство записи</s:String>
+    <s:String x:Key="s_RecordingStartedOnDeviceNumber">Запущена запись с устройства номер</s:String>
+    <s:String x:Key="s_RecordingStoppedOnDeviceNumber">Остановлена запись с устройства номер</s:String>
+    
+    <s:String x:Key="s_ClipboardIsBusy">Буфер обмена используется другой программой</s:String>
+    <s:String x:Key="s_ClipboardIsBusyAffectedBy">Буфер обмена заблокирован программой</s:String>
+
+    <s:String x:Key="s_SettingsDownloadSuccess">Настройки успешно загружены с сервера!</s:String>
+    <s:String x:Key="s_SettingsDownloadFail">Не удалось скачать настройки с сервера.</s:String>
+    <s:String x:Key="s_SettingsUploadSuccess">Настройки успешно отправлены на сервер</s:String>
+    <s:String x:Key="s_SettingsUploadFail">Не удалось отправить настройки на сервер</s:String>
+    
+    <s:String x:Key="s_PackUpdated">Пришло обновление коллекции</s:String>
+    <s:String x:Key="s_ApplicationVersion">Версия программы</s:String>
+    <s:String x:Key="s_UnderstoodText">понял текст</s:String>
+    <s:String x:Key="s_UnderstoodCommand">понял команду</s:String>
+    <s:String x:Key="s_CommandNotStartsWithKeyword">Команда не начинается с ключевого слова</s:String>
+    <s:String x:Key="s_TextNotStartsWithKeyword">Текст не начинается с ключевого слова</s:String>
+    <s:String x:Key="s_CommandDone">Выполнена команда</s:String>
+    <s:String x:Key="s_TypingText">Вставляю текст</s:String>
+    <s:String x:Key="s_ThatRecordNeedsPlay">Эту запись требуется просто воспроизвести, потому что включена опция &quot;Слушать себя&quot;</s:String>
+    
+    <s:String x:Key="s_RemovingErrorTyping">Удаляю предыдущую вставку текста</s:String>
+    <s:String x:Key="s_TypingUpperFirstChar">т.к. предыдущая команда была сепаратором или сменился фокус текстового поля, пишу фразу с большой буквы</s:String>
+    <s:String x:Key="s_ComaWaitTime">т.к. время ожидания было достаточно малым, вставляю в начало фразы запятую</s:String>
+    <s:String x:Key="s_DotWaitTime">т.к. время ожидания было достаточно большим, вставляю в начало фразы точку</s:String>
+    <s:String x:Key="s_SpaceBeforeSeparator">т.к. текстовое поле осталось прежним, добавлю в начало фразы пробел</s:String>
+    <!--#endregion-->
+    
+    <!--#region  Community -->
+    <s:String x:Key="s_ServiceBlockedException">Сервис произношения временно заблокировал доступ к запросам с этого компьютера. Выберите другой сервис в настройках.</s:String>
+    <s:String x:Key="s_SharePromotion">Голосовое управление компьютером и набор текста с помощью Laitis. Установи сейчас и попробуй. Бесплатно и без рекламы.</s:String>
+    <s:String x:Key="s_UsersPublications">Публикации пользователей:</s:String>
+    <s:String x:Key="s_Downloads">Загрузок</s:String>
+    <s:String x:Key="s_LaitisDescription">Пожертвование Laitis: Голосовое управление компьютером</s:String>
+    <s:String x:Key="s_Like">Мне нравится</s:String>
+    <s:String x:Key="s_Dislike">Мне не нравится</s:String>
+    <s:String x:Key="s_RecieveDate">Дата получения</s:String>
+    <!--#endregion-->
+
+    <!--#region Publisher-->
+    <s:String x:Key="s_AutorizationNeeded">Авторизируйтесь в систему</s:String>
+    <s:String x:Key="s_CollectionNameIsTooShort">Название коллекции слишком короткое</s:String>
+    <s:String x:Key="s_NoCommandsInPack">В сборнике нет команд</s:String>
+    <s:String x:Key="s_ChangesNotFound">Не найдено изменений для публикации</s:String>
+    <s:String x:Key="s_PublicationSendedToTheServer">Ваша публикация успешно отправлена на сервер</s:String>
+    <s:String x:Key="s_DownloadingAdditionalDataFromServer">Загрузка необходимой информации с сервера...</s:String>
+    <s:String x:Key="s_PublishNewCollection">Публикация новой коллекции</s:String>
+    <s:String x:Key="s_PublishSomeChanges">Публикация изменений коллекции</s:String>
+    <s:String x:Key="s_CommandsToRemove">Команды которые будут удалены из коллекции:</s:String>
+    <s:String x:Key="s_ChangeAppliedSuccesfully">Изменения успешно применены</s:String>
+    <!--#endregion-->
+
+    <!--#region Variables-->
+    <s:String x:Key="s_Custom">Пользовательские</s:String>
+    <s:String x:Key="s_DateTime">Дата и время</s:String>
+    <s:String x:Key="s_Account">Аккаунт</s:String>
+    <s:String x:Key="s_Environment">Окружение</s:String>
+    
+    <s:String x:Key="s_SetVariable">Задать переменной</s:String>
+    <s:String x:Key="s_Value">значение</s:String>
+    <s:String x:Key="s_IfVariableValue">Если значение переменной</s:String>
+    <s:String x:Key="s_IfWebsiteNavValue">Если на сайте выделено</s:String>
+
+    <s:String x:Key="s_VariableOperator_Exists">существует</s:String>
+    <s:String x:Key="s_VariableOperator_Equals">равно</s:String>
+    <s:String x:Key="s_VariableOperator_NotEquals">не равно</s:String>
+    <s:String x:Key="s_VariableOperator_Bigger">больше</s:String>
+    <s:String x:Key="s_VariableOperator_Smaller">меньше</s:String>
+    <s:String x:Key="s_VariableOperator_BiggerOrEquals">больше или равно</s:String>
+    <s:String x:Key="s_VariableOperator_SmallerOrEquals">меньше или равно</s:String>
+
+    <s:String x:Key="s_Second">Секунда</s:String>
+    <s:String x:Key="s_Minute">Минута</s:String>
+    <s:String x:Key="s_Hour">Час</s:String>
+    <s:String x:Key="s_Day">День</s:String>
+    <s:String x:Key="s_Month">Месяц</s:String>
+    <s:String x:Key="s_Year">Год</s:String>
+    <s:String x:Key="s_DayOfWeek">День недели</s:String>
+    <s:String x:Key="s_Date">Дата</s:String>
+    <s:String x:Key="s_Time">Время</s:String>
+    <s:String x:Key="s_Version">Версия</s:String>
+    <s:String x:Key="s_VKURL">ВК ссылка</s:String>
+    <!--#endregion-->
+
+    <!--#region Common Labels-->
+    <s:String x:Key="s_Images">Изображения</s:String>
+    <s:String x:Key="s_SelectImage">Выбор изображения</s:String>
+    <s:String x:Key="s_In">в</s:String>
+    <s:String x:Key="s_Ms">мс</s:String>
+    <s:String x:Key="s_And">и</s:String>
+    <s:String x:Key="s_Hello">Привет</s:String>
+    <s:String x:Key="s_Understand">Понятно</s:String>
+    <s:String x:Key="s_Well">Хорошо</s:String>
+    <s:String x:Key="s_Say">Сказать</s:String>
+    <s:String x:Key="s_Cut">Вырезать</s:String>
+    <s:String x:Key="s_Type">Напечатать</s:String>
+    <s:String x:Key="s_Stop">Стоп</s:String>
+    <s:String x:Key="s_Send">Отправить</s:String>
+    <s:String x:Key="s_Play">Воспроизвести</s:String>
+    <s:String x:Key="s_Word">Слово</s:String>
+    <s:String x:Key="s_Wait">Подождать</s:String>
+    <s:String x:Key="s_Open">Открыть</s:String>
+    <s:String x:Key="s_Exit">Выход</s:String>
+    <s:String x:Key="s_Copy">Копировать</s:String>
+    <s:String x:Key="s_Edit">Редактировать</s:String>
+    <s:String x:Key="s_Name">Имя</s:String>
+    <s:String x:Key="s_Times">раз</s:String>
+    <s:String x:Key="s_Email">Email</s:String>
+    <s:String x:Key="s_Opera">Опера</s:String>
+    <s:String x:Key="s_Chrome">Chrome</s:String>
+    <s:String x:Key="s_FireFox">Firefox</s:String>
+    <s:String x:Key="s_Yandex">Яндекс</s:String>
+    <s:String x:Key="s_Vivaldi">Вивальди</s:String>
+    <s:String x:Key="s_Password">Пароль</s:String>
+    <s:String x:Key="s_RepeatPassword">Повторите пароль</s:String>
+    <s:String x:Key="s_NickName">Ник</s:String>
+    <s:String x:Key="s_Today">сегодня</s:String>
+    <s:String x:Key="s_Paste">Вставить</s:String>
+    <s:String x:Key="s_Rules">Автозамена</s:String>
+    <s:String x:Key="s_Voice">Голос</s:String>
+    <s:String x:Key="s_Top10">Топ 10</s:String>
+    <s:String x:Key="s_Rub">руб.</s:String>
+    <s:String x:Key="s_Donate">Пожертвовать</s:String>
+    <s:String x:Key="s_Search">Поиск</s:String>
+    <s:String x:Key="s_Browse">Выбрать</s:String>
+    <s:String x:Key="s_Remove">Удалить</s:String>
+    <s:String x:Key="s_Removed">Удалено</s:String>
+    <s:String x:Key="s_Tester">Тестировщик</s:String>
+    <s:String x:Key="s_Execute">Выполнить</s:String>
+    <s:String x:Key="s_Refresh">Обновить</s:String>
+    <s:String x:Key="s_Loading">Загрузка</s:String>
+    <s:String x:Key="s_Donated">Пожертвовано</s:String>
+    <s:String x:Key="s_NewPack">Новая коллекция</s:String>
+    <s:String x:Key="s_Unknown">Неизвестный</s:String>
+    <s:String x:Key="s_YouSaid">Вы сказали</s:String>
+    <s:String x:Key="s_AddPack">Добавить коллекцию</s:String>
+    <s:String x:Key="s_Settings">Настройки</s:String>
+    <s:String x:Key="s_OnServer">На сервере</s:String>
+    <s:String x:Key="s_Defaults">По умолчанию</s:String>
+    <s:String x:Key="s_Close">Закрыть</s:String>
+    <s:String x:Key="s_Messages">сообщений</s:String>
+    <s:String x:Key="s_Vkontakte">ВКонтакте</s:String>
+    <s:String x:Key="s_Confidant">Доверенное лицо</s:String>
+    <s:String x:Key="s_Dublicate">Дубликат</s:String>
+    <s:String x:Key="s_Executing">Выполняю</s:String>
+    <s:String x:Key="s_DaysWithUs">дней с нами</s:String>
+    <s:String x:Key="s_HttpWebRequest">Веб-запрос</s:String>
+    <s:String x:Key="s_Responding">Отвечаю</s:String>
+    <s:String x:Key="s_Categories">категориях</s:String>
+    <s:String x:Key="s_Collection">Коллекция</s:String>
+    <s:String x:Key="s_Reputation">Репутация</s:String>
+    <s:String x:Key="s_AddCommand">Добавить команду</s:String>
+    <s:String x:Key="s_Replacement">Замена</s:String>
+    <s:String x:Key="s_Publish">Опубликовать</s:String>
+    <s:String x:Key="s_Publication">Публикация</s:String>
+    <s:String x:Key="s_AddCategory">Добавить категорию</s:String>
+    <s:String x:Key="s_NewCategory">Новая категория</s:String>
+    <s:String x:Key="s_SaveChanges">Сохранить изменения</s:String>
+    <s:String x:Key="s_Achievements">Достижения</s:String>
+    <s:String x:Key="s_UsersInvited">Пригласил пользвателей</s:String>
+    <s:String x:Key="s_IfProcessOpen">Если открыта программа</s:String>
+    <s:String x:Key="s_IfWebsiteOpen">Если открыт веб-сайт</s:String>
+    <s:String x:Key="s_WithParameters">с параметрами</s:String>
+    <s:String x:Key="w_IfProcessActive">Если активна программа</s:String>
+    <s:String x:Key="s_NothingSelected">Ничего не выбрано</s:String>
+    <s:String x:Key="s_RegistrationDate">Дата регистрации</s:String>
+    <s:String x:Key="s_ConnectionProblems">Проблемы с подключением к серверу</s:String>
+    <s:String x:Key="s_DataTransferCompleted">Данные отправлены на сервер</s:String>
+    <s:String x:Key="s_ShareLaitisWithYourFriends">Расскажи о Laitis cвоим друзьям и знакомым!</s:String>
+    
+    <s:String x:Key="s_Questions">Вопросы</s:String>
+    <s:String x:Key="s_Answers">Ответы</s:String>
+    <s:String x:Key="s_MouseMoveOn">Навести курсор на элемент</s:String>
+    <s:String x:Key="s_DonationValueInvalid">Неправильное значение</s:String>
+    <s:String x:Key="s_DonateToLaitis">Пожертвовать деньги Laitis</s:String>
+
+
+    <s:String x:Key="s_AccessDenied">Доступ закрыт</s:String>
+    <s:String x:Key="s_Size">Размер</s:String>
+    <s:String x:Key="s_Download">Скачать</s:String>
+    <s:String x:Key="s_HoldToConfirm">Зажмите для подтверждения</s:String>
+    <s:String x:Key="s_Cancel">Отменить</s:String>
+
+
+    <s:String x:Key="s_CustomVariables">Пользовательские переменные</s:String>
+
+    <s:String x:Key="s_ProcessName">Название процесса</s:String>
+    <s:String x:Key="s_FilePath">Путь к файлу</s:String>
+
+    <s:String x:Key="s_Command_Select_Difference_Command">Выбрать новую команду</s:String>
+    <s:String x:Key="s_Command_Select_Difference_Order">Выбрать изменение позиции</s:String>
+    <s:String x:Key="s_Command_Select_Difference_Actions">Выбрать изменение действий</s:String>
+    <s:String x:Key="s_Command_Select_Difference_VoiceCommands">Выбрать изменение голосовых команд</s:String>
+    <!--#endregion-->
+
+    <!--#region Common Tooltips-->
+    <TextBlock x:Key="s_Tooltip_CancelButton">
+        <Run Text="{StaticResource s_Cancel}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_RemoveButton">
+        <Run Text="{StaticResource s_Remove}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_DownloadButton">
+        <Run Text="{StaticResource s_Download}" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_Tooltip_ApplyChangeToMyCollection">
+        <Run Text="Применить это изменение к моей коллекции" />
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            <Run Text="{StaticResource s_HoldToConfirm}" />
+        </Span>
+    </TextBlock>
+    <!--#endregion-->
+
+    <!--#region Browser Controller-->
+    <s:String x:Key="s_BrowserController">Управление вебсайтами</s:String>
+    <!--#endregion-->
+
+    <!--#region Command Editor-->
+    <s:String x:Key="s_CommandEditor_Default_Category_Name">Общие</s:String>
+    <s:String x:Key="s_CommandEditor_Default_Pack_Name">Новая коллекция</s:String>
+    <s:String x:Key="s_CommandEditor_Open_ErrorText">Не удалось открыть редактор. Подробности в журнале событий.</s:String>
+    <s:String x:Key="s_CommandEditor_DublicateFounded">Уже есть точно такая же голосовая команда</s:String>
+    <s:String x:Key="s_CommandEditor_DublicateTooltip">Программа автоматически распознает многие вариации.</s:String>
+    <s:String x:Key="s_CommandEditor_VoiceCommandExists">Эта голосовая команда уже используется в команде</s:String>
+    <s:String x:Key="s_CommandEditor_VoiceCommands">Голосовые команды:</s:String>
+    <s:String x:Key="s_CommandEditor_Actions">Действия:</s:String>
+    <s:String x:Key="s_CommandEditor_Variables">Переменные:</s:String>
+    <s:String x:Key="s_CommandEditor_SelectProcess">Выбрать процесс</s:String>
+
+    <s:String x:Key="s_CommandAction_AddCondition">Условие</s:String>
+    <s:String x:Key="s_CommandAction_AddAction">Действие</s:String>
+    <s:String x:Key="s_CommandAction_AddWebAction">Веб-Действие</s:String>
+
+    <s:String x:Key="s_CommandAction_Label_OpenFile0">Открыть файл:</s:String>
+    <s:String x:Key="s_CommandAction_Label_OpenFile1">Параметры запуска:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Hotkeys">Cочетание клавиш:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Say">Сказать:</s:String>
+    <s:String x:Key="s_CommandAction_Label_PlayAudio">Проиграть аудио:</s:String>
+    <s:String x:Key="s_CommandAction_Label_Pause">Подождать:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfProcessSelected">Если активна программа:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfProcessExists">Если запущена программа:</s:String>
+    <s:String x:Key="s_CommandAction_Label_IfWebsiteSelected">Если открыт вебсайт:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseButton">Кнопка мыши:</s:String>
+    <s:String x:Key="s_CommandAction_Label_HttpWebRequest">Веб-запрос:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Action">Действие:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Element">Элемент:</s:String>
+
+    <s:String x:Key="s_CommandAction_Label_OpenURL">Открыть веб-страницу:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageClick">Кликнуть на веб-странице:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageFocus">Сфокусировать на веб-странице:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageRead">Прочитать на веб-странице:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageNavigate">Выбрать на веб-странице:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPageNavClick">Открыть выбранное на веб-странице:</s:String>
+    <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Открыть всплывающее окно:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseScroll">на:</s:String>
+
+    <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Параметры запуска приложения (пример: -game cstrike)</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Просто нажмите нужное сочетание</s:String>
+    <TextBlock x:Key="s_CommandAction_Tooltip_HotkeysManualInput">
+        Свободный ввод сочетаний клавиш
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Если включен можно ввести сочетание с клавишей Win
+            <LineBreak />
+            Если включен можно вводить несколько сочетаний через запятую
+        </Span>
+    </TextBlock>
+    
+    <s:String x:Key="s_Click">Кликнуть</s:String>
+    <s:String x:Key="s_Focus">Фокус</s:String>
+    <s:String x:Key="s_Navigate">Выбрать</s:String>
+    <s:String x:Key="s_NavClick">Открыть выбор</s:String>
+    <s:String x:Key="s_OpenPopup">Открыть всплывающее окно</s:String>
+    
+    <s:String x:Key="s_CommandAction_Tooltip_MouseMove">Можно выбрать с помощью кнопки &quot;Выбрать&quot;</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Например: http://ya.ru</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Pause">Время в миллисекундах</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_IfWebsiteSelected">Начало url вебсайта</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_HttpWebRequest">Отправить веб-запрос без использования браузера</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. Если вы не знаете CSS - вы не сможете правильно создать это действие</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_NavClick">Это поле можно оставить пустым или ввести CSS-selector</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_Else">Логическое Иначе для условия выше</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_EndIf">Завершение логического условия Если. Не обязательное, если ниже нет действий.</s:String>
+    <!--#endregion-->
+
+    <!--#region Enums-->
+    <!--  HttpWebRequestMethod -->
+    <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
+    <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
+    <!--  YandexMoneyPaymentType -->
+    <s:String x:Key="s_YandexMoneyPaymentType_YandexMoney">Яндекс деньгами</s:String>
+    <s:String x:Key="s_YandexMoneyPaymentType_CreditCard">Кредитной картой</s:String>
+    <s:String x:Key="s_YandexMoneyPaymentType_MobileBalance">С мобильного</s:String>
+    <!--  CommandState -->
+    <s:String x:Key="s_CommandState_ModifiedByUser">Вы внесли изменения в эту команду</s:String>
+    <s:String x:Key="s_CommandState_CreatedByUser">Вы создали эту команду</s:String>
+    <s:String x:Key="s_CommandState_UpdateAvailable">Доступно Обновление</s:String>
+    <!--  SpeechState -->
+    <s:String x:Key="s_SpeechState_Normal">Выключен</s:String>
+    <s:String x:Key="s_SpeechState_Working">Включен</s:String>
+    <s:String x:Key="s_SpeechState_Recording">Записываю</s:String>
+    <s:String x:Key="s_SpeechState_Saying">Говорю</s:String>
+    <s:String x:Key="s_SpeechState_Paused">На паузе</s:String>
+    <!--  MouseMoveType -->
+    <s:String x:Key="s_MouseMoveType_Point">Передвинуть курсор в точку</s:String>
+    <s:String x:Key="s_MouseMoveType_Relative">Подвинуть курсор</s:String>
+    <!--  MouseScrollType -->
+    <s:String x:Key="s_MouseScrollType_Vertical">Вертикально</s:String>
+    <s:String x:Key="s_MouseScrollType_Horizontal">Горизонтально</s:String>
+    <!--  ActionType -->
+    <s:String x:Key="s_ActionType_OpenFile">Открыть файл или программу</s:String>
+    <s:String x:Key="s_ActionType_CloseApp">Закрыть программу</s:String>
+    <s:String x:Key="s_ActionType_Hotkeys">Нажать сочетание клавиш</s:String>
+    <s:String x:Key="s_ActionType_MouseMove">Переместить курсор</s:String>
+    <s:String x:Key="s_ActionType_Say">Сказать</s:String>
+    <s:String x:Key="s_ActionType_Type">Вставить текст</s:String>
+    <s:String x:Key="s_ActionType_PlayAudio">Проиграть аудиофайл</s:String>
+    <s:String x:Key="s_ActionType_OpenURL">Открыть веб-страницу</s:String>
+    <s:String x:Key="s_ActionType_WebPageScript">Выполнить javascript</s:String>
+    <s:String x:Key="s_ActionType_Pause">Подождать</s:String>
+    <s:String x:Key="s_ActionType_IfProcessSelected">Если активна программа</s:String>
+    <s:String x:Key="s_ActionType_IfProcessExists">Если запущена программа</s:String>
+    <s:String x:Key="s_ActionType_IfWebsiteSelected">Если открыт вебсайт</s:String>
+    <s:String x:Key="s_ActionType_MouseButton">Нажать кнопку мыши</s:String>
+    <s:String x:Key="s_ActionType_HttpWebRequest">Веб-запрос</s:String>
+    <s:String x:Key="s_ActionType_SetCustomVariable">Задать значение переменной</s:String>
+    <s:String x:Key="s_ActionType_IfVariableValue">Если значение переменной</s:String>
+    <s:String x:Key="s_ActionType_IfWebsiteNavValue">Если на сайте выделено</s:String>
+    <s:String x:Key="s_ActionType_ShowWindow">Показать окно</s:String>
+    <s:String x:Key="s_ActionType_WebPageFocus">Фокус</s:String>
+    <s:String x:Key="s_ActionType_WebPageClick">Клик</s:String>
+    <s:String x:Key="s_ActionType_WebPageRead">Прочитать</s:String>
+    <s:String x:Key="s_ActionType_WebPageNavigate">Выбрать</s:String>
+    <s:String x:Key="s_ActionType_WebPageNavClick">Открыть выбор</s:String>
+    <s:String x:Key="s_ActionType_WebPagePopupOpen">Открыть всплывающее окно</s:String>
+    <s:String x:Key="s_ActionType_MouseMoveOn">Навести курсор на элемент</s:String>
+    <s:String x:Key="s_ActionType_Else">Иначе</s:String>
+    <s:String x:Key="s_ActionType_EndIf">КонецЕсли</s:String>
+    <s:String x:Key="s_ActionType_Comment">Комментарий</s:String>
+    <s:String x:Key="s_ActionType_MouseScroll">Прокрутить колесо мыши</s:String>
+    <!--  WebNavigateAction-->
+    <s:String x:Key="s_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
+    <s:String x:Key="s_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
+    <s:String x:Key="s_WebPageNavigateAction_SubstractIndex">Убрать из позиции</s:String>
+    <!--  CloseAppBehaviour -->
+    <s:String x:Key="s_CloseAppBehaviour_Close">Закрыть</s:String>
+    <s:String x:Key="s_CloseAppBehaviour_Kill">Убить</s:String>
+    <!--  Mouse Button-->
+    <s:String x:Key="s_MouseButton_Left">Левая кнопка мыши</s:String>
+    <s:String x:Key="s_MouseButton_Right">Правая кнопка мыши</s:String>
+    <s:String x:Key="s_MouseButton_Middle">Средняя кнопка мыши</s:String>
+    <s:String x:Key="s_MouseButton_XButton1">Х1 кнопка мыши</s:String>
+    <s:String x:Key="s_MouseButton_XButton2">Х2 кнопка мыши</s:String>
+    <!--  Mouse Action-->
+    <s:String x:Key="s_ButtonAction_Click">Нажать</s:String>
+    <s:String x:Key="s_ButtonAction_Press">Зажать</s:String>
+    <s:String x:Key="s_ButtonAction_Release">Отжать</s:String>
+    <s:String x:Key="s_ButtonAction_LongClick">Длинное нажатие</s:String>
+    <!--  Show Window Commands-->
+    <s:String x:Key="s_ShowWindowCommandType_Show">Показать</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Maximize">Растянуть</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Minimize">Свернуть</s:String>
+    <s:String x:Key="s_ShowWindowCommandType_Hide">Спрятать</s:String>
+    <!--  Day of Week-->
+    <s:String x:Key="s_Monday">Понедельник</s:String>
+    <s:String x:Key="s_Tuesday">Вторник</s:String>
+    <s:String x:Key="s_Wednesday">Среда</s:String>
+    <s:String x:Key="s_Thursday">Четверг</s:String>
+    <s:String x:Key="s_Friday">Пятница</s:String>
+    <s:String x:Key="s_Saturday">Суббота</s:String>
+    <s:String x:Key="s_Sunday">Воскресенье</s:String>
+    <!--  Month-->
+    <s:String x:Key="s_January">Январь</s:String>
+    <s:String x:Key="s_February">Февраль</s:String>
+    <s:String x:Key="s_March">Март</s:String>
+    <s:String x:Key="s_April">Апрель</s:String>
+    <s:String x:Key="s_May">Май</s:String>
+    <s:String x:Key="s_June">Июнь</s:String>
+    <s:String x:Key="s_July">Июль</s:String>
+    <s:String x:Key="s_August">Август</s:String>
+    <s:String x:Key="s_September">Сентябрь</s:String>
+    <s:String x:Key="s_October">Октябрь</s:String>
+    <s:String x:Key="s_November">Ноябрь</s:String>
+    <s:String x:Key="s_December">Декабрь</s:String>
+    <!--#endregion-->
+
+    <!--#region Settings-->
+
+    <!--#region Settings Categories-->
+    <s:String x:Key="s_Settings_Category_Common">Общие</s:String>
+    <s:String x:Key="s_Settings_Category_VoiceCommands">Голосовые сервисы</s:String>
+    <s:String x:Key="s_Settings_Category_Website">Управление сайтами</s:String>
+    <s:String x:Key="s_Settings_Category_Assistant">Голосовой помощник</s:String>
+    <s:String x:Key="s_Settings_Category_Typing">Набор текста</s:String>
+    <s:String x:Key="s_Settings_Category_Variables">Переменные</s:String>
+    <s:String x:Key="s_Settings_Category_Rules">Автозамена</s:String>
+    <s:String x:Key="s_Settings_Category_Logger">Журнал</s:String>
+    <!--#endregion-->
+    <s:String x:Key="s_Service_Online">онлайн</s:String>
+    <s:String x:Key="s_Service_Offline">офлайн</s:String>
+    <s:String x:Key="s_Service_Authorize">регистрация</s:String>
+    <s:String x:Key="s_Service_BadQuality">плохое качество</s:String>
+    <s:String x:Key="s_Service_GoodQuality">хорошее качество</s:String>
+    <s:String x:Key="s_Service_Install">установка</s:String>
+    <s:String x:Key="s_Service_Limited">лимиты</s:String>
+    
+    <s:String x:Key="s_Logger_Clear">Очистить журнал событий</s:String>
+    <s:String x:Key="s_Logger_ItemsCopied">Элементы журнала скопированы</s:String>
+    <s:String x:Key="s_Logger_ExtendedMode">Подробный режим</s:String>
+    
+    <s:String x:Key="s_Settings_Default_CommandStarter">Эй ты/ОК Google/Siri/Эй Siri</s:String>
+    <s:String x:Key="s_Settings_Default_TextInputStarter">написать</s:String>
+    <s:String x:Key="s_Settings_Default_Language">ru-RU</s:String>
+    
+    <!--#region Settings Labels-->
+    <s:String x:Key="s_Settings_Label_IsRecordEnabled">Запись звука</s:String>
+    <s:String x:Key="s_Settings_Label_VoiceCommands">Голосовые команды</s:String>
+    <s:String x:Key="s_Settings_Label_VoiceDialing">Голосовой набор текста</s:String>
+    <s:String x:Key="s_Settings_Label_IsPauseRecordingOnLoudSound">Приостанавливать запись при громкой музыке</s:String>
+    <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Запись только при зажатии</s:String>
+    <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Выключать звук при зажатии клавиши</s:String>
+    <s:String x:Key="s_Settings_Label_IsListenYourself">Слушать себя</s:String>
+    <s:String x:Key="s_Settings_Label_UseCommandStarter">Запускать команды только если фразы начинаются с</s:String>
+    <s:String x:Key="s_Settings_Label_UseTypeStarter">Набирать текст только если он начинается с</s:String>
+    <s:String x:Key="s_Settings_Label_IsQAEducationEnabled">Включить добавление вопросов и ответов</s:String>
+    <s:String x:Key="s_Settings_Label_AutoRun">Запускать Laitis при старте Windows</s:String>
+    <s:String x:Key="s_Settings_Label_UseStatusWindow">Всплывающие уведомления вверху экрана</s:String>
+    <s:String x:Key="s_Settings_Label_IsStartMinimized">Запускать Laitis свернутым в панель задач</s:String>
+    <s:String x:Key="s_Settings_Label_RecognitionService">Сервис распознавания голоса</s:String>
+    <s:String x:Key="s_Settings_Label_RecognitionLanguage">Язык распознавания</s:String>
+    <s:String x:Key="s_Settings_Label_ApplicationLanguage">Язык интерфейса программы</s:String>
+    <s:String x:Key="s_Settings_Label_TextToSpeechService">Сервис произношения голоса</s:String>
+    <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Голосовое управление сайтами</s:String>
+    <s:String x:Key="s_Settings_Label_UseAssistant">Общение</s:String>
+    <s:String x:Key="s_Settings_Label_UseTranslit">Использовать транслитерацию кириллицы</s:String>
+    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Автоматически расставлять точки и запятые, писать с большой буквы</s:String>
+    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Набирать текст нажимая клавиши, а не вставлять через буффер обмена</s:String>
+    <s:String x:Key="s_Settings_Label_ComaWaitTime">Длительность паузы для вставки запятой</s:String>
+    <s:String x:Key="s_Settings_Label_DotWaitTime">Длительность паузы для вставки точки</s:String>
+    <s:String x:Key="s_Settings_Label_RuleServerSync">Синхронизация списка автозамены с сервером</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreBackUp">Восстановить предыдущее сохранение из хранилища</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreSuccess">Восстановление данных прошло успешно</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFues">Показать панели подсказок (Настройка браузеров, Команды, Общение)</s:String>
+    <s:String x:Key="s_Settings_Label_ShowLogger">Показать журнал событий</s:String>
+    <s:String x:Key="s_Settings_Label_HideLogger">Спрятать журнал событий</s:String>
+    <!--#endregion-->
+
+    <!--#region Template Texts-->
+    <ControlTemplate x:Key="s_Settings_Text_YandexService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Яндекса требуется:
+  1) Аккаунт Яндекс <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
+  2) Войти в кабинет разработчика и получить личный ключ на использование SpeechKit <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
+  3) Вставить ключ в текстовое поле ниже</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_BingService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Bing требуется:
+  1) Открыть ссылку <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
+  2) Выбрать Speech, Bing Speech API, войти в любой из предложенных аккаунтов                  
+  3) Вставить первый ключ в текстовое поле ниже</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_WindowsService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для добавления языков надо скачивать языковые пакеты Windows (русский не поддерживается)</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_WindowsTtsService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для добавления голосов надо скачивать языковые пакеты Windows или сторонние голосовые движки, например Ivona</TextBlock>
+    </ControlTemplate>
+    <ControlTemplate x:Key="s_Settings_Text_AcapelaService">
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Acapela требуется:
+  1) Перейти по ссылке <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
+  2) Нажать Sign up for free в правом верхнем углу
+  3) Ввести запрашиваемые данные (имя, емейл, пароль) и зарегистрироваться
+  4) На эмейл вам прийдут данные которые нужно ввести в поля ниже</TextBlock>
+    </ControlTemplate>
+    <!--#endregion-->
+
+    <!--#region Settings Tooltips-->
+    
+    <TextBlock x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
+        Для того чтобы Laitis не записывал и выполнял услышанные слова из видео и музыки
+    </TextBlock>
+    
+    <TextBlock x:Key="s_Settings_Tooltip_NoiseProgress">
+        Этот индикатор отображает уровень шума в микрофоне
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_TooLoud">
+        Уровень звука в компьютере превысил предел в 30%
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Запись голоса приостановлена
+            <LineBreak />
+            Отключить приостановление записи голоса можно в настройках
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_VoiceDialing">
+        С помощью этой опции можно включить набор текста с помощью голоса
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Набор текста может производиться в любое активное текстовое поле
+            <LineBreak />
+            в операционной системе Windows
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_RecordStarter">
+        Выбрать клавишу
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsMuteOnCtrlClick">
+        Выключает звук в windows при зажатии клавиши
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Чтобы играемая в колонках музыка не фонила в микрофон
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsListenYourself">
+        Позволяет вам послушать себя
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Чтобы оценить качество записи вашего микрофона.
+            <LineBreak />
+            Если включить - все функции распознавания будут выключены.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseCommandStarter">
+        Все команды будут начинаться с ключевого слова
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Чтобы вызвать команду &quot;подтвердить&quot;, надо будет сказать &quot;&lt;специальное слово&gt; подтвердить&quot;
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseTypeStarter">
+        Диктовка текста будет начинаться с ключевого слова
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Чтобы написать &quot;привет&quot;, надо будет сказать &quot;&lt;специальное слово&gt; привет&quot;
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_UseTranslit">
+        Это опция включает автозамену кириллических символов на латинские
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Понадобится для использования программ, не поддерживающих Юникод.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
+        Работает только при автоматической записи звука
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Текст будет писаться с большой буквы при смене текстового поля и при наборе нового предложения;
+            <LineBreak />
+            Запятая ставится, если вы сделаете паузу на промежуток от 2 до 4 секунд(стандартные значения);
+            <LineBreak />
+            Точка ставится, если вы сделаете паузу на 4 секунды(стандартное значение) и более.
+        </Span>
+    </TextBlock>
+    
+    <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
+        Бета версия. Включать на свой страх и риск.
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Поддерживаются раскладки клавиатуры: US, Russian, Ukrainian.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Settings_Tooltip_IsTypingAutoCorrect">
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Срабатывает только при точном совпадении строки
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
+        Корневой ли вопрос
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Разговор начинается только с корневого вопроса.
+            <LineBreak />
+            Если вопрос не корневой - к нему можно перейти только после выбранных ответов.
+        </Span>
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_AddChildQuestion">
+        Добавить вопрос к этому ответу
+    </TextBlock>
+
+    <TextBlock x:Key="s_Question_Tooltip_AddChildAnswer">
+        Добавить ответ к этому вопросу
+    </TextBlock>
+
+    <s:String x:Key="s_Settings_Text_GoogleService">
+        После 10-20 запросов перестает работать
+    </s:String>
+    
+    <!--#endregion-->
+
+    <!--#endregion-->
+
+    <!--#region Help-->
+
+    <s:String x:Key="s_Help_Updates">Обновления</s:String>
+    <s:String x:Key="s_Help_Prepare">Подготовка</s:String>
+    <s:String x:Key="s_Help_IOT">Умный дом и сервисы (для разработчиков)</s:String>
+    <s:String x:Key="s_Help_FAQ">Часто задаваемые вопросы</s:String>
+    <s:String x:Key="s_Help_Extra">Дополнительная информация</s:String>
+
+    <FlowDocument x:Key="s_HelpDocument">
+
+        <Section Margin="0,0,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Prepare}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Вам нужен <Run TextDecorations="Underline">хороший микрофон</Run>.
+                Он должен записывать звук без лишнего шума и треска. Больше подходят настольные микрофоны,
+                микрофоны с наушниками.
+                Микрофон, который находится в дешевой веб-камере в полуметре от Вас
+                не сможет обеспечить достаточное качество записи звука.</Paragraph>
+            <Paragraph TextIndent="40">
+                У Вас должно быть <Run TextDecorations="Underline">хорошее интернет соединение</Run>.
+                Скорость должна быть более 1 мегабита и задержка(пинг) не более 200 миллисекунд.
+                Задержка играет очень важную роль, если вы скажете словосочетание и оно напишется через 100-600мс - то это будет приемлемо,
+                но задержка в 1000 мс и более оказывает огромное неудобство работы с программой.
+                Скорости и задержки интернета через модем абсолютно недостаточно для комфортной работы программы.</Paragraph>
+            <Paragraph TextIndent="40">
+                Вы должны находиться в <Run TextDecorations="Underline">относительно тихом месте</Run>.
+                Если у вас в комнате включен телевизор или с вами разговаривает собеседник,
+                или в стереоколонках играет громкая музыка, то сервис распознавания будет некорректно распознавать ваш голос.
+                Решить это можно либо микрофоном с шумоподавлением, либо уединением в тихом месте.</Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_FAQ}" />
+            </Paragraph>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему распознавание голоса не работает?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Ваш микрофон не подключен/не работает/выключен.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы не включили в настройках &quot;голосовые команды&quot; либо &quot;голосовой набор&quot;.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Установленная антивирусная программа блокирует работу приложения.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        У вас нет подключения к интернету, либо оно слишком медленное.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему распознавание голоса работает отвратительно?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы плохо выговариваете слова.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        У вас что-то с микрофоном. Может быть он тарахтит/скрипит/слишком тихий.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы находитесь в шумной обстановке и алгоритму распознавания трудно отличить ваш голос от посторонних шумов.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Вы выбрали некачественный сервис распознавания.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему не работают команды управления веб-сайтами?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Проверьте, установлено ли в вашем браузере расширение Laitis. Без расширения команды управления веб-сайтами работать не будут.
+                        Скачать его можно тут: 
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Chrome</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Yandex</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Vivaldi</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/?display=en">Opera</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Что такое журнал событий и где его найти?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Это журнал в который Laitis записывает свои действия и ошибки.
+                        Открыть его можно нажав на кнопку внизу Настроек.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Почему нет поддержки OS X, IOS, Android, Linux, Windows Phone, XBOX?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Потому что проект не кроссплатформенный и им не может быть. Т.к. управление компьютером на всех ОС разное.
+                        Для других ОС разработки не будет.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я отказаться от автоматических обновлений программы?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Нет. Все обновления весят менее 1 мегабайта. Они могут выходить по несколько штук в день. Чтобы не утруждать пользователя
+                        надоедливыми вопросами о обновлении, они будут применяться автоматически.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я получить исходный код программы?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Нет. &quot;запрещено дешифровать, эмулировать, изменять, декомпилировать, дизассемблировать
+                        исходный код «Laitis» и его компонентов с целью несанкционированного использования и/или получения информации о
+                        реализации используемых в них алгоритмов. Незаконное использование указанных в пользовательском соглашении объектов
+                        интеллектуальной собственности влечет гражданскую, административную и уголовную ответственность.&quot;
+                        - отрывок из пользовательского соглашения.
+                    </Paragraph>
+                </ListItem>
+            </List>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Laitis умеет отправлять веб запросы и выполнять команды, которые вернет сервер.
+                Благодаря этому можно настроить Laitis для:
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        Управления умным домом
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Создания чат-бота
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Общения в вашем мессенджере
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Подключения вашего сервиса доставки пиццы/записи к доктору
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Подключения информационных сервисов погоды/анекдотов/новостей
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph TextIndent="40">
+                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration">Дополнительная информация находится в репозитории gitHub</controls:Hyperlink>
+            </Paragraph>
+        </Section>
+        
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Extra}" />
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы не ознакомились с
+                <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">пользовательским соглашением</controls:Hyperlink>
+                перед установкой программы, то сделайте это сейчас. Если вы не согласны с соглашением, то удалите эту программу.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы хотите отблагодарить разработчика или посоветовать ему что-то, вы можете сделать это лично, отправив ему сообщение
+                <controls:Hyperlink NavigateUri="https://vk.com/im?sel=16663300">Вконтакте</controls:Hyperlink>.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Если вы хотите отблагодарить разработчика денежным вознаграждением, то воспользуйтесь любым способом, из перечисленных ниже:
+            </Paragraph>
+            <List>
+                <ListItem Margin="0,10,0,0">
+                    <BlockUIContainer>
+                        <laitis:YandexMoneyDonation Width="240" HorizontalAlignment="Left"/>
+                    </BlockUIContainer>
+                    <Paragraph></Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Sberbank:</Run>
+                        5469300309812623 Миколайтис Сергей</Paragraph>
+                </ListItem>
+                <ListItem Margin="0,10,0,0">
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Webmoney:</Run>
+                        R340805744805(рубли), X128078209734(биткоины), Z152356853702(доллары), E471475057900(евро), U248920972085(гривны)</Paragraph>
+                </ListItem>
+                <ListItem Margin="0,10,0,0">
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Qiwi:</Run>
+                        можно отправить ваучер на blasterloremaster@gmail.com</Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph TextIndent="40">
+                Все пожертвования идут на оплату хостинга и электронной подписи программы.
+            </Paragraph>
+            <Paragraph TextIndent="40">
+                Используемые сервисы:
+                <controls:Hyperlink NavigateUri="http://google.com/">Google Web Speech API</controls:Hyperlink>,
+                <controls:Hyperlink NavigateUri="https://tech.yandex.ru/speechkit/cloud/"><Image Source="{Binding YandexLogo}" Height="11"></Image> SpeechKit Cloud</controls:Hyperlink>
+            </Paragraph>
+        </Section>
+
+        <Section Margin="0,100,0,0">
+            <Paragraph>
+                <Run FontSize="20" Text="{StaticResource s_Help_Updates}" />
+            </Paragraph>
+        </Section>
+
+    </FlowDocument>
+    <!--#endregion-->
+
+</ResourceDictionary>
