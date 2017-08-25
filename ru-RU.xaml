@@ -98,6 +98,9 @@
     <s:String x:Key="s_QA_AddRootQuestion">Добавить корневой вопрос</s:String>
     <s:String x:Key="s_QA_RemoveSelection">Убрать выделение</s:String>
     
+    <s:String x:Key="s_QA_ConnectedTo">Следует за</s:String>
+    <s:String x:Key="s_QA_ConnectedFrom">Следует из</s:String>
+    
     <s:String x:Key="s_QA_Education_Add">Добавить</s:String>
     <s:String x:Key="s_QA_Education_AddRootQuestion">Добавить корневой вопрос</s:String>
     <s:String x:Key="s_QA_Education_RootQuestionAdded">Добавлен корневой вопрос &quot;{0}&quot;</s:String>
@@ -176,7 +179,9 @@
     <s:String x:Key="s_EditCommand">Редактировать команду</s:String>
     <s:String x:Key="s_CommandImport">Импорт команды из текста</s:String>
     <s:String x:Key="s_CommandExport">Экспорт команды в текст</s:String>
-    <s:String x:Key="s_CommandImported">Команда импортирована</s:String>
+    <s:String x:Key="s_CommandImported">Команда импортирована в буфер обмена как текст</s:String>
+    <s:String x:Key="s_CommandExported">Команда экспортирована из буфера обмена</s:String>
+    <s:String x:Key="s_CommandImportFail">Команда экспортирована из буфера обмена</s:String>
     <s:String x:Key="s_CommandUpdate">Обновить команду</s:String>
     <s:String x:Key="s_CreateSame">Создать похожую команду</s:String>
     <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Выполнить команду через 2 секунды</s:String>

@@ -98,6 +98,9 @@
     <s:String x:Key="s_QA_AddRootQuestion">Add root question</s:String>
     <s:String x:Key="s_QA_RemoveSelection">Deselect</s:String>
     
+    <s:String x:Key="s_QA_ConnectedTo">Connected to</s:String>
+    <s:String x:Key="s_QA_ConnectedFrom">Connected from</s:String>
+    
     <s:String x:Key="s_QA_Education_Add">Add</s:String>
     <s:String x:Key="s_QA_Education_AddRootQuestion">Add root question</s:String>
     <s:String x:Key="s_QA_Education_RootQuestionAdded">Root question added: &quot;{0}&quot;</s:String>
@@ -176,7 +179,9 @@
     <s:String x:Key="s_EditCommand">Edit command</s:String>
     <s:String x:Key="s_CommandImport">Import command from text</s:String>
     <s:String x:Key="s_CommandExport">Export command to text</s:String>
-    <s:String x:Key="s_CommandImported">Command is imported</s:String>
+    <s:String x:Key="s_CommandImported">Command is imported to clipboard as text</s:String>
+    <s:String x:Key="s_CommandExported">Command is exported from clipboard</s:String>
+    <s:String x:Key="s_CommandImportFail">Command export from clipboard is failed</s:String>
     <s:String x:Key="s_CommandUpdate">Update command</s:String>
     <s:String x:Key="s_CreateSame">Create same command</s:String>
     <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
@@ -1025,7 +1030,8 @@
                 before installing the program, then do it now. If you do not agree with the agreement, then delete this program.
             </Paragraph>
             <Paragraph TextIndent="40">
-                If you want to thank the developer or advise him something, you can do it personally by sending a message to blasterloremaster@gmail.com email.
+                If you want to thank the developer or advise him something, you can do it personally by sending 
+                a message to blasterloremaster@gmail.com email.
             </Paragraph>
             <Paragraph TextIndent="40">
                 If you want to thank the developer and give him money, then use any of the methods listed below:
