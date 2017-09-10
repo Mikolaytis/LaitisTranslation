@@ -101,15 +101,6 @@
     <s:String x:Key="s_QA_ConnectedTo">Connected to</s:String>
     <s:String x:Key="s_QA_ConnectedFrom">Connected from</s:String>
     
-    <s:String x:Key="s_QA_Education_Add">Add</s:String>
-    <s:String x:Key="s_QA_Education_AddRootQuestion">Add root question</s:String>
-    <s:String x:Key="s_QA_Education_RootQuestionAdded">Root question added: &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_QuestionAdded">Question added: &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_AnswerAdded">Answer added: &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_ToAddRootQuestionSayAdd">To add root question &quot;{0}&quot; say Add</s:String>
-    <s:String x:Key="s_QA_Education_ToAddQuestionSayAdd">To add question &quot;{0}&quot; for answer &quot;{1}&quot; say Add</s:String>
-    <s:String x:Key="s_QA_Education_ToAddAnswerSayAdd">To add answer &quot;{0}&quot; for question &quot;{1}&quot; say Add</s:String>
-
     <s:String x:Key="s_QA_Details_Creator">Creator:</s:String>
     <s:String x:Key="s_QA_Details_Local">It's not on the server yet</s:String>
     <s:String x:Key="s_QA_Details_AddToPublication">Add to publication</s:String>
@@ -139,11 +130,16 @@
     <s:String x:Key="s_Profile">Profile</s:String>
     <s:String x:Key="s_Community">Community</s:String>
     <s:String x:Key="s_Commands">Commands</s:String>
+    <s:String x:Key="s_Autoreplace">Autoreplace</s:String>
+    <s:String x:Key="s_Packs">Packs</s:String>
     <s:String x:Key="s_Communication">Communication</s:String>
     <s:String x:Key="s_Help">Help</s:String>
     <s:String x:Key="s_About">About</s:String>
     <s:String x:Key="s_Editor">Editor</s:String>
     <s:String x:Key="s_Publisher">Publisher</s:String>
+    <s:String x:Key="s_Actions">Actions</s:String>
+    <s:String x:Key="s_Phrases">Phrases</s:String>
+    <s:String x:Key="s_Other">Other</s:String>
     
     <s:String x:Key="s_Hide">Hide</s:String>
     <s:String x:Key="s_Pause">Pause</s:String>
@@ -245,6 +241,13 @@
     <s:String x:Key="s_Like">Like</s:String>
     <s:String x:Key="s_Dislike">Dislike</s:String>
     <s:String x:Key="s_RecieveDate">Recieve date</s:String>
+    
+    <s:String x:Key="s_DaysWithUs">Days with us</s:String>
+    <s:String x:Key="s_RegistrationDate">Registration date</s:String>
+    <s:String x:Key="s_VoiceCommandsDone">Commands done:</s:String>
+    <s:String x:Key="s_TextDictated">Text dictated</s:String>
+    <s:String x:Key="s_WebsiteCommandsDone">Website commands done</s:String>
+    <s:String x:Key="s_CommunicationsDone">Communications done</s:String>
     <!--#endregion-->
 
     <!--#region Publisher-->
@@ -261,6 +264,7 @@
     <!--#endregion-->
 
     <!--#region Variables-->
+    <s:String x:Key="s_Common">Common</s:String>
     <s:String x:Key="s_Custom">Custom</s:String>
     <s:String x:Key="s_DateTime">DateTime</s:String>
     <s:String x:Key="s_Account">Account</s:String>
@@ -270,6 +274,7 @@
     <s:String x:Key="s_Value">value</s:String>
     <s:String x:Key="s_IfVariableValue">If variable value is</s:String>
     <s:String x:Key="s_IfWebsiteNavValue">If website selection is</s:String>
+    <s:String x:Key="s_VariableNotFound">Variable is not found</s:String>
 
     <s:String x:Key="s_VariableOperator_Exists">exists</s:String>
     <s:String x:Key="s_VariableOperator_Equals">equals</s:String>
@@ -353,7 +358,6 @@
     <s:String x:Key="s_Confidant">Confidant</s:String>
     <s:String x:Key="s_Dublicate">Duplicate</s:String>
     <s:String x:Key="s_Executing">Executing</s:String>
-    <s:String x:Key="s_DaysWithUs">days with us</s:String>
     <s:String x:Key="s_HttpWebRequest">Web-request</s:String>
     <s:String x:Key="s_Responding">Responding</s:String>
     <s:String x:Key="s_Categories">categories</s:String>
@@ -373,7 +377,6 @@
     <s:String x:Key="s_WithParameters">with parameters</s:String>
     <s:String x:Key="w_IfProcessActive">If process is active</s:String>
     <s:String x:Key="s_NothingSelected">Nothing selected</s:String>
-    <s:String x:Key="s_RegistrationDate">Registration date</s:String>
     <s:String x:Key="s_ConnectionProblems">Connection problems</s:String>
     <s:String x:Key="s_DataTransferCompleted">Data transfer is completed</s:String>
     <s:String x:Key="s_ShareLaitisWithYourFriends">Share Laitis with your friends!</s:String>
@@ -392,7 +395,7 @@
     <s:String x:Key="s_Cancel">Cancel</s:String>
 
 
-    <s:String x:Key="s_CustomVariables">Custom variables</s:String>
+    <s:String x:Key="s_Variables">Variables</s:String>
 
     <s:String x:Key="s_ProcessName">Process name</s:String>
     <s:String x:Key="s_FilePath">File path</s:String>
@@ -648,7 +651,6 @@
     <s:String x:Key="s_Settings_Label_IsListenYourself">Listen yourself</s:String>
     <s:String x:Key="s_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
     <s:String x:Key="s_Settings_Label_UseTypeStarter">Type text only if it starts with</s:String>
-    <s:String x:Key="s_Settings_Label_IsQAEducationEnabled">Enable communication learning</s:String>
     <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
     <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
     <s:String x:Key="s_Settings_Label_IsStartMinimized">Minimize Laitis on app start</s:String>
@@ -772,19 +774,15 @@
         Translit from russian to english
     </TextBlock>
 
-    
-    
-    
-    
     <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Works only with automatic voice recording
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Текст будет писаться с большой буквы при смене текстового поля и при наборе нового предложения;
+            Text is typed from upper case if you change textbox focus or if you type a new sentence;
             <LineBreak />
-            Запятая ставится, если вы сделаете паузу на промежуток от 2 до 4 секунд(стандартные значения);
+            The comma is typed if you pause for a period of 2 to 4 seconds (default values);
             <LineBreak />
-            Точка ставится, если вы сделаете паузу на 4 секунды(стандартное значение) и более.
+            The dot is typed if you pause for 4 seconds (default value) or more.
         </Span>
     </TextBlock>
     

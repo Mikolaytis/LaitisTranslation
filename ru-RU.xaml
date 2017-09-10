@@ -101,15 +101,6 @@
     <s:String x:Key="s_QA_ConnectedTo">Следует за</s:String>
     <s:String x:Key="s_QA_ConnectedFrom">Следует из</s:String>
     
-    <s:String x:Key="s_QA_Education_Add">Добавить</s:String>
-    <s:String x:Key="s_QA_Education_AddRootQuestion">Добавить корневой вопрос</s:String>
-    <s:String x:Key="s_QA_Education_RootQuestionAdded">Добавлен корневой вопрос &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_QuestionAdded">Добавлен ответ &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_AnswerAdded">Добавлен вопрос &quot;{0}&quot;</s:String>
-    <s:String x:Key="s_QA_Education_ToAddRootQuestionSayAdd">Чтобы добавить корневой вопрос &quot;{0}&quot; скажите Добавить</s:String>
-    <s:String x:Key="s_QA_Education_ToAddQuestionSayAdd">Чтобы добавить вопрос &quot;{0}&quot; на ответ &quot;{1}&quot; скажите Добавить</s:String>
-    <s:String x:Key="s_QA_Education_ToAddAnswerSayAdd">Чтобы добавить ответ &quot;{0}&quot; на вопрос &quot;{1}&quot; скажите Добавить</s:String>
-
     <s:String x:Key="s_QA_Details_Creator">Создатель:</s:String>
     <s:String x:Key="s_QA_Details_Local">Этого еще нет на сервере</s:String>
     <s:String x:Key="s_QA_Details_AddToPublication">Добавить в публикацию</s:String>
@@ -138,12 +129,17 @@
     <!--#region Main Tabs and Buttons-->
     <s:String x:Key="s_Profile">Профиль</s:String>
     <s:String x:Key="s_Community">Сообщество</s:String>
+    <s:String x:Key="s_Packs">Коллекции</s:String>
     <s:String x:Key="s_Commands">Команды</s:String>
+    <s:String x:Key="s_Autoreplace">Автозамена</s:String>
     <s:String x:Key="s_Communication">Общение</s:String>
     <s:String x:Key="s_Help">Помощь</s:String>
     <s:String x:Key="s_About">О программе</s:String>
     <s:String x:Key="s_Editor">Редактор</s:String>
     <s:String x:Key="s_Publisher">Публикация</s:String>
+    <s:String x:Key="s_Actions">Действия</s:String>
+    <s:String x:Key="s_Phrases">Фразы</s:String>
+    <s:String x:Key="s_Other">Остальное</s:String>
     
     <s:String x:Key="s_Hide">Свернуть</s:String>
     <s:String x:Key="s_Pause">Пауза</s:String>
@@ -245,6 +241,13 @@
     <s:String x:Key="s_Like">Мне нравится</s:String>
     <s:String x:Key="s_Dislike">Мне не нравится</s:String>
     <s:String x:Key="s_RecieveDate">Дата получения</s:String>
+    
+    <s:String x:Key="s_DaysWithUs">Дней с нами</s:String>
+    <s:String x:Key="s_RegistrationDate">Дата регистрации</s:String>
+    <s:String x:Key="s_VoiceCommandsDone">Выполнено команд</s:String>
+    <s:String x:Key="s_TextDictated">Надиктовано текста</s:String>
+    <s:String x:Key="s_WebsiteCommandsDone">Выполнено команд управления веб-сайтами</s:String>
+    <s:String x:Key="s_CommunicationsDone">Общений с ботом</s:String>
     <!--#endregion-->
 
     <!--#region Publisher-->
@@ -261,6 +264,7 @@
     <!--#endregion-->
 
     <!--#region Variables-->
+    <s:String x:Key="s_Common">Общие</s:String>
     <s:String x:Key="s_Custom">Пользовательские</s:String>
     <s:String x:Key="s_DateTime">Дата и время</s:String>
     <s:String x:Key="s_Account">Аккаунт</s:String>
@@ -270,6 +274,7 @@
     <s:String x:Key="s_Value">значение</s:String>
     <s:String x:Key="s_IfVariableValue">Если значение переменной</s:String>
     <s:String x:Key="s_IfWebsiteNavValue">Если на сайте выделено</s:String>
+    <s:String x:Key="s_VariableNotFound">Переменная не найдена</s:String>
 
     <s:String x:Key="s_VariableOperator_Exists">существует</s:String>
     <s:String x:Key="s_VariableOperator_Equals">равно</s:String>
@@ -353,7 +358,6 @@
     <s:String x:Key="s_Confidant">Доверенное лицо</s:String>
     <s:String x:Key="s_Dublicate">Дубликат</s:String>
     <s:String x:Key="s_Executing">Выполняю</s:String>
-    <s:String x:Key="s_DaysWithUs">дней с нами</s:String>
     <s:String x:Key="s_HttpWebRequest">Веб-запрос</s:String>
     <s:String x:Key="s_Responding">Отвечаю</s:String>
     <s:String x:Key="s_Categories">категориях</s:String>
@@ -367,13 +371,12 @@
     <s:String x:Key="s_NewCategory">Новая категория</s:String>
     <s:String x:Key="s_SaveChanges">Сохранить изменения</s:String>
     <s:String x:Key="s_Achievements">Достижения</s:String>
-    <s:String x:Key="s_UsersInvited">Пригласил пользвателей</s:String>
+    <s:String x:Key="s_UsersInvited">Пригласил пользователей</s:String>
     <s:String x:Key="s_IfProcessOpen">Если открыта программа</s:String>
     <s:String x:Key="s_IfWebsiteOpen">Если открыт веб-сайт</s:String>
     <s:String x:Key="s_WithParameters">с параметрами</s:String>
     <s:String x:Key="w_IfProcessActive">Если активна программа</s:String>
     <s:String x:Key="s_NothingSelected">Ничего не выбрано</s:String>
-    <s:String x:Key="s_RegistrationDate">Дата регистрации</s:String>
     <s:String x:Key="s_ConnectionProblems">Проблемы с подключением к серверу</s:String>
     <s:String x:Key="s_DataTransferCompleted">Данные отправлены на сервер</s:String>
     <s:String x:Key="s_ShareLaitisWithYourFriends">Расскажи о Laitis cвоим друзьям и знакомым!</s:String>
@@ -392,7 +395,7 @@
     <s:String x:Key="s_Cancel">Отменить</s:String>
 
 
-    <s:String x:Key="s_CustomVariables">Пользовательские переменные</s:String>
+    <s:String x:Key="s_Variables">Переменные</s:String>
 
     <s:String x:Key="s_ProcessName">Название процесса</s:String>
     <s:String x:Key="s_FilePath">Путь к файлу</s:String>
@@ -648,7 +651,6 @@
     <s:String x:Key="s_Settings_Label_IsListenYourself">Слушать себя</s:String>
     <s:String x:Key="s_Settings_Label_UseCommandStarter">Запускать команды только если фразы начинаются с</s:String>
     <s:String x:Key="s_Settings_Label_UseTypeStarter">Набирать текст только если он начинается с</s:String>
-    <s:String x:Key="s_Settings_Label_IsQAEducationEnabled">Включить добавление вопросов и ответов</s:String>
     <s:String x:Key="s_Settings_Label_AutoRun">Запускать Laitis при старте Windows</s:String>
     <s:String x:Key="s_Settings_Label_UseStatusWindow">Всплывающие уведомления вверху экрана</s:String>
     <s:String x:Key="s_Settings_Label_IsStartMinimized">Запускать Laitis свернутым в панель задач</s:String>
