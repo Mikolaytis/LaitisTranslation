@@ -1,9 +1,10 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:Laitis.Common;assembly=Laitis.Common"
     xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
-    xmlns:s="clr-namespace:System;assembly=mscorlib"
-    xmlns:laitis="clr-namespace:Laitis">
+    xmlns:laitis="clr-namespace:Laitis"
+    xmlns:s="clr-namespace:System;assembly=mscorlib">
 
     <!--#region App Initialization-->
     <s:String x:Key="s_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
@@ -13,7 +14,7 @@
     <s:String x:Key="s_Load_PerformingUpdate">Updating</s:String>
     <s:String x:Key="s_Load_AppLoaded">started</s:String>
     <s:String x:Key="s_Load_MandatoryUpdateNeeded">Critical application load failure. Download the latest version of Laitis on laitis.ru, if it will not help - send a message into vk.com/mikolaytis or vk.com/laitisgroup.</s:String>
-    
+
     <s:String x:Key="s_Load_SettingsFail">Fail of user's data loading</s:String>
     <s:String x:Key="s_Load_SettingsFail_Retry">Try again</s:String>
     <s:String x:Key="s_Load_SettingsFail_OpenApp">Open application with default data</s:String>
@@ -37,7 +38,7 @@
     <s:String x:Key="s_Account_PasswordsDoNotMatch">Passwords missmatch</s:String>
     <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Only latin chars and numerics are available</s:String>
     <!--#endregion-->
-    
+
     <!--#region PublicApiHost-->
     <s:String x:Key="s_PublicApiHost_SettingsIsEnabled">Enable External API channel for third-party Laitis extensions</s:String>
     <s:String x:Key="s_PublicApiHost_HostOpened">External API channel is started</s:String>
@@ -46,7 +47,7 @@
     <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
     <s:String x:Key="s_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
     <!--#endregion-->
-    
+
     <!--#region UIAutomation-->
     <s:String x:Key="s_UIAutomation_ElementFoundInActiveWindow">Element {0} is found in active windows</s:String>
     <s:String x:Key="s_UIAutomation_ElementFoundInTaskBar">Element {0} is found in taskbar</s:String>
@@ -56,7 +57,7 @@
 
     <!--#region FUE-->
     <s:String x:Key="s_FUE_Initial_HelloDearUser">Hello, dear user!</s:String>
-    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Thanks for install of </s:String>
+    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Thanks for install of</s:String>
     <s:String x:Key="s_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- app that provides voice control over PC and voice text typing</s:String>
     <s:String x:Key="s_FUE_Initial_TakeMicrophoneAndSayHello">Bring to your microphone and say &quot;Hello&quot;</s:String>
     <s:String x:Key="s_FUE_Initial_ThanksMaybeNextTime">Thanks, maybe next time</s:String>
@@ -64,7 +65,7 @@
     <s:String x:Key="s_FUE_Browser_Setup">Browser configuration</s:String>
     <s:String x:Key="s_FUE_Browser_Info">You need to install a browser extension to allow Laitis perform web-site actions</s:String>
     <s:String x:Key="s_FUE_Browser_Skip">Skip</s:String>
-    
+
     <s:String x:Key="s_FUE_QA_Header">This section contains the structure of communication with the voice bot</s:String>
     <s:String x:Key="s_FUE_QA_YouAskQuestions">You asking questions</s:String>
     <s:String x:Key="s_FUE_QA_BotAnswersThem">Bot responds to them</s:String>
@@ -97,26 +98,17 @@
     <!--#region QA-->
     <s:String x:Key="s_QA_AddRootQuestion">Add root question</s:String>
     <s:String x:Key="s_QA_RemoveSelection">Deselect</s:String>
-    
+
     <s:String x:Key="s_QA_ConnectedTo">Connected to</s:String>
     <s:String x:Key="s_QA_ConnectedFrom">Connected from</s:String>
-    
-    <s:String x:Key="s_QA_Details_Creator">Creator:</s:String>
-    <s:String x:Key="s_QA_Details_Local">It's not on the server yet</s:String>
-    <s:String x:Key="s_QA_Details_AddToPublication">Add to publication</s:String>
-    <s:String x:Key="s_QA_Details_RemoveFromPublication">Remove from publication</s:String>
-    <s:String x:Key="s_QA_Details_SendPublicationTooltip">Send publication with selected questions and answers</s:String>
-    <s:String x:Key="s_QA_Details_AddQuestionToPublicationErrorMessage">First, add changes of parent answer</s:String>
-    <s:String x:Key="s_QA_Details_AddAnswerToPublicationErrorMessage">First, add changes of parent question</s:String>
-    <s:String x:Key="s_QA_Details_RemoveQuestionFromPublicationErrorMessage">First, remove the changes of child answer</s:String>
-    <s:String x:Key="s_QA_Details_RemoveAnswerFromPublicationErrorMessage">First, remove the changes of child question</s:String>
     <!--#endregion-->
 
-    <!--#region  Exceptions -->
-    <s:String x:Key="s_DownloadSaveError">ЗDownload save error</s:String>
-    <s:String x:Key="s_ServerError">Server error</s:String>
+    <!--#region  Exceptions-->
+    <s:String x:Key="s_ConnectionProblems">Server connection problem</s:String>
+    <s:String x:Key="s_DownloadSaveError">Download save error</s:String>
     <s:String x:Key="s_Error">Error</s:String>
     <s:String x:Key="s_DataUploadError">Data upload error</s:String>
+    <s:String x:Key="s_DataIsToBig">Too big data to show</s:String>
     <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
     <s:String x:Key="s_UnknownErrorOccured">Oops! Unknown error occured!</s:String>
     <s:String x:Key="s_SendingInfoAndRestarting">Sending info, saving everything and restarting</s:String>
@@ -140,7 +132,7 @@
     <s:String x:Key="s_Actions">Actions</s:String>
     <s:String x:Key="s_Phrases">Phrases</s:String>
     <s:String x:Key="s_Other">Other</s:String>
-    
+
     <s:String x:Key="s_Hide">Hide</s:String>
     <s:String x:Key="s_Pause">Pause</s:String>
     <s:String x:Key="s_Buttons_Hide">Hide</s:String>
@@ -170,7 +162,7 @@
     <s:String x:Key="s_PasteCommand">Paste command</s:String>
     <s:String x:Key="s_PasteCategory">Paste category</s:String>
     <s:String x:Key="s_PastePack">Paste collection</s:String>
-    
+
     <s:String x:Key="s_DeleteCommand">Remove command</s:String>
     <s:String x:Key="s_EditCommand">Edit command</s:String>
     <s:String x:Key="s_CommandImport">Import command from text</s:String>
@@ -181,11 +173,12 @@
     <s:String x:Key="s_CommandUpdate">Update command</s:String>
     <s:String x:Key="s_CreateSame">Create same command</s:String>
     <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
-    
+
     <s:String x:Key="s_PackActivity">Pack activity</s:String>
+    <s:String x:Key="s_DownloadPacks">DownloadPacks</s:String>
     <!--#endregion-->
-    
-    <!--#region Notifications -->
+
+    <!--#region Notifications-->
     <s:String x:Key="s_Details">Details</s:String>
     <s:String x:Key="s_EndRecieve">Data recieve ended</s:String>
     <s:String x:Key="s_ConnectionDrop">Connection drop</s:String>
@@ -195,7 +188,7 @@
     <s:String x:Key="s_EndSend">Record sending ended</s:String>
     <s:String x:Key="s_TooLongRecordIsEnded">Record was stopped because its too long</s:String>
     <s:String x:Key="s_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
-    
+
     <s:String x:Key="s_DownloadOfUpdate">Downloading update</s:String>
     <s:String x:Key="s_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis succesfully updated from version</s:String>
     <s:String x:Key="s_ToVersion">to version</s:String>
@@ -206,7 +199,7 @@
     <s:String x:Key="s_FailToFindRecordingDevice">Fail to find recording device</s:String>
     <s:String x:Key="s_RecordingStartedOnDeviceNumber">Recording is started from device #</s:String>
     <s:String x:Key="s_RecordingStoppedOnDeviceNumber">Recording is stopped from device #</s:String>
-    
+
     <s:String x:Key="s_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
     <s:String x:Key="s_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
 
@@ -214,8 +207,8 @@
     <s:String x:Key="s_SettingsDownloadFail">Settings download fail.</s:String>
     <s:String x:Key="s_SettingsUploadSuccess">Settings upload success</s:String>
     <s:String x:Key="s_SettingsUploadFail">Settings upload fail</s:String>
-    
-    <s:String x:Key="s_PackUpdated">Update of pack </s:String>
+
+    <s:String x:Key="s_PackUpdated">Update of pack</s:String>
     <s:String x:Key="s_ApplicationVersion">Application version</s:String>
     <s:String x:Key="s_UnderstoodText">understood text</s:String>
     <s:String x:Key="s_UnderstoodCommand">understood command</s:String>
@@ -224,15 +217,15 @@
     <s:String x:Key="s_CommandDone">Command executed</s:String>
     <s:String x:Key="s_TypingText">Typing text</s:String>
     <s:String x:Key="s_ThatRecordNeedsPlay">That record is playing because &quot;Listen yourself&quot; option is enabled</s:String>
-    
+
     <s:String x:Key="s_RemovingErrorTyping">Removing previous error typing</s:String>
     <s:String x:Key="s_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
     <s:String x:Key="s_ComaWaitTime">Adding coma, becaise wait time was short</s:String>
     <s:String x:Key="s_DotWaitTime">Adding dot, because there was a long wait time</s:String>
     <s:String x:Key="s_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
     <!--#endregion-->
-    
-    <!--#region  Community -->
+
+    <!--#region  Community-->
     <s:String x:Key="s_ServiceBlockedException">Pronounce service temporarily blocked requests from your PC. Select another service in settings.</s:String>
     <s:String x:Key="s_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
     <s:String x:Key="s_UsersPublications">Users publications:</s:String>
@@ -241,7 +234,7 @@
     <s:String x:Key="s_Like">Like</s:String>
     <s:String x:Key="s_Dislike">Dislike</s:String>
     <s:String x:Key="s_RecieveDate">Recieve date</s:String>
-    
+
     <s:String x:Key="s_DaysWithUs">Days with us</s:String>
     <s:String x:Key="s_RegistrationDate">Registration date</s:String>
     <s:String x:Key="s_VoiceCommandsDone">Commands done:</s:String>
@@ -253,14 +246,14 @@
     <!--#region Publisher-->
     <s:String x:Key="s_AutorizationNeeded">Authorization needed</s:String>
     <s:String x:Key="s_CollectionNameIsTooShort">Collection name is too short</s:String>
-    <s:String x:Key="s_NoCommandsInPack">Pack is empty</s:String>
     <s:String x:Key="s_ChangesNotFound">0 changes found</s:String>
     <s:String x:Key="s_PublicationSendedToTheServer">Your publication is sended to the server</s:String>
-    <s:String x:Key="s_DownloadingAdditionalDataFromServer">Downloading additional information from server...</s:String>
     <s:String x:Key="s_PublishNewCollection">Publish new collection</s:String>
     <s:String x:Key="s_PublishSomeChanges">Publish some changes</s:String>
-    <s:String x:Key="s_CommandsToRemove">Commands to remove:</s:String>
     <s:String x:Key="s_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
+    <s:String x:Key="s_ToRemove">to remove</s:String>
+    <s:String x:Key="s_ConnectionsToAnswers">Connections to answers</s:String>
+    <s:String x:Key="s_ConnectionsToQuestions">Connections to questions</s:String>
     <!--#endregion-->
 
     <!--#region Variables-->
@@ -269,7 +262,7 @@
     <s:String x:Key="s_DateTime">DateTime</s:String>
     <s:String x:Key="s_Account">Account</s:String>
     <s:String x:Key="s_Environment">Environment</s:String>
-    
+
     <s:String x:Key="s_SetVariable">Set variable</s:String>
     <s:String x:Key="s_Value">value</s:String>
     <s:String x:Key="s_IfVariableValue">If variable value is</s:String>
@@ -377,10 +370,9 @@
     <s:String x:Key="s_WithParameters">with parameters</s:String>
     <s:String x:Key="w_IfProcessActive">If process is active</s:String>
     <s:String x:Key="s_NothingSelected">Nothing selected</s:String>
-    <s:String x:Key="s_ConnectionProblems">Connection problems</s:String>
     <s:String x:Key="s_DataTransferCompleted">Data transfer is completed</s:String>
     <s:String x:Key="s_ShareLaitisWithYourFriends">Share Laitis with your friends!</s:String>
-    
+
     <s:String x:Key="s_Questions">Questions</s:String>
     <s:String x:Key="s_Answers">Answers</s:String>
     <s:String x:Key="s_MouseMoveOn">Move mouse on element</s:String>
@@ -399,11 +391,6 @@
 
     <s:String x:Key="s_ProcessName">Process name</s:String>
     <s:String x:Key="s_FilePath">File path</s:String>
-
-    <s:String x:Key="s_Command_Select_Difference_Command">Select new command</s:String>
-    <s:String x:Key="s_Command_Select_Difference_Order">Select order difference</s:String>
-    <s:String x:Key="s_Command_Select_Difference_Actions">Select actions difference</s:String>
-    <s:String x:Key="s_Command_Select_Difference_VoiceCommands">Select voice commands difference</s:String>
     <!--#endregion-->
 
     <!--#region Common Tooltips-->
@@ -513,6 +500,10 @@
     <!--#endregion-->
 
     <!--#region Enums-->
+    <!--  StartupState -->
+    <s:String x:Key="s_StartupState_Minimized">minimized to taskbar</s:String>
+    <s:String x:Key="s_StartupState_MinimizedToTray">minimized to system tray</s:String>
+    <s:String x:Key="s_StartupState_Maximized">maximized to fullscreen</s:String>
     <!--  HttpWebRequestMethod -->
     <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
     <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
@@ -524,6 +515,7 @@
     <s:String x:Key="s_CommandState_ModifiedByUser">You modified that command</s:String>
     <s:String x:Key="s_CommandState_CreatedByUser">You created that command</s:String>
     <s:String x:Key="s_CommandState_UpdateAvailable">Update available</s:String>
+    <s:String x:Key="s_CommandState_RemovedOnServer">Removed on Server</s:String>
     <!--  SpeechState -->
     <s:String x:Key="s_SpeechState_Normal">Disabled</s:String>
     <s:String x:Key="s_SpeechState_Working">Enabled</s:String>
@@ -653,7 +645,7 @@
     <s:String x:Key="s_Settings_Label_UseTypeStarter">Type text only if it starts with</s:String>
     <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
     <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
-    <s:String x:Key="s_Settings_Label_IsStartMinimized">Minimize Laitis on app start</s:String>
+    <s:String x:Key="s_Settings_Label_IsStartMinimized">Start Laitis</s:String>
     <s:String x:Key="s_Settings_Label_RecognitionService">Recognition Service</s:String>
     <s:String x:Key="s_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
     <s:String x:Key="s_Settings_Label_ApplicationLanguage">Application Language</s:String>
@@ -669,7 +661,7 @@
     <s:String x:Key="s_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
     <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFues">Show Hints (Browsers configuuration, Commands, Communication)</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFues">Show Hints (Browsers configuration, Commands, Communication)</s:String>
     <s:String x:Key="s_Settings_Label_ShowLogger">Show Event Logger</s:String>
     <s:String x:Key="s_Settings_Label_HideLogger">Hide Event Logger</s:String>
     <!--#endregion-->
@@ -774,6 +766,10 @@
         Translit from russian to english
     </TextBlock>
 
+    
+    
+    
+    
     <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Works only with automatic voice recording
         <LineBreak />
@@ -1043,8 +1039,13 @@
                 </ListItem>
                 <ListItem>
                     <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Credit card:</Run>
-                        5469300309812623 Mikolaytis Sergey</Paragraph>
+                        <Run FontWeight="Bold">Sberbank credit card:</Run>
+                        <Run Text="{x:Static common:LaitisConst.SberbankCard}"/> Mikolaytis Sergey</Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Tinkoff credit card:</Run>
+                        <Run Text="{x:Static common:LaitisConst.TinkoffCard}"/> Mikolaytis Sergey</Paragraph>
                 </ListItem>
                 <ListItem Margin="0,10,0,0">
                     <Paragraph TextAlignment="Left">
