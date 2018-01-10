@@ -24,6 +24,7 @@
 
     <!--#region Account-->
     <s:String x:Key="s_Account_LogIn">Log In</s:String>
+    <s:String x:Key="s_Account_Register">Register</s:String>
     <s:String x:Key="s_Account_Registration">Registration</s:String>
     <s:String x:Key="s_Account_SymbolsMin">{0} symbols min</s:String>
     <s:String x:Key="s_Account_SymbolsMax">{0} symbols max</s:String>
@@ -37,13 +38,17 @@
     <s:String x:Key="s_Account_PaswordsMatch">Passwords match</s:String>
     <s:String x:Key="s_Account_PasswordsDoNotMatch">Passwords missmatch</s:String>
     <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Only latin chars and numerics are available</s:String>
+    
+    <s:String x:Key="s_Account_LogInFeature1">Publication of changes</s:String>
+    <s:String x:Key="s_Account_LogInFeature2">Synchronization of settings</s:String>
+    <s:String x:Key="s_Account_LogInFeature3">Access to rating</s:String>
+    <s:String x:Key="s_Account_LogInFeature4">Statistics</s:String>
+    <s:String x:Key="s_Account_LogInFeature5">Achievements</s:String>
     <!--#endregion-->
 
     <!--#region PublicApiHost-->
-    <s:String x:Key="s_PublicApiHost_SettingsIsEnabled">Enable External API channel for third-party Laitis extensions</s:String>
     <s:String x:Key="s_PublicApiHost_HostOpened">External API channel is started</s:String>
     <s:String x:Key="s_PublicApiHost_HostOpenError">Error occured on starting external API channel</s:String>
-    <s:String x:Key="s_PublicApiHost_HostClosed">External API channel is stopped</s:String>
     <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
     <s:String x:Key="s_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
     <!--#endregion-->
@@ -97,14 +102,25 @@
 
     <!--#region QA-->
     <s:String x:Key="s_QA_AddRootQuestion">Add root question</s:String>
-    <s:String x:Key="s_QA_RemoveSelection">Deselect</s:String>
-
     <s:String x:Key="s_QA_ConnectedTo">Connected to</s:String>
     <s:String x:Key="s_QA_ConnectedFrom">Connected from</s:String>
+    <s:String x:Key="s_Question_Tooltip_AddChildQuestion">Add question to this answer</s:String>
+    <s:String x:Key="s_Question_Tooltip_AddChildAnswer">Add answer to this question</s:String>
+    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
+        Is root question
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Conversation can start only from root question.
+            <LineBreak />
+            If question is not root question - you can come to it only after connected answers.
+        </Span>
+    </TextBlock>
     <!--#endregion-->
 
     <!--#region  Exceptions-->
     <s:String x:Key="s_ConnectionProblems">Server connection problem</s:String>
+    <s:String x:Key="s_WrongCredentials">Wrong credentials</s:String>
+    <s:String x:Key="s_VoiceCommandsDisabled">Voice commands are disabled</s:String>
     <s:String x:Key="s_DownloadSaveError">Download save error</s:String>
     <s:String x:Key="s_Error">Error</s:String>
     <s:String x:Key="s_DataUploadError">Data upload error</s:String>
@@ -132,6 +148,7 @@
     <s:String x:Key="s_Actions">Actions</s:String>
     <s:String x:Key="s_Phrases">Phrases</s:String>
     <s:String x:Key="s_Other">Other</s:String>
+    <s:String x:Key="s_Logger">Events</s:String>
 
     <s:String x:Key="s_Hide">Hide</s:String>
     <s:String x:Key="s_Pause">Pause</s:String>
@@ -149,10 +166,10 @@
     <s:String x:Key="s_CategoryCutted">Category is cutted</s:String>
     <s:String x:Key="s_CategoryPasted">Category is pasted</s:String>
     <s:String x:Key="s_CategoryDeleted">Category is removed</s:String>
-    <s:String x:Key="s_PackCopied">Collection is copied</s:String>
-    <s:String x:Key="s_PackCutted">Collection is cutted</s:String>
-    <s:String x:Key="s_PackPasted">Collection is pasted</s:String>
-    <s:String x:Key="s_PackDeleted">Collection is removed</s:String>
+    <s:String x:Key="s_PackCopied">Pack is copied</s:String>
+    <s:String x:Key="s_PackCutted">Pack is cutted</s:String>
+    <s:String x:Key="s_PackPasted">Pack is pasted</s:String>
+    <s:String x:Key="s_PackDeleted">Pack is removed</s:String>
 
     <s:String x:Key="s_CopyPack">Copy pack</s:String>
     <s:String x:Key="s_CopyCommand">Copy command</s:String>
@@ -161,15 +178,15 @@
     <s:String x:Key="s_CutCategory">Cut category</s:String>
     <s:String x:Key="s_PasteCommand">Paste command</s:String>
     <s:String x:Key="s_PasteCategory">Paste category</s:String>
-    <s:String x:Key="s_PastePack">Paste collection</s:String>
+    <s:String x:Key="s_PastePack">Paste Pack</s:String>
 
     <s:String x:Key="s_DeleteCommand">Remove command</s:String>
     <s:String x:Key="s_EditCommand">Edit command</s:String>
     <s:String x:Key="s_CommandImport">Import command from text</s:String>
     <s:String x:Key="s_CommandExport">Export command to text</s:String>
-    <s:String x:Key="s_CommandImported">Command is imported to clipboard as text</s:String>
-    <s:String x:Key="s_CommandExported">Command is exported from clipboard</s:String>
-    <s:String x:Key="s_CommandImportFail">Command export from clipboard is failed</s:String>
+    <s:String x:Key="s_CommandImported">Command is imported from clipboard</s:String>
+    <s:String x:Key="s_CommandExported">Command is exported to clipboard as text</s:String>
+    <s:String x:Key="s_CommandImportFail">Command import is failed</s:String>
     <s:String x:Key="s_CommandUpdate">Update command</s:String>
     <s:String x:Key="s_CreateSame">Create same command</s:String>
     <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
@@ -186,7 +203,7 @@
     <s:String x:Key="s_RecordStarted">Record started</s:String>
     <s:String x:Key="s_StartToSend">Record sending started</s:String>
     <s:String x:Key="s_EndSend">Record sending ended</s:String>
-    <s:String x:Key="s_TooLongRecordIsEnded">Record was stopped because its too long</s:String>
+    <s:String x:Key="s_TooLongRecordIsEnded">Record was stopped because its too long. To improve recognition quality disable microphone boost if it is enabled.</s:String>
     <s:String x:Key="s_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
 
     <s:String x:Key="s_DownloadOfUpdate">Downloading update</s:String>
@@ -197,8 +214,8 @@
     <s:String x:Key="s_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
     <s:String x:Key="s_FailToPlayPhrase">Fail to play phrase</s:String>
     <s:String x:Key="s_FailToFindRecordingDevice">Fail to find recording device</s:String>
-    <s:String x:Key="s_RecordingStartedOnDeviceNumber">Recording is started from device #</s:String>
-    <s:String x:Key="s_RecordingStoppedOnDeviceNumber">Recording is stopped from device #</s:String>
+    <s:String x:Key="s_RecordingStartedOnDevice">Recording is started from device</s:String>
+    <s:String x:Key="s_RecordingStoppedOnDevice">Recording is stopped from device</s:String>
 
     <s:String x:Key="s_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
     <s:String x:Key="s_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
@@ -216,8 +233,7 @@
     <s:String x:Key="s_TextNotStartsWithKeyword">Text is not started with keyword</s:String>
     <s:String x:Key="s_CommandDone">Command executed</s:String>
     <s:String x:Key="s_TypingText">Typing text</s:String>
-    <s:String x:Key="s_ThatRecordNeedsPlay">That record is playing because &quot;Listen yourself&quot; option is enabled</s:String>
-
+    
     <s:String x:Key="s_RemovingErrorTyping">Removing previous error typing</s:String>
     <s:String x:Key="s_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
     <s:String x:Key="s_ComaWaitTime">Adding coma, becaise wait time was short</s:String>
@@ -226,7 +242,6 @@
     <!--#endregion-->
 
     <!--#region  Community-->
-    <s:String x:Key="s_ServiceBlockedException">Pronounce service temporarily blocked requests from your PC. Select another service in settings.</s:String>
     <s:String x:Key="s_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
     <s:String x:Key="s_UsersPublications">Users publications:</s:String>
     <s:String x:Key="s_Downloads">Downloads</s:String>
@@ -245,10 +260,10 @@
 
     <!--#region Publisher-->
     <s:String x:Key="s_AutorizationNeeded">Authorization needed</s:String>
-    <s:String x:Key="s_CollectionNameIsTooShort">Collection name is too short</s:String>
+    <s:String x:Key="s_CollectionNameIsTooShort">Pack name is too short</s:String>
     <s:String x:Key="s_ChangesNotFound">0 changes found</s:String>
     <s:String x:Key="s_PublicationSendedToTheServer">Your publication is sended to the server</s:String>
-    <s:String x:Key="s_PublishNewCollection">Publish new collection</s:String>
+    <s:String x:Key="s_PublishNewCollection">Publish new pack</s:String>
     <s:String x:Key="s_PublishSomeChanges">Publish some changes</s:String>
     <s:String x:Key="s_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
     <s:String x:Key="s_ToRemove">to remove</s:String>
@@ -287,7 +302,6 @@
     <s:String x:Key="s_Date">Date</s:String>
     <s:String x:Key="s_Time">Time</s:String>
     <s:String x:Key="s_Version">Version</s:String>
-    <s:String x:Key="s_VKURL">VKURL</s:String>
     <!--#endregion-->
 
     <!--#region Common Labels-->
@@ -327,7 +341,7 @@
     <s:String x:Key="s_Rules">AutoCorrect</s:String>
     <s:String x:Key="s_Voice">Voice</s:String>
     <s:String x:Key="s_Top10">Top 10</s:String>
-    <s:String x:Key="s_Rub">$</s:String>
+    <s:String x:Key="s_Rub">Rub</s:String>
     <s:String x:Key="s_Donate">Donate</s:String>
     <s:String x:Key="s_Search">Search</s:String>
     <s:String x:Key="s_Browse">Browse</s:String>
@@ -344,7 +358,6 @@
     <s:String x:Key="s_AddPack">Add pack</s:String>
     <s:String x:Key="s_Settings">Settings</s:String>
     <s:String x:Key="s_OnServer">On server</s:String>
-    <s:String x:Key="s_Defaults">Set defaults</s:String>
     <s:String x:Key="s_Close">Close</s:String>
     <s:String x:Key="s_Messages">messages</s:String>
     <s:String x:Key="s_Vkontakte">Vkontakte</s:String>
@@ -364,14 +377,13 @@
     <s:String x:Key="s_NewCategory">New category</s:String>
     <s:String x:Key="s_SaveChanges">Save changes</s:String>
     <s:String x:Key="s_Achievements">Achievements</s:String>
-    <s:String x:Key="s_UsersInvited">Users invited</s:String>
     <s:String x:Key="s_IfProcessOpen">If process is open</s:String>
     <s:String x:Key="s_IfWebsiteOpen">If web-site is open</s:String>
     <s:String x:Key="s_WithParameters">with parameters</s:String>
     <s:String x:Key="w_IfProcessActive">If process is active</s:String>
     <s:String x:Key="s_NothingSelected">Nothing selected</s:String>
     <s:String x:Key="s_DataTransferCompleted">Data transfer is completed</s:String>
-    <s:String x:Key="s_ShareLaitisWithYourFriends">Share Laitis with your friends!</s:String>
+    <s:String x:Key="s_Everything">Everything</s:String>
 
     <s:String x:Key="s_Questions">Questions</s:String>
     <s:String x:Key="s_Answers">Answers</s:String>
@@ -415,13 +427,6 @@
             <Run Text="{StaticResource s_HoldToConfirm}" />
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_Tooltip_ApplyChangeToMyCollection">
-        <Run Text="Apply that change to my collection" />
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
-        </Span>
-    </TextBlock>
     <!--#endregion-->
 
     <!--#region Browser Controller-->
@@ -431,10 +436,11 @@
     <!--#region Command Editor-->
     <s:String x:Key="s_CommandEditor_Default_Category_Name">Common</s:String>
     <s:String x:Key="s_CommandEditor_Default_Pack_Name">New pack</s:String>
-    <s:String x:Key="s_CommandEditor_Open_ErrorText">Cannot open editor. Details in the event log.</s:String>
+    <s:String x:Key="s_CommandEditor_Open_ErrorText">Cannot open editor. Details in the events tab.</s:String>
     <s:String x:Key="s_CommandEditor_DublicateFounded">Dublicate voice command found</s:String>
     <s:String x:Key="s_CommandEditor_DublicateTooltip">Application automatically recognizes word cases.</s:String>
     <s:String x:Key="s_CommandEditor_VoiceCommandExists">That voice command already exists in that command</s:String>
+    <s:String x:Key="s_CommandEditor_VoiceCommandVariableNameError">Variable name is incorrect</s:String>
     <s:String x:Key="s_CommandEditor_VoiceCommands">Voice commands:</s:String>
     <s:String x:Key="s_CommandEditor_Actions">Actions:</s:String>
     <s:String x:Key="s_CommandEditor_Variables">Variables:</s:String>
@@ -468,7 +474,8 @@
     <s:String x:Key="s_CommandAction_Label_WebPageNavigate">Select on web-page:</s:String>
     <s:String x:Key="s_CommandAction_Label_WebPageNavClick">Click on web-page selection:</s:String>
     <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Open web-page popup window:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseScroll">on:</s:String>
+    <s:String x:Key="s_CommandAction_Label_MouseScroll">by:</s:String>
+    <s:String x:Key="s_CommandAction_Label_TogglePackActivity">pack:</s:String>
 
     <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
@@ -488,6 +495,20 @@
     <s:String x:Key="s_NavClick">Click on selection</s:String>
     <s:String x:Key="s_OpenPopup">Open popup</s:String>
     
+    <TextBlock x:Key="s_CommandAction_Tooltip_RandomActionBlock">
+        Beginning a block of random actions
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Allows to execute random action
+            <LineBreak />
+            Only one question in block will be executed
+            <LineBreak />
+            You can close block by End action and do another actions after
+            <LineBreak />
+            Random action will be picked from actions that can be executed
+        </Span>
+    </TextBlock>
+    <s:String x:Key="s_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Example: http://ya.ru</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Pause">Time in milliseconds</s:String>
@@ -496,14 +517,21 @@
     <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. If you do not know what CSS is - you cannot create that kind of commands</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_NavClick">You can leave that field empty or enter CSS-selector</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Else">Logical Else for If condition</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_EndIf">Ending for If condition. Not required, if there is no actions below.</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Ending for If condition and of random action list. Not required, if there is no actions below.</s:String>
     <!--#endregion-->
 
     <!--#region Enums-->
-    <!--  StartupState -->
-    <s:String x:Key="s_StartupState_Minimized">minimized to taskbar</s:String>
-    <s:String x:Key="s_StartupState_MinimizedToTray">minimized to system tray</s:String>
-    <s:String x:Key="s_StartupState_Maximized">maximized to fullscreen</s:String>
+    <!--  VoiceCommandMode -->
+    <s:String x:Key="s_VoiceCommandMode_Default">Default</s:String>
+    <s:String x:Key="s_VoiceCommandMode_Keyword">Require keyword</s:String>
+    <!--  TextTypingMode -->
+    <s:String x:Key="s_TextTypingMode_Default">Default</s:String>
+    <s:String x:Key="s_TextTypingMode_Prefix">Require keyword before dictation</s:String>
+    <s:String x:Key="s_TextTypingMode_Postfix">Require keyword after dictation</s:String>
+    <!--  StateSwitchingAction -->
+    <s:String x:Key="s_StateSwitchingAction_Toggle">Toggle</s:String>
+    <s:String x:Key="s_StateSwitchingAction_Enable">Enable</s:String>
+    <s:String x:Key="s_StateSwitchingAction_Disable">Disable</s:String>
     <!--  HttpWebRequestMethod -->
     <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
     <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
@@ -517,7 +545,6 @@
     <s:String x:Key="s_CommandState_UpdateAvailable">Update available</s:String>
     <s:String x:Key="s_CommandState_RemovedOnServer">Removed on Server</s:String>
     <!--  SpeechState -->
-    <s:String x:Key="s_SpeechState_Normal">Disabled</s:String>
     <s:String x:Key="s_SpeechState_Working">Enabled</s:String>
     <s:String x:Key="s_SpeechState_Recording">Recording</s:String>
     <s:String x:Key="s_SpeechState_Saying">Saying</s:String>
@@ -556,9 +583,11 @@
     <s:String x:Key="s_ActionType_WebPagePopupOpen">Open web-page popup</s:String>
     <s:String x:Key="s_ActionType_MouseMoveOn">Move mouse on element</s:String>
     <s:String x:Key="s_ActionType_Else">Else</s:String>
-    <s:String x:Key="s_ActionType_EndIf">EndIf</s:String>
+    <s:String x:Key="s_ActionType_EndBlock">End</s:String>
     <s:String x:Key="s_ActionType_Comment">Comment</s:String>
-    <s:String x:Key="s_ActionType_MouseScroll">Wheel Mouse Scroll</s:String>
+    <s:String x:Key="s_ActionType_MouseScroll">Wheel mouse scroll</s:String>
+    <s:String x:Key="s_ActionType_TogglePackActivity">Toggle pack activity</s:String>
+    <s:String x:Key="s_ActionType_RandomActionBlock">Random action block</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -607,16 +636,6 @@
 
     <!--#region Settings-->
 
-    <!--#region Settings Categories-->
-    <s:String x:Key="s_Settings_Category_Common">Common</s:String>
-    <s:String x:Key="s_Settings_Category_VoiceCommands">Speech services</s:String>
-    <s:String x:Key="s_Settings_Category_Website">Web-site control</s:String>
-    <s:String x:Key="s_Settings_Category_Assistant">Assistant</s:String>
-    <s:String x:Key="s_Settings_Category_Typing">Text typing</s:String>
-    <s:String x:Key="s_Settings_Category_Variables">Variables</s:String>
-    <s:String x:Key="s_Settings_Category_Rules">AutoCorrect</s:String>
-    <s:String x:Key="s_Settings_Category_Logger">Event log</s:String>
-    <!--#endregion-->
     <s:String x:Key="s_Service_Online">online</s:String>
     <s:String x:Key="s_Service_Offline">offline</s:String>
     <s:String x:Key="s_Service_Authorize">authorize</s:String>
@@ -625,45 +644,35 @@
     <s:String x:Key="s_Service_Install">install</s:String>
     <s:String x:Key="s_Service_Limited">limits</s:String>
     
-    <s:String x:Key="s_Logger_Clear">Clear event log</s:String>
-    <s:String x:Key="s_Logger_ItemsCopied">Event log items are copied</s:String>
+    <s:String x:Key="s_Logger_Clear">Clear events</s:String>
+    <s:String x:Key="s_Logger_ItemsCopied">Events are copied</s:String>
     <s:String x:Key="s_Logger_ExtendedMode">Extended mode</s:String>
     
     <s:String x:Key="s_Settings_Default_CommandStarter">Hey Siri/ОК Google/Hey bro</s:String>
     <s:String x:Key="s_Settings_Default_TextInputStarter">type</s:String>
     <s:String x:Key="s_Settings_Default_Language">en-US</s:String>
-    
+    <s:String x:Key="s_Settings_ListenLastRecording">Listen last voice recording</s:String>
+
     <!--#region Settings Labels-->
-    <s:String x:Key="s_Settings_Label_IsRecordEnabled">Is record enabled</s:String>
     <s:String x:Key="s_Settings_Label_VoiceCommands">Voice commands</s:String>
     <s:String x:Key="s_Settings_Label_VoiceDialing">Voice text typing</s:String>
     <s:String x:Key="s_Settings_Label_IsPauseRecordingOnLoudSound">Pause recording on loud sound</s:String>
     <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
     <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
-    <s:String x:Key="s_Settings_Label_IsListenYourself">Listen yourself</s:String>
     <s:String x:Key="s_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
-    <s:String x:Key="s_Settings_Label_UseTypeStarter">Type text only if it starts with</s:String>
     <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
     <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
-    <s:String x:Key="s_Settings_Label_IsStartMinimized">Start Laitis</s:String>
     <s:String x:Key="s_Settings_Label_RecognitionService">Recognition Service</s:String>
     <s:String x:Key="s_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
-    <s:String x:Key="s_Settings_Label_ApplicationLanguage">Application Language</s:String>
     <s:String x:Key="s_Settings_Label_TextToSpeechService">Text to Speech Service</s:String>
     <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Is website control enabled</s:String>
-    <s:String x:Key="s_Settings_Label_UseAssistant">Communication</s:String>
-    <s:String x:Key="s_Settings_Label_UseTranslit">Use translit</s:String>
+    <s:String x:Key="s_Settings_Label_UseCommunication">Communication</s:String>
     <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Automatically insert dots, comas, uppercase chars</s:String>
     <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Type text using keyboard, rather than clipboard</s:String>
-    <s:String x:Key="s_Settings_Label_ComaWaitTime">Coma insert timeout</s:String>
-    <s:String x:Key="s_Settings_Label_DotWaitTime">Dot insert timeout</s:String>
-    <s:String x:Key="s_Settings_Label_RuleServerSync">Sync AutoCorrect list with server</s:String>
     <s:String x:Key="s_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
     <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFues">Show Hints (Browsers configuration, Commands, Communication)</s:String>
-    <s:String x:Key="s_Settings_Label_ShowLogger">Show Event Logger</s:String>
-    <s:String x:Key="s_Settings_Label_HideLogger">Hide Event Logger</s:String>
+    <s:String x:Key="s_Settings_Label_RestoreFues">Show hint panels</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -696,9 +705,9 @@
 
     <!--#region Settings Tooltips-->
     
-    <TextBlock x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
+    <s:String x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
         To stop Laitis from recognizing audio from speakers (video, music)
-    </TextBlock>
+    </s:String>
     
     <TextBlock x:Key="s_Settings_Tooltip_NoiseProgress">
         That indicator displays noise volume in microphone
@@ -724,25 +733,15 @@
 
     
     
-    <TextBlock x:Key="s_Settings_Tooltip_RecordStarter">
+    <s:String x:Key="s_Settings_Tooltip_RecordStarter">
         Select key
-    </TextBlock>
+    </s:String>
 
     <TextBlock x:Key="s_Settings_Tooltip_IsMuteOnCtrlClick">
         Mutes Windows sound on pressing start record button
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
             That is used to not record music or video sound
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="s_Settings_Tooltip_IsListenYourself">
-        Allows you to listen yourself
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            To verify recording quality.
-            <LineBreak />
-            Enabling this feature disables all recognition features.
         </Span>
     </TextBlock>
 
@@ -754,22 +753,6 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_UseTypeStarter">
-        Text dictation will only work if it starts with keyword
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            To type &quot;hello&quot;, you'll need to say &quot;&lt;keyword&gt; hello&quot;
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="s_Settings_Tooltip_UseTranslit">
-        Translit from russian to english
-    </TextBlock>
-
-    
-    
-    
-    
     <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Works only with automatic voice recording
         <LineBreak />
@@ -796,27 +779,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
-        Is root question
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Conversation can start only from root question.
-            <LineBreak />
-            If question is not root question - you can come to it only after connected answers.
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="s_Question_Tooltip_AddChildQuestion">
-        Add question to this answer
-    </TextBlock>
-
-    <TextBlock x:Key="s_Question_Tooltip_AddChildAnswer">
-        Add answer to this question
-    </TextBlock>
-
-    <s:String x:Key="s_Settings_Text_GoogleService">
-        Stop's working after 10-20 requests
-    </s:String>
+    <s:String x:Key="s_Settings_Text_GoogleService">Stop's working after 10-20 requests</s:String>
     
     <!--#endregion-->
 
@@ -922,17 +885,6 @@
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Vivaldi</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/?display=en">Opera</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                What is an event log and where to find it?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        This is the дщп in which Laitis цкшеуы its actions and errors. 
-                        Open it by clicking on the Open Event Log button at the bottom of the Settings.
                     </Paragraph>
                 </ListItem>
             </List>
