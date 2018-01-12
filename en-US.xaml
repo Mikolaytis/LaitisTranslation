@@ -508,6 +508,7 @@
             Random action will be picked from actions that can be executed
         </Span>
     </TextBlock>
+    <s:String x:Key="s_CommandAction_Tooltip_Loop">Beginning a block of actions that will be executed multiple times</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Example: http://ya.ru</s:String>
@@ -588,6 +589,7 @@
     <s:String x:Key="s_ActionType_MouseScroll">Wheel mouse scroll</s:String>
     <s:String x:Key="s_ActionType_TogglePackActivity">Toggle pack activity</s:String>
     <s:String x:Key="s_ActionType_RandomActionBlock">Random action block</s:String>
+    <s:String x:Key="s_ActionType_Loop">Loop</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -764,6 +766,7 @@
             The dot is typed if you pause for 4 seconds (default value) or more.
         </Span>
     </TextBlock>
+    
     
     <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
         Beta version. Use at your own risk.

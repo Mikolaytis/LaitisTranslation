@@ -106,7 +106,6 @@
     <s:String x:Key="s_QA_ConnectedFrom">Следует из</s:String>
     <s:String x:Key="s_Question_Tooltip_AddChildQuestion">Добавить вопрос к этому ответу</s:String>
     <s:String x:Key="s_Question_Tooltip_AddChildAnswer">Добавить ответ к этому вопросу</s:String>
-
     <TextBlock x:Key="s_Question_Tooltip_IsRoot">
         Корневой ли вопрос
         <LineBreak />
@@ -509,6 +508,7 @@
             Случайное действие будет выбрано из тех действий, которые реально выполнить
         </Span>
     </TextBlock>
+    <s:String x:Key="s_CommandAction_Tooltip_Loop">Начало блока действий, которые будет выполнены несколько раз</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_TogglePackActivity">Оставьте поле пустым чтобы переключить все коллекции</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_MouseMove">Можно выбрать с помощью кнопки &quot;Выбрать&quot;</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Например: http://ya.ru</s:String>
@@ -524,11 +524,11 @@
     <!--#region Enums-->
     <!--  VoiceCommandMode -->
     <s:String x:Key="s_VoiceCommandMode_Default">Без ключевых слов</s:String>
-    <s:String x:Key="s_VoiceCommandMode_Keyword">Требовать ключевое слово перед командой</s:String>
+    <s:String x:Key="s_VoiceCommandMode_Keyword">Ключевое слово перед командой</s:String>
     <!--  StateSwitchingAction -->
     <s:String x:Key="s_TextTypingMode_Default">Обычная диктовка текста</s:String>
-    <s:String x:Key="s_TextTypingMode_Prefix">Требовать ключевое слово перед диктовкой</s:String>
-    <s:String x:Key="s_TextTypingMode_Postfix">Требовать ключевое слово после диктовки</s:String>
+    <s:String x:Key="s_TextTypingMode_Prefix">Ключевое слово перед диктовкой</s:String>
+    <s:String x:Key="s_TextTypingMode_Postfix">Ключевое слово после диктовки</s:String>
     <!--  StateSwitchingAction -->
     <s:String x:Key="s_StateSwitchingAction_Toggle">Переключить</s:String>
     <s:String x:Key="s_StateSwitchingAction_Enable">Включить</s:String>
@@ -589,6 +589,7 @@
     <s:String x:Key="s_ActionType_MouseScroll">Прокрутить колесо мыши</s:String>
     <s:String x:Key="s_ActionType_TogglePackActivity">Вкл/Выкл коллекцию</s:String>
     <s:String x:Key="s_ActionType_RandomActionBlock">Блок случайного действия</s:String>
+    <s:String x:Key="s_ActionType_Loop">Цикл</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
@@ -668,8 +669,8 @@
     <s:String x:Key="s_Settings_Label_TextToSpeechService">Сервис произношения голоса</s:String>
     <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Голосовое управление сайтами</s:String>
     <s:String x:Key="s_Settings_Label_UseCommunication">Общение</s:String>
-    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Автоматически расставлять точки и запятые, писать с большой буквы</s:String>
-    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Набирать текст нажимая клавиши, а не вставлять через буффер обмена</s:String>
+    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Автоматическая орфография</s:String>
+    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Клавиатурный ввод текста</s:String>
     <s:String x:Key="s_Settings_Label_RestoreBackUp">Восстановить предыдущее сохранение из хранилища</s:String>
     <s:String x:Key="s_Settings_Label_RestoreSuccess">Восстановление данных прошло успешно</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
@@ -755,9 +756,11 @@
     </TextBlock>
 
     <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
-        Работает только при автоматической записи звука
+        Автоматически расставлять точки и запятые, писать с большой буквы
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Работает только при автоматической записи звука;
+            <LineBreak />
             Текст будет писаться с большой буквы при смене текстового поля и при наборе нового предложения;
             <LineBreak />
             Запятая ставится, если вы сделаете паузу на промежуток от 2 до 4 секунд(стандартные значения);
@@ -767,7 +770,7 @@
     </TextBlock>
     
     <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
-        Бета версия. Включать на свой страх и риск.
+        Набирать текст нажимая клавиши, а не вставлять через буффер обмена
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
             Поддерживаются раскладки клавиатуры: US, Russian, Ukrainian.
