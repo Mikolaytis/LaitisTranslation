@@ -647,7 +647,6 @@
     <s:String x:Key="s_Service_Limited">limits</s:String>
     
     <s:String x:Key="s_Logger_Clear">Clear events</s:String>
-    <s:String x:Key="s_Logger_ItemsCopied">Events are copied</s:String>
     <s:String x:Key="s_Logger_ExtendedMode">Extended mode</s:String>
     
     <s:String x:Key="s_Settings_Default_CommandStarter">Hey Siri/ОК Google/Hey bro</s:String>
@@ -773,12 +772,6 @@
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
             Supported keyboard layouts: US, Russian, Ukrainian.
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="s_Settings_Tooltip_IsTypingAutoCorrect">
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Only works if the string exactly matches 
         </Span>
     </TextBlock>
 
@@ -965,7 +958,7 @@
                 </ListItem>
             </List>
             <Paragraph TextIndent="40">
-                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration">Additional information is in the gitHub repository</controls:Hyperlink>
+                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration/wiki">All info and examples are in gitHub repository</controls:Hyperlink>
             </Paragraph>
         </Section>
         
