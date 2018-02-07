@@ -46,6 +46,56 @@
     <s:String x:Key="s_Account_LogInFeature5">Достижения</s:String>
     <!--#endregion-->
 
+    <!--#region Achievements-->
+    <s:String x:Key="s_Ach_Social_Name">Социальный</s:String>
+    <s:String x:Key="s_Ach_Social_Desc">Привязать аккаунт соцсети</s:String>
+    
+    <s:String x:Key="s_Ach_Publications1_Name">Первый шаг</s:String>
+    <s:String x:Key="s_Ach_Publications1_Desc">1 успешная публикация</s:String>
+    
+    <s:String x:Key="s_Ach_PacksPublished1_Name">Создатель коллекции</s:String>
+    <s:String x:Key="s_Ach_PacksPublished1_Desc">Успешно опубликовать коллекцию</s:String>
+    
+    <s:String x:Key="s_Ach_Commands100_Name">Новичек</s:String>
+    <s:String x:Key="s_Ach_Commands100_Desc">Выполнить 100 голосовых команд</s:String>
+    
+    <s:String x:Key="s_Ach_Commands500_Name">Помнит команды</s:String>
+    <s:String x:Key="s_Ach_Commands500_Desc">Выполнить 500 голосовых команд</s:String>
+    
+    <s:String x:Key="s_Ach_Commands1000_Name">Эксперт</s:String>
+    <s:String x:Key="s_Ach_Commands1000_Desc">Выполнить 1000 голосовых команд</s:String>
+    
+    <s:String x:Key="s_Ach_Commands5000_Name">Мастер</s:String>
+    <s:String x:Key="s_Ach_Commands5000_Desc">Выполнить 5000 голосовых команд</s:String>
+    
+    <s:String x:Key="s_Ach_Donate_Name">Благодетель</s:String>
+    <s:String x:Key="s_Ach_Donate_Desc">Первое пожертвование Laitis</s:String>
+    
+    <s:String x:Key="s_Ach_Dictate10000_Name">Научился диктовать</s:String>
+    <s:String x:Key="s_Ach_Dictate10000_Desc">Надиктовать 10,000 символов</s:String>
+    
+    <s:String x:Key="s_Ach_Dictate50000_Name">Диктую везде и всюду</s:String>
+    <s:String x:Key="s_Ach_Dictate50000_Desc">Надиктовать 50,000 символов</s:String>
+    
+    <s:String x:Key="s_Ach_Dictate100000_Name">Мастер диктовки</s:String>
+    <s:String x:Key="s_Ach_Dictate100000_Desc">Надиктовать 100,000 символов</s:String>
+    
+    <s:String x:Key="s_Ach_Dictate500000_Name">Бог диктовки</s:String>
+    <s:String x:Key="s_Ach_Dictate500000_Desc">Надиктовать 500,000 символов</s:String>
+    
+    <s:String x:Key="s_Ach_Publications5_Name">Серьезный вклад</s:String>
+    <s:String x:Key="s_Ach_Publications5_Desc">5 успешных публикаций</s:String>
+    
+    <s:String x:Key="s_Ach_Publications20_Name">Большой вклад</s:String>
+    <s:String x:Key="s_Ach_Publications20_Desc">20 успешных публикаций</s:String>
+    
+    <s:String x:Key="s_Ach_Publications50_Name">Огромный вклад</s:String>
+    <s:String x:Key="s_Ach_Publications50_Desc">50 успешных публикаций</s:String>
+    
+    <s:String x:Key="s_Ach_Publications200_Name">Колоссальный вклад</s:String>
+    <s:String x:Key="s_Ach_Publications200_Desc">200 успешных публикаций</s:String>
+    <!--#endregion-->
+    
     <!--#region PublicApiHost-->
     <s:String x:Key="s_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
     <s:String x:Key="s_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
@@ -118,6 +168,7 @@
     <!--#endregion-->
 
     <!--#region  Exceptions-->
+    <s:String x:Key="s_ExecutionRestricted">Выполнение запрещено в данных условиях</s:String>
     <s:String x:Key="s_ConnectionProblems">Проблемы с подключением к серверу</s:String>
     <s:String x:Key="s_WrongCredentials">Авторизация не успешна</s:String>
     <s:String x:Key="s_VoiceCommandsDisabled">Голосовые команды отключены</s:String>
@@ -155,6 +206,7 @@
     <s:String x:Key="s_Buttons_Hide">Свернуть</s:String>
     <s:String x:Key="s_Buttons_Pause">Приостановить выполнение команд</s:String>
     <s:String x:Key="s_Buttons_Unpause">Возобновить выполнение команд</s:String>
+    <s:String x:Key="s_Buttons_Stop">Остановить воспроизведение</s:String>
     <!--#endregion-->
 
     <!--#region Commands List-->
@@ -216,6 +268,8 @@
     <s:String x:Key="s_FailToFindRecordingDevice">Не найдено устройство записи</s:String>
     <s:String x:Key="s_RecordingStartedOnDevice">Запущена запись с устройства</s:String>
     <s:String x:Key="s_RecordingStoppedOnDevice">Остановлена запись с устройства</s:String>
+    <s:String x:Key="s_SilenceTresholdIncreasedTo">Запись слишком долгая или громкая. Порог тишины увеличен до</s:String>
+    <s:String x:Key="s_SilenceTresholdReducedTo">Очень тихо. Порог тишины уменьшен до</s:String>
 
     <s:String x:Key="s_ClipboardIsBusy">Буфер обмена используется другой программой</s:String>
     <s:String x:Key="s_ClipboardIsBusyAffectedBy">Буфер обмена заблокирован программой</s:String>
@@ -259,6 +313,7 @@
     <!--#endregion-->
 
     <!--#region Publisher-->
+    <s:String x:Key="s_IAcceptThisRules">Я принимаю данные правила</s:String>
     <s:String x:Key="s_AutorizationNeeded">Авторизируйтесь в систему</s:String>
     <s:String x:Key="s_CollectionNameIsTooShort">Название коллекции слишком короткое</s:String>
     <s:String x:Key="s_ChangesNotFound">Не найдено изменений для публикации</s:String>
@@ -305,11 +360,14 @@
     <!--#endregion-->
 
     <!--#region Common Labels-->
-    <s:String x:Key="s_Images">Изображения</s:String>
     <s:String x:Key="s_SelectImage">Выбор изображения</s:String>
+    <s:String x:Key="s_From">с</s:String>
+    <s:String x:Key="s_To">на</s:String>
+    <s:String x:Key="s_ReplaceIn">Заменить в</s:String>
     <s:String x:Key="s_In">в</s:String>
     <s:String x:Key="s_Ms">мс</s:String>
     <s:String x:Key="s_And">и</s:String>
+    <s:String x:Key="s_Back">Назад</s:String>
     <s:String x:Key="s_Hello">Привет</s:String>
     <s:String x:Key="s_Understand">Понятно</s:String>
     <s:String x:Key="s_Well">Хорошо</s:String>
@@ -319,7 +377,6 @@
     <s:String x:Key="s_Stop">Стоп</s:String>
     <s:String x:Key="s_Send">Отправить</s:String>
     <s:String x:Key="s_Play">Воспроизвести</s:String>
-    <s:String x:Key="s_Word">Слово</s:String>
     <s:String x:Key="s_Wait">Подождать</s:String>
     <s:String x:Key="s_Open">Открыть</s:String>
     <s:String x:Key="s_Exit">Выход</s:String>
@@ -329,6 +386,7 @@
     <s:String x:Key="s_Times">раз</s:String>
     <s:String x:Key="s_Email">Email</s:String>
     <s:String x:Key="s_Opera">Опера</s:String>
+    <s:String x:Key="s_Upload">загрузить</s:String>
     <s:String x:Key="s_Chrome">Chrome</s:String>
     <s:String x:Key="s_FireFox">Firefox</s:String>
     <s:String x:Key="s_Yandex">Яндекс</s:String>
@@ -336,18 +394,14 @@
     <s:String x:Key="s_Password">Пароль</s:String>
     <s:String x:Key="s_RepeatPassword">Повторите пароль</s:String>
     <s:String x:Key="s_NickName">Ник</s:String>
-    <s:String x:Key="s_Today">сегодня</s:String>
     <s:String x:Key="s_Paste">Вставить</s:String>
     <s:String x:Key="s_Rules">Автозамены</s:String>
-    <s:String x:Key="s_Voice">Голос</s:String>
     <s:String x:Key="s_Top10">Топ 10</s:String>
     <s:String x:Key="s_Rub">руб.</s:String>
     <s:String x:Key="s_Donate">Пожертвовать</s:String>
     <s:String x:Key="s_Search">Поиск</s:String>
     <s:String x:Key="s_Browse">Выбрать</s:String>
     <s:String x:Key="s_Remove">Удалить</s:String>
-    <s:String x:Key="s_Removed">Удалено</s:String>
-    <s:String x:Key="s_Tester">Тестировщик</s:String>
     <s:String x:Key="s_Execute">Выполнить</s:String>
     <s:String x:Key="s_Refresh">Обновить</s:String>
     <s:String x:Key="s_Loading">Загрузка</s:String>
@@ -359,8 +413,7 @@
     <s:String x:Key="s_Settings">Настройки</s:String>
     <s:String x:Key="s_OnServer">На сервере</s:String>
     <s:String x:Key="s_Close">Закрыть</s:String>
-    <s:String x:Key="s_Messages">сообщений</s:String>
-    <s:String x:Key="s_Vkontakte">ВКонтакте</s:String>
+    <s:String x:Key="s_EventHasCome">Событие настало</s:String>
     <s:String x:Key="s_Confidant">Доверенное лицо</s:String>
     <s:String x:Key="s_Dublicate">Дубликат</s:String>
     <s:String x:Key="s_Executing">Выполняю</s:String>
@@ -375,7 +428,7 @@
     <s:String x:Key="s_Publication">Публикация</s:String>
     <s:String x:Key="s_AddCategory">Новая категория</s:String>
     <s:String x:Key="s_NewCategory">Новая категория</s:String>
-    <s:String x:Key="s_SaveChanges">Сохранить изменения</s:String>
+    <s:String x:Key="s_Save">Сохранить</s:String>
     <s:String x:Key="s_Achievements">Достижения</s:String>
     <s:String x:Key="s_IfProcessOpen">Если открыта программа</s:String>
     <s:String x:Key="s_IfWebsiteOpen">Если открыт веб-сайт</s:String>
@@ -391,10 +444,10 @@
     <s:String x:Key="s_DonationValueInvalid">Неправильное значение</s:String>
     <s:String x:Key="s_DonateToLaitis">Пожертвовать деньги Laitis</s:String>
 
-
-    <s:String x:Key="s_AccessDenied">Доступ закрыт</s:String>
     <s:String x:Key="s_Size">Размер</s:String>
     <s:String x:Key="s_Download">Скачать</s:String>
+    <s:String x:Key="s_DownloadStarted">загрузка начата</s:String>
+    <s:String x:Key="s_DownloadCompleted">загрузка завершена</s:String>
     <s:String x:Key="s_HoldToConfirm">Зажмите для подтверждения</s:String>
     <s:String x:Key="s_Cancel">Отменить</s:String>
 
@@ -420,13 +473,6 @@
             <Run Text="{StaticResource s_HoldToConfirm}" />
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_Tooltip_DownloadButton">
-        <Run Text="{StaticResource s_Download}" />
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
-        </Span>
-    </TextBlock>
     <!--#endregion-->
 
     <!--#region Browser Controller-->
@@ -446,17 +492,18 @@
     <s:String x:Key="s_CommandEditor_Variables">Переменные:</s:String>
     <s:String x:Key="s_CommandEditor_SelectProcess">Выбрать процесс</s:String>
 
-    <s:String x:Key="s_CommandAction_AddCondition">Условие</s:String>
-    <s:String x:Key="s_CommandAction_AddAction">Действие</s:String>
-    <s:String x:Key="s_CommandAction_AddWebAction">Веб-Действие</s:String>
-
+    <s:String x:Key="s_CommandAction_AddCondition">Добавить Условие</s:String>
+    <s:String x:Key="s_CommandAction_AddAction">Добавить Действие</s:String>
+    <s:String x:Key="s_CommandAction_AddUtilityAction">Добавить Полезное Действие</s:String>
+    <s:String x:Key="s_CommandAction_AddInputAction">Добавить Действие Ввода</s:String>
+    <s:String x:Key="s_CommandAction_AddWebAction">Добавить Веб-Действие</s:String>
+    
     <s:String x:Key="s_CommandAction_Label_OpenFile0">Открыть файл:</s:String>
     <s:String x:Key="s_CommandAction_Label_OpenFile1">Параметры запуска:</s:String>
     <s:String x:Key="s_CommandAction_Label_Hotkeys">Cочетание клавиш:</s:String>
     <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
     <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
     <s:String x:Key="s_CommandAction_Label_Say">Сказать:</s:String>
-    <s:String x:Key="s_CommandAction_Label_PlayAudio">Проиграть аудио:</s:String>
     <s:String x:Key="s_CommandAction_Label_Pause">Подождать:</s:String>
     <s:String x:Key="s_CommandAction_Label_IfProcessSelected">Если активна программа:</s:String>
     <s:String x:Key="s_CommandAction_Label_IfProcessExists">Если запущена программа:</s:String>
@@ -476,7 +523,35 @@
     <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Открыть всплывающее окно:</s:String>
     <s:String x:Key="s_CommandAction_Label_MouseScroll">на:</s:String>
     <s:String x:Key="s_CommandAction_Label_TogglePackActivity">коллекцию:</s:String>
-
+    <s:String x:Key="s_CommandAction_Label_JetAim">Прицелить курсор. Цифры:</s:String>
+    
+    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+        Приостанавливает выполнение действий
+        <LineBreak />
+        Ожидает фразу от пользователя
+        <LineBreak />
+        Записывает значение в переменную с указанным именем
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim">
+        Открывает интерактивный интерфейс перемещения курсора с помощью голоса
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Экран делится на 9 частей 
+            <LineBreak />
+            5 раз нужно назвать часть, в которую надо переместить курсор
+            <LineBreak />
+            Во время выбора можно сказать: Назад, Отмена, Закрыть, Ноль(выбрать заранее)
+        </Span>
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim_Numbers">
+        Цифры можно задать заранее
+        <LineBreak />
+        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
+            Можно подряд, можно через запятую или пробел
+            <LineBreak />
+            Этот параметр можно оставить пустым
+        </Span>
+    </TextBlock>
     <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Параметры запуска приложения (пример: -game cstrike)</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Просто нажмите нужное сочетание</s:String>
     <TextBlock x:Key="s_CommandAction_Tooltip_HotkeysManualInput">
@@ -522,13 +597,16 @@
     <!--#endregion-->
 
     <!--#region Enums-->
+    <!--  ScheduleEventType -->
+    <s:String x:Key="s_ScheduleEventType_At">в</s:String>
+    <s:String x:Key="s_ScheduleEventType_After">через</s:String>
     <!--  VoiceCommandMode -->
     <s:String x:Key="s_VoiceCommandMode_Default">Без ключевых слов</s:String>
     <s:String x:Key="s_VoiceCommandMode_Keyword">Ключевое слово перед командой</s:String>
     <!--  StateSwitchingAction -->
     <s:String x:Key="s_TextTypingMode_Default">Обычная диктовка текста</s:String>
-    <s:String x:Key="s_TextTypingMode_Prefix">Ключевое слово перед диктовкой</s:String>
-    <s:String x:Key="s_TextTypingMode_Postfix">Ключевое слово после диктовки</s:String>
+    <s:String x:Key="s_TextTypingMode_Prefix">Ключевое слово перед текстом</s:String>
+    <s:String x:Key="s_TextTypingMode_Postfix">Ключевое слово после текста</s:String>
     <!--  StateSwitchingAction -->
     <s:String x:Key="s_StateSwitchingAction_Toggle">Переключить</s:String>
     <s:String x:Key="s_StateSwitchingAction_Enable">Включить</s:String>
@@ -563,7 +641,7 @@
     <s:String x:Key="s_ActionType_MouseMove">Переместить курсор</s:String>
     <s:String x:Key="s_ActionType_Say">Сказать</s:String>
     <s:String x:Key="s_ActionType_Type">Вставить текст</s:String>
-    <s:String x:Key="s_ActionType_PlayAudio">Проиграть аудиофайл</s:String>
+    <s:String x:Key="s_ActionType_PlayAudio">Звук/Аудио</s:String>
     <s:String x:Key="s_ActionType_OpenURL">Открыть веб-страницу</s:String>
     <s:String x:Key="s_ActionType_WebPageScript">Выполнить javascript</s:String>
     <s:String x:Key="s_ActionType_Pause">Подождать</s:String>
@@ -572,7 +650,7 @@
     <s:String x:Key="s_ActionType_IfWebsiteSelected">Если открыт вебсайт</s:String>
     <s:String x:Key="s_ActionType_MouseButton">Нажать кнопку мыши</s:String>
     <s:String x:Key="s_ActionType_HttpWebRequest">Веб-запрос</s:String>
-    <s:String x:Key="s_ActionType_SetCustomVariable">Задать значение переменной</s:String>
+    <s:String x:Key="s_ActionType_SetVariableValue">Задать значение переменной</s:String>
     <s:String x:Key="s_ActionType_IfVariableValue">Если значение переменной</s:String>
     <s:String x:Key="s_ActionType_IfWebsiteNavValue">Если на сайте выделено</s:String>
     <s:String x:Key="s_ActionType_ShowWindow">Показать окно</s:String>
@@ -590,6 +668,11 @@
     <s:String x:Key="s_ActionType_TogglePackActivity">Вкл/Выкл коллекцию</s:String>
     <s:String x:Key="s_ActionType_RandomActionBlock">Блок случайного действия</s:String>
     <s:String x:Key="s_ActionType_Loop">Цикл</s:String>
+    <s:String x:Key="s_ActionType_JetAim">Прицелить курсор</s:String>
+    <s:String x:Key="s_ActionType_BatchScript">.bat скрипт</s:String>
+    <s:String x:Key="s_ActionType_VariableReplace">Замена в переменной</s:String>
+    <s:String x:Key="s_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
+    <s:String x:Key="s_ActionType_ScheduleEvent">Запланировать событие</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
@@ -649,10 +732,11 @@
     <s:String x:Key="s_Logger_Clear">Очистить журнал событий</s:String>
     <s:String x:Key="s_Logger_ExtendedMode">Подробный режим</s:String>
     
-    <s:String x:Key="s_Settings_Default_CommandStarter">Эй ты/ОК Google/Siri/Эй Siri</s:String>
-    <s:String x:Key="s_Settings_Default_TextInputStarter">написать</s:String>
+    <s:String x:Key="s_Settings_Default_CommandStarter">Эй ты/ОК Google/Siri/Эй Siri/Джарвис</s:String>
+    <s:String x:Key="s_Settings_Default_TextInputStarter">написать/напечатать/диктовать</s:String>
     <s:String x:Key="s_Settings_Default_Language">ru-RU</s:String>
     <s:String x:Key="s_Settings_ListenLastRecording">Послушать последнюю запись голоса</s:String>
+    <s:String x:Key="s_Settings_ScheduledEvents">Будущие действия</s:String>
     
     <!--#region Settings Labels-->
     <s:String x:Key="s_Settings_Label_VoiceCommands">Голосовые команды</s:String>
@@ -776,8 +860,6 @@
         </Span>
     </TextBlock>
     
-    <s:String x:Key="s_Settings_Text_GoogleService">После 10-20 запросов перестает работать</s:String>
-    
     <!--#endregion-->
 
     <!--#endregion-->
@@ -877,10 +959,10 @@
                     <Paragraph FontStyle="Italic">
                         Проверьте, установлено ли в вашем браузере расширение Laitis. Без расширения команды управления веб-сайтами работать не будут.
                         Скачать его можно тут: 
-                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Chrome</controls:Hyperlink>,
-                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Yandex</controls:Hyperlink>,
-                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc?hl=ru">Vivaldi</controls:Hyperlink>,
-                        <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/?display=en">Opera</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Chrome</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Yandex</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Vivaldi</controls:Hyperlink>,
+                        <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/">Opera</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
                     </Paragraph>
                 </ListItem>
@@ -1025,5 +1107,56 @@
 
     </FlowDocument>
     <!--#endregion-->
+    
+    <FlowDocument x:Key="s_PublisherFUE">
+        <Paragraph FontSize="20" TextAlignment="Center">Это функционал публикации ваших изменений и новых команд на сервер</Paragraph>
+
+        <Paragraph>Процесс:</Paragraph>
+        <List MarkerStyle="Decimal">
+            <ListItem FontStyle="Italic">
+                <Paragraph>Вы публикуете новую коллекцию или изменения в какой-то из коллекций.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Сообщество оценивает вашу публикацию.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Модератор проверяет вашу публикацию на соответствие правилам и принимает/отклоняет ее.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Изменения и новые команды из принятых публикаций попадают в сообщество.</Paragraph>
+            </ListItem>
+        </List>
+
+        <Paragraph>Правила:</Paragraph>
+        <List MarkerStyle="Decimal">
+            <ListItem FontStyle="Italic">
+                <Paragraph>Вы несете ответственность за контент, который публикуете.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Контент, который запрещен для детей может быть только в коллекциях с 18+ в названии.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Публикуйте только те команды, которыми хотите поделится с другими пользователями.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Команды должны корректно работать у любого пользователя.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Команды не должны ломать команды из других коллекций.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Команды не должны навредить компьютеру пользователей.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Команды не должны нарушать работу Laitis.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Ваши изменения и новые команды должны соответствовать коллекции.</Paragraph>
+            </ListItem>
+            <ListItem FontStyle="Italic">
+                <Paragraph>Несоблюдение правил приведет к блокировке.</Paragraph>
+            </ListItem>
+        </List>
+    </FlowDocument>
 
 </ResourceDictionary>
