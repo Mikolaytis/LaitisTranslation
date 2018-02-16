@@ -167,7 +167,7 @@
     </TextBlock>
     <!--#endregion-->
 
-    <!--#region  Exceptions-->
+    <!--#region Exceptions-->
     <s:String x:Key="s_ExecutionRestricted">Execution is restricted in these conditions</s:String>
     <s:String x:Key="s_ConnectionProblems">Server connection problem</s:String>
     <s:String x:Key="s_WrongCredentials">Wrong credentials</s:String>
@@ -178,10 +178,9 @@
     <s:String x:Key="s_DataIsToBig">Too big data to show</s:String>
     <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
     <s:String x:Key="s_UnknownErrorOccured">Oops! Unknown error occured!</s:String>
-    <s:String x:Key="s_SendingInfoAndRestarting">Sending info, saving everything and restarting</s:String>
-    <s:String x:Key="s_OutOfMemoryException">Out of memory to continue work of Laitis</s:String>
+    <s:String x:Key="s_OutOfMemoryException">Out of memory to continue work of Laitis. Restarting Laitis...</s:String>
     <s:String x:Key="s_DiskIsFull">Disk is full to continue work of Laitis</s:String>
-    <s:String x:Key="s_UIAutomationDllMissing">UIAutomation.dll library not found. ACtion will not work.</s:String>
+    <s:String x:Key="s_UIAutomationDllMissing">UIAutomation.dll library not found. Mouse Move Actions will not work.</s:String>
     <s:String x:Key="s_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
     <!--#endregion-->
 
@@ -295,7 +294,7 @@
     <s:String x:Key="s_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
     <!--#endregion-->
 
-    <!--#region  Community-->
+    <!--#region Community-->
     <s:String x:Key="s_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
     <s:String x:Key="s_UsersPublications">Users publications:</s:String>
     <s:String x:Key="s_Downloads">Downloads</s:String>
@@ -359,6 +358,22 @@
     <s:String x:Key="s_Version">Version</s:String>
     <!--#endregion-->
 
+    <!--#region Scheduler-->
+    <s:String x:Key="s_Prefixes">at,on,the,a,of,from,for</s:String>
+    <s:String x:Key="s_AndAHalf">and a half</s:String>
+    <s:String x:Key="s_Half">half</s:String>
+    <s:String x:Key="s_After">after,in,next</s:String>
+    <s:String x:Key="s_Mornings">a.m.,am</s:String>
+    <s:String x:Key="s_Evenings">p.m.,pm</s:String>
+    <s:String x:Key="s_DayParts">midnight,morning,afternoon,midday,evening,night</s:String>
+    <s:String x:Key="s_Numbers">zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeed,eighteen,nineteen</s:String>
+    <s:String x:Key="s_HighNumbers">twenty,thirty,forty,fifty,sixty,seventy,eighty,ninety</s:String>
+    <s:String x:Key="s_WeekDays">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</s:String>
+    <s:String x:Key="s_Months">January,February,March,April,May,June,July,August,September,October,November,December</s:String>
+    <s:String x:Key="s_TimeUnits">sec,min,hour,day,week,month,year/annual</s:String>
+    <s:String x:Key="s_SpecialModifiers">now/right now,tomorrow/next day,day after tomorrow</s:String>
+    <!--#endregion-->
+    
     <!--#region Common Labels-->
     <s:String x:Key="s_SelectImage">Select image</s:String>
     <s:String x:Key="s_From">from</s:String>
@@ -525,6 +540,11 @@
     <s:String x:Key="s_CommandAction_Label_TogglePackActivity">pack:</s:String>
     <s:String x:Key="s_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
     
+    <TextBlock x:Key="s_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
+        Actions below will be executed after scheduled event DateTime
+        <LineBreak />
+        If PC is sleeping and Laitis was enabled - PC will wake up if event time is not 00:00
+    </TextBlock>
     <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Pauses actions execution
         <LineBreak />
@@ -593,7 +613,7 @@
     <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. If you do not know what CSS is - you cannot create that kind of commands</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_NavClick">You can leave that field empty or enter CSS-selector</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Else">Logical Else for If condition</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Ending for If condition and of random action list. Not required, if there is no actions below.</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Ending for If condition and other blocks. Not required, if there is no actions below.</s:String>
     <!--#endregion-->
 
     <!--#region Enums-->
@@ -673,6 +693,7 @@
     <s:String x:Key="s_ActionType_VariableReplace">Replace in variable</s:String>
     <s:String x:Key="s_ActionType_WaitNextCommand">Wait next command</s:String>
     <s:String x:Key="s_ActionType_ScheduleEvent">Schedule event</s:String>
+    <s:String x:Key="s_ActionType_WaitAudioEnd">Wait audio end</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -696,27 +717,6 @@
     <s:String x:Key="s_ShowWindowCommandType_Maximize">Maximize</s:String>
     <s:String x:Key="s_ShowWindowCommandType_Minimize">Minimize</s:String>
     <s:String x:Key="s_ShowWindowCommandType_Hide">Hide</s:String>
-    <!--  Day of Week-->
-    <s:String x:Key="s_Monday">Monday</s:String>
-    <s:String x:Key="s_Tuesday">Tuesday</s:String>
-    <s:String x:Key="s_Wednesday">Wednesday</s:String>
-    <s:String x:Key="s_Thursday">Thursday</s:String>
-    <s:String x:Key="s_Friday">Friday</s:String>
-    <s:String x:Key="s_Saturday">Saturday</s:String>
-    <s:String x:Key="s_Sunday">Sunday</s:String>
-    <!--  Month-->
-    <s:String x:Key="s_January">January</s:String>
-    <s:String x:Key="s_February">February</s:String>
-    <s:String x:Key="s_March">March</s:String>
-    <s:String x:Key="s_April">April</s:String>
-    <s:String x:Key="s_May">May</s:String>
-    <s:String x:Key="s_June">June</s:String>
-    <s:String x:Key="s_July">July</s:String>
-    <s:String x:Key="s_August">August</s:String>
-    <s:String x:Key="s_September">September</s:String>
-    <s:String x:Key="s_October">October</s:String>
-    <s:String x:Key="s_November">November</s:String>
-    <s:String x:Key="s_December">December</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
@@ -968,6 +968,27 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
+                Can I use my Bluetooth headset to work with Laitis?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Yes. Connect it to the computer and select in Laitis your headset, as a voice recording device.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Can I use my phone as a microphone for Laitis?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Yes. Download and install <controls:Hyperlink NavigateUri="http://www.wirelessorange.com/womic/">WO Mic</controls:Hyperlink> app on your PC and phone. 
+                        Don't forget to install their mic driver to your PC. Works over Bluetooth, Wifi, and even USB cable.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
                 Why there is no support for OS X, iOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
@@ -1109,7 +1130,7 @@
     <!--#endregion-->
     
     <FlowDocument x:Key="s_PublisherFUE">
-        <Paragraph FontSize="20" TextAlignment="Center">This is the functionality of publishing your changes and new commands to the server</Paragraph>
+        <Paragraph FontSize="20" TextAlignment="Center">This is the functionality of publishing your changes and new commands to the community</Paragraph>
 
         <Paragraph>Process:</Paragraph>
         <List MarkerStyle="Decimal">

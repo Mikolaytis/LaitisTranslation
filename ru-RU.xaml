@@ -167,7 +167,7 @@
     </TextBlock>
     <!--#endregion-->
 
-    <!--#region  Exceptions-->
+    <!--#region Exceptions-->
     <s:String x:Key="s_ExecutionRestricted">Выполнение запрещено в данных условиях</s:String>
     <s:String x:Key="s_ConnectionProblems">Проблемы с подключением к серверу</s:String>
     <s:String x:Key="s_WrongCredentials">Авторизация не успешна</s:String>
@@ -178,8 +178,7 @@
     <s:String x:Key="s_DataIsToBig">Слишком много данных, чтобы их отобразить</s:String>
     <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
     <s:String x:Key="s_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
-    <s:String x:Key="s_SendingInfoAndRestarting">Отправляем данные, все сохраняем и перезапускаем</s:String>
-    <s:String x:Key="s_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis</s:String>
+    <s:String x:Key="s_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis. Перезапуск Laitis...</s:String>
     <s:String x:Key="s_DiskIsFull">Недостаточно места на диске для работы Laitis</s:String>
     <s:String x:Key="s_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
     <s:String x:Key="s_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
@@ -295,7 +294,7 @@
     <s:String x:Key="s_SpaceBeforeSeparator">т.к. текстовое поле осталось прежним, добавлю в начало фразы пробел</s:String>
     <!--#endregion-->
 
-    <!--#region  Community-->
+    <!--#region Community-->
     <s:String x:Key="s_SharePromotion">Голосовое управление компьютером и набор текста с помощью Laitis. Установи сейчас и попробуй. Бесплатно и без рекламы.</s:String>
     <s:String x:Key="s_UsersPublications">Публикации пользователей:</s:String>
     <s:String x:Key="s_Downloads">Загрузок</s:String>
@@ -359,6 +358,22 @@
     <s:String x:Key="s_Version">Версия</s:String>
     <!--#endregion-->
 
+    <!--#region Scheduler-->
+    <s:String x:Key="s_Prefixes">в,во,с</s:String>
+    <s:String x:Key="s_AndAHalf">с половиной</s:String>
+    <s:String x:Key="s_Half">пол</s:String>
+    <s:String x:Key="s_After">через,на,на следующий,на следующей</s:String>
+    <s:String x:Key="s_Mornings">утра,ночи</s:String>
+    <s:String x:Key="s_Evenings">дня,вечера</s:String>
+    <s:String x:Key="s_DayParts">полночь,утром,днем,полдень,вечером,ночью</s:String>
+    <s:String x:Key="s_Numbers">ноль,один,два,три,четыре,пять,шесть,семь,восемь,девять,десять,одинадцать,двенадцать,тринадцать,четырнадцать,пятнадцать,шестнадцать,семнадцать,восемнадцать,девятнадцать</s:String>
+    <s:String x:Key="s_HighNumbers">двадцать,тридцать,сорок,пятдесят,шестдесят,семдесят,восемдесят,девяносто</s:String>
+    <s:String x:Key="s_WeekDays">Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота</s:String>
+    <s:String x:Key="s_Months">Январь,Февраль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь</s:String>
+    <s:String x:Key="s_TimeUnits">сек,мин,час,дней/дня/ден,нед,мес,год</s:String>
+    <s:String x:Key="s_SpecialModifiers">щас/прям щас/сейчас/прямо сейчас,завтра,послезавтра</s:String>
+    <!--#endregion-->
+    
     <!--#region Common Labels-->
     <s:String x:Key="s_SelectImage">Выбор изображения</s:String>
     <s:String x:Key="s_From">с</s:String>
@@ -525,6 +540,11 @@
     <s:String x:Key="s_CommandAction_Label_TogglePackActivity">коллекцию:</s:String>
     <s:String x:Key="s_CommandAction_Label_JetAim">Прицелить курсор. Цифры:</s:String>
     
+    <TextBlock x:Key="s_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
+        Действия ниже будут выполнены после времени, указанного в запланированном событии
+        <LineBreak />
+        Если компьютер в состоянии сна и Laitis был включен - комп проснется если время события не 00:00.
+    </TextBlock>
     <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Приостанавливает выполнение действий
         <LineBreak />
@@ -593,7 +613,7 @@
     <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. Если вы не знаете CSS - вы не сможете правильно создать это действие</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_NavClick">Это поле можно оставить пустым или ввести CSS-selector</s:String>
     <s:String x:Key="s_CommandAction_Tooltip_Else">Логическое Иначе для условия выше</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Завершение логического условия Если и Списка случайных действий. Не обязательное, если ниже нет действий.</s:String>
+    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Завершение логического условия Если и других конструкций. Не обязательное, если ниже нет действий.</s:String>
     <!--#endregion-->
 
     <!--#region Enums-->
@@ -673,6 +693,7 @@
     <s:String x:Key="s_ActionType_VariableReplace">Замена в переменной</s:String>
     <s:String x:Key="s_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
     <s:String x:Key="s_ActionType_ScheduleEvent">Запланировать событие</s:String>
+    <s:String x:Key="s_ActionType_WaitAudioEnd">Подождать окончания аудио</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
@@ -696,27 +717,6 @@
     <s:String x:Key="s_ShowWindowCommandType_Maximize">Растянуть</s:String>
     <s:String x:Key="s_ShowWindowCommandType_Minimize">Свернуть</s:String>
     <s:String x:Key="s_ShowWindowCommandType_Hide">Спрятать</s:String>
-    <!--  Day of Week-->
-    <s:String x:Key="s_Monday">Понедельник</s:String>
-    <s:String x:Key="s_Tuesday">Вторник</s:String>
-    <s:String x:Key="s_Wednesday">Среда</s:String>
-    <s:String x:Key="s_Thursday">Четверг</s:String>
-    <s:String x:Key="s_Friday">Пятница</s:String>
-    <s:String x:Key="s_Saturday">Суббота</s:String>
-    <s:String x:Key="s_Sunday">Воскресенье</s:String>
-    <!--  Month-->
-    <s:String x:Key="s_January">Январь</s:String>
-    <s:String x:Key="s_February">Февраль</s:String>
-    <s:String x:Key="s_March">Март</s:String>
-    <s:String x:Key="s_April">Апрель</s:String>
-    <s:String x:Key="s_May">Май</s:String>
-    <s:String x:Key="s_June">Июнь</s:String>
-    <s:String x:Key="s_July">Июль</s:String>
-    <s:String x:Key="s_August">Август</s:String>
-    <s:String x:Key="s_September">Сентябрь</s:String>
-    <s:String x:Key="s_October">Октябрь</s:String>
-    <s:String x:Key="s_November">Ноябрь</s:String>
-    <s:String x:Key="s_December">Декабрь</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
@@ -968,6 +968,27 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я использовать мою Bluetooth гарнитуру для работы с Laitis?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Да. Подключайте ее к компьютеру и выберите в Laitis вашу гарнитуру, как устройство записи голоса.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Могу ли я использовать мой телефон как микрофон для Laitis?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Да. Скачайте на телефон и компьютер приложение <controls:Hyperlink NavigateUri="http://www.wirelessorange.com/womic/">WO Mic</controls:Hyperlink> и установите их драйвер микрофона.
+                        Работает и через Bluetooth, и через Wifi, и даже по USB кабелю.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
                 Почему нет поддержки OS X, IOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
@@ -1109,7 +1130,7 @@
     <!--#endregion-->
     
     <FlowDocument x:Key="s_PublisherFUE">
-        <Paragraph FontSize="20" TextAlignment="Center">Это функционал публикации ваших изменений и новых команд на сервер</Paragraph>
+        <Paragraph FontSize="20" TextAlignment="Center">Это функционал публикации ваших изменений и новых команд в сообщество</Paragraph>
 
         <Paragraph>Процесс:</Paragraph>
         <List MarkerStyle="Decimal">
