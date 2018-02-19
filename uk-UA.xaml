@@ -23,7 +23,7 @@
     <!--#endregion-->
 
     <!--#region Account-->
-    <s:String x:Key="s_Account_LogIn">Вихід</s:String>
+    <s:String x:Key="s_Account_LogIn">Увійти</s:String>
     <s:String x:Key="s_Account_Registration">Реєстрація</s:String>
     <s:String x:Key="s_Account_Register">Створити</s:String>
     <s:String x:Key="s_Account_SymbolsMin">Не менше {0} символів</s:String>
@@ -785,13 +785,13 @@
 
     <!--#region Template Texts-->
     <ControlTemplate x:Key="s_Settings_Text_YandexService">
-        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключанія до сервісу Яндекса потрібно:
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для підключення до сервісу Яндекса потрібно:
   1) Аккаунт Яндекс <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
   2) Увійти в кабінет розробника і отримати особистий ключ на використання SpeechKit <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
   3) Вставити ключ в текстове поле нижче</TextBlock>
     </ControlTemplate>
     <ControlTemplate x:Key="s_Settings_Text_BingService">
-        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключанія до сервісу Bing потрібно:
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для підключення до сервісу Bing потрібно:
   1) Відкрити посилання <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
   2) Вибрати Speech, Bing Speech API, увійти в будь-який із запропонованих акаунтів                  
   3) Вставити перший ключ в текстове поле нижче</TextBlock>
@@ -803,7 +803,7 @@
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для додавання голосів треба завантажувати мовні пакети Windows або сторонні голосові движки, наприклад Ivona</TextBlock>
     </ControlTemplate>
     <ControlTemplate x:Key="s_Settings_Text_AcapelaService">
-        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключанія до сервісу Acapela потрібно:
+        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для підключення до сервісу Acapela потрібно:
   1) Перейти за посиланням <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
   2) Нажати Sign up for free в правому верхньому куті
   3) Ввести запитувані дані (ім'я, емейл, пароль) і зареєструватися
