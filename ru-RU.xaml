@@ -7,156 +7,156 @@
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
     <!--#region App Initialization-->
-    <s:String x:Key="s_Load_WaitForOtherInstanceClosing">Ожидание закрытия другой копии программы</s:String>
-    <s:String x:Key="s_Load_Data">Загрузка данных</s:String>
-    <s:String x:Key="s_Load_UpdateCancelledByUser">Вы отменили критическое обновление. Пожалуйста нажмите да, чтобы обновить программу.</s:String>
-    <s:String x:Key="s_Load_UpdaterFailRestart">Обновление не удалось. Перезапуск обновления.</s:String>
-    <s:String x:Key="s_Load_PerformingUpdate">Обновление программы</s:String>
-    <s:String x:Key="s_Load_AppLoaded">запущен</s:String>
-    <s:String x:Key="s_Load_MandatoryUpdateNeeded">Критическая ошибка загрузки программы. Скачайте последнюю версию программы на веб-сайте laitis.ru, если не поможет - пишите в vk.com/mikolaytis или vk.com/laitisgroup.</s:String>
+    <s:String x:Key="_Load_WaitForOtherInstanceClosing">Ожидание закрытия другой копии программы</s:String>
+    <s:String x:Key="_Load_Data">Загрузка данных</s:String>
+    <s:String x:Key="_Load_UpdateCancelledByUser">Вы отменили критическое обновление. Пожалуйста нажмите да, чтобы обновить программу.</s:String>
+    <s:String x:Key="_Load_UpdaterFailRestart">Обновление не удалось. Перезапуск обновления.</s:String>
+    <s:String x:Key="_Load_PerformingUpdate">Обновление программы</s:String>
+    <s:String x:Key="_Load_AppLoaded">запущен</s:String>
+    <s:String x:Key="_Load_MandatoryUpdateNeeded">Критическая ошибка загрузки программы. Скачайте последнюю версию программы на веб-сайте laitis.ru, если не поможет - пишите в vk.com/mikolaytis или vk.com/laitisgroup.</s:String>
 
-    <s:String x:Key="s_Load_SettingsFail">Сбой загрузки пользовательских данных</s:String>
-    <s:String x:Key="s_Load_SettingsFail_Retry">Попробовать еще</s:String>
-    <s:String x:Key="s_Load_SettingsFail_OpenApp">Открыть программу с данными по умолчанию</s:String>
-    <s:String x:Key="s_Load_SettingsFail_LoadBackup">Загрузить предыдущее сохранение из хранилища</s:String>
-    <s:String x:Key="s_Load_SettingsFail_CloseApp">Закрыть программу</s:String>
+    <s:String x:Key="_Load_SettingsFail">Сбой загрузки пользовательских данных</s:String>
+    <s:String x:Key="_Load_SettingsFail_Retry">Попробовать еще</s:String>
+    <s:String x:Key="_Load_SettingsFail_OpenApp">Открыть программу с данными по умолчанию</s:String>
+    <s:String x:Key="_Load_SettingsFail_LoadBackup">Загрузить предыдущее сохранение из хранилища</s:String>
+    <s:String x:Key="_Load_SettingsFail_CloseApp">Закрыть программу</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
-    <s:String x:Key="s_Account_LogIn">Вход</s:String>
-    <s:String x:Key="s_Account_Registration">Регистрация</s:String>
-    <s:String x:Key="s_Account_Register">Создать</s:String>
-    <s:String x:Key="s_Account_SymbolsMin">Не менее {0} символов</s:String>
-    <s:String x:Key="s_Account_SymbolsMax">Не более {0} символов</s:String>
-    <s:String x:Key="s_Account_InvalidEmail">Не правильный Email</s:String>
-    <s:String x:Key="s_Account_EnterEmail">Введите Email</s:String>
-    <s:String x:Key="s_Account_EnterPassword">Введите пароль</s:String>
-    <s:String x:Key="s_Account_AlreadyExists">Уже используется</s:String>
-    <s:String x:Key="s_Account_EmailCorrect">Email корректен</s:String>
-    <s:String x:Key="s_Account_EnterNickName">Введите Ник</s:String>
-    <s:String x:Key="s_Account_NickNameCorrect">Ник корректен</s:String>
-    <s:String x:Key="s_Account_PaswordsMatch">Пароли совпадают</s:String>
-    <s:String x:Key="s_Account_PasswordsDoNotMatch">Пароли не совпадают</s:String>
-    <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Доступны только буквы латинского алфавита и цифры</s:String>
+    <s:String x:Key="_Account_LogIn">Вход</s:String>
+    <s:String x:Key="_Account_Registration">Регистрация</s:String>
+    <s:String x:Key="_Account_Register">Создать</s:String>
+    <s:String x:Key="_Account_SymbolsMin">Не менее {0} символов</s:String>
+    <s:String x:Key="_Account_SymbolsMax">Не более {0} символов</s:String>
+    <s:String x:Key="_Account_InvalidEmail">Не правильный Email</s:String>
+    <s:String x:Key="_Account_EnterEmail">Введите Email</s:String>
+    <s:String x:Key="_Account_EnterPassword">Введите пароль</s:String>
+    <s:String x:Key="_Account_AlreadyExists">Уже используется</s:String>
+    <s:String x:Key="_Account_EmailCorrect">Email корректен</s:String>
+    <s:String x:Key="_Account_EnterNickName">Введите Ник</s:String>
+    <s:String x:Key="_Account_NickNameCorrect">Ник корректен</s:String>
+    <s:String x:Key="_Account_PaswordsMatch">Пароли совпадают</s:String>
+    <s:String x:Key="_Account_PasswordsDoNotMatch">Пароли не совпадают</s:String>
+    <s:String x:Key="_Account_OnlyLatinCharsAndNumericsAvailable">Доступны только буквы латинского алфавита и цифры</s:String>
     
-    <s:String x:Key="s_Account_LogInFeature1">Публикация изменений</s:String>
-    <s:String x:Key="s_Account_LogInFeature2">Синхронизация настроек</s:String>
-    <s:String x:Key="s_Account_LogInFeature3">Доступ к системе рейтинга</s:String>
-    <s:String x:Key="s_Account_LogInFeature4">Статистика</s:String>
-    <s:String x:Key="s_Account_LogInFeature5">Достижения</s:String>
+    <s:String x:Key="_Account_LogInFeature1">Публикация изменений</s:String>
+    <s:String x:Key="_Account_LogInFeature2">Синхронизация настроек</s:String>
+    <s:String x:Key="_Account_LogInFeature3">Доступ к системе рейтинга</s:String>
+    <s:String x:Key="_Account_LogInFeature4">Статистика</s:String>
+    <s:String x:Key="_Account_LogInFeature5">Достижения</s:String>
     <!--#endregion-->
 
     <!--#region Achievements-->
-    <s:String x:Key="s_Ach_Social_Name">Социальный</s:String>
-    <s:String x:Key="s_Ach_Social_Desc">Привязать аккаунт соцсети</s:String>
+    <s:String x:Key="_Ach_Social_Name">Социальный</s:String>
+    <s:String x:Key="_Ach_Social_Desc">Привязать аккаунт соцсети</s:String>
     
-    <s:String x:Key="s_Ach_Publications1_Name">Первый шаг</s:String>
-    <s:String x:Key="s_Ach_Publications1_Desc">1 успешная публикация</s:String>
+    <s:String x:Key="_Ach_Publications1_Name">Первый шаг</s:String>
+    <s:String x:Key="_Ach_Publications1_Desc">1 успешная публикация</s:String>
     
-    <s:String x:Key="s_Ach_PacksPublished1_Name">Создатель коллекции</s:String>
-    <s:String x:Key="s_Ach_PacksPublished1_Desc">Успешно опубликовать коллекцию</s:String>
+    <s:String x:Key="_Ach_PacksPublished1_Name">Создатель коллекции</s:String>
+    <s:String x:Key="_Ach_PacksPublished1_Desc">Успешно опубликовать коллекцию</s:String>
     
-    <s:String x:Key="s_Ach_Commands100_Name">Новичек</s:String>
-    <s:String x:Key="s_Ach_Commands100_Desc">Выполнить 100 голосовых команд</s:String>
+    <s:String x:Key="_Ach_Commands100_Name">Новичек</s:String>
+    <s:String x:Key="_Ach_Commands100_Desc">Выполнить 100 голосовых команд</s:String>
     
-    <s:String x:Key="s_Ach_Commands500_Name">Помнит команды</s:String>
-    <s:String x:Key="s_Ach_Commands500_Desc">Выполнить 500 голосовых команд</s:String>
+    <s:String x:Key="_Ach_Commands500_Name">Помнит команды</s:String>
+    <s:String x:Key="_Ach_Commands500_Desc">Выполнить 500 голосовых команд</s:String>
     
-    <s:String x:Key="s_Ach_Commands1000_Name">Эксперт</s:String>
-    <s:String x:Key="s_Ach_Commands1000_Desc">Выполнить 1000 голосовых команд</s:String>
+    <s:String x:Key="_Ach_Commands1000_Name">Эксперт</s:String>
+    <s:String x:Key="_Ach_Commands1000_Desc">Выполнить 1000 голосовых команд</s:String>
     
-    <s:String x:Key="s_Ach_Commands5000_Name">Мастер</s:String>
-    <s:String x:Key="s_Ach_Commands5000_Desc">Выполнить 5000 голосовых команд</s:String>
+    <s:String x:Key="_Ach_Commands5000_Name">Мастер</s:String>
+    <s:String x:Key="_Ach_Commands5000_Desc">Выполнить 5000 голосовых команд</s:String>
     
-    <s:String x:Key="s_Ach_Donate_Name">Благодетель</s:String>
-    <s:String x:Key="s_Ach_Donate_Desc">Первое пожертвование Laitis</s:String>
+    <s:String x:Key="_Ach_Donate_Name">Благодетель</s:String>
+    <s:String x:Key="_Ach_Donate_Desc">Первое пожертвование Laitis</s:String>
     
-    <s:String x:Key="s_Ach_Dictate10000_Name">Научился диктовать</s:String>
-    <s:String x:Key="s_Ach_Dictate10000_Desc">Надиктовать 10,000 символов</s:String>
+    <s:String x:Key="_Ach_Dictate10000_Name">Научился диктовать</s:String>
+    <s:String x:Key="_Ach_Dictate10000_Desc">Надиктовать 10,000 символов</s:String>
     
-    <s:String x:Key="s_Ach_Dictate50000_Name">Диктую везде и всюду</s:String>
-    <s:String x:Key="s_Ach_Dictate50000_Desc">Надиктовать 50,000 символов</s:String>
+    <s:String x:Key="_Ach_Dictate50000_Name">Диктую везде и всюду</s:String>
+    <s:String x:Key="_Ach_Dictate50000_Desc">Надиктовать 50,000 символов</s:String>
     
-    <s:String x:Key="s_Ach_Dictate100000_Name">Мастер диктовки</s:String>
-    <s:String x:Key="s_Ach_Dictate100000_Desc">Надиктовать 100,000 символов</s:String>
+    <s:String x:Key="_Ach_Dictate100000_Name">Мастер диктовки</s:String>
+    <s:String x:Key="_Ach_Dictate100000_Desc">Надиктовать 100,000 символов</s:String>
     
-    <s:String x:Key="s_Ach_Dictate500000_Name">Бог диктовки</s:String>
-    <s:String x:Key="s_Ach_Dictate500000_Desc">Надиктовать 500,000 символов</s:String>
+    <s:String x:Key="_Ach_Dictate500000_Name">Бог диктовки</s:String>
+    <s:String x:Key="_Ach_Dictate500000_Desc">Надиктовать 500,000 символов</s:String>
     
-    <s:String x:Key="s_Ach_Publications5_Name">Серьезный вклад</s:String>
-    <s:String x:Key="s_Ach_Publications5_Desc">5 успешных публикаций</s:String>
+    <s:String x:Key="_Ach_Publications5_Name">Серьезный вклад</s:String>
+    <s:String x:Key="_Ach_Publications5_Desc">5 успешных публикаций</s:String>
     
-    <s:String x:Key="s_Ach_Publications20_Name">Большой вклад</s:String>
-    <s:String x:Key="s_Ach_Publications20_Desc">20 успешных публикаций</s:String>
+    <s:String x:Key="_Ach_Publications20_Name">Большой вклад</s:String>
+    <s:String x:Key="_Ach_Publications20_Desc">20 успешных публикаций</s:String>
     
-    <s:String x:Key="s_Ach_Publications50_Name">Огромный вклад</s:String>
-    <s:String x:Key="s_Ach_Publications50_Desc">50 успешных публикаций</s:String>
+    <s:String x:Key="_Ach_Publications50_Name">Огромный вклад</s:String>
+    <s:String x:Key="_Ach_Publications50_Desc">50 успешных публикаций</s:String>
     
-    <s:String x:Key="s_Ach_Publications200_Name">Колоссальный вклад</s:String>
-    <s:String x:Key="s_Ach_Publications200_Desc">200 успешных публикаций</s:String>
+    <s:String x:Key="_Ach_Publications200_Name">Колоссальный вклад</s:String>
+    <s:String x:Key="_Ach_Publications200_Desc">200 успешных публикаций</s:String>
     <!--#endregion-->
     
     <!--#region PublicApiHost-->
-    <s:String x:Key="s_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
-    <s:String x:Key="s_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
-    <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">Канал API получил голосовую команду</s:String>
-    <s:String x:Key="s_PublicApiHost_RecievedAction">Канал API получил действие</s:String>
+    <s:String x:Key="_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
+    <s:String x:Key="_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedVoiceCommand">Канал API получил голосовую команду</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedAction">Канал API получил действие</s:String>
     <!--#endregion-->
 
     <!--#region UIAutomation-->
-    <s:String x:Key="s_UIAutomation_ElementFoundInActiveWindow">Элемент {0} найден в активном окне</s:String>
-    <s:String x:Key="s_UIAutomation_ElementFoundInTaskBar">Элемент {0} найден в панели задач</s:String>
-    <s:String x:Key="s_UIAutomation_ElementFoundInWebsite">Элемент {0} найден в веб-сайте</s:String>
-    <s:String x:Key="s_UIAutomation_ElementNotFound">Элемент {0} не найден</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInActiveWindow">Элемент {0} найден в активном окне</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInTaskBar">Элемент {0} найден в панели задач</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInWebsite">Элемент {0} найден в веб-сайте</s:String>
+    <s:String x:Key="_UIAutomation_ElementNotFound">Элемент {0} не найден</s:String>
     <!--#endregion-->
 
     <!--#region FUE-->
-    <s:String x:Key="s_FUE_Initial_HelloDearUser">Здравствуйте, дорогой пользователь!</s:String>
-    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Cпасибо за установку</s:String>
-    <s:String x:Key="s_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- программы голосового управления компьютером и набора текста</s:String>
-    <s:String x:Key="s_FUE_Initial_TakeMicrophoneAndSayHello">Поднесите к себе микрофон и скажите &quot;Привет&quot;</s:String>
-    <s:String x:Key="s_FUE_Initial_ThanksMaybeNextTime">Спасибо, в другой раз</s:String>
+    <s:String x:Key="_FUE_Initial_HelloDearUser">Здравствуйте, дорогой пользователь!</s:String>
+    <s:String x:Key="_FUE_Initial_ThanksForInstall">Cпасибо за установку</s:String>
+    <s:String x:Key="_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- программы голосового управления компьютером и набора текста</s:String>
+    <s:String x:Key="_FUE_Initial_TakeMicrophoneAndSayHello">Поднесите к себе микрофон и скажите &quot;Привет&quot;</s:String>
+    <s:String x:Key="_FUE_Initial_ThanksMaybeNextTime">Спасибо, в другой раз</s:String>
 
-    <s:String x:Key="s_FUE_Browser_Setup">Настройка браузера</s:String>
-    <s:String x:Key="s_FUE_Browser_Info">Для того чтобы работали команды управления веб-сайтами, требуется установить расширение для вашего браузера</s:String>
-    <s:String x:Key="s_FUE_Browser_Skip">Пропустить</s:String>
+    <s:String x:Key="_FUE_Browser_Setup">Настройка браузера</s:String>
+    <s:String x:Key="_FUE_Browser_Info">Для того чтобы работали команды управления веб-сайтами, требуется установить расширение для вашего браузера</s:String>
+    <s:String x:Key="_FUE_Browser_Skip">Пропустить</s:String>
 
-    <s:String x:Key="s_FUE_QA_Header">Этот раздел содержит структуру общения с голосовым ботом</s:String>
-    <s:String x:Key="s_FUE_QA_YouAskQuestions">Вы задаете вопросы</s:String>
-    <s:String x:Key="s_FUE_QA_BotAnswersThem">Бот на них отвечает</s:String>
-    <s:String x:Key="s_FUE_QA_Talk1">Привет</s:String>
-    <s:String x:Key="s_FUE_QA_Talk2">Здравствуйте!</s:String>
-    <s:String x:Key="s_FUE_QA_Talk3">Как дела</s:String>
-    <s:String x:Key="s_FUE_QA_Talk4">Замечательно, а у вас?</s:String>
-    <s:String x:Key="s_FUE_QA_Talk5">Тоже</s:String>
-    <s:String x:Key="s_FUE_QA_Talk6">Отлично!</s:String>
+    <s:String x:Key="_FUE_QA_Header">Этот раздел содержит структуру общения с голосовым ботом</s:String>
+    <s:String x:Key="_FUE_QA_YouAskQuestions">Вы задаете вопросы</s:String>
+    <s:String x:Key="_FUE_QA_BotAnswersThem">Бот на них отвечает</s:String>
+    <s:String x:Key="_FUE_QA_Talk1">Привет</s:String>
+    <s:String x:Key="_FUE_QA_Talk2">Здравствуйте!</s:String>
+    <s:String x:Key="_FUE_QA_Talk3">Как дела</s:String>
+    <s:String x:Key="_FUE_QA_Talk4">Замечательно, а у вас?</s:String>
+    <s:String x:Key="_FUE_QA_Talk5">Тоже</s:String>
+    <s:String x:Key="_FUE_QA_Talk6">Отлично!</s:String>
 
-    <s:String x:Key="s_FUE_Commands_Header">Этот раздел содержит голосовые команды</s:String>
-    <s:String x:Key="s_FUE_Commands_CommandIsConsistsOf">Команда состоит из:</s:String>
-    <s:String x:Key="s_FUE_Commands_Phrases">Фраз</s:String>
-    <s:String x:Key="s_FUE_Commands_Actions">Действий</s:String>
-    <s:String x:Key="s_FUE_Commands_OpenNotepad">Открыть блокнот</s:String>
-    <s:String x:Key="s_FUE_Commands_RunNotepad">Запустить блокнот</s:String>
-    <s:String x:Key="s_FUE_Commands_ShowNotepad">Показать блокнот</s:String>
-    <s:String x:Key="s_FUE_Commands_NotepadIsOpen">Блокнот открыт!</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip1">Программа автоматически поддерживает падежи часто используемых слов.</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip2">Вместо &quot;Открыть блокнот&quot; можно сказать &quot;Открой блокнот&quot;, &quot;Откройте блокнот&quot;...</s:String>
-    <s:String x:Key="s_FUE_Commands_VariableSupport">Поддержка переменных</s:String>
-    <s:String x:Key="s_FUE_Commands_Phrase">Фразa</s:String>
-    <s:String x:Key="s_FUE_Commands_Action">Действие</s:String>
-    <s:String x:Key="s_FUE_Commands_SayWord">Сказать слово</s:String>
-    <s:String x:Key="s_FUE_Commands_Word">{слово}</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip3">Расшифровка команды: Если вы произнесете &quot;Скажи слово Привет&quot;, то программа скажет &quot;Привет&quot;.</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip4">Все команды созданы пользователями программы и прошли проверку на безопасность</s:String>
+    <s:String x:Key="_FUE_Commands_Header">Этот раздел содержит голосовые команды</s:String>
+    <s:String x:Key="_FUE_Commands_CommandIsConsistsOf">Команда состоит из:</s:String>
+    <s:String x:Key="_FUE_Commands_Phrases">Фраз</s:String>
+    <s:String x:Key="_FUE_Commands_Actions">Действий</s:String>
+    <s:String x:Key="_FUE_Commands_OpenNotepad">Открыть блокнот</s:String>
+    <s:String x:Key="_FUE_Commands_RunNotepad">Запустить блокнот</s:String>
+    <s:String x:Key="_FUE_Commands_ShowNotepad">Показать блокнот</s:String>
+    <s:String x:Key="_FUE_Commands_NotepadIsOpen">Блокнот открыт!</s:String>
+    <s:String x:Key="_FUE_Commands_Tip1">Программа автоматически поддерживает падежи часто используемых слов.</s:String>
+    <s:String x:Key="_FUE_Commands_Tip2">Вместо &quot;Открыть блокнот&quot; можно сказать &quot;Открой блокнот&quot;, &quot;Откройте блокнот&quot;...</s:String>
+    <s:String x:Key="_FUE_Commands_VariableSupport">Поддержка переменных</s:String>
+    <s:String x:Key="_FUE_Commands_Phrase">Фразa</s:String>
+    <s:String x:Key="_FUE_Commands_Action">Действие</s:String>
+    <s:String x:Key="_FUE_Commands_SayWord">Сказать слово</s:String>
+    <s:String x:Key="_FUE_Commands_Word">{слово}</s:String>
+    <s:String x:Key="_FUE_Commands_Tip3">Расшифровка команды: Если вы произнесете &quot;Скажи слово Привет&quot;, то программа скажет &quot;Привет&quot;.</s:String>
+    <s:String x:Key="_FUE_Commands_Tip4">Все команды созданы пользователями программы и прошли проверку на безопасность</s:String>
     <!--#endregion-->
 
     <!--#region QA-->
-    <s:String x:Key="s_QA_AddRootQuestion">Добавить корневой вопрос</s:String>
-    <s:String x:Key="s_QA_ConnectedTo">Следует за</s:String>
-    <s:String x:Key="s_QA_ConnectedFrom">Следует из</s:String>
-    <s:String x:Key="s_Question_Tooltip_AddChildQuestion">Добавить вопрос к этому ответу</s:String>
-    <s:String x:Key="s_Question_Tooltip_AddChildAnswer">Добавить ответ к этому вопросу</s:String>
-    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
+    <s:String x:Key="_QA_AddRootQuestion">Добавить корневой вопрос</s:String>
+    <s:String x:Key="_QA_ConnectedTo">Следует за</s:String>
+    <s:String x:Key="_QA_ConnectedFrom">Следует из</s:String>
+    <s:String x:Key="_Question_Tooltip_AddChildQuestion">Добавить вопрос к этому ответу</s:String>
+    <s:String x:Key="_Question_Tooltip_AddChildAnswer">Добавить ответ к этому вопросу</s:String>
+    <TextBlock x:Key="_Question_Tooltip_IsRoot">
         Корневой ли вопрос
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -168,404 +168,404 @@
     <!--#endregion-->
 
     <!--#region Exceptions-->
-    <s:String x:Key="s_ExecutionRestricted">Выполнение запрещено в данных условиях</s:String>
-    <s:String x:Key="s_ConnectionProblems">Проблемы с подключением к серверу</s:String>
-    <s:String x:Key="s_WrongCredentials">Авторизация не успешна</s:String>
-    <s:String x:Key="s_VoiceCommandsDisabled">Голосовые команды отключены</s:String>
-    <s:String x:Key="s_DownloadSaveError">Загрузка сохранения с сервера не удалась</s:String>
-    <s:String x:Key="s_Error">Ошибка</s:String>
-    <s:String x:Key="s_DataUploadError">Ошибка загрузки данных</s:String>
-    <s:String x:Key="s_DataIsToBig">Слишком много данных, чтобы их отобразить</s:String>
-    <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
-    <s:String x:Key="s_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
-    <s:String x:Key="s_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis. Перезапуск Laitis...</s:String>
-    <s:String x:Key="s_DiskIsFull">Недостаточно места на диске для работы Laitis</s:String>
-    <s:String x:Key="s_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
-    <s:String x:Key="s_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
+    <s:String x:Key="_ExecutionRestricted">Выполнение запрещено в данных условиях</s:String>
+    <s:String x:Key="_ConnectionProblems">Проблемы с подключением к серверу</s:String>
+    <s:String x:Key="_WrongCredentials">Авторизация не успешна</s:String>
+    <s:String x:Key="_VoiceCommandsDisabled">Голосовые команды отключены</s:String>
+    <s:String x:Key="_DownloadSaveError">Загрузка сохранения с сервера не удалась</s:String>
+    <s:String x:Key="_Error">Ошибка</s:String>
+    <s:String x:Key="_DataUploadError">Ошибка загрузки данных</s:String>
+    <s:String x:Key="_DataIsToBig">Слишком много данных, чтобы их отобразить</s:String>
+    <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
+    <s:String x:Key="_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
+    <s:String x:Key="_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis. Перезапуск Laitis...</s:String>
+    <s:String x:Key="_DiskIsFull">Недостаточно места на диске для работы Laitis</s:String>
+    <s:String x:Key="_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
+    <s:String x:Key="_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
     <!--#endregion-->
 
     <!--#region Main Tabs and Buttons-->
-    <s:String x:Key="s_Profile">Профиль</s:String>
-    <s:String x:Key="s_Community">Сообщество</s:String>
-    <s:String x:Key="s_Packs">Коллекции</s:String>
-    <s:String x:Key="s_Commands">Команды</s:String>
-    <s:String x:Key="s_Autoreplace">Автозамена</s:String>
-    <s:String x:Key="s_Communication">Общение</s:String>
-    <s:String x:Key="s_Help">Помощь</s:String>
-    <s:String x:Key="s_About">О программе</s:String>
-    <s:String x:Key="s_Editor">Редактор</s:String>
-    <s:String x:Key="s_Publisher">Публикация</s:String>
-    <s:String x:Key="s_Actions">Действия</s:String>
-    <s:String x:Key="s_Phrases">Фразы</s:String>
-    <s:String x:Key="s_Other">Остальное</s:String>
-    <s:String x:Key="s_Logger">Журнал</s:String>
+    <s:String x:Key="_Profile">Профиль</s:String>
+    <s:String x:Key="_Community">Сообщество</s:String>
+    <s:String x:Key="_Packs">Коллекции</s:String>
+    <s:String x:Key="_Commands">Команды</s:String>
+    <s:String x:Key="_Autoreplace">Автозамена</s:String>
+    <s:String x:Key="_Communication">Общение</s:String>
+    <s:String x:Key="_Help">Помощь</s:String>
+    <s:String x:Key="_About">О программе</s:String>
+    <s:String x:Key="_Editor">Редактор</s:String>
+    <s:String x:Key="_Publisher">Публикация</s:String>
+    <s:String x:Key="_Actions">Действия</s:String>
+    <s:String x:Key="_Phrases">Фразы</s:String>
+    <s:String x:Key="_Other">Остальное</s:String>
+    <s:String x:Key="_Logger">Журнал</s:String>
 
-    <s:String x:Key="s_Hide">Свернуть</s:String>
-    <s:String x:Key="s_Pause">Пауза</s:String>
-    <s:String x:Key="s_Buttons_Hide">Свернуть</s:String>
-    <s:String x:Key="s_Buttons_Pause">Приостановить выполнение команд</s:String>
-    <s:String x:Key="s_Buttons_Unpause">Возобновить выполнение команд</s:String>
-    <s:String x:Key="s_Buttons_Stop">Остановить воспроизведение</s:String>
+    <s:String x:Key="_Hide">Свернуть</s:String>
+    <s:String x:Key="_Pause">Пауза</s:String>
+    <s:String x:Key="_Buttons_Hide">Свернуть</s:String>
+    <s:String x:Key="_Buttons_Pause">Приостановить выполнение команд</s:String>
+    <s:String x:Key="_Buttons_Unpause">Возобновить выполнение команд</s:String>
+    <s:String x:Key="_Buttons_Stop">Остановить воспроизведение</s:String>
     <!--#endregion-->
 
     <!--#region Commands List-->
-    <s:String x:Key="s_CommandCopied">Команда скопирована</s:String>
-    <s:String x:Key="s_CommandCutted">Команда вырезана</s:String>
-    <s:String x:Key="s_CommandPasted">Команда вставлена</s:String>
-    <s:String x:Key="s_CommandDeleted">Команда удалена</s:String>
-    <s:String x:Key="s_CategoryCopied">Категория скопирована</s:String>
-    <s:String x:Key="s_CategoryCutted">Категория вырезана</s:String>
-    <s:String x:Key="s_CategoryPasted">Категория вставлена</s:String>
-    <s:String x:Key="s_CategoryDeleted">Категория удалена</s:String>
-    <s:String x:Key="s_PackCopied">Коллекция скопирована</s:String>
-    <s:String x:Key="s_PackCutted">Коллекция вырезана</s:String>
-    <s:String x:Key="s_PackPasted">Коллекция вставлена</s:String>
-    <s:String x:Key="s_PackDeleted">Коллекция удалена</s:String>
+    <s:String x:Key="_CommandCopied">Команда скопирована</s:String>
+    <s:String x:Key="_CommandCutted">Команда вырезана</s:String>
+    <s:String x:Key="_CommandPasted">Команда вставлена</s:String>
+    <s:String x:Key="_CommandDeleted">Команда удалена</s:String>
+    <s:String x:Key="_CategoryCopied">Категория скопирована</s:String>
+    <s:String x:Key="_CategoryCutted">Категория вырезана</s:String>
+    <s:String x:Key="_CategoryPasted">Категория вставлена</s:String>
+    <s:String x:Key="_CategoryDeleted">Категория удалена</s:String>
+    <s:String x:Key="_PackCopied">Коллекция скопирована</s:String>
+    <s:String x:Key="_PackCutted">Коллекция вырезана</s:String>
+    <s:String x:Key="_PackPasted">Коллекция вставлена</s:String>
+    <s:String x:Key="_PackDeleted">Коллекция удалена</s:String>
 
-    <s:String x:Key="s_CopyPack">Копировать коллекцию</s:String>
-    <s:String x:Key="s_CopyCommand">Копировать команду</s:String>
-    <s:String x:Key="s_CopyCategory">Копировать категорию</s:String>
-    <s:String x:Key="s_CutCommand">Вырезать команду</s:String>
-    <s:String x:Key="s_CutCategory">Вырезать категорию</s:String>
-    <s:String x:Key="s_PasteCommand">Вставить команду</s:String>
-    <s:String x:Key="s_PasteCategory">Вставить категорию</s:String>
-    <s:String x:Key="s_PastePack">Вставить коллекцию</s:String>
+    <s:String x:Key="_CopyPack">Копировать коллекцию</s:String>
+    <s:String x:Key="_CopyCommand">Копировать команду</s:String>
+    <s:String x:Key="_CopyCategory">Копировать категорию</s:String>
+    <s:String x:Key="_CutCommand">Вырезать команду</s:String>
+    <s:String x:Key="_CutCategory">Вырезать категорию</s:String>
+    <s:String x:Key="_PasteCommand">Вставить команду</s:String>
+    <s:String x:Key="_PasteCategory">Вставить категорию</s:String>
+    <s:String x:Key="_PastePack">Вставить коллекцию</s:String>
 
-    <s:String x:Key="s_DeleteCommand">Удалить команду</s:String>
-    <s:String x:Key="s_EditCommand">Редактировать команду</s:String>
-    <s:String x:Key="s_CommandImport">Импорт команды из текста</s:String>
-    <s:String x:Key="s_CommandExport">Экспорт команды в текст</s:String>
-    <s:String x:Key="s_CommandImported">Команда импортирована из буфера обмена</s:String>
-    <s:String x:Key="s_CommandExported">Команда экспортирована в буфер обмен как текст</s:String>
-    <s:String x:Key="s_CommandImportFail">Не получилось импортировать команду</s:String>
-    <s:String x:Key="s_CommandUpdate">Обновить команду</s:String>
-    <s:String x:Key="s_CreateSame">Создать похожую команду</s:String>
-    <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Выполнить команду через 2 секунды</s:String>
+    <s:String x:Key="_DeleteCommand">Удалить команду</s:String>
+    <s:String x:Key="_EditCommand">Редактировать команду</s:String>
+    <s:String x:Key="_CommandImport">Импорт команды из текста</s:String>
+    <s:String x:Key="_CommandExport">Экспорт команды в текст</s:String>
+    <s:String x:Key="_CommandImported">Команда импортирована из буфера обмена</s:String>
+    <s:String x:Key="_CommandExported">Команда экспортирована в буфер обмен как текст</s:String>
+    <s:String x:Key="_CommandImportFail">Не получилось импортировать команду</s:String>
+    <s:String x:Key="_CommandUpdate">Обновить команду</s:String>
+    <s:String x:Key="_CreateSame">Создать похожую команду</s:String>
+    <s:String x:Key="_ExecuteCommandAfterTwoSeconds">Выполнить команду через 2 секунды</s:String>
 
-    <s:String x:Key="s_PackActivity">Активность Коллекции</s:String>
-    <s:String x:Key="s_DownloadPacks">Скачать коллекции</s:String>
+    <s:String x:Key="_PackActivity">Активность Коллекции</s:String>
+    <s:String x:Key="_DownloadPacks">Скачать коллекции</s:String>
     <!--#endregion-->
 
     <!--#region Notifications-->
-    <s:String x:Key="s_Details">Подробнее</s:String>
-    <s:String x:Key="s_EndRecieve">Завершение получения данных</s:String>
-    <s:String x:Key="s_ConnectionDrop">Подключение разорвано</s:String>
-    <s:String x:Key="s_RecordEnded">Завершена запись голоса</s:String>
-    <s:String x:Key="s_RecordStarted">Начата запись голоса</s:String>
-    <s:String x:Key="s_StartToSend">Начата отправка голоса</s:String>
-    <s:String x:Key="s_EndSend">Завершена отправка голоса</s:String>
-    <s:String x:Key="s_TooLongRecordIsEnded">Запись была завершена потому что она была слишком длинной. Чтобы улучшить качество распознавания выключите усиление микрофона, если оно включено.</s:String>
-    <s:String x:Key="s_TooShortRecordIsEnded">Запись была завершена потому что она была слишком короткой</s:String>
+    <s:String x:Key="_Details">Подробнее</s:String>
+    <s:String x:Key="_EndRecieve">Завершение получения данных</s:String>
+    <s:String x:Key="_ConnectionDrop">Подключение разорвано</s:String>
+    <s:String x:Key="_RecordEnded">Завершена запись голоса</s:String>
+    <s:String x:Key="_RecordStarted">Начата запись голоса</s:String>
+    <s:String x:Key="_StartToSend">Начата отправка голоса</s:String>
+    <s:String x:Key="_EndSend">Завершена отправка голоса</s:String>
+    <s:String x:Key="_TooLongRecordIsEnded">Запись была завершена потому что она была слишком длинной. Чтобы улучшить качество распознавания выключите усиление микрофона, если оно включено.</s:String>
+    <s:String x:Key="_TooShortRecordIsEnded">Запись была завершена потому что она была слишком короткой</s:String>
 
-    <s:String x:Key="s_DownloadOfUpdate">Загружается обновление</s:String>
-    <s:String x:Key="s_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успешно обновлен с версии</s:String>
-    <s:String x:Key="s_ToVersion">до версии</s:String>
+    <s:String x:Key="_DownloadOfUpdate">Загружается обновление</s:String>
+    <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успешно обновлен с версии</s:String>
+    <s:String x:Key="_ToVersion">до версии</s:String>
 
-    <s:String x:Key="s_YandexKeyEmpty">Ключ от Яндекса пуст. Пробуем Google</s:String>
-    <s:String x:Key="s_AcapelaKeyEmpty">Ключ от Acapela пуст. Пробуем Google</s:String>
-    <s:String x:Key="s_FailToPlayPhrase">Не удалось воспроизвести фразу</s:String>
-    <s:String x:Key="s_FailToFindRecordingDevice">Не найдено устройство записи</s:String>
-    <s:String x:Key="s_RecordingStartedOnDevice">Запущена запись с устройства</s:String>
-    <s:String x:Key="s_RecordingStoppedOnDevice">Остановлена запись с устройства</s:String>
-    <s:String x:Key="s_SilenceTresholdIncreasedTo">Запись слишком долгая или громкая. Порог тишины увеличен до</s:String>
-    <s:String x:Key="s_SilenceTresholdReducedTo">Очень тихо. Порог тишины уменьшен до</s:String>
+    <s:String x:Key="_YandexKeyEmpty">Ключ от Яндекса пуст. Пробуем Google</s:String>
+    <s:String x:Key="_AcapelaKeyEmpty">Ключ от Acapela пуст. Пробуем Google</s:String>
+    <s:String x:Key="_FailToPlayPhrase">Не удалось воспроизвести фразу</s:String>
+    <s:String x:Key="_FailToFindRecordingDevice">Не найдено устройство записи</s:String>
+    <s:String x:Key="_RecordingStartedOnDevice">Запущена запись с устройства</s:String>
+    <s:String x:Key="_RecordingStoppedOnDevice">Остановлена запись с устройства</s:String>
+    <s:String x:Key="_SilenceTresholdIncreasedTo">Запись слишком долгая или громкая. Порог тишины увеличен до</s:String>
+    <s:String x:Key="_SilenceTresholdReducedTo">Очень тихо. Порог тишины уменьшен до</s:String>
 
-    <s:String x:Key="s_ClipboardIsBusy">Буфер обмена используется другой программой</s:String>
-    <s:String x:Key="s_ClipboardIsBusyAffectedBy">Буфер обмена заблокирован программой</s:String>
+    <s:String x:Key="_ClipboardIsBusy">Буфер обмена используется другой программой</s:String>
+    <s:String x:Key="_ClipboardIsBusyAffectedBy">Буфер обмена заблокирован программой</s:String>
 
-    <s:String x:Key="s_SettingsDownloadSuccess">Настройки успешно загружены с сервера!</s:String>
-    <s:String x:Key="s_SettingsDownloadFail">Не удалось скачать настройки с сервера.</s:String>
-    <s:String x:Key="s_SettingsUploadSuccess">Настройки успешно отправлены на сервер</s:String>
-    <s:String x:Key="s_SettingsUploadFail">Не удалось отправить настройки на сервер</s:String>
+    <s:String x:Key="_SettingsDownloadSuccess">Настройки успешно загружены с сервера!</s:String>
+    <s:String x:Key="_SettingsDownloadFail">Не удалось скачать настройки с сервера.</s:String>
+    <s:String x:Key="_SettingsUploadSuccess">Настройки успешно отправлены на сервер</s:String>
+    <s:String x:Key="_SettingsUploadFail">Не удалось отправить настройки на сервер</s:String>
 
-    <s:String x:Key="s_PackUpdated">Пришло обновление коллекции</s:String>
-    <s:String x:Key="s_ApplicationVersion">Версия программы</s:String>
-    <s:String x:Key="s_UnderstoodText">понял текст</s:String>
-    <s:String x:Key="s_UnderstoodCommand">понял команду</s:String>
-    <s:String x:Key="s_CommandNotStartsWithKeyword">Команда не начинается с ключевого слова</s:String>
-    <s:String x:Key="s_TextNotStartsWithKeyword">Текст не начинается с ключевого слова</s:String>
-    <s:String x:Key="s_CommandDone">Выполнена команда</s:String>
-    <s:String x:Key="s_TypingText">Вставляю текст</s:String>
+    <s:String x:Key="_PackUpdated">Пришло обновление коллекции</s:String>
+    <s:String x:Key="_ApplicationVersion">Версия программы</s:String>
+    <s:String x:Key="_UnderstoodText">понял текст</s:String>
+    <s:String x:Key="_UnderstoodCommand">понял команду</s:String>
+    <s:String x:Key="_CommandNotStartsWithKeyword">Команда не начинается с ключевого слова</s:String>
+    <s:String x:Key="_TextNotStartsWithKeyword">Текст не начинается с ключевого слова</s:String>
+    <s:String x:Key="_CommandDone">Выполнена команда</s:String>
+    <s:String x:Key="_TypingText">Вставляю текст</s:String>
     
-    <s:String x:Key="s_RemovingErrorTyping">Удаляю предыдущую вставку текста</s:String>
-    <s:String x:Key="s_TypingUpperFirstChar">т.к. предыдущая команда была сепаратором или сменился фокус текстового поля, пишу фразу с большой буквы</s:String>
-    <s:String x:Key="s_ComaWaitTime">т.к. время ожидания было достаточно малым, вставляю в начало фразы запятую</s:String>
-    <s:String x:Key="s_DotWaitTime">т.к. время ожидания было достаточно большим, вставляю в начало фразы точку</s:String>
-    <s:String x:Key="s_SpaceBeforeSeparator">т.к. текстовое поле осталось прежним, добавлю в начало фразы пробел</s:String>
+    <s:String x:Key="_RemovingErrorTyping">Удаляю предыдущую вставку текста</s:String>
+    <s:String x:Key="_TypingUpperFirstChar">т.к. предыдущая команда была сепаратором или сменился фокус текстового поля, пишу фразу с большой буквы</s:String>
+    <s:String x:Key="_ComaWaitTime">т.к. время ожидания было достаточно малым, вставляю в начало фразы запятую</s:String>
+    <s:String x:Key="_DotWaitTime">т.к. время ожидания было достаточно большим, вставляю в начало фразы точку</s:String>
+    <s:String x:Key="_SpaceBeforeSeparator">т.к. текстовое поле осталось прежним, добавлю в начало фразы пробел</s:String>
     <!--#endregion-->
 
     <!--#region Community-->
-    <s:String x:Key="s_SharePromotion">Голосовое управление компьютером и набор текста с помощью Laitis. Установи сейчас и попробуй. Бесплатно и без рекламы.</s:String>
-    <s:String x:Key="s_UsersPublications">Публикации пользователей:</s:String>
-    <s:String x:Key="s_Downloads">Загрузок</s:String>
-    <s:String x:Key="s_LaitisDescription">Пожертвование Laitis: Голосовое управление компьютером</s:String>
-    <s:String x:Key="s_Like">Мне нравится</s:String>
-    <s:String x:Key="s_Dislike">Мне не нравится</s:String>
-    <s:String x:Key="s_RecieveDate">Дата получения</s:String>
+    <s:String x:Key="_SharePromotion">Голосовое управление компьютером и набор текста с помощью Laitis. Установи сейчас и попробуй. Бесплатно и без рекламы.</s:String>
+    <s:String x:Key="_UsersPublications">Публикации пользователей:</s:String>
+    <s:String x:Key="_Downloads">Загрузок</s:String>
+    <s:String x:Key="_LaitisDescription">Пожертвование Laitis: Голосовое управление компьютером</s:String>
+    <s:String x:Key="_Like">Мне нравится</s:String>
+    <s:String x:Key="_Dislike">Мне не нравится</s:String>
+    <s:String x:Key="_RecieveDate">Дата получения</s:String>
 
-    <s:String x:Key="s_DaysWithUs">Дней с нами</s:String>
-    <s:String x:Key="s_RegistrationDate">Дата регистрации</s:String>
-    <s:String x:Key="s_VoiceCommandsDone">Выполнено команд</s:String>
-    <s:String x:Key="s_TextDictated">Надиктовано текста</s:String>
-    <s:String x:Key="s_WebsiteCommandsDone">Выполнено команд управления веб-сайтами</s:String>
-    <s:String x:Key="s_CommunicationsDone">Общений с ботом</s:String>
+    <s:String x:Key="_DaysWithUs">Дней с нами</s:String>
+    <s:String x:Key="_RegistrationDate">Дата регистрации</s:String>
+    <s:String x:Key="_VoiceCommandsDone">Выполнено команд</s:String>
+    <s:String x:Key="_TextDictated">Надиктовано текста</s:String>
+    <s:String x:Key="_WebsiteCommandsDone">Выполнено команд управления веб-сайтами</s:String>
+    <s:String x:Key="_CommunicationsDone">Общений с ботом</s:String>
     <!--#endregion-->
 
     <!--#region Publisher-->
-    <s:String x:Key="s_IAcceptThisRules">Я принимаю данные правила</s:String>
-    <s:String x:Key="s_AutorizationNeeded">Авторизируйтесь в систему</s:String>
-    <s:String x:Key="s_CollectionNameIsTooShort">Название коллекции слишком короткое</s:String>
-    <s:String x:Key="s_ChangesNotFound">Не найдено изменений для публикации</s:String>
-    <s:String x:Key="s_PublicationSendedToTheServer">Ваша публикация успешно отправлена на сервер</s:String>
-    <s:String x:Key="s_PublishNewCollection">Публикация новой коллекции</s:String>
-    <s:String x:Key="s_PublishSomeChanges">Публикация изменений коллекции</s:String>
-    <s:String x:Key="s_ChangeAppliedSuccesfully">Изменения успешно применены</s:String>
-    <s:String x:Key="s_ToRemove">которые будут удалены из коллекции</s:String>
-    <s:String x:Key="s_ConnectionsToAnswers">Связей с ответами</s:String>
-    <s:String x:Key="s_ConnectionsToQuestions">Связей с вопросами</s:String>
+    <s:String x:Key="_IAcceptThisRules">Я принимаю данные правила</s:String>
+    <s:String x:Key="_AutorizationNeeded">Авторизируйтесь в систему</s:String>
+    <s:String x:Key="_CollectionNameIsTooShort">Название коллекции слишком короткое</s:String>
+    <s:String x:Key="_ChangesNotFound">Не найдено изменений для публикации</s:String>
+    <s:String x:Key="_PublicationSendedToTheServer">Ваша публикация успешно отправлена на сервер</s:String>
+    <s:String x:Key="_PublishNewCollection">Публикация новой коллекции</s:String>
+    <s:String x:Key="_PublishSomeChanges">Публикация изменений коллекции</s:String>
+    <s:String x:Key="_ChangeAppliedSuccesfully">Изменения успешно применены</s:String>
+    <s:String x:Key="_ToRemove">которые будут удалены из коллекции</s:String>
+    <s:String x:Key="_ConnectionsToAnswers">Связей с ответами</s:String>
+    <s:String x:Key="_ConnectionsToQuestions">Связей с вопросами</s:String>
     <!--#endregion-->
 
     <!--#region Variables-->
-    <s:String x:Key="s_Common">Общие</s:String>
-    <s:String x:Key="s_Custom">Пользовательские</s:String>
-    <s:String x:Key="s_DateTime">Дата и время</s:String>
-    <s:String x:Key="s_Account">Аккаунт</s:String>
-    <s:String x:Key="s_Environment">Окружение</s:String>
+    <s:String x:Key="_Common">Общие</s:String>
+    <s:String x:Key="_Custom">Пользовательские</s:String>
+    <s:String x:Key="_DateTime">Дата и время</s:String>
+    <s:String x:Key="_Account">Аккаунт</s:String>
+    <s:String x:Key="_Environment">Окружение</s:String>
 
-    <s:String x:Key="s_SetVariable">Задать переменной</s:String>
-    <s:String x:Key="s_Value">значение</s:String>
-    <s:String x:Key="s_IfVariableValue">Если значение переменной</s:String>
-    <s:String x:Key="s_IfWebsiteNavValue">Если на сайте выделено</s:String>
-    <s:String x:Key="s_VariableNotFound">Переменная не найдена</s:String>
+    <s:String x:Key="_SetVariable">Задать переменной</s:String>
+    <s:String x:Key="_Value">значение</s:String>
+    <s:String x:Key="_IfVariableValue">Если значение переменной</s:String>
+    <s:String x:Key="_IfWebsiteNavValue">Если на сайте выделено</s:String>
+    <s:String x:Key="_VariableNotFound">Переменная не найдена</s:String>
 
-    <s:String x:Key="s_VariableOperator_Exists">существует</s:String>
-    <s:String x:Key="s_VariableOperator_Equals">равно</s:String>
-    <s:String x:Key="s_VariableOperator_NotEquals">не равно</s:String>
-    <s:String x:Key="s_VariableOperator_Bigger">больше</s:String>
-    <s:String x:Key="s_VariableOperator_Smaller">меньше</s:String>
-    <s:String x:Key="s_VariableOperator_BiggerOrEquals">больше или равно</s:String>
-    <s:String x:Key="s_VariableOperator_SmallerOrEquals">меньше или равно</s:String>
+    <s:String x:Key="_VariableOperator_Exists">существует</s:String>
+    <s:String x:Key="_VariableOperator_Equals">равно</s:String>
+    <s:String x:Key="_VariableOperator_NotEquals">не равно</s:String>
+    <s:String x:Key="_VariableOperator_Bigger">больше</s:String>
+    <s:String x:Key="_VariableOperator_Smaller">меньше</s:String>
+    <s:String x:Key="_VariableOperator_BiggerOrEquals">больше или равно</s:String>
+    <s:String x:Key="_VariableOperator_SmallerOrEquals">меньше или равно</s:String>
 
-    <s:String x:Key="s_Second">Секунда</s:String>
-    <s:String x:Key="s_Minute">Минута</s:String>
-    <s:String x:Key="s_Hour">Час</s:String>
-    <s:String x:Key="s_Day">День</s:String>
-    <s:String x:Key="s_Month">Месяц</s:String>
-    <s:String x:Key="s_Year">Год</s:String>
-    <s:String x:Key="s_DayOfWeek">День недели</s:String>
-    <s:String x:Key="s_Date">Дата</s:String>
-    <s:String x:Key="s_Time">Время</s:String>
-    <s:String x:Key="s_Version">Версия</s:String>
+    <s:String x:Key="_Second">Секунда</s:String>
+    <s:String x:Key="_Minute">Минута</s:String>
+    <s:String x:Key="_Hour">Час</s:String>
+    <s:String x:Key="_Day">День</s:String>
+    <s:String x:Key="_Month">Месяц</s:String>
+    <s:String x:Key="_Year">Год</s:String>
+    <s:String x:Key="_DayOfWeek">День недели</s:String>
+    <s:String x:Key="_Date">Дата</s:String>
+    <s:String x:Key="_Time">Время</s:String>
+    <s:String x:Key="_Version">Версия</s:String>
     <!--#endregion-->
 
     <!--#region Scheduler-->
-    <s:String x:Key="s_Prefixes">в,во,с</s:String>
-    <s:String x:Key="s_AndAHalf">с половиной</s:String>
-    <s:String x:Key="s_Half">пол</s:String>
-    <s:String x:Key="s_After">через,на,на следующий,на следующей</s:String>
-    <s:String x:Key="s_Mornings" xml:space="preserve"> утра, ночи</s:String>
-    <s:String x:Key="s_Evenings" xml:space="preserve"> дня, вечера</s:String>
-    <s:String x:Key="s_DayParts">полночь,утром,днем,полдень,вечором,ночью</s:String>
-    <s:String x:Key="s_Numbers">ноль,один,два,три,четыре,пять,шесть,семь,восемь,девять,десять,одинадцать,двенадцать,тринадцать,четырнадцать,пятнадцать,шестнадцать,семнадцать,восемнадцать,девятнадцать</s:String>
-    <s:String x:Key="s_HighNumbers">двадцать,тридцать,сорок,пятдесят,шестдесят,семдесят,восемдесят,девяносто</s:String>
-    <s:String x:Key="s_WeekDays">Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота</s:String>
-    <s:String x:Key="s_Months">Январь,Февраль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь</s:String>
-    <s:String x:Key="s_TimeUnits">сек,мин,час,дней/дня/ден,нед,мес,год</s:String>
-    <s:String x:Key="s_SpecialModifiers">щас/прям щас/сейчас/прямо сейчас,завтра,послезавтра</s:String>
+    <s:String x:Key="_Prefixes">в,во,с</s:String>
+    <s:String x:Key="_AndAHalf">с половиной</s:String>
+    <s:String x:Key="_Half">пол</s:String>
+    <s:String x:Key="_After">через,на,на следующий,на следующей</s:String>
+    <s:String x:Key="_Mornings" xml:space="preserve"> утра, ночи</s:String>
+    <s:String x:Key="_Evenings" xml:space="preserve"> дня, вечера</s:String>
+    <s:String x:Key="_DayParts">полночь,утром,днем,полдень,вечором,ночью</s:String>
+    <s:String x:Key="_Numbers">ноль,один,два,три,четыре,пять,шесть,семь,восемь,девять,десять,одинадцать,двенадцать,тринадцать,четырнадцать,пятнадцать,шестнадцать,семнадцать,восемнадцать,девятнадцать</s:String>
+    <s:String x:Key="_HighNumbers">двадцать,тридцать,сорок,пятдесят,шестдесят,семдесят,восемдесят,девяносто</s:String>
+    <s:String x:Key="_WeekDays">Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота</s:String>
+    <s:String x:Key="_Months">Январь,Февраль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь</s:String>
+    <s:String x:Key="_TimeUnits">сек,мин,час,дней/дня/ден,нед,мес,год</s:String>
+    <s:String x:Key="_SpecialModifiers">щас/прям щас/сейчас/прямо сейчас,завтра,послезавтра</s:String>
     <!--#endregion-->
     
     <!--#region Common Labels-->
-    <s:String x:Key="s_Duration">Длительность</s:String>
-    <s:String x:Key="s_SelectImage">Выбор изображения</s:String>
-    <s:String x:Key="s_From">с</s:String>
-    <s:String x:Key="s_To">на</s:String>
-    <s:String x:Key="s_ReplaceIn">Заменить в</s:String>
-    <s:String x:Key="s_In">в</s:String>
-    <s:String x:Key="s_Ms">мс</s:String>
-    <s:String x:Key="s_And">и</s:String>
-    <s:String x:Key="s_Back">Назад</s:String>
-    <s:String x:Key="s_Hello">Привет</s:String>
-    <s:String x:Key="s_Understand">Понятно</s:String>
-    <s:String x:Key="s_Well">Хорошо</s:String>
-    <s:String x:Key="s_Say">Сказать</s:String>
-    <s:String x:Key="s_Cut">Вырезать</s:String>
-    <s:String x:Key="s_Type">Напечатать</s:String>
-    <s:String x:Key="s_Stop">Стоп</s:String>
-    <s:String x:Key="s_Send">Отправить</s:String>
-    <s:String x:Key="s_Play">Воспроизвести</s:String>
-    <s:String x:Key="s_Open">Открыть</s:String>
-    <s:String x:Key="s_Exit">Выход</s:String>
-    <s:String x:Key="s_Copy">Копировать</s:String>
-    <s:String x:Key="s_Edit">Редактировать</s:String>
-    <s:String x:Key="s_Name">Имя</s:String>
-    <s:String x:Key="s_Times">раз</s:String>
-    <s:String x:Key="s_Email">Email</s:String>
-    <s:String x:Key="s_Opera">Опера</s:String>
-    <s:String x:Key="s_Upload">загрузить</s:String>
-    <s:String x:Key="s_Chrome">Chrome</s:String>
-    <s:String x:Key="s_FireFox">Firefox</s:String>
-    <s:String x:Key="s_Yandex">Яндекс</s:String>
-    <s:String x:Key="s_Vivaldi">Вивальди</s:String>
-    <s:String x:Key="s_Password">Пароль</s:String>
-    <s:String x:Key="s_RepeatPassword">Повторите пароль</s:String>
-    <s:String x:Key="s_NickName">Ник</s:String>
-    <s:String x:Key="s_Paste">Вставить</s:String>
-    <s:String x:Key="s_Rules">Автозамены</s:String>
-    <s:String x:Key="s_Top10">Топ 10</s:String>
-    <s:String x:Key="s_Rub">руб.</s:String>
-    <s:String x:Key="s_Donate">Пожертвовать</s:String>
-    <s:String x:Key="s_Search">Поиск</s:String>
-    <s:String x:Key="s_Browse">Выбрать</s:String>
-    <s:String x:Key="s_Remove">Удалить</s:String>
-    <s:String x:Key="s_Execute">Выполнить</s:String>
-    <s:String x:Key="s_Refresh">Обновить</s:String>
-    <s:String x:Key="s_Loading">Загрузка</s:String>
-    <s:String x:Key="s_Donated">Пожертвовано</s:String>
-    <s:String x:Key="s_NewPack">Новая коллекция</s:String>
-    <s:String x:Key="s_Unknown">Неизвестный</s:String>
-    <s:String x:Key="s_AddPack">Добавить коллекцию</s:String>
-    <s:String x:Key="s_Settings">Настройки</s:String>
-    <s:String x:Key="s_OnServer">На сервере</s:String>
-    <s:String x:Key="s_Close">Закрыть</s:String>
-    <s:String x:Key="s_EventHasCome">Событие настало</s:String>
-    <s:String x:Key="s_Confidant">Доверенное лицо</s:String>
-    <s:String x:Key="s_Dublicate">Дубликат</s:String>
-    <s:String x:Key="s_HttpWebRequest">Веб-запрос</s:String>
-    <s:String x:Key="s_Categories">Категории</s:String>
-    <s:String x:Key="s_Collection">Коллекция</s:String>
-    <s:String x:Key="s_Reputation">Репутация</s:String>
-    <s:String x:Key="s_AddCommand">Добавить команду</s:String>
-    <s:String x:Key="s_Replacement">Замена</s:String>
-    <s:String x:Key="s_Publish">Опубликовать</s:String>
-    <s:String x:Key="s_Publication">Публикация</s:String>
-    <s:String x:Key="s_AddCategory">Новая категория</s:String>
-    <s:String x:Key="s_NewCategory">Новая категория</s:String>
-    <s:String x:Key="s_Save">Сохранить</s:String>
-    <s:String x:Key="s_Achievements">Достижения</s:String>
-    <s:String x:Key="s_IfProcessOpen">Если открыта программа</s:String>
-    <s:String x:Key="s_IfWebsiteOpen">Если открыт веб-сайт</s:String>
-    <s:String x:Key="s_WithParameters">с параметрами</s:String>
+    <s:String x:Key="_Duration">Длительность</s:String>
+    <s:String x:Key="_SelectImage">Выбор изображения</s:String>
+    <s:String x:Key="_From">с</s:String>
+    <s:String x:Key="_To">на</s:String>
+    <s:String x:Key="_ReplaceIn">Заменить в</s:String>
+    <s:String x:Key="_In">в</s:String>
+    <s:String x:Key="_Ms">мс</s:String>
+    <s:String x:Key="_And">и</s:String>
+    <s:String x:Key="_Back">Назад</s:String>
+    <s:String x:Key="_Hello">Привет</s:String>
+    <s:String x:Key="_Understand">Понятно</s:String>
+    <s:String x:Key="_Well">Хорошо</s:String>
+    <s:String x:Key="_Say">Сказать</s:String>
+    <s:String x:Key="_Cut">Вырезать</s:String>
+    <s:String x:Key="_Type">Напечатать</s:String>
+    <s:String x:Key="_Stop">Стоп</s:String>
+    <s:String x:Key="_Send">Отправить</s:String>
+    <s:String x:Key="_Play">Воспроизвести</s:String>
+    <s:String x:Key="_Open">Открыть</s:String>
+    <s:String x:Key="_Exit">Выход</s:String>
+    <s:String x:Key="_Copy">Копировать</s:String>
+    <s:String x:Key="_Edit">Редактировать</s:String>
+    <s:String x:Key="_Name">Имя</s:String>
+    <s:String x:Key="_Times">раз</s:String>
+    <s:String x:Key="_Email">Email</s:String>
+    <s:String x:Key="_Opera">Опера</s:String>
+    <s:String x:Key="_Upload">загрузить</s:String>
+    <s:String x:Key="_Chrome">Chrome</s:String>
+    <s:String x:Key="_FireFox">Firefox</s:String>
+    <s:String x:Key="_Yandex">Яндекс</s:String>
+    <s:String x:Key="_Vivaldi">Вивальди</s:String>
+    <s:String x:Key="_Password">Пароль</s:String>
+    <s:String x:Key="_RepeatPassword">Повторите пароль</s:String>
+    <s:String x:Key="_NickName">Ник</s:String>
+    <s:String x:Key="_Paste">Вставить</s:String>
+    <s:String x:Key="_Rules">Автозамены</s:String>
+    <s:String x:Key="_Top10">Топ 10</s:String>
+    <s:String x:Key="_Rub">руб.</s:String>
+    <s:String x:Key="_Donate">Пожертвовать</s:String>
+    <s:String x:Key="_Search">Поиск</s:String>
+    <s:String x:Key="_Browse">Выбрать</s:String>
+    <s:String x:Key="_Remove">Удалить</s:String>
+    <s:String x:Key="_Execute">Выполнить</s:String>
+    <s:String x:Key="_Refresh">Обновить</s:String>
+    <s:String x:Key="_Loading">Загрузка</s:String>
+    <s:String x:Key="_Donated">Пожертвовано</s:String>
+    <s:String x:Key="_NewPack">Новая коллекция</s:String>
+    <s:String x:Key="_Unknown">Неизвестный</s:String>
+    <s:String x:Key="_AddPack">Добавить коллекцию</s:String>
+    <s:String x:Key="_Settings">Настройки</s:String>
+    <s:String x:Key="_OnServer">На сервере</s:String>
+    <s:String x:Key="_Close">Закрыть</s:String>
+    <s:String x:Key="_EventHasCome">Событие настало</s:String>
+    <s:String x:Key="_Confidant">Доверенное лицо</s:String>
+    <s:String x:Key="_Dublicate">Дубликат</s:String>
+    <s:String x:Key="_HttpWebRequest">Веб-запрос</s:String>
+    <s:String x:Key="_Categories">Категории</s:String>
+    <s:String x:Key="_Collection">Коллекция</s:String>
+    <s:String x:Key="_Reputation">Репутация</s:String>
+    <s:String x:Key="_AddCommand">Добавить команду</s:String>
+    <s:String x:Key="_Replacement">Замена</s:String>
+    <s:String x:Key="_Publish">Опубликовать</s:String>
+    <s:String x:Key="_Publication">Публикация</s:String>
+    <s:String x:Key="_AddCategory">Новая категория</s:String>
+    <s:String x:Key="_NewCategory">Новая категория</s:String>
+    <s:String x:Key="_Save">Сохранить</s:String>
+    <s:String x:Key="_Achievements">Достижения</s:String>
+    <s:String x:Key="_IfProcessOpen">Если открыта программа</s:String>
+    <s:String x:Key="_IfWebsiteOpen">Если открыт веб-сайт</s:String>
+    <s:String x:Key="_WithParameters">с параметрами</s:String>
     <s:String x:Key="w_IfProcessActive">Если активна программа</s:String>
-    <s:String x:Key="s_NothingSelected">Ничего не выбрано</s:String>
-    <s:String x:Key="s_DataTransferCompleted">Данные отправлены на сервер</s:String>
-    <s:String x:Key="s_Everything">Всё</s:String>
+    <s:String x:Key="_NothingSelected">Ничего не выбрано</s:String>
+    <s:String x:Key="_DataTransferCompleted">Данные отправлены на сервер</s:String>
+    <s:String x:Key="_Everything">Всё</s:String>
 
-    <s:String x:Key="s_Questions">Вопросы</s:String>
-    <s:String x:Key="s_Answers">Ответы</s:String>
-    <s:String x:Key="s_MouseMoveOn">Навести курсор на элемент</s:String>
-    <s:String x:Key="s_DonationValueInvalid">Неправильное значение</s:String>
-    <s:String x:Key="s_DonateToLaitis">Пожертвовать деньги Laitis</s:String>
+    <s:String x:Key="_Questions">Вопросы</s:String>
+    <s:String x:Key="_Answers">Ответы</s:String>
+    <s:String x:Key="_MouseMoveOn">Навести курсор на элемент</s:String>
+    <s:String x:Key="_DonationValueInvalid">Неправильное значение</s:String>
+    <s:String x:Key="_DonateToLaitis">Пожертвовать деньги Laitis</s:String>
 
-    <s:String x:Key="s_Size">Размер</s:String>
-    <s:String x:Key="s_Download">Скачать</s:String>
-    <s:String x:Key="s_DownloadStarted">загрузка начата</s:String>
-    <s:String x:Key="s_DownloadCompleted">загрузка завершена</s:String>
-    <s:String x:Key="s_HoldToConfirm">Зажмите для подтверждения</s:String>
-    <s:String x:Key="s_Cancel">Отменить</s:String>
+    <s:String x:Key="_Size">Размер</s:String>
+    <s:String x:Key="_Download">Скачать</s:String>
+    <s:String x:Key="_DownloadStarted">загрузка начата</s:String>
+    <s:String x:Key="_DownloadCompleted">загрузка завершена</s:String>
+    <s:String x:Key="_HoldToConfirm">Зажмите для подтверждения</s:String>
+    <s:String x:Key="_Cancel">Отменить</s:String>
 
 
-    <s:String x:Key="s_Variables">Переменные</s:String>
+    <s:String x:Key="_Variables">Переменные</s:String>
 
-    <s:String x:Key="s_ProcessName">Название процесса</s:String>
-    <s:String x:Key="s_FilePath">Путь к файлу</s:String>
+    <s:String x:Key="_ProcessName">Название процесса</s:String>
+    <s:String x:Key="_FilePath">Путь к файлу</s:String>
     <!--#endregion-->
 
     <!--#region Common Tooltips-->
-    <TextBlock x:Key="s_Tooltip_CancelButton">
-        <Run Text="{StaticResource s_Cancel}" />
+    <TextBlock x:Key="_Tooltip_CancelButton">
+        <Run Text="{StaticResource _Cancel}" />
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
+            <Run Text="{StaticResource _HoldToConfirm}" />
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_Tooltip_RemoveButton">
-        <Run Text="{StaticResource s_Remove}" />
+    <TextBlock x:Key="_Tooltip_RemoveButton">
+        <Run Text="{StaticResource _Remove}" />
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
+            <Run Text="{StaticResource _HoldToConfirm}" />
         </Span>
     </TextBlock>
     <!--#endregion-->
 
     <!--#region Browser Controller-->
-    <s:String x:Key="s_BrowserController">Управление вебсайтами</s:String>
+    <s:String x:Key="_BrowserController">Управление вебсайтами</s:String>
     <!--#endregion-->
 
     <!--#region Command Editor-->
-    <s:String x:Key="s_CommandEditor_Default_Category_Name">Общие</s:String>
-    <s:String x:Key="s_CommandEditor_Default_Pack_Name">Новая коллекция</s:String>
-    <s:String x:Key="s_CommandEditor_Open_ErrorText">Не удалось открыть редактор. Подробности в журнале событий.</s:String>
-    <s:String x:Key="s_CommandEditor_DublicateFounded">Уже есть точно такая же голосовая команда</s:String>
-    <s:String x:Key="s_CommandEditor_DublicateTooltip">Программа автоматически распознает многие вариации.</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommandExists">Эта голосовая команда уже используется в команде</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommandVariableNameError">Не корректное название переменной</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommands">Голосовые команды:</s:String>
-    <s:String x:Key="s_CommandEditor_Actions">Действия:</s:String>
-    <s:String x:Key="s_CommandEditor_Variables">Переменные:</s:String>
-    <s:String x:Key="s_CommandEditor_SelectProcess">Выбрать процесс</s:String>
+    <s:String x:Key="_CommandEditor_Default_Category_Name">Общие</s:String>
+    <s:String x:Key="_CommandEditor_Default_Pack_Name">Новая коллекция</s:String>
+    <s:String x:Key="_CommandEditor_Open_ErrorText">Не удалось открыть редактор. Подробности в журнале событий.</s:String>
+    <s:String x:Key="_CommandEditor_DublicateFounded">Уже есть точно такая же голосовая команда</s:String>
+    <s:String x:Key="_CommandEditor_DublicateTooltip">Программа автоматически распознает многие вариации.</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommandExists">Эта голосовая команда уже используется в команде</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommandVariableNameError">Не корректное название переменной</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommands">Голосовые команды:</s:String>
+    <s:String x:Key="_CommandEditor_Actions">Действия:</s:String>
+    <s:String x:Key="_CommandEditor_Variables">Переменные:</s:String>
+    <s:String x:Key="_CommandEditor_SelectProcess">Выбрать процесс</s:String>
 
-    <s:String x:Key="s_CommandAction_AddCondition">Добавить Условие</s:String>
-    <s:String x:Key="s_CommandAction_AddAction">Добавить Действие</s:String>
-    <s:String x:Key="s_CommandAction_AddUtilityAction">Добавить Полезное Действие</s:String>
-    <s:String x:Key="s_CommandAction_AddInputAction">Добавить Действие Ввода</s:String>
-    <s:String x:Key="s_CommandAction_AddWebAction">Добавить Веб-Действие</s:String>
+    <s:String x:Key="_CommandAction_AddCondition">Добавить Условие</s:String>
+    <s:String x:Key="_CommandAction_AddAction">Добавить Действие</s:String>
+    <s:String x:Key="_CommandAction_AddUtilityAction">Добавить Полезное Действие</s:String>
+    <s:String x:Key="_CommandAction_AddInputAction">Добавить Действие Ввода</s:String>
+    <s:String x:Key="_CommandAction_AddWebAction">Добавить Веб-Действие</s:String>
     
-    <s:String x:Key="s_CommandAction_Label_OpenFile0">Открыть файл:</s:String>
-    <s:String x:Key="s_CommandAction_Label_OpenFile1">Параметры запуска:</s:String>
-    <s:String x:Key="s_CommandAction_Label_Hotkeys">Cочетание клавиш:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
-    <s:String x:Key="s_CommandAction_Label_Say">Сказать:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfProcessSelected">Если активна программа:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfProcessExists">Если запущена программа:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfWebsiteSelected">Если открыт вебсайт:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseButton">Кнопка мыши:</s:String>
-    <s:String x:Key="s_CommandAction_Label_HttpWebRequest">Веб-запрос:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Action">Действие:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Element">Элемент:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenFile0">Открыть файл:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenFile1">Параметры запуска:</s:String>
+    <s:String x:Key="_CommandAction_Label_Hotkeys">Cочетание клавиш:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMove_X">X:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMove_Y">Y:</s:String>
+    <s:String x:Key="_CommandAction_Label_Say">Сказать:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfProcessSelected">Если активна программа:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfProcessExists">Если запущена программа:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">Если открыт вебсайт:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseButton">Кнопка мыши:</s:String>
+    <s:String x:Key="_CommandAction_Label_HttpWebRequest">Веб-запрос:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Действие:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Элемент:</s:String>
 
-    <s:String x:Key="s_CommandAction_Label_OpenURL">Открыть веб-страницу:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageClick">Кликнуть на веб-странице:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageFocus">Сфокусировать на веб-странице:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageRead">Прочитать на веб-странице:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageNavigate">Выбрать на веб-странице:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageNavClick">Открыть выбранное на веб-странице:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Открыть всплывающее окно:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseScroll">на:</s:String>
-    <s:String x:Key="s_CommandAction_Label_TogglePackActivity">коллекцию:</s:String>
-    <s:String x:Key="s_CommandAction_Label_JetAim">Прицелить курсор. Цифры:</s:String>
-    <s:String x:Key="s_CommandAction_Label_VoiceCommand">Выполнить голосовую команду:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenURL">Открыть веб-страницу:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageClick">Кликнуть на веб-странице:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageFocus">Сфокусировать на веб-странице:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageRead">Прочитать на веб-странице:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavigate">Выбрать на веб-странице:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavClick">Открыть выбранное на веб-странице:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Открыть всплывающее окно:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseScroll">на:</s:String>
+    <s:String x:Key="_CommandAction_Label_TogglePackActivity">коллекцию:</s:String>
+    <s:String x:Key="_CommandAction_Label_JetAim">Прицелить курсор. Цифры:</s:String>
+    <s:String x:Key="_CommandAction_Label_VoiceCommand">Выполнить голосовую команду:</s:String>
     
-    <TextBlock x:Key="s_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
         Действия ниже будут выполнены после времени, указанного в запланированном событии
         <LineBreak />
         Если компьютер в состоянии сна и Laitis был включен - комп проснется если время события не 00:00.
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Приостанавливает выполнение действий
         <LineBreak />
         Ожидает фразу от пользователя
         <LineBreak />
         Записывает значение в переменную с указанным именем
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
         Сколько времени ждать ответа от пользователя
         <LineBreak />
         Пустота или 0 = бесконечно
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
         1 секунда = 1000 миллисекунд
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
         В секундах
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Позволяет вызвать действия из другой голосовой команды
         <LineBreak />
         Укажите одну из фраз
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim">
+    <TextBlock x:Key="_CommandAction_Tooltip_JetAim">
         Открывает интерактивный интерфейс перемещения курсора с помощью голоса
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -576,7 +576,7 @@
             Во время выбора можно сказать: Назад, Отмена, Закрыть, Ноль(выбрать заранее)
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim_Numbers">
+    <TextBlock x:Key="_CommandAction_Tooltip_JetAim_Numbers">
         Цифры можно задать заранее
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -585,9 +585,9 @@
             Этот параметр можно оставить пустым
         </Span>
     </TextBlock>
-    <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Параметры запуска приложения (пример: -game cstrike)</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Просто нажмите нужное сочетание</s:String>
-    <TextBlock x:Key="s_CommandAction_Tooltip_HotkeysManualInput">
+    <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Параметры запуска приложения (пример: -game cstrike)</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Просто нажмите нужное сочетание</s:String>
+    <TextBlock x:Key="_CommandAction_Tooltip_HotkeysManualInput">
         Свободный ввод сочетаний клавиш
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -597,13 +597,13 @@
         </Span>
     </TextBlock>
 
-    <s:String x:Key="s_Click">Кликнуть</s:String>
-    <s:String x:Key="s_Focus">Фокус</s:String>
-    <s:String x:Key="s_Navigate">Выбрать</s:String>
-    <s:String x:Key="s_NavClick">Открыть выбор</s:String>
-    <s:String x:Key="s_OpenPopup">Открыть всплывающее окно</s:String>
+    <s:String x:Key="_Click">Кликнуть</s:String>
+    <s:String x:Key="_Focus">Фокус</s:String>
+    <s:String x:Key="_Navigate">Выбрать</s:String>
+    <s:String x:Key="_NavClick">Открыть выбор</s:String>
+    <s:String x:Key="_OpenPopup">Открыть всплывающее окно</s:String>
     
-    <TextBlock x:Key="s_CommandAction_Tooltip_RandomActionBlock">
+    <TextBlock x:Key="_CommandAction_Tooltip_RandomActionBlock">
         Начала блока случайных действий
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -616,193 +616,193 @@
             Случайное действие будет выбрано из тех действий, которые реально выполнить
         </Span>
     </TextBlock>
-    <s:String x:Key="s_CommandAction_Tooltip_Loop">Начало блока действий, которые будет выполнены несколько раз</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_TogglePackActivity">Оставьте поле пустым чтобы переключить все коллекции</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_MouseMove">Можно выбрать с помощью кнопки &quot;Выбрать&quot;</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Например: http://ya.ru</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Pause">Время в миллисекундах</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_IfWebsiteSelected">Начало url вебсайта</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_HttpWebRequest">Отправить веб-запрос без использования браузера</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. Если вы не знаете CSS - вы не сможете правильно создать это действие</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_NavClick">Это поле можно оставить пустым или ввести CSS-selector</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Else">Логическое Иначе для условия выше</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Завершение логического условия Если и других конструкций. Не обязательное, если ниже нет действий.</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Loop">Начало блока действий, которые будет выполнены несколько раз</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Оставьте поле пустым чтобы переключить все коллекции</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_MouseMove">Можно выбрать с помощью кнопки &quot;Выбрать&quot;</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_OpenURL">Например: http://ya.ru</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Pause">Время в миллисекундах</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_IfWebsiteSelected">Начало url вебсайта</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_HttpWebRequest">Отправить веб-запрос без использования браузера</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Selector">CSS-selector. Если вы не знаете CSS - вы не сможете правильно создать это действие</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_NavClick">Это поле можно оставить пустым или ввести CSS-selector</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Else">Логическое Иначе для условия выше</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_EndBlock">Завершение логического условия Если и других конструкций. Не обязательное, если ниже нет действий.</s:String>
     <!--#endregion-->
 
     <!--#region Enums-->
     <!--  NotificationType -->
-    <s:String x:Key="s_NotificationType_Default">Обычная</s:String>
-    <s:String x:Key="s_NotificationType_Info">Инфо</s:String>
-    <s:String x:Key="s_NotificationType_Done">Готово</s:String>
-    <s:String x:Key="s_NotificationType_Error">Ошибка</s:String>
+    <s:String x:Key="_NotificationType_Default">Обычная</s:String>
+    <s:String x:Key="_NotificationType_Info">Инфо</s:String>
+    <s:String x:Key="_NotificationType_Done">Готово</s:String>
+    <s:String x:Key="_NotificationType_Error">Ошибка</s:String>
     <!--  PauseType -->
-    <s:String x:Key="s_PauseType_Time">Пауза на</s:String>
-    <s:String x:Key="s_PauseType_AudioEnd">Пауза пока не закончится звук</s:String>
+    <s:String x:Key="_PauseType_Time">Пауза на</s:String>
+    <s:String x:Key="_PauseType_AudioEnd">Пауза пока не закончится звук</s:String>
     <!--  ScheduleEventType -->
-    <s:String x:Key="s_ScheduleEventType_At">в</s:String>
-    <s:String x:Key="s_ScheduleEventType_After">через</s:String>
+    <s:String x:Key="_ScheduleEventType_At">в</s:String>
+    <s:String x:Key="_ScheduleEventType_After">через</s:String>
     <!--  VoiceCommandMode -->
-    <s:String x:Key="s_VoiceCommandMode_Default">Без ключевых слов</s:String>
-    <s:String x:Key="s_VoiceCommandMode_Keyword">Ключевое слово перед командой</s:String>
+    <s:String x:Key="_VoiceCommandMode_Default">Без ключевых слов</s:String>
+    <s:String x:Key="_VoiceCommandMode_Keyword">Ключевое слово перед командой</s:String>
     <!--  StateSwitchingAction -->
-    <s:String x:Key="s_TextTypingMode_Default">Обычная диктовка текста</s:String>
-    <s:String x:Key="s_TextTypingMode_Prefix">Ключевое слово перед текстом</s:String>
-    <s:String x:Key="s_TextTypingMode_Postfix">Ключевое слово после текста</s:String>
+    <s:String x:Key="_TextTypingMode_Default">Обычная диктовка текста</s:String>
+    <s:String x:Key="_TextTypingMode_Prefix">Ключевое слово перед текстом</s:String>
+    <s:String x:Key="_TextTypingMode_Postfix">Ключевое слово после текста</s:String>
     <!--  StateSwitchingAction -->
-    <s:String x:Key="s_StateSwitchingAction_Toggle">Переключить</s:String>
-    <s:String x:Key="s_StateSwitchingAction_Enable">Включить</s:String>
-    <s:String x:Key="s_StateSwitchingAction_Disable">Выключить</s:String>
+    <s:String x:Key="_StateSwitchingAction_Toggle">Переключить</s:String>
+    <s:String x:Key="_StateSwitchingAction_Enable">Включить</s:String>
+    <s:String x:Key="_StateSwitchingAction_Disable">Выключить</s:String>
     <!--  HttpWebRequestMethod -->
-    <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
-    <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
+    <s:String x:Key="_HttpWebRequestMethod_GET">GET</s:String>
+    <s:String x:Key="_HttpWebRequestMethod_POST">POST</s:String>
     <!--  YandexMoneyPaymentType -->
-    <s:String x:Key="s_YandexMoneyPaymentType_YandexMoney">Яндекс деньгами</s:String>
-    <s:String x:Key="s_YandexMoneyPaymentType_CreditCard">Кредитной картой</s:String>
-    <s:String x:Key="s_YandexMoneyPaymentType_MobileBalance">С мобильного</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_YandexMoney">Яндекс деньгами</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_CreditCard">Кредитной картой</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_MobileBalance">С мобильного</s:String>
     <!--  CommandState -->
-    <s:String x:Key="s_CommandState_ModifiedByUser">Вы внесли изменения в эту команду</s:String>
-    <s:String x:Key="s_CommandState_CreatedByUser">Вы создали эту команду</s:String>
-    <s:String x:Key="s_CommandState_UpdateAvailable">Доступно Обновление</s:String>
-    <s:String x:Key="s_CommandState_RemovedOnServer">Удалено на сервере</s:String>
+    <s:String x:Key="_CommandState_ModifiedByUser">Вы внесли изменения в эту команду</s:String>
+    <s:String x:Key="_CommandState_CreatedByUser">Вы создали эту команду</s:String>
+    <s:String x:Key="_CommandState_UpdateAvailable">Доступно Обновление</s:String>
+    <s:String x:Key="_CommandState_RemovedOnServer">Удалено на сервере</s:String>
     <!--  SpeechState -->
-    <s:String x:Key="s_SpeechState_Working">Включен</s:String>
-    <s:String x:Key="s_SpeechState_Recording">Записываю</s:String>
-    <s:String x:Key="s_SpeechState_Saying">Говорю</s:String>
-    <s:String x:Key="s_SpeechState_Paused">На паузе</s:String>
+    <s:String x:Key="_SpeechState_Working">Включен</s:String>
+    <s:String x:Key="_SpeechState_Recording">Записываю</s:String>
+    <s:String x:Key="_SpeechState_Saying">Говорю</s:String>
+    <s:String x:Key="_SpeechState_Paused">На паузе</s:String>
     <!--  MouseMoveType -->
-    <s:String x:Key="s_MouseMoveType_Point">Передвинуть курсор в точку</s:String>
-    <s:String x:Key="s_MouseMoveType_Relative">Подвинуть курсор</s:String>
+    <s:String x:Key="_MouseMoveType_Point">Передвинуть курсор в точку</s:String>
+    <s:String x:Key="_MouseMoveType_Relative">Подвинуть курсор</s:String>
     <!--  MouseScrollType -->
-    <s:String x:Key="s_MouseScrollType_Vertical">Вертикально</s:String>
-    <s:String x:Key="s_MouseScrollType_Horizontal">Горизонтально</s:String>
+    <s:String x:Key="_MouseScrollType_Vertical">Вертикально</s:String>
+    <s:String x:Key="_MouseScrollType_Horizontal">Горизонтально</s:String>
     <!--  ActionType -->
-    <s:String x:Key="s_ActionType_OpenFile">Открыть файл или программу</s:String>
-    <s:String x:Key="s_ActionType_CloseApp">Закрыть программу</s:String>
-    <s:String x:Key="s_ActionType_Hotkeys">Нажать сочетание клавиш</s:String>
-    <s:String x:Key="s_ActionType_MouseMove">Переместить курсор</s:String>
-    <s:String x:Key="s_ActionType_Say">Сказать</s:String>
-    <s:String x:Key="s_ActionType_Type">Напечатать текст</s:String>
-    <s:String x:Key="s_ActionType_PlayAudio">Звук/Аудио</s:String>
-    <s:String x:Key="s_ActionType_OpenURL">Открыть веб-страницу</s:String>
-    <s:String x:Key="s_ActionType_WebPageScript">Выполнить javascript</s:String>
-    <s:String x:Key="s_ActionType_Pause">Подождать</s:String>
-    <s:String x:Key="s_ActionType_IfProcessSelected">Если активна программа</s:String>
-    <s:String x:Key="s_ActionType_IfProcessExists">Если запущена программа</s:String>
-    <s:String x:Key="s_ActionType_IfWebsiteSelected">Если открыт вебсайт</s:String>
-    <s:String x:Key="s_ActionType_MouseButton">Нажать кнопку мыши</s:String>
-    <s:String x:Key="s_ActionType_HttpWebRequest">Веб-запрос</s:String>
-    <s:String x:Key="s_ActionType_SetVariableValue">Задать значение переменной</s:String>
-    <s:String x:Key="s_ActionType_IfVariableValue">Если значение переменной</s:String>
-    <s:String x:Key="s_ActionType_IfWebsiteNavValue">Если на сайте выделено</s:String>
-    <s:String x:Key="s_ActionType_ShowWindow">Показать окно</s:String>
-    <s:String x:Key="s_ActionType_WebPageFocus">Фокус</s:String>
-    <s:String x:Key="s_ActionType_WebPageClick">Клик</s:String>
-    <s:String x:Key="s_ActionType_WebPageRead">Прочитать</s:String>
-    <s:String x:Key="s_ActionType_WebPageNavigate">Выбрать</s:String>
-    <s:String x:Key="s_ActionType_WebPageNavClick">Открыть выбор</s:String>
-    <s:String x:Key="s_ActionType_WebPagePopupOpen">Открыть всплывающее окно</s:String>
-    <s:String x:Key="s_ActionType_MouseMoveOn">Навести курсор на элемент</s:String>
-    <s:String x:Key="s_ActionType_Else">Иначе</s:String>
-    <s:String x:Key="s_ActionType_EndBlock">Конец</s:String>
-    <s:String x:Key="s_ActionType_Comment">Комментарий</s:String>
-    <s:String x:Key="s_ActionType_MouseScroll">Прокрутить колесо мыши</s:String>
-    <s:String x:Key="s_ActionType_TogglePackActivity">Вкл/Выкл коллекцию</s:String>
-    <s:String x:Key="s_ActionType_RandomActionBlock">Блок случайного действия</s:String>
-    <s:String x:Key="s_ActionType_Loop">Цикл</s:String>
-    <s:String x:Key="s_ActionType_JetAim">Прицелить курсор</s:String>
-    <s:String x:Key="s_ActionType_BatchScript">.bat скрипт</s:String>
-    <s:String x:Key="s_ActionType_VariableReplace">Замена в переменной</s:String>
-    <s:String x:Key="s_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
-    <s:String x:Key="s_ActionType_ScheduleEvent">Запланировать событие</s:String>
-    <s:String x:Key="s_ActionType_Notify">Уведомить</s:String>
-    <s:String x:Key="s_ActionType_VoiceCommand">Выполнить голосовую команду</s:String>
+    <s:String x:Key="_ActionType_OpenFile">Открыть файл или программу</s:String>
+    <s:String x:Key="_ActionType_CloseApp">Закрыть программу</s:String>
+    <s:String x:Key="_ActionType_Hotkeys">Нажать сочетание клавиш</s:String>
+    <s:String x:Key="_ActionType_MouseMove">Переместить курсор</s:String>
+    <s:String x:Key="_ActionType_Say">Сказать</s:String>
+    <s:String x:Key="_ActionType_Type">Напечатать текст</s:String>
+    <s:String x:Key="_ActionType_PlayAudio">Звук/Аудио</s:String>
+    <s:String x:Key="_ActionType_OpenURL">Открыть веб-страницу</s:String>
+    <s:String x:Key="_ActionType_WebPageScript">Выполнить javascript</s:String>
+    <s:String x:Key="_ActionType_Pause">Подождать</s:String>
+    <s:String x:Key="_ActionType_IfProcessSelected">Если активна программа</s:String>
+    <s:String x:Key="_ActionType_IfProcessExists">Если запущена программа</s:String>
+    <s:String x:Key="_ActionType_IfWebsiteSelected">Если открыт вебсайт</s:String>
+    <s:String x:Key="_ActionType_MouseButton">Нажать кнопку мыши</s:String>
+    <s:String x:Key="_ActionType_HttpWebRequest">Веб-запрос</s:String>
+    <s:String x:Key="_ActionType_SetVariableValue">Задать значение переменной</s:String>
+    <s:String x:Key="_ActionType_IfVariableValue">Если значение переменной</s:String>
+    <s:String x:Key="_ActionType_IfWebsiteNavValue">Если на сайте выделено</s:String>
+    <s:String x:Key="_ActionType_ShowWindow">Показать окно</s:String>
+    <s:String x:Key="_ActionType_WebPageFocus">Фокус</s:String>
+    <s:String x:Key="_ActionType_WebPageClick">Клик</s:String>
+    <s:String x:Key="_ActionType_WebPageRead">Прочитать</s:String>
+    <s:String x:Key="_ActionType_WebPageNavigate">Выбрать</s:String>
+    <s:String x:Key="_ActionType_WebPageNavClick">Открыть выбор</s:String>
+    <s:String x:Key="_ActionType_WebPagePopupOpen">Открыть всплывающее окно</s:String>
+    <s:String x:Key="_ActionType_MouseMoveOn">Навести курсор на элемент</s:String>
+    <s:String x:Key="_ActionType_Else">Иначе</s:String>
+    <s:String x:Key="_ActionType_EndBlock">Конец</s:String>
+    <s:String x:Key="_ActionType_Comment">Комментарий</s:String>
+    <s:String x:Key="_ActionType_MouseScroll">Прокрутить колесо мыши</s:String>
+    <s:String x:Key="_ActionType_TogglePackActivity">Вкл/Выкл коллекцию</s:String>
+    <s:String x:Key="_ActionType_RandomActionBlock">Блок случайного действия</s:String>
+    <s:String x:Key="_ActionType_Loop">Цикл</s:String>
+    <s:String x:Key="_ActionType_JetAim">Прицелить курсор</s:String>
+    <s:String x:Key="_ActionType_BatchScript">.bat скрипт</s:String>
+    <s:String x:Key="_ActionType_VariableReplace">Замена в переменной</s:String>
+    <s:String x:Key="_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
+    <s:String x:Key="_ActionType_ScheduleEvent">Запланировать событие</s:String>
+    <s:String x:Key="_ActionType_Notify">Уведомить</s:String>
+    <s:String x:Key="_ActionType_VoiceCommand">Выполнить голосовую команду</s:String>
     <!--  WebNavigateAction-->
-    <s:String x:Key="s_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
-    <s:String x:Key="s_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
-    <s:String x:Key="s_WebPageNavigateAction_SubstractIndex">Убрать из позиции</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
+    <s:String x:Key="_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SubstractIndex">Убрать из позиции</s:String>
     <!--  CloseAppBehaviour -->
-    <s:String x:Key="s_CloseAppBehaviour_Close">Закрыть</s:String>
-    <s:String x:Key="s_CloseAppBehaviour_Kill">Убить</s:String>
+    <s:String x:Key="_CloseAppBehaviour_Close">Закрыть</s:String>
+    <s:String x:Key="_CloseAppBehaviour_Kill">Убить</s:String>
     <!--  Mouse Button-->
-    <s:String x:Key="s_MouseButton_Left">Левая кнопка мыши</s:String>
-    <s:String x:Key="s_MouseButton_Right">Правая кнопка мыши</s:String>
-    <s:String x:Key="s_MouseButton_Middle">Средняя кнопка мыши</s:String>
-    <s:String x:Key="s_MouseButton_XButton1">Х1 кнопка мыши</s:String>
-    <s:String x:Key="s_MouseButton_XButton2">Х2 кнопка мыши</s:String>
+    <s:String x:Key="_MouseButton_Left">Левая кнопка мыши</s:String>
+    <s:String x:Key="_MouseButton_Right">Правая кнопка мыши</s:String>
+    <s:String x:Key="_MouseButton_Middle">Средняя кнопка мыши</s:String>
+    <s:String x:Key="_MouseButton_XButton1">Х1 кнопка мыши</s:String>
+    <s:String x:Key="_MouseButton_XButton2">Х2 кнопка мыши</s:String>
     <!--  Mouse Action-->
-    <s:String x:Key="s_ButtonAction_Click">Нажать</s:String>
-    <s:String x:Key="s_ButtonAction_Press">Зажать</s:String>
-    <s:String x:Key="s_ButtonAction_Release">Отжать</s:String>
-    <s:String x:Key="s_ButtonAction_LongClick">Длинное нажатие</s:String>
+    <s:String x:Key="_ButtonAction_Click">Нажать</s:String>
+    <s:String x:Key="_ButtonAction_Press">Зажать</s:String>
+    <s:String x:Key="_ButtonAction_Release">Отжать</s:String>
+    <s:String x:Key="_ButtonAction_LongClick">Длинное нажатие</s:String>
     <!--  Show Window Commands-->
-    <s:String x:Key="s_ShowWindowCommandType_Show">Показать</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Maximize">Растянуть</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Minimize">Свернуть</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Hide">Спрятать</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Show">Показать</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Maximize">Растянуть</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Minimize">Свернуть</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Hide">Спрятать</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
 
-    <s:String x:Key="s_Service_Online">онлайн</s:String>
-    <s:String x:Key="s_Service_Offline">офлайн</s:String>
-    <s:String x:Key="s_Service_Authorize">регистрация</s:String>
-    <s:String x:Key="s_Service_BadQuality">плохое качество</s:String>
-    <s:String x:Key="s_Service_GoodQuality">хорошее качество</s:String>
-    <s:String x:Key="s_Service_Install">установка</s:String>
-    <s:String x:Key="s_Service_Limited">лимиты</s:String>
+    <s:String x:Key="_Service_Online">онлайн</s:String>
+    <s:String x:Key="_Service_Offline">офлайн</s:String>
+    <s:String x:Key="_Service_Authorize">регистрация</s:String>
+    <s:String x:Key="_Service_BadQuality">плохое качество</s:String>
+    <s:String x:Key="_Service_GoodQuality">хорошее качество</s:String>
+    <s:String x:Key="_Service_Install">установка</s:String>
+    <s:String x:Key="_Service_Limited">лимиты</s:String>
     
-    <s:String x:Key="s_Logger_Clear">Очистить журнал событий</s:String>
-    <s:String x:Key="s_Logger_ExtendedMode">Подробный режим</s:String>
+    <s:String x:Key="_Logger_Clear">Очистить журнал событий</s:String>
+    <s:String x:Key="_Logger_ExtendedMode">Подробный режим</s:String>
     
-    <s:String x:Key="s_Settings_Default_CommandStarter">Эй ты/ОК Google/Siri/Эй Siri/Джарвис</s:String>
-    <s:String x:Key="s_Settings_Default_TextInputStarter">написать/напечатать/диктовать</s:String>
-    <s:String x:Key="s_Settings_Default_Language">ru-RU</s:String>
-    <s:String x:Key="s_Settings_ListenLastRecording">Послушать последнюю запись голоса</s:String>
-    <s:String x:Key="s_Settings_ScheduledEvents">Будущие действия</s:String>
+    <s:String x:Key="_Settings_Default_CommandStarter">Эй ты/ОК Google/Siri/Эй Siri/Джарвис</s:String>
+    <s:String x:Key="_Settings_Default_TextInputStarter">написать/напечатать/диктовать</s:String>
+    <s:String x:Key="_Settings_Default_Language">ru-RU</s:String>
+    <s:String x:Key="_Settings_ListenLastRecording">Послушать последнюю запись голоса</s:String>
+    <s:String x:Key="_Settings_ScheduledEvents">Будущие действия</s:String>
     
     <!--#region Settings Labels-->
-    <s:String x:Key="s_Settings_Label_VoiceCommands">Голосовые команды</s:String>
-    <s:String x:Key="s_Settings_Label_VoiceDialing">Голосовой набор текста</s:String>
-    <s:String x:Key="s_Settings_Label_IsPauseRecordingOnLoudSound">Приостанавливать запись при громкой музыке</s:String>
-    <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Запись только при зажатии</s:String>
-    <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Выключать звук при зажатии клавиши</s:String>
-    <s:String x:Key="s_Settings_Label_UseCommandStarter">Запускать команды только если фразы начинаются с</s:String>
-    <s:String x:Key="s_Settings_Label_AutoRun">Запускать Laitis при старте Windows</s:String>
-    <s:String x:Key="s_Settings_Label_UseStatusWindow">Всплывающие уведомления вверху экрана</s:String>
-    <s:String x:Key="s_Settings_Label_RecognitionService">Сервис распознавания голоса</s:String>
-    <s:String x:Key="s_Settings_Label_RecognitionLanguage">Язык распознавания</s:String>
-    <s:String x:Key="s_Settings_Label_TextToSpeechService">Сервис произношения голоса</s:String>
-    <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Голосовое управление сайтами</s:String>
-    <s:String x:Key="s_Settings_Label_UseCommunication">Общение</s:String>
-    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Автоматическая орфография</s:String>
-    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Клавиатурный ввод текста</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreBackUp">Восстановить предыдущее сохранение из хранилища</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreSuccess">Восстановление данных прошло успешно</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFues">Показать панели подсказок</s:String>
-    <s:String x:Key="s_Settings_Label_AlwaysRunAsAdministrator">Всегда запускать от имени администратора</s:String>
+    <s:String x:Key="_Settings_Label_VoiceCommands">Голосовые команды</s:String>
+    <s:String x:Key="_Settings_Label_VoiceDialing">Голосовой набор текста</s:String>
+    <s:String x:Key="_Settings_Label_IsPauseRecordingOnLoudSound">Приостанавливать запись при громкой музыке</s:String>
+    <s:String x:Key="_Settings_Label_CtrlRecordStarter">Запись только при зажатии</s:String>
+    <s:String x:Key="_Settings_Label_IsMuteOnCtrlClick">Выключать звук при зажатии клавиши</s:String>
+    <s:String x:Key="_Settings_Label_UseCommandStarter">Запускать команды только если фразы начинаются с</s:String>
+    <s:String x:Key="_Settings_Label_AutoRun">Запускать Laitis при старте Windows</s:String>
+    <s:String x:Key="_Settings_Label_UseStatusWindow">Всплывающие уведомления вверху экрана</s:String>
+    <s:String x:Key="_Settings_Label_RecognitionService">Сервис распознавания голоса</s:String>
+    <s:String x:Key="_Settings_Label_RecognitionLanguage">Язык распознавания</s:String>
+    <s:String x:Key="_Settings_Label_TextToSpeechService">Сервис произношения голоса</s:String>
+    <s:String x:Key="_Settings_Label_IsWebsiteControlEnabled">Голосовое управление сайтами</s:String>
+    <s:String x:Key="_Settings_Label_UseCommunication">Общение</s:String>
+    <s:String x:Key="_Settings_Label_IsAutomaticOrphographyEnabled">Автоматическая орфография</s:String>
+    <s:String x:Key="_Settings_Label_IsKeyboardInputEnabled">Клавиатурный ввод текста</s:String>
+    <s:String x:Key="_Settings_Label_RestoreBackUp">Восстановить предыдущее сохранение из хранилища</s:String>
+    <s:String x:Key="_Settings_Label_RestoreSuccess">Восстановление данных прошло успешно</s:String>
+    <s:String x:Key="_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
+    <s:String x:Key="_Settings_Label_RestoreFues">Показать панели подсказок</s:String>
+    <s:String x:Key="_Settings_Label_AlwaysRunAsAdministrator">Всегда запускать от имени администратора</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
-    <ControlTemplate x:Key="s_Settings_Text_YandexService">
+    <ControlTemplate x:Key="_Settings_Text_YandexService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Яндекса требуется:
   1) Аккаунт Яндекс <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
   2) Войти в кабинет разработчика и получить личный ключ на использование SpeechKit <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
   3) Вставить ключ в текстовое поле ниже</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_BingService">
+    <ControlTemplate x:Key="_Settings_Text_BingService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Bing требуется:
   1) Открыть ссылку <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
   2) Выбрать Speech, Bing Speech API, войти в любой из предложенных аккаунтов                  
   3) Вставить первый ключ в текстовое поле ниже</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_WindowsService">
+    <ControlTemplate x:Key="_Settings_Text_WindowsService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для добавления языков надо скачивать языковые пакеты Windows (русский не поддерживается)</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_WindowsTtsService">
+    <ControlTemplate x:Key="_Settings_Text_WindowsTtsService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для добавления голосов надо скачивать языковые пакеты Windows или сторонние голосовые движки, например Ivona</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_AcapelaService">
+    <ControlTemplate x:Key="_Settings_Text_AcapelaService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключания к сервису Acapela требуется:
   1) Перейти по ссылке <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
   2) Нажать Sign up for free в правом верхнем углу
@@ -813,15 +813,15 @@
 
     <!--#region Settings Tooltips-->
     
-    <s:String x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
+    <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">
         Для того чтобы Laitis не записывал и выполнял услышанные слова из видео и музыки
     </s:String>
     
-    <TextBlock x:Key="s_Settings_Tooltip_NoiseProgress">
+    <TextBlock x:Key="_Settings_Tooltip_NoiseProgress">
         Этот индикатор отображает уровень шума в микрофоне
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_TooLoud">
+    <TextBlock x:Key="_Settings_Tooltip_TooLoud">
         Уровень звука в компьютере превысил предел в 30%
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -831,7 +831,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_VoiceDialing">
+    <TextBlock x:Key="_Settings_Tooltip_VoiceDialing">
         С помощью этой опции можно включить набор текста с помощью голоса
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -841,11 +841,11 @@
         </Span>
     </TextBlock>
 
-    <s:String x:Key="s_Settings_Tooltip_RecordStarter">
+    <s:String x:Key="_Settings_Tooltip_RecordStarter">
         Выбрать клавишу
     </s:String>
 
-    <TextBlock x:Key="s_Settings_Tooltip_IsMuteOnCtrlClick">
+    <TextBlock x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">
         Выключает звук в windows при зажатии клавиши
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -853,7 +853,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_UseCommandStarter">
+    <TextBlock x:Key="_Settings_Tooltip_UseCommandStarter">
         Все команды будут начинаться с ключевого слова
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -861,7 +861,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
+    <TextBlock x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Автоматически расставлять точки и запятые, писать с большой буквы
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -875,7 +875,7 @@
         </Span>
     </TextBlock>
     
-    <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
+    <TextBlock x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">
         Набирать текст нажимая клавиши, а не вставлять через буффер обмена
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -889,17 +889,17 @@
 
     <!--#region Help-->
 
-    <s:String x:Key="s_Help_Updates">Обновления</s:String>
-    <s:String x:Key="s_Help_Prepare">Подготовка</s:String>
-    <s:String x:Key="s_Help_IOT">Умный дом и сервисы (для разработчиков)</s:String>
-    <s:String x:Key="s_Help_FAQ">Часто задаваемые вопросы</s:String>
-    <s:String x:Key="s_Help_Extra">Дополнительная информация</s:String>
+    <s:String x:Key="_Help_Updates">Обновления</s:String>
+    <s:String x:Key="_Help_Prepare">Подготовка</s:String>
+    <s:String x:Key="_Help_IOT">Умный дом и сервисы (для разработчиков)</s:String>
+    <s:String x:Key="_Help_FAQ">Часто задаваемые вопросы</s:String>
+    <s:String x:Key="_Help_Extra">Дополнительная информация</s:String>
 
-    <FlowDocument x:Key="s_HelpDocument">
+    <FlowDocument x:Key="_HelpDocument">
 
         <Section Margin="0,0,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Prepare}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Prepare}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 Вам нужен <Run TextDecorations="Underline">хороший микрофон</Run>.
@@ -922,7 +922,7 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_FAQ}" />
+                <Run FontSize="20" Text="{StaticResource _Help_FAQ}" />
             </Paragraph>
             <Paragraph FontWeight="Bold" TextIndent="20">
                 Почему распознавание голоса не работает?
@@ -1051,7 +1051,7 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
+                <Run FontSize="20" Text="{StaticResource _Help_IOT}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 Laitis умеет отправлять веб запросы и выполнять команды, которые вернет сервер.
@@ -1091,7 +1091,7 @@
         
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Extra}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Extra}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 Если вы не ознакомились с
@@ -1145,14 +1145,14 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Updates}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Updates}" />
             </Paragraph>
         </Section>
 
     </FlowDocument>
     <!--#endregion-->
     
-    <FlowDocument x:Key="s_PublisherFUE">
+    <FlowDocument x:Key="_PublisherFUE">
         <Paragraph FontSize="20" TextAlignment="Center">Это функционал публикации ваших изменений и новых команд в сообщество</Paragraph>
 
         <Paragraph>Процесс:</Paragraph>

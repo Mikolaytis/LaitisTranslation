@@ -7,156 +7,156 @@
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
     <!--#region App Initialization-->
-    <s:String x:Key="s_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
-    <s:String x:Key="s_Load_Data">Downloading Data</s:String>
-    <s:String x:Key="s_Load_UpdateCancelledByUser">You are rejected a critical update. Please press yes, to update the application.</s:String>
-    <s:String x:Key="s_Load_UpdaterFailRestart">Update failed. Application restart.</s:String>
-    <s:String x:Key="s_Load_PerformingUpdate">Updating</s:String>
-    <s:String x:Key="s_Load_AppLoaded">started</s:String>
-    <s:String x:Key="s_Load_MandatoryUpdateNeeded">Critical application load failure. Download the latest version of Laitis on laitis.ru, if it will not help - send a message into vk.com/mikolaytis or vk.com/laitisgroup.</s:String>
+    <s:String x:Key="_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
+    <s:String x:Key="_Load_Data">Downloading Data</s:String>
+    <s:String x:Key="_Load_UpdateCancelledByUser">You are rejected a critical update. Please press yes, to update the application.</s:String>
+    <s:String x:Key="_Load_UpdaterFailRestart">Update failed. Application restart.</s:String>
+    <s:String x:Key="_Load_PerformingUpdate">Updating</s:String>
+    <s:String x:Key="_Load_AppLoaded">started</s:String>
+    <s:String x:Key="_Load_MandatoryUpdateNeeded">Critical application load failure. Download the latest version of Laitis on laitis.ru, if it will not help - send a message into vk.com/mikolaytis or vk.com/laitisgroup.</s:String>
 
-    <s:String x:Key="s_Load_SettingsFail">Fail of user's data loading</s:String>
-    <s:String x:Key="s_Load_SettingsFail_Retry">Try again</s:String>
-    <s:String x:Key="s_Load_SettingsFail_OpenApp">Open application with default data</s:String>
-    <s:String x:Key="s_Load_SettingsFail_LoadBackup">Load previous data save from storage</s:String>
-    <s:String x:Key="s_Load_SettingsFail_CloseApp">Close app</s:String>
+    <s:String x:Key="_Load_SettingsFail">Fail of user's data loading</s:String>
+    <s:String x:Key="_Load_SettingsFail_Retry">Try again</s:String>
+    <s:String x:Key="_Load_SettingsFail_OpenApp">Open application with default data</s:String>
+    <s:String x:Key="_Load_SettingsFail_LoadBackup">Load previous data save from storage</s:String>
+    <s:String x:Key="_Load_SettingsFail_CloseApp">Close app</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
-    <s:String x:Key="s_Account_LogIn">Log In</s:String>
-    <s:String x:Key="s_Account_Register">Register</s:String>
-    <s:String x:Key="s_Account_Registration">Registration</s:String>
-    <s:String x:Key="s_Account_SymbolsMin">{0} symbols min</s:String>
-    <s:String x:Key="s_Account_SymbolsMax">{0} symbols max</s:String>
-    <s:String x:Key="s_Account_InvalidEmail">Invalid Email</s:String>
-    <s:String x:Key="s_Account_EnterEmail">Enter Email</s:String>
-    <s:String x:Key="s_Account_EnterPassword">Enter password</s:String>
-    <s:String x:Key="s_Account_AlreadyExists">Already exists</s:String>
-    <s:String x:Key="s_Account_EmailCorrect">Email is correct</s:String>
-    <s:String x:Key="s_Account_EnterNickName">Enter Nick Name</s:String>
-    <s:String x:Key="s_Account_NickNameCorrect">Nick Name is correct</s:String>
-    <s:String x:Key="s_Account_PaswordsMatch">Passwords match</s:String>
-    <s:String x:Key="s_Account_PasswordsDoNotMatch">Passwords missmatch</s:String>
-    <s:String x:Key="s_Account_OnlyLatinCharsAndNumericsAvailable">Only latin chars and numerics are available</s:String>
+    <s:String x:Key="_Account_LogIn">Log In</s:String>
+    <s:String x:Key="_Account_Register">Register</s:String>
+    <s:String x:Key="_Account_Registration">Registration</s:String>
+    <s:String x:Key="_Account_SymbolsMin">{0} symbols min</s:String>
+    <s:String x:Key="_Account_SymbolsMax">{0} symbols max</s:String>
+    <s:String x:Key="_Account_InvalidEmail">Invalid Email</s:String>
+    <s:String x:Key="_Account_EnterEmail">Enter Email</s:String>
+    <s:String x:Key="_Account_EnterPassword">Enter password</s:String>
+    <s:String x:Key="_Account_AlreadyExists">Already exists</s:String>
+    <s:String x:Key="_Account_EmailCorrect">Email is correct</s:String>
+    <s:String x:Key="_Account_EnterNickName">Enter Nick Name</s:String>
+    <s:String x:Key="_Account_NickNameCorrect">Nick Name is correct</s:String>
+    <s:String x:Key="_Account_PaswordsMatch">Passwords match</s:String>
+    <s:String x:Key="_Account_PasswordsDoNotMatch">Passwords missmatch</s:String>
+    <s:String x:Key="_Account_OnlyLatinCharsAndNumericsAvailable">Only latin chars and numerics are available</s:String>
     
-    <s:String x:Key="s_Account_LogInFeature1">Publication of changes</s:String>
-    <s:String x:Key="s_Account_LogInFeature2">Synchronization of settings</s:String>
-    <s:String x:Key="s_Account_LogInFeature3">Access to rating</s:String>
-    <s:String x:Key="s_Account_LogInFeature4">Statistics</s:String>
-    <s:String x:Key="s_Account_LogInFeature5">Achievements</s:String>
+    <s:String x:Key="_Account_LogInFeature1">Publication of changes</s:String>
+    <s:String x:Key="_Account_LogInFeature2">Synchronization of settings</s:String>
+    <s:String x:Key="_Account_LogInFeature3">Access to rating</s:String>
+    <s:String x:Key="_Account_LogInFeature4">Statistics</s:String>
+    <s:String x:Key="_Account_LogInFeature5">Achievements</s:String>
     <!--#endregion-->
 
     <!--#region Achievements-->
-    <s:String x:Key="s_Ach_Social_Name">Social</s:String>
-    <s:String x:Key="s_Ach_Social_Desc">Connect social account</s:String>
+    <s:String x:Key="_Ach_Social_Name">Social</s:String>
+    <s:String x:Key="_Ach_Social_Desc">Connect social account</s:String>
     
-    <s:String x:Key="s_Ach_Publications1_Name">First step</s:String>
-    <s:String x:Key="s_Ach_Publications1_Desc">1 successful publication</s:String>
+    <s:String x:Key="_Ach_Publications1_Name">First step</s:String>
+    <s:String x:Key="_Ach_Publications1_Desc">1 successful publication</s:String>
     
-    <s:String x:Key="s_Ach_PacksPublished1_Name">Creator</s:String>
-    <s:String x:Key="s_Ach_PacksPublished1_Desc">1 published pack</s:String>
+    <s:String x:Key="_Ach_PacksPublished1_Name">Creator</s:String>
+    <s:String x:Key="_Ach_PacksPublished1_Desc">1 published pack</s:String>
     
-    <s:String x:Key="s_Ach_Commands100_Name">Novice</s:String>
-    <s:String x:Key="s_Ach_Commands100_Desc">Execute 100 voice commands</s:String>
+    <s:String x:Key="_Ach_Commands100_Name">Novice</s:String>
+    <s:String x:Key="_Ach_Commands100_Desc">Execute 100 voice commands</s:String>
     
-    <s:String x:Key="s_Ach_Commands500_Name">Knowing something</s:String>
-    <s:String x:Key="s_Ach_Commands500_Desc">Execute 500 voice commands</s:String>
+    <s:String x:Key="_Ach_Commands500_Name">Knowing something</s:String>
+    <s:String x:Key="_Ach_Commands500_Desc">Execute 500 voice commands</s:String>
     
-    <s:String x:Key="s_Ach_Commands1000_Name">Expert</s:String>
-    <s:String x:Key="s_Ach_Commands1000_Desc">Execute 1000 voice commands</s:String>
+    <s:String x:Key="_Ach_Commands1000_Name">Expert</s:String>
+    <s:String x:Key="_Ach_Commands1000_Desc">Execute 1000 voice commands</s:String>
     
-    <s:String x:Key="s_Ach_Commands5000_Name">Master</s:String>
-    <s:String x:Key="s_Ach_Commands5000_Desc">Execute 5000 voice commands</s:String>
+    <s:String x:Key="_Ach_Commands5000_Name">Master</s:String>
+    <s:String x:Key="_Ach_Commands5000_Desc">Execute 5000 voice commands</s:String>
     
-    <s:String x:Key="s_Ach_Donate_Name">Benefactor</s:String>
-    <s:String x:Key="s_Ach_Donate_Desc">First Laitis Donation</s:String>
+    <s:String x:Key="_Ach_Donate_Name">Benefactor</s:String>
+    <s:String x:Key="_Ach_Donate_Desc">First Laitis Donation</s:String>
     
-    <s:String x:Key="s_Ach_Dictate10000_Name">Learned to dictate</s:String>
-    <s:String x:Key="s_Ach_Dictate10000_Desc">Dictate 10,000 symbols</s:String>
+    <s:String x:Key="_Ach_Dictate10000_Name">Learned to dictate</s:String>
+    <s:String x:Key="_Ach_Dictate10000_Desc">Dictate 10,000 symbols</s:String>
     
-    <s:String x:Key="s_Ach_Dictate50000_Name">Dictating everywhere</s:String>
-    <s:String x:Key="s_Ach_Dictate50000_Desc">Dictate 50,000 symbols</s:String>
+    <s:String x:Key="_Ach_Dictate50000_Name">Dictating everywhere</s:String>
+    <s:String x:Key="_Ach_Dictate50000_Desc">Dictate 50,000 symbols</s:String>
     
-    <s:String x:Key="s_Ach_Dictate100000_Name">Dictation master</s:String>
-    <s:String x:Key="s_Ach_Dictate100000_Desc">Dictate 100,000 symbols</s:String>
+    <s:String x:Key="_Ach_Dictate100000_Name">Dictation master</s:String>
+    <s:String x:Key="_Ach_Dictate100000_Desc">Dictate 100,000 symbols</s:String>
     
-    <s:String x:Key="s_Ach_Dictate500000_Name">Dictation god</s:String>
-    <s:String x:Key="s_Ach_Dictate500000_Desc">Dictate 500,000 symbols</s:String>
+    <s:String x:Key="_Ach_Dictate500000_Name">Dictation god</s:String>
+    <s:String x:Key="_Ach_Dictate500000_Desc">Dictate 500,000 symbols</s:String>
     
-    <s:String x:Key="s_Ach_Publications5_Name">Solid contribution</s:String>
-    <s:String x:Key="s_Ach_Publications5_Desc">5 successful publications</s:String>
+    <s:String x:Key="_Ach_Publications5_Name">Solid contribution</s:String>
+    <s:String x:Key="_Ach_Publications5_Desc">5 successful publications</s:String>
     
-    <s:String x:Key="s_Ach_Publications20_Name">Big contribution</s:String>
-    <s:String x:Key="s_Ach_Publications20_Desc">20 successful publications</s:String>
+    <s:String x:Key="_Ach_Publications20_Name">Big contribution</s:String>
+    <s:String x:Key="_Ach_Publications20_Desc">20 successful publications</s:String>
     
-    <s:String x:Key="s_Ach_Publications50_Name">Huge contribution</s:String>
-    <s:String x:Key="s_Ach_Publications50_Desc">50 successful publications</s:String>
+    <s:String x:Key="_Ach_Publications50_Name">Huge contribution</s:String>
+    <s:String x:Key="_Ach_Publications50_Desc">50 successful publications</s:String>
     
-    <s:String x:Key="s_Ach_Publications200_Name">Colossal contribution</s:String>
-    <s:String x:Key="s_Ach_Publications200_Desc">200 successful publications</s:String>
+    <s:String x:Key="_Ach_Publications200_Name">Colossal contribution</s:String>
+    <s:String x:Key="_Ach_Publications200_Desc">200 successful publications</s:String>
     <!--#endregion-->
     
     <!--#region PublicApiHost-->
-    <s:String x:Key="s_PublicApiHost_HostOpened">External API channel is started</s:String>
-    <s:String x:Key="s_PublicApiHost_HostOpenError">Error occured on starting external API channel</s:String>
-    <s:String x:Key="s_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
-    <s:String x:Key="s_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
+    <s:String x:Key="_PublicApiHost_HostOpened">External API channel is started</s:String>
+    <s:String x:Key="_PublicApiHost_HostOpenError">Error occured on starting external API channel</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
     <!--#endregion-->
 
     <!--#region UIAutomation-->
-    <s:String x:Key="s_UIAutomation_ElementFoundInActiveWindow">Element {0} is found in active windows</s:String>
-    <s:String x:Key="s_UIAutomation_ElementFoundInTaskBar">Element {0} is found in taskbar</s:String>
-    <s:String x:Key="s_UIAutomation_ElementFoundInWebsite">Element {0} is found on a website</s:String>
-    <s:String x:Key="s_UIAutomation_ElementNotFound">Element {0} is not found</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInActiveWindow">Element {0} is found in active windows</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInTaskBar">Element {0} is found in taskbar</s:String>
+    <s:String x:Key="_UIAutomation_ElementFoundInWebsite">Element {0} is found on a website</s:String>
+    <s:String x:Key="_UIAutomation_ElementNotFound">Element {0} is not found</s:String>
     <!--#endregion-->
 
     <!--#region FUE-->
-    <s:String x:Key="s_FUE_Initial_HelloDearUser">Hello, dear user!</s:String>
-    <s:String x:Key="s_FUE_Initial_ThanksForInstall">Thanks for install of</s:String>
-    <s:String x:Key="s_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- app that provides voice control over PC and voice text typing</s:String>
-    <s:String x:Key="s_FUE_Initial_TakeMicrophoneAndSayHello">Bring to your microphone and say &quot;Hello&quot;</s:String>
-    <s:String x:Key="s_FUE_Initial_ThanksMaybeNextTime">Thanks, maybe next time</s:String>
+    <s:String x:Key="_FUE_Initial_HelloDearUser">Hello, dear user!</s:String>
+    <s:String x:Key="_FUE_Initial_ThanksForInstall">Thanks for install of</s:String>
+    <s:String x:Key="_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- app that provides voice control over PC and voice text typing</s:String>
+    <s:String x:Key="_FUE_Initial_TakeMicrophoneAndSayHello">Bring to your microphone and say &quot;Hello&quot;</s:String>
+    <s:String x:Key="_FUE_Initial_ThanksMaybeNextTime">Thanks, maybe next time</s:String>
 
-    <s:String x:Key="s_FUE_Browser_Setup">Browser configuration</s:String>
-    <s:String x:Key="s_FUE_Browser_Info">You need to install a browser extension to allow Laitis perform web-site actions</s:String>
-    <s:String x:Key="s_FUE_Browser_Skip">Skip</s:String>
+    <s:String x:Key="_FUE_Browser_Setup">Browser configuration</s:String>
+    <s:String x:Key="_FUE_Browser_Info">You need to install a browser extension to allow Laitis perform web-site actions</s:String>
+    <s:String x:Key="_FUE_Browser_Skip">Skip</s:String>
 
-    <s:String x:Key="s_FUE_QA_Header">This section contains the structure of communication with the voice bot</s:String>
-    <s:String x:Key="s_FUE_QA_YouAskQuestions">You asking questions</s:String>
-    <s:String x:Key="s_FUE_QA_BotAnswersThem">Bot responds to them</s:String>
-    <s:String x:Key="s_FUE_QA_Talk1">Hi</s:String>
-    <s:String x:Key="s_FUE_QA_Talk2">Hello!</s:String>
-    <s:String x:Key="s_FUE_QA_Talk3">How are you doing</s:String>
-    <s:String x:Key="s_FUE_QA_Talk4">I'm fine, and you?</s:String>
-    <s:String x:Key="s_FUE_QA_Talk5">Fine too</s:String>
-    <s:String x:Key="s_FUE_QA_Talk6">Great!</s:String>
+    <s:String x:Key="_FUE_QA_Header">This section contains the structure of communication with the voice bot</s:String>
+    <s:String x:Key="_FUE_QA_YouAskQuestions">You asking questions</s:String>
+    <s:String x:Key="_FUE_QA_BotAnswersThem">Bot responds to them</s:String>
+    <s:String x:Key="_FUE_QA_Talk1">Hi</s:String>
+    <s:String x:Key="_FUE_QA_Talk2">Hello!</s:String>
+    <s:String x:Key="_FUE_QA_Talk3">How are you doing</s:String>
+    <s:String x:Key="_FUE_QA_Talk4">I'm fine, and you?</s:String>
+    <s:String x:Key="_FUE_QA_Talk5">Fine too</s:String>
+    <s:String x:Key="_FUE_QA_Talk6">Great!</s:String>
 
-    <s:String x:Key="s_FUE_Commands_Header">This section contains voice commands</s:String>
-    <s:String x:Key="s_FUE_Commands_CommandIsConsistsOf">Command consist of:</s:String>
-    <s:String x:Key="s_FUE_Commands_Phrases">Phrases</s:String>
-    <s:String x:Key="s_FUE_Commands_Actions">Actions</s:String>
-    <s:String x:Key="s_FUE_Commands_OpenNotepad">Open notepad</s:String>
-    <s:String x:Key="s_FUE_Commands_RunNotepad">Run notepad</s:String>
-    <s:String x:Key="s_FUE_Commands_ShowNotepad">Show notepad</s:String>
-    <s:String x:Key="s_FUE_Commands_NotepadIsOpen">Notepad is open!</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip1">The program automatically supports cases of commonly used words.</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip2">Instead of &quot;Open notepad&quot; you can say &quot;Run notepad&quot;, &quot;Start notepad&quot;...</s:String>
-    <s:String x:Key="s_FUE_Commands_VariableSupport">Variables support</s:String>
-    <s:String x:Key="s_FUE_Commands_Phrase">Phrase</s:String>
-    <s:String x:Key="s_FUE_Commands_Action">Action</s:String>
-    <s:String x:Key="s_FUE_Commands_SayWord">Say word</s:String>
-    <s:String x:Key="s_FUE_Commands_Word">{word}</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip3">Explain: If you say &quot;Say word Hello&quot;, the program will say &quot;Hello&quot;.</s:String>
-    <s:String x:Key="s_FUE_Commands_Tip4">All the commands are created by the users of the program and have been tested for security</s:String>
+    <s:String x:Key="_FUE_Commands_Header">This section contains voice commands</s:String>
+    <s:String x:Key="_FUE_Commands_CommandIsConsistsOf">Command consist of:</s:String>
+    <s:String x:Key="_FUE_Commands_Phrases">Phrases</s:String>
+    <s:String x:Key="_FUE_Commands_Actions">Actions</s:String>
+    <s:String x:Key="_FUE_Commands_OpenNotepad">Open notepad</s:String>
+    <s:String x:Key="_FUE_Commands_RunNotepad">Run notepad</s:String>
+    <s:String x:Key="_FUE_Commands_ShowNotepad">Show notepad</s:String>
+    <s:String x:Key="_FUE_Commands_NotepadIsOpen">Notepad is open!</s:String>
+    <s:String x:Key="_FUE_Commands_Tip1">The program automatically supports cases of commonly used words.</s:String>
+    <s:String x:Key="_FUE_Commands_Tip2">Instead of &quot;Open notepad&quot; you can say &quot;Run notepad&quot;, &quot;Start notepad&quot;...</s:String>
+    <s:String x:Key="_FUE_Commands_VariableSupport">Variables support</s:String>
+    <s:String x:Key="_FUE_Commands_Phrase">Phrase</s:String>
+    <s:String x:Key="_FUE_Commands_Action">Action</s:String>
+    <s:String x:Key="_FUE_Commands_SayWord">Say word</s:String>
+    <s:String x:Key="_FUE_Commands_Word">{word}</s:String>
+    <s:String x:Key="_FUE_Commands_Tip3">Explain: If you say &quot;Say word Hello&quot;, the program will say &quot;Hello&quot;.</s:String>
+    <s:String x:Key="_FUE_Commands_Tip4">All the commands are created by the users of the program and have been tested for security</s:String>
     <!--#endregion-->
 
     <!--#region QA-->
-    <s:String x:Key="s_QA_AddRootQuestion">Add root question</s:String>
-    <s:String x:Key="s_QA_ConnectedTo">Connected to</s:String>
-    <s:String x:Key="s_QA_ConnectedFrom">Connected from</s:String>
-    <s:String x:Key="s_Question_Tooltip_AddChildQuestion">Add question to this answer</s:String>
-    <s:String x:Key="s_Question_Tooltip_AddChildAnswer">Add answer to this question</s:String>
-    <TextBlock x:Key="s_Question_Tooltip_IsRoot">
+    <s:String x:Key="_QA_AddRootQuestion">Add root question</s:String>
+    <s:String x:Key="_QA_ConnectedTo">Connected to</s:String>
+    <s:String x:Key="_QA_ConnectedFrom">Connected from</s:String>
+    <s:String x:Key="_Question_Tooltip_AddChildQuestion">Add question to this answer</s:String>
+    <s:String x:Key="_Question_Tooltip_AddChildAnswer">Add answer to this question</s:String>
+    <TextBlock x:Key="_Question_Tooltip_IsRoot">
         Is root question
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -168,404 +168,404 @@
     <!--#endregion-->
 
     <!--#region Exceptions-->
-    <s:String x:Key="s_ExecutionRestricted">Execution is restricted in these conditions</s:String>
-    <s:String x:Key="s_ConnectionProblems">Server connection problem</s:String>
-    <s:String x:Key="s_WrongCredentials">Wrong credentials</s:String>
-    <s:String x:Key="s_VoiceCommandsDisabled">Voice commands are disabled</s:String>
-    <s:String x:Key="s_DownloadSaveError">Download save error</s:String>
-    <s:String x:Key="s_Error">Error</s:String>
-    <s:String x:Key="s_DataUploadError">Data upload error</s:String>
-    <s:String x:Key="s_DataIsToBig">Too big data to show</s:String>
-    <s:String x:Key="s_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
-    <s:String x:Key="s_UnknownErrorOccured">Oops! Unknown error occured!</s:String>
-    <s:String x:Key="s_OutOfMemoryException">Out of memory to continue work of Laitis. Restarting Laitis...</s:String>
-    <s:String x:Key="s_DiskIsFull">Disk is full to continue work of Laitis</s:String>
-    <s:String x:Key="s_UIAutomationDllMissing">UIAutomation.dll library not found. Mouse Move Actions will not work.</s:String>
-    <s:String x:Key="s_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
+    <s:String x:Key="_ExecutionRestricted">Execution is restricted in these conditions</s:String>
+    <s:String x:Key="_ConnectionProblems">Server connection problem</s:String>
+    <s:String x:Key="_WrongCredentials">Wrong credentials</s:String>
+    <s:String x:Key="_VoiceCommandsDisabled">Voice commands are disabled</s:String>
+    <s:String x:Key="_DownloadSaveError">Download save error</s:String>
+    <s:String x:Key="_Error">Error</s:String>
+    <s:String x:Key="_DataUploadError">Data upload error</s:String>
+    <s:String x:Key="_DataIsToBig">Too big data to show</s:String>
+    <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
+    <s:String x:Key="_UnknownErrorOccured">Oops! Unknown error occured!</s:String>
+    <s:String x:Key="_OutOfMemoryException">Out of memory to continue work of Laitis. Restarting Laitis...</s:String>
+    <s:String x:Key="_DiskIsFull">Disk is full to continue work of Laitis</s:String>
+    <s:String x:Key="_UIAutomationDllMissing">UIAutomation.dll library not found. Mouse Move Actions will not work.</s:String>
+    <s:String x:Key="_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
     <!--#endregion-->
 
     <!--#region Main Tabs and Buttons-->
-    <s:String x:Key="s_Profile">Profile</s:String>
-    <s:String x:Key="s_Community">Community</s:String>
-    <s:String x:Key="s_Commands">Commands</s:String>
-    <s:String x:Key="s_Autoreplace">Autoreplace</s:String>
-    <s:String x:Key="s_Packs">Packs</s:String>
-    <s:String x:Key="s_Communication">Communication</s:String>
-    <s:String x:Key="s_Help">Help</s:String>
-    <s:String x:Key="s_About">About</s:String>
-    <s:String x:Key="s_Editor">Editor</s:String>
-    <s:String x:Key="s_Publisher">Publisher</s:String>
-    <s:String x:Key="s_Actions">Actions</s:String>
-    <s:String x:Key="s_Phrases">Phrases</s:String>
-    <s:String x:Key="s_Other">Other</s:String>
-    <s:String x:Key="s_Logger">Events</s:String>
+    <s:String x:Key="_Profile">Profile</s:String>
+    <s:String x:Key="_Community">Community</s:String>
+    <s:String x:Key="_Commands">Commands</s:String>
+    <s:String x:Key="_Autoreplace">Autoreplace</s:String>
+    <s:String x:Key="_Packs">Packs</s:String>
+    <s:String x:Key="_Communication">Communication</s:String>
+    <s:String x:Key="_Help">Help</s:String>
+    <s:String x:Key="_About">About</s:String>
+    <s:String x:Key="_Editor">Editor</s:String>
+    <s:String x:Key="_Publisher">Publisher</s:String>
+    <s:String x:Key="_Actions">Actions</s:String>
+    <s:String x:Key="_Phrases">Phrases</s:String>
+    <s:String x:Key="_Other">Other</s:String>
+    <s:String x:Key="_Logger">Events</s:String>
 
-    <s:String x:Key="s_Hide">Hide</s:String>
-    <s:String x:Key="s_Pause">Pause</s:String>
-    <s:String x:Key="s_Buttons_Hide">Hide</s:String>
-    <s:String x:Key="s_Buttons_Pause">Disable voice commands</s:String>
-    <s:String x:Key="s_Buttons_Unpause">Enable voice commands</s:String>
-    <s:String x:Key="s_Buttons_Stop">Stop playing</s:String>
+    <s:String x:Key="_Hide">Hide</s:String>
+    <s:String x:Key="_Pause">Pause</s:String>
+    <s:String x:Key="_Buttons_Hide">Hide</s:String>
+    <s:String x:Key="_Buttons_Pause">Disable voice commands</s:String>
+    <s:String x:Key="_Buttons_Unpause">Enable voice commands</s:String>
+    <s:String x:Key="_Buttons_Stop">Stop playing</s:String>
     <!--#endregion-->
 
     <!--#region Commands List-->
-    <s:String x:Key="s_CommandCopied">Command is copied</s:String>
-    <s:String x:Key="s_CommandCutted">Command is cutted</s:String>
-    <s:String x:Key="s_CommandPasted">Command is pasted</s:String>
-    <s:String x:Key="s_CommandDeleted">Command is removed</s:String>
-    <s:String x:Key="s_CategoryCopied">Category is copied</s:String>
-    <s:String x:Key="s_CategoryCutted">Category is cutted</s:String>
-    <s:String x:Key="s_CategoryPasted">Category is pasted</s:String>
-    <s:String x:Key="s_CategoryDeleted">Category is removed</s:String>
-    <s:String x:Key="s_PackCopied">Pack is copied</s:String>
-    <s:String x:Key="s_PackCutted">Pack is cutted</s:String>
-    <s:String x:Key="s_PackPasted">Pack is pasted</s:String>
-    <s:String x:Key="s_PackDeleted">Pack is removed</s:String>
+    <s:String x:Key="_CommandCopied">Command is copied</s:String>
+    <s:String x:Key="_CommandCutted">Command is cutted</s:String>
+    <s:String x:Key="_CommandPasted">Command is pasted</s:String>
+    <s:String x:Key="_CommandDeleted">Command is removed</s:String>
+    <s:String x:Key="_CategoryCopied">Category is copied</s:String>
+    <s:String x:Key="_CategoryCutted">Category is cutted</s:String>
+    <s:String x:Key="_CategoryPasted">Category is pasted</s:String>
+    <s:String x:Key="_CategoryDeleted">Category is removed</s:String>
+    <s:String x:Key="_PackCopied">Pack is copied</s:String>
+    <s:String x:Key="_PackCutted">Pack is cutted</s:String>
+    <s:String x:Key="_PackPasted">Pack is pasted</s:String>
+    <s:String x:Key="_PackDeleted">Pack is removed</s:String>
 
-    <s:String x:Key="s_CopyPack">Copy pack</s:String>
-    <s:String x:Key="s_CopyCommand">Copy command</s:String>
-    <s:String x:Key="s_CopyCategory">Copy category</s:String>
-    <s:String x:Key="s_CutCommand">Cut command</s:String>
-    <s:String x:Key="s_CutCategory">Cut category</s:String>
-    <s:String x:Key="s_PasteCommand">Paste command</s:String>
-    <s:String x:Key="s_PasteCategory">Paste category</s:String>
-    <s:String x:Key="s_PastePack">Paste Pack</s:String>
+    <s:String x:Key="_CopyPack">Copy pack</s:String>
+    <s:String x:Key="_CopyCommand">Copy command</s:String>
+    <s:String x:Key="_CopyCategory">Copy category</s:String>
+    <s:String x:Key="_CutCommand">Cut command</s:String>
+    <s:String x:Key="_CutCategory">Cut category</s:String>
+    <s:String x:Key="_PasteCommand">Paste command</s:String>
+    <s:String x:Key="_PasteCategory">Paste category</s:String>
+    <s:String x:Key="_PastePack">Paste Pack</s:String>
 
-    <s:String x:Key="s_DeleteCommand">Remove command</s:String>
-    <s:String x:Key="s_EditCommand">Edit command</s:String>
-    <s:String x:Key="s_CommandImport">Import command from text</s:String>
-    <s:String x:Key="s_CommandExport">Export command to text</s:String>
-    <s:String x:Key="s_CommandImported">Command is imported from clipboard</s:String>
-    <s:String x:Key="s_CommandExported">Command is exported to clipboard as text</s:String>
-    <s:String x:Key="s_CommandImportFail">Command import is failed</s:String>
-    <s:String x:Key="s_CommandUpdate">Update command</s:String>
-    <s:String x:Key="s_CreateSame">Create same command</s:String>
-    <s:String x:Key="s_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
+    <s:String x:Key="_DeleteCommand">Remove command</s:String>
+    <s:String x:Key="_EditCommand">Edit command</s:String>
+    <s:String x:Key="_CommandImport">Import command from text</s:String>
+    <s:String x:Key="_CommandExport">Export command to text</s:String>
+    <s:String x:Key="_CommandImported">Command is imported from clipboard</s:String>
+    <s:String x:Key="_CommandExported">Command is exported to clipboard as text</s:String>
+    <s:String x:Key="_CommandImportFail">Command import is failed</s:String>
+    <s:String x:Key="_CommandUpdate">Update command</s:String>
+    <s:String x:Key="_CreateSame">Create same command</s:String>
+    <s:String x:Key="_ExecuteCommandAfterTwoSeconds">Execute command after 2 seconds</s:String>
 
-    <s:String x:Key="s_PackActivity">Pack activity</s:String>
-    <s:String x:Key="s_DownloadPacks">DownloadPacks</s:String>
+    <s:String x:Key="_PackActivity">Pack activity</s:String>
+    <s:String x:Key="_DownloadPacks">DownloadPacks</s:String>
     <!--#endregion-->
 
     <!--#region Notifications-->
-    <s:String x:Key="s_Details">Details</s:String>
-    <s:String x:Key="s_EndRecieve">Data recieve ended</s:String>
-    <s:String x:Key="s_ConnectionDrop">Connection drop</s:String>
-    <s:String x:Key="s_RecordEnded">Record ended</s:String>
-    <s:String x:Key="s_RecordStarted">Record started</s:String>
-    <s:String x:Key="s_StartToSend">Record sending started</s:String>
-    <s:String x:Key="s_EndSend">Record sending ended</s:String>
-    <s:String x:Key="s_TooLongRecordIsEnded">Record was stopped because its too long. To improve recognition quality disable microphone boost if it is enabled.</s:String>
-    <s:String x:Key="s_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
+    <s:String x:Key="_Details">Details</s:String>
+    <s:String x:Key="_EndRecieve">Data recieve ended</s:String>
+    <s:String x:Key="_ConnectionDrop">Connection drop</s:String>
+    <s:String x:Key="_RecordEnded">Record ended</s:String>
+    <s:String x:Key="_RecordStarted">Record started</s:String>
+    <s:String x:Key="_StartToSend">Record sending started</s:String>
+    <s:String x:Key="_EndSend">Record sending ended</s:String>
+    <s:String x:Key="_TooLongRecordIsEnded">Record was stopped because its too long. To improve recognition quality disable microphone boost if it is enabled.</s:String>
+    <s:String x:Key="_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
 
-    <s:String x:Key="s_DownloadOfUpdate">Downloading update</s:String>
-    <s:String x:Key="s_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis succesfully updated from version</s:String>
-    <s:String x:Key="s_ToVersion">to version</s:String>
+    <s:String x:Key="_DownloadOfUpdate">Downloading update</s:String>
+    <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis succesfully updated from version</s:String>
+    <s:String x:Key="_ToVersion">to version</s:String>
 
-    <s:String x:Key="s_YandexKeyEmpty">Yandex key is empty. Trying Google</s:String>
-    <s:String x:Key="s_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
-    <s:String x:Key="s_FailToPlayPhrase">Fail to play phrase</s:String>
-    <s:String x:Key="s_FailToFindRecordingDevice">Fail to find recording device</s:String>
-    <s:String x:Key="s_RecordingStartedOnDevice">Recording is started from device</s:String>
-    <s:String x:Key="s_RecordingStoppedOnDevice">Recording is stopped from device</s:String>
-    <s:String x:Key="s_SilenceTresholdIncreasedTo">Recording is long or loud. Silence treshold is increased to</s:String>
-    <s:String x:Key="s_SilenceTresholdReducedTo">It's quiet. Silence treshold is decreased to</s:String>
+    <s:String x:Key="_YandexKeyEmpty">Yandex key is empty. Trying Google</s:String>
+    <s:String x:Key="_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
+    <s:String x:Key="_FailToPlayPhrase">Fail to play phrase</s:String>
+    <s:String x:Key="_FailToFindRecordingDevice">Fail to find recording device</s:String>
+    <s:String x:Key="_RecordingStartedOnDevice">Recording is started from device</s:String>
+    <s:String x:Key="_RecordingStoppedOnDevice">Recording is stopped from device</s:String>
+    <s:String x:Key="_SilenceTresholdIncreasedTo">Recording is long or loud. Silence treshold is increased to</s:String>
+    <s:String x:Key="_SilenceTresholdReducedTo">It's quiet. Silence treshold is decreased to</s:String>
 
-    <s:String x:Key="s_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
-    <s:String x:Key="s_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
+    <s:String x:Key="_ClipboardIsBusy">Clipboard is blocked by another application</s:String>
+    <s:String x:Key="_ClipboardIsBusyAffectedBy">Clipboard is blocked by</s:String>
 
-    <s:String x:Key="s_SettingsDownloadSuccess">Settings download success!</s:String>
-    <s:String x:Key="s_SettingsDownloadFail">Settings download fail.</s:String>
-    <s:String x:Key="s_SettingsUploadSuccess">Settings upload success</s:String>
-    <s:String x:Key="s_SettingsUploadFail">Settings upload fail</s:String>
+    <s:String x:Key="_SettingsDownloadSuccess">Settings download success!</s:String>
+    <s:String x:Key="_SettingsDownloadFail">Settings download fail.</s:String>
+    <s:String x:Key="_SettingsUploadSuccess">Settings upload success</s:String>
+    <s:String x:Key="_SettingsUploadFail">Settings upload fail</s:String>
 
-    <s:String x:Key="s_PackUpdated">Update of pack</s:String>
-    <s:String x:Key="s_ApplicationVersion">Application version</s:String>
-    <s:String x:Key="s_UnderstoodText">understood text</s:String>
-    <s:String x:Key="s_UnderstoodCommand">understood command</s:String>
-    <s:String x:Key="s_CommandNotStartsWithKeyword">Command is not started with keyword</s:String>
-    <s:String x:Key="s_TextNotStartsWithKeyword">Text is not started with keyword</s:String>
-    <s:String x:Key="s_CommandDone">Command executed</s:String>
-    <s:String x:Key="s_TypingText">Typing text</s:String>
+    <s:String x:Key="_PackUpdated">Update of pack</s:String>
+    <s:String x:Key="_ApplicationVersion">Application version</s:String>
+    <s:String x:Key="_UnderstoodText">understood text</s:String>
+    <s:String x:Key="_UnderstoodCommand">understood command</s:String>
+    <s:String x:Key="_CommandNotStartsWithKeyword">Command is not started with keyword</s:String>
+    <s:String x:Key="_TextNotStartsWithKeyword">Text is not started with keyword</s:String>
+    <s:String x:Key="_CommandDone">Command executed</s:String>
+    <s:String x:Key="_TypingText">Typing text</s:String>
     
-    <s:String x:Key="s_RemovingErrorTyping">Removing previous error typing</s:String>
-    <s:String x:Key="s_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
-    <s:String x:Key="s_ComaWaitTime">Adding coma, becaise wait time was short</s:String>
-    <s:String x:Key="s_DotWaitTime">Adding dot, because there was a long wait time</s:String>
-    <s:String x:Key="s_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
+    <s:String x:Key="_RemovingErrorTyping">Removing previous error typing</s:String>
+    <s:String x:Key="_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
+    <s:String x:Key="_ComaWaitTime">Adding coma, becaise wait time was short</s:String>
+    <s:String x:Key="_DotWaitTime">Adding dot, because there was a long wait time</s:String>
+    <s:String x:Key="_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
     <!--#endregion-->
 
     <!--#region Community-->
-    <s:String x:Key="s_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
-    <s:String x:Key="s_UsersPublications">Users publications:</s:String>
-    <s:String x:Key="s_Downloads">Downloads</s:String>
-    <s:String x:Key="s_LaitisDescription">Laitis donation: Controlling PC with your voice</s:String>
-    <s:String x:Key="s_Like">Like</s:String>
-    <s:String x:Key="s_Dislike">Dislike</s:String>
-    <s:String x:Key="s_RecieveDate">Recieve date</s:String>
+    <s:String x:Key="_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
+    <s:String x:Key="_UsersPublications">Users publications:</s:String>
+    <s:String x:Key="_Downloads">Downloads</s:String>
+    <s:String x:Key="_LaitisDescription">Laitis donation: Controlling PC with your voice</s:String>
+    <s:String x:Key="_Like">Like</s:String>
+    <s:String x:Key="_Dislike">Dislike</s:String>
+    <s:String x:Key="_RecieveDate">Recieve date</s:String>
 
-    <s:String x:Key="s_DaysWithUs">Days with us</s:String>
-    <s:String x:Key="s_RegistrationDate">Registration date</s:String>
-    <s:String x:Key="s_VoiceCommandsDone">Commands done:</s:String>
-    <s:String x:Key="s_TextDictated">Text dictated</s:String>
-    <s:String x:Key="s_WebsiteCommandsDone">Website commands done</s:String>
-    <s:String x:Key="s_CommunicationsDone">Communications done</s:String>
+    <s:String x:Key="_DaysWithUs">Days with us</s:String>
+    <s:String x:Key="_RegistrationDate">Registration date</s:String>
+    <s:String x:Key="_VoiceCommandsDone">Commands done:</s:String>
+    <s:String x:Key="_TextDictated">Text dictated</s:String>
+    <s:String x:Key="_WebsiteCommandsDone">Website commands done</s:String>
+    <s:String x:Key="_CommunicationsDone">Communications done</s:String>
     <!--#endregion-->
 
     <!--#region Publisher-->
-    <s:String x:Key="s_IAcceptThisRules">I accept this rules</s:String>
-    <s:String x:Key="s_AutorizationNeeded">Authorization needed</s:String>
-    <s:String x:Key="s_CollectionNameIsTooShort">Pack name is too short</s:String>
-    <s:String x:Key="s_ChangesNotFound">0 changes found</s:String>
-    <s:String x:Key="s_PublicationSendedToTheServer">Your publication is sended to the server</s:String>
-    <s:String x:Key="s_PublishNewCollection">Publish new pack</s:String>
-    <s:String x:Key="s_PublishSomeChanges">Publish some changes</s:String>
-    <s:String x:Key="s_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
-    <s:String x:Key="s_ToRemove">to remove</s:String>
-    <s:String x:Key="s_ConnectionsToAnswers">Connections to answers</s:String>
-    <s:String x:Key="s_ConnectionsToQuestions">Connections to questions</s:String>
+    <s:String x:Key="_IAcceptThisRules">I accept this rules</s:String>
+    <s:String x:Key="_AutorizationNeeded">Authorization needed</s:String>
+    <s:String x:Key="_CollectionNameIsTooShort">Pack name is too short</s:String>
+    <s:String x:Key="_ChangesNotFound">0 changes found</s:String>
+    <s:String x:Key="_PublicationSendedToTheServer">Your publication is sended to the server</s:String>
+    <s:String x:Key="_PublishNewCollection">Publish new pack</s:String>
+    <s:String x:Key="_PublishSomeChanges">Publish some changes</s:String>
+    <s:String x:Key="_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
+    <s:String x:Key="_ToRemove">to remove</s:String>
+    <s:String x:Key="_ConnectionsToAnswers">Connections to answers</s:String>
+    <s:String x:Key="_ConnectionsToQuestions">Connections to questions</s:String>
     <!--#endregion-->
 
     <!--#region Variables-->
-    <s:String x:Key="s_Common">Common</s:String>
-    <s:String x:Key="s_Custom">Custom</s:String>
-    <s:String x:Key="s_DateTime">DateTime</s:String>
-    <s:String x:Key="s_Account">Account</s:String>
-    <s:String x:Key="s_Environment">Environment</s:String>
+    <s:String x:Key="_Common">Common</s:String>
+    <s:String x:Key="_Custom">Custom</s:String>
+    <s:String x:Key="_DateTime">DateTime</s:String>
+    <s:String x:Key="_Account">Account</s:String>
+    <s:String x:Key="_Environment">Environment</s:String>
 
-    <s:String x:Key="s_SetVariable">Set variable</s:String>
-    <s:String x:Key="s_Value">value</s:String>
-    <s:String x:Key="s_IfVariableValue">If variable value is</s:String>
-    <s:String x:Key="s_IfWebsiteNavValue">If website selection is</s:String>
-    <s:String x:Key="s_VariableNotFound">Variable is not found</s:String>
+    <s:String x:Key="_SetVariable">Set variable</s:String>
+    <s:String x:Key="_Value">value</s:String>
+    <s:String x:Key="_IfVariableValue">If variable value is</s:String>
+    <s:String x:Key="_IfWebsiteNavValue">If website selection is</s:String>
+    <s:String x:Key="_VariableNotFound">Variable is not found</s:String>
 
-    <s:String x:Key="s_VariableOperator_Exists">exists</s:String>
-    <s:String x:Key="s_VariableOperator_Equals">equals</s:String>
-    <s:String x:Key="s_VariableOperator_NotEquals">not equals</s:String>
-    <s:String x:Key="s_VariableOperator_Bigger">bigger than</s:String>
-    <s:String x:Key="s_VariableOperator_Smaller">smaller than</s:String>
-    <s:String x:Key="s_VariableOperator_BiggerOrEquals">bigger or equals</s:String>
-    <s:String x:Key="s_VariableOperator_SmallerOrEquals">smaller of equals</s:String>
+    <s:String x:Key="_VariableOperator_Exists">exists</s:String>
+    <s:String x:Key="_VariableOperator_Equals">equals</s:String>
+    <s:String x:Key="_VariableOperator_NotEquals">not equals</s:String>
+    <s:String x:Key="_VariableOperator_Bigger">bigger than</s:String>
+    <s:String x:Key="_VariableOperator_Smaller">smaller than</s:String>
+    <s:String x:Key="_VariableOperator_BiggerOrEquals">bigger or equals</s:String>
+    <s:String x:Key="_VariableOperator_SmallerOrEquals">smaller of equals</s:String>
 
-    <s:String x:Key="s_Second">Second</s:String>
-    <s:String x:Key="s_Minute">Minute</s:String>
-    <s:String x:Key="s_Hour">Hour</s:String>
-    <s:String x:Key="s_Day">Day</s:String>
-    <s:String x:Key="s_Month">Month</s:String>
-    <s:String x:Key="s_Year">Year</s:String>
-    <s:String x:Key="s_DayOfWeek">DayOfWeek</s:String>
-    <s:String x:Key="s_Date">Date</s:String>
-    <s:String x:Key="s_Time">Time</s:String>
-    <s:String x:Key="s_Version">Version</s:String>
+    <s:String x:Key="_Second">Second</s:String>
+    <s:String x:Key="_Minute">Minute</s:String>
+    <s:String x:Key="_Hour">Hour</s:String>
+    <s:String x:Key="_Day">Day</s:String>
+    <s:String x:Key="_Month">Month</s:String>
+    <s:String x:Key="_Year">Year</s:String>
+    <s:String x:Key="_DayOfWeek">DayOfWeek</s:String>
+    <s:String x:Key="_Date">Date</s:String>
+    <s:String x:Key="_Time">Time</s:String>
+    <s:String x:Key="_Version">Version</s:String>
     <!--#endregion-->
 
     <!--#region Scheduler-->
-    <s:String x:Key="s_Prefixes">at,on,the,a,of,from,for</s:String>
-    <s:String x:Key="s_AndAHalf">and a half</s:String>
-    <s:String x:Key="s_Half">half</s:String>
-    <s:String x:Key="s_After">after,in,next</s:String>
-    <s:String x:Key="s_Mornings" xml:space="preserve">a.m.,am</s:String>
-    <s:String x:Key="s_Evenings" xml:space="preserve">p.m.,pm</s:String>
-    <s:String x:Key="s_DayParts">midnight,morning,afternoon,midday,evening,night</s:String>
-    <s:String x:Key="s_Numbers">zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeed,eighteen,nineteen</s:String>
-    <s:String x:Key="s_HighNumbers">twenty,thirty,forty,fifty,sixty,seventy,eighty,ninety</s:String>
-    <s:String x:Key="s_WeekDays">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</s:String>
-    <s:String x:Key="s_Months">January,February,March,April,May,June,July,August,September,October,November,December</s:String>
-    <s:String x:Key="s_TimeUnits">sec,min,hour,day,week,month,year/annual</s:String>
-    <s:String x:Key="s_SpecialModifiers">now/right now,tomorrow/next day,day after tomorrow</s:String>
+    <s:String x:Key="_Prefixes">at,on,the,a,of,from,for</s:String>
+    <s:String x:Key="_AndAHalf">and a half</s:String>
+    <s:String x:Key="_Half">half</s:String>
+    <s:String x:Key="_After">after,in,next</s:String>
+    <s:String x:Key="_Mornings" xml:space="preserve">a.m.,am</s:String>
+    <s:String x:Key="_Evenings" xml:space="preserve">p.m.,pm</s:String>
+    <s:String x:Key="_DayParts">midnight,morning,afternoon,midday,evening,night</s:String>
+    <s:String x:Key="_Numbers">zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeed,eighteen,nineteen</s:String>
+    <s:String x:Key="_HighNumbers">twenty,thirty,forty,fifty,sixty,seventy,eighty,ninety</s:String>
+    <s:String x:Key="_WeekDays">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</s:String>
+    <s:String x:Key="_Months">January,February,March,April,May,June,July,August,September,October,November,December</s:String>
+    <s:String x:Key="_TimeUnits">sec,min,hour,day,week,month,year/annual</s:String>
+    <s:String x:Key="_SpecialModifiers">now/right now,tomorrow/next day,day after tomorrow</s:String>
     <!--#endregion-->
     
     <!--#region Common Labels-->
-    <s:String x:Key="s_Duration">Duration</s:String>
-    <s:String x:Key="s_SelectImage">Select image</s:String>
-    <s:String x:Key="s_From">from</s:String>
-    <s:String x:Key="s_To">to</s:String>
-    <s:String x:Key="s_ReplaceIn">Replace in</s:String>
-    <s:String x:Key="s_In">in</s:String>
-    <s:String x:Key="s_Ms">ms</s:String>
-    <s:String x:Key="s_And">and</s:String>
-    <s:String x:Key="s_Back">Back</s:String>
-    <s:String x:Key="s_Hello">Hello</s:String>
-    <s:String x:Key="s_Understand">Understand</s:String>
-    <s:String x:Key="s_Well">Well</s:String>
-    <s:String x:Key="s_Say">Say</s:String>
-    <s:String x:Key="s_Cut">Cut</s:String>
-    <s:String x:Key="s_Type">Type</s:String>
-    <s:String x:Key="s_Stop">Stop</s:String>
-    <s:String x:Key="s_Send">Send</s:String>
-    <s:String x:Key="s_Play">Play</s:String>
-    <s:String x:Key="s_Open">Open</s:String>
-    <s:String x:Key="s_Exit">Exit</s:String>
-    <s:String x:Key="s_Copy">Copy</s:String>
-    <s:String x:Key="s_Edit">Edit</s:String>
-    <s:String x:Key="s_Name">Name</s:String>
-    <s:String x:Key="s_Times">times</s:String>
-    <s:String x:Key="s_Email">Email</s:String>
-    <s:String x:Key="s_Opera">Opera</s:String>
-    <s:String x:Key="s_Upload">upload</s:String>
-    <s:String x:Key="s_Chrome">Chrome</s:String>
-    <s:String x:Key="s_FireFox">Firefox</s:String>
-    <s:String x:Key="s_Yandex">Yandex</s:String>
-    <s:String x:Key="s_Vivaldi">Vivaldi</s:String>
-    <s:String x:Key="s_Password">Password</s:String>
-    <s:String x:Key="s_RepeatPassword">Repeat password</s:String>
-    <s:String x:Key="s_NickName">Nickname</s:String>
-    <s:String x:Key="s_Paste">Paste</s:String>
-    <s:String x:Key="s_Rules">AutoCorrect</s:String>
-    <s:String x:Key="s_Top10">Top 10</s:String>
-    <s:String x:Key="s_Rub">Rub</s:String>
-    <s:String x:Key="s_Donate">Donate</s:String>
-    <s:String x:Key="s_Search">Search</s:String>
-    <s:String x:Key="s_Browse">Browse</s:String>
-    <s:String x:Key="s_Remove">Remove</s:String>
-    <s:String x:Key="s_Execute">Execute</s:String>
-    <s:String x:Key="s_Refresh">Refresh</s:String>
-    <s:String x:Key="s_Loading">Loading</s:String>
-    <s:String x:Key="s_Donated">Donated</s:String>
-    <s:String x:Key="s_NewPack">New pack</s:String>
-    <s:String x:Key="s_Unknown">Unknown</s:String>
-    <s:String x:Key="s_AddPack">Add pack</s:String>
-    <s:String x:Key="s_Settings">Settings</s:String>
-    <s:String x:Key="s_OnServer">On server</s:String>
-    <s:String x:Key="s_Close">Close</s:String>
-    <s:String x:Key="s_EventHasCome">Event has come</s:String>
-    <s:String x:Key="s_Confidant">Confidant</s:String>
-    <s:String x:Key="s_Dublicate">Duplicate</s:String>
-    <s:String x:Key="s_HttpWebRequest">Web-request</s:String>
-    <s:String x:Key="s_Categories">categories</s:String>
-    <s:String x:Key="s_Collection">Pack</s:String>
-    <s:String x:Key="s_Reputation">Reputation</s:String>
-    <s:String x:Key="s_AddCommand">Add command</s:String>
-    <s:String x:Key="s_Replacement">replacement</s:String>
-    <s:String x:Key="s_Publish">Publish</s:String>
-    <s:String x:Key="s_Publication">Publication</s:String>
-    <s:String x:Key="s_AddCategory">Add category</s:String>
-    <s:String x:Key="s_NewCategory">New category</s:String>
-    <s:String x:Key="s_Save">Save</s:String>
-    <s:String x:Key="s_Achievements">Achievements</s:String>
-    <s:String x:Key="s_IfProcessOpen">If process is open</s:String>
-    <s:String x:Key="s_IfWebsiteOpen">If web-site is open</s:String>
-    <s:String x:Key="s_WithParameters">with parameters</s:String>
+    <s:String x:Key="_Duration">Duration</s:String>
+    <s:String x:Key="_SelectImage">Select image</s:String>
+    <s:String x:Key="_From">from</s:String>
+    <s:String x:Key="_To">to</s:String>
+    <s:String x:Key="_ReplaceIn">Replace in</s:String>
+    <s:String x:Key="_In">in</s:String>
+    <s:String x:Key="_Ms">ms</s:String>
+    <s:String x:Key="_And">and</s:String>
+    <s:String x:Key="_Back">Back</s:String>
+    <s:String x:Key="_Hello">Hello</s:String>
+    <s:String x:Key="_Understand">Understand</s:String>
+    <s:String x:Key="_Well">Well</s:String>
+    <s:String x:Key="_Say">Say</s:String>
+    <s:String x:Key="_Cut">Cut</s:String>
+    <s:String x:Key="_Type">Type</s:String>
+    <s:String x:Key="_Stop">Stop</s:String>
+    <s:String x:Key="_Send">Send</s:String>
+    <s:String x:Key="_Play">Play</s:String>
+    <s:String x:Key="_Open">Open</s:String>
+    <s:String x:Key="_Exit">Exit</s:String>
+    <s:String x:Key="_Copy">Copy</s:String>
+    <s:String x:Key="_Edit">Edit</s:String>
+    <s:String x:Key="_Name">Name</s:String>
+    <s:String x:Key="_Times">times</s:String>
+    <s:String x:Key="_Email">Email</s:String>
+    <s:String x:Key="_Opera">Opera</s:String>
+    <s:String x:Key="_Upload">upload</s:String>
+    <s:String x:Key="_Chrome">Chrome</s:String>
+    <s:String x:Key="_FireFox">Firefox</s:String>
+    <s:String x:Key="_Yandex">Yandex</s:String>
+    <s:String x:Key="_Vivaldi">Vivaldi</s:String>
+    <s:String x:Key="_Password">Password</s:String>
+    <s:String x:Key="_RepeatPassword">Repeat password</s:String>
+    <s:String x:Key="_NickName">Nickname</s:String>
+    <s:String x:Key="_Paste">Paste</s:String>
+    <s:String x:Key="_Rules">AutoCorrect</s:String>
+    <s:String x:Key="_Top10">Top 10</s:String>
+    <s:String x:Key="_Rub">Rub</s:String>
+    <s:String x:Key="_Donate">Donate</s:String>
+    <s:String x:Key="_Search">Search</s:String>
+    <s:String x:Key="_Browse">Browse</s:String>
+    <s:String x:Key="_Remove">Remove</s:String>
+    <s:String x:Key="_Execute">Execute</s:String>
+    <s:String x:Key="_Refresh">Refresh</s:String>
+    <s:String x:Key="_Loading">Loading</s:String>
+    <s:String x:Key="_Donated">Donated</s:String>
+    <s:String x:Key="_NewPack">New pack</s:String>
+    <s:String x:Key="_Unknown">Unknown</s:String>
+    <s:String x:Key="_AddPack">Add pack</s:String>
+    <s:String x:Key="_Settings">Settings</s:String>
+    <s:String x:Key="_OnServer">On server</s:String>
+    <s:String x:Key="_Close">Close</s:String>
+    <s:String x:Key="_EventHasCome">Event has come</s:String>
+    <s:String x:Key="_Confidant">Confidant</s:String>
+    <s:String x:Key="_Dublicate">Duplicate</s:String>
+    <s:String x:Key="_HttpWebRequest">Web-request</s:String>
+    <s:String x:Key="_Categories">categories</s:String>
+    <s:String x:Key="_Collection">Pack</s:String>
+    <s:String x:Key="_Reputation">Reputation</s:String>
+    <s:String x:Key="_AddCommand">Add command</s:String>
+    <s:String x:Key="_Replacement">replacement</s:String>
+    <s:String x:Key="_Publish">Publish</s:String>
+    <s:String x:Key="_Publication">Publication</s:String>
+    <s:String x:Key="_AddCategory">Add category</s:String>
+    <s:String x:Key="_NewCategory">New category</s:String>
+    <s:String x:Key="_Save">Save</s:String>
+    <s:String x:Key="_Achievements">Achievements</s:String>
+    <s:String x:Key="_IfProcessOpen">If process is open</s:String>
+    <s:String x:Key="_IfWebsiteOpen">If web-site is open</s:String>
+    <s:String x:Key="_WithParameters">with parameters</s:String>
     <s:String x:Key="w_IfProcessActive">If process is active</s:String>
-    <s:String x:Key="s_NothingSelected">Nothing selected</s:String>
-    <s:String x:Key="s_DataTransferCompleted">Data transfer is completed</s:String>
-    <s:String x:Key="s_Everything">Everything</s:String>
+    <s:String x:Key="_NothingSelected">Nothing selected</s:String>
+    <s:String x:Key="_DataTransferCompleted">Data transfer is completed</s:String>
+    <s:String x:Key="_Everything">Everything</s:String>
 
-    <s:String x:Key="s_Questions">Questions</s:String>
-    <s:String x:Key="s_Answers">Answers</s:String>
-    <s:String x:Key="s_MouseMoveOn">Move mouse on element</s:String>
-    <s:String x:Key="s_DonationValueInvalid">Donation value is invalid</s:String>
-    <s:String x:Key="s_DonateToLaitis">Donate to Laitis</s:String>
+    <s:String x:Key="_Questions">Questions</s:String>
+    <s:String x:Key="_Answers">Answers</s:String>
+    <s:String x:Key="_MouseMoveOn">Move mouse on element</s:String>
+    <s:String x:Key="_DonationValueInvalid">Donation value is invalid</s:String>
+    <s:String x:Key="_DonateToLaitis">Donate to Laitis</s:String>
 
-    <s:String x:Key="s_Size">Size</s:String>
-    <s:String x:Key="s_Download">Download</s:String>
-    <s:String x:Key="s_DownloadStarted">download started</s:String>
-    <s:String x:Key="s_DownloadCompleted">download completed</s:String>
-    <s:String x:Key="s_HoldToConfirm">Press and hold to confirm</s:String>
-    <s:String x:Key="s_Cancel">Cancel</s:String>
+    <s:String x:Key="_Size">Size</s:String>
+    <s:String x:Key="_Download">Download</s:String>
+    <s:String x:Key="_DownloadStarted">download started</s:String>
+    <s:String x:Key="_DownloadCompleted">download completed</s:String>
+    <s:String x:Key="_HoldToConfirm">Press and hold to confirm</s:String>
+    <s:String x:Key="_Cancel">Cancel</s:String>
 
 
-    <s:String x:Key="s_Variables">Variables</s:String>
+    <s:String x:Key="_Variables">Variables</s:String>
 
-    <s:String x:Key="s_ProcessName">Process name</s:String>
-    <s:String x:Key="s_FilePath">File path</s:String>
+    <s:String x:Key="_ProcessName">Process name</s:String>
+    <s:String x:Key="_FilePath">File path</s:String>
     <!--#endregion-->
 
     <!--#region Common Tooltips-->
-    <TextBlock x:Key="s_Tooltip_CancelButton">
-        <Run Text="{StaticResource s_Cancel}" />
+    <TextBlock x:Key="_Tooltip_CancelButton">
+        <Run Text="{StaticResource _Cancel}" />
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
+            <Run Text="{StaticResource _HoldToConfirm}" />
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_Tooltip_RemoveButton">
-        <Run Text="{StaticResource s_Remove}" />
+    <TextBlock x:Key="_Tooltip_RemoveButton">
+        <Run Text="{StaticResource _Remove}" />
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource s_HoldToConfirm}" />
+            <Run Text="{StaticResource _HoldToConfirm}" />
         </Span>
     </TextBlock>
     <!--#endregion-->
 
     <!--#region Browser Controller-->
-    <s:String x:Key="s_BrowserController">Browser controller</s:String>
+    <s:String x:Key="_BrowserController">Browser controller</s:String>
     <!--#endregion-->
 
     <!--#region Command Editor-->
-    <s:String x:Key="s_CommandEditor_Default_Category_Name">Common</s:String>
-    <s:String x:Key="s_CommandEditor_Default_Pack_Name">New pack</s:String>
-    <s:String x:Key="s_CommandEditor_Open_ErrorText">Cannot open editor. Details in the events tab.</s:String>
-    <s:String x:Key="s_CommandEditor_DublicateFounded">Dublicate voice command found</s:String>
-    <s:String x:Key="s_CommandEditor_DublicateTooltip">Application automatically recognizes word cases.</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommandExists">That voice command already exists in that command</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommandVariableNameError">Variable name is incorrect</s:String>
-    <s:String x:Key="s_CommandEditor_VoiceCommands">Voice commands:</s:String>
-    <s:String x:Key="s_CommandEditor_Actions">Actions:</s:String>
-    <s:String x:Key="s_CommandEditor_Variables">Variables:</s:String>
-    <s:String x:Key="s_CommandEditor_SelectProcess">Select process</s:String>
+    <s:String x:Key="_CommandEditor_Default_Category_Name">Common</s:String>
+    <s:String x:Key="_CommandEditor_Default_Pack_Name">New pack</s:String>
+    <s:String x:Key="_CommandEditor_Open_ErrorText">Cannot open editor. Details in the events tab.</s:String>
+    <s:String x:Key="_CommandEditor_DublicateFounded">Dublicate voice command found</s:String>
+    <s:String x:Key="_CommandEditor_DublicateTooltip">Application automatically recognizes word cases.</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommandExists">That voice command already exists in that command</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommandVariableNameError">Variable name is incorrect</s:String>
+    <s:String x:Key="_CommandEditor_VoiceCommands">Voice commands:</s:String>
+    <s:String x:Key="_CommandEditor_Actions">Actions:</s:String>
+    <s:String x:Key="_CommandEditor_Variables">Variables:</s:String>
+    <s:String x:Key="_CommandEditor_SelectProcess">Select process</s:String>
 
-    <s:String x:Key="s_CommandAction_AddCondition">Add Condition</s:String>
-    <s:String x:Key="s_CommandAction_AddAction">Add Action</s:String>
-    <s:String x:Key="s_CommandAction_AddUtilityAction">Add Utility Action</s:String>
-    <s:String x:Key="s_CommandAction_AddInputAction">Add Input Action</s:String>
-    <s:String x:Key="s_CommandAction_AddWebAction">Add Website Action</s:String>
+    <s:String x:Key="_CommandAction_AddCondition">Add Condition</s:String>
+    <s:String x:Key="_CommandAction_AddAction">Add Action</s:String>
+    <s:String x:Key="_CommandAction_AddUtilityAction">Add Utility Action</s:String>
+    <s:String x:Key="_CommandAction_AddInputAction">Add Input Action</s:String>
+    <s:String x:Key="_CommandAction_AddWebAction">Add Website Action</s:String>
 
-    <s:String x:Key="s_CommandAction_Label_OpenFile0">Open file:</s:String>
-    <s:String x:Key="s_CommandAction_Label_OpenFile1">Parameters:</s:String>
-    <s:String x:Key="s_CommandAction_Label_Hotkeys">Hotkeys:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
-    <s:String x:Key="s_CommandAction_Label_Say">Say:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfProcessSelected">If active process is:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfProcessExists">If process exists:</s:String>
-    <s:String x:Key="s_CommandAction_Label_IfWebsiteSelected">If active website is:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseButton">Mouse button:</s:String>
-    <s:String x:Key="s_CommandAction_Label_HttpWebRequest">Web-request:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn">Mouse move on:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Action">Action:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseMoveOn_Element">Element:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenFile0">Open file:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenFile1">Parameters:</s:String>
+    <s:String x:Key="_CommandAction_Label_Hotkeys">Hotkeys:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMove_X">X:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMove_Y">Y:</s:String>
+    <s:String x:Key="_CommandAction_Label_Say">Say:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfProcessSelected">If active process is:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfProcessExists">If process exists:</s:String>
+    <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">If active website is:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseButton">Mouse button:</s:String>
+    <s:String x:Key="_CommandAction_Label_HttpWebRequest">Web-request:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn">Mouse move on:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Action:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Element:</s:String>
 
-    <s:String x:Key="s_CommandAction_Label_OpenURL">Open URL:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageClick">Click on web-page:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageFocus">Focus on web-page:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageRead">Read on web-page:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageNavigate">Select on web-page:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPageNavClick">Click on web-page selection:</s:String>
-    <s:String x:Key="s_CommandAction_Label_WebPagePopupOpen">Open web-page popup window:</s:String>
-    <s:String x:Key="s_CommandAction_Label_MouseScroll">by:</s:String>
-    <s:String x:Key="s_CommandAction_Label_TogglePackActivity">pack:</s:String>
-    <s:String x:Key="s_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
-    <s:String x:Key="s_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
+    <s:String x:Key="_CommandAction_Label_OpenURL">Open URL:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageClick">Click on web-page:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageFocus">Focus on web-page:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageRead">Read on web-page:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavigate">Select on web-page:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavClick">Click on web-page selection:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Open web-page popup window:</s:String>
+    <s:String x:Key="_CommandAction_Label_MouseScroll">by:</s:String>
+    <s:String x:Key="_CommandAction_Label_TogglePackActivity">pack:</s:String>
+    <s:String x:Key="_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
+    <s:String x:Key="_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
     
-    <TextBlock x:Key="s_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
         Actions below will be executed after scheduled event DateTime
         <LineBreak />
         If PC is sleeping and Laitis was enabled - PC will wake up if event time is not 00:00
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Pauses actions execution
         <LineBreak />
         Waits phrase from user
         <LineBreak />
         Sets phrase value into variable with selected name
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
         How long to wait users command
         <LineBreak />
         Blank or 0 = infinite
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
         1 second = 1000 milliseconds
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
         In seconds
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+    <TextBlock x:Key="_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
         Allows to execute actions from another voice command
         <LineBreak />
         Enter one phrase
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim">
+    <TextBlock x:Key="_CommandAction_Tooltip_JetAim">
         Mouve move via voice feature
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -576,7 +576,7 @@
             When showing you can say: Back, Cancel, Close, Zero(to choose in advance)
         </Span>
     </TextBlock>
-    <TextBlock x:Key="s_CommandAction_Tooltip_JetAim_Numbers">
+    <TextBlock x:Key="_CommandAction_Tooltip_JetAim_Numbers">
         Digits can be set in advance
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -585,9 +585,9 @@
             That field can be empty
         </Span>
     </TextBlock>
-    <s:String x:Key="s_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
-    <TextBlock x:Key="s_CommandAction_Tooltip_HotkeysManualInput">
+    <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
+    <TextBlock x:Key="_CommandAction_Tooltip_HotkeysManualInput">
         Free hotkeys input
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -597,13 +597,13 @@
         </Span>
     </TextBlock>
     
-    <s:String x:Key="s_Click">Click</s:String>
-    <s:String x:Key="s_Focus">Focus</s:String>
-    <s:String x:Key="s_Navigate">Select</s:String>
-    <s:String x:Key="s_NavClick">Click on selection</s:String>
-    <s:String x:Key="s_OpenPopup">Open popup</s:String>
+    <s:String x:Key="_Click">Click</s:String>
+    <s:String x:Key="_Focus">Focus</s:String>
+    <s:String x:Key="_Navigate">Select</s:String>
+    <s:String x:Key="_NavClick">Click on selection</s:String>
+    <s:String x:Key="_OpenPopup">Open popup</s:String>
     
-    <TextBlock x:Key="s_CommandAction_Tooltip_RandomActionBlock">
+    <TextBlock x:Key="_CommandAction_Tooltip_RandomActionBlock">
         Beginning a block of random actions
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -616,193 +616,193 @@
             Random action will be picked from actions that can be executed
         </Span>
     </TextBlock>
-    <s:String x:Key="s_CommandAction_Tooltip_Loop">Beginning a block of actions that will be executed multiple times</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_OpenURL">Example: http://ya.ru</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Pause">Time in milliseconds</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_IfWebsiteSelected">Web-site url part</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_HttpWebRequest">Send web-request without using a browser</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Selector">CSS-selector. If you do not know what CSS is - you cannot create that kind of commands</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_NavClick">You can leave that field empty or enter CSS-selector</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_Else">Logical Else for If condition</s:String>
-    <s:String x:Key="s_CommandAction_Tooltip_EndBlock">Ending for If condition and other blocks. Not required, if there is no actions below.</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Loop">Beginning a block of actions that will be executed multiple times</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_OpenURL">Example: http://ya.ru</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Pause">Time in milliseconds</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_IfWebsiteSelected">Web-site url part</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_HttpWebRequest">Send web-request without using a browser</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Selector">CSS-selector. If you do not know what CSS is - you cannot create that kind of commands</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_NavClick">You can leave that field empty or enter CSS-selector</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Else">Logical Else for If condition</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_EndBlock">Ending for If condition and other blocks. Not required, if there is no actions below.</s:String>
     <!--#endregion-->
 
     <!--#region Enums-->
     <!--  NotificationType -->
-    <s:String x:Key="s_NotificationType_Default">Default</s:String>
-    <s:String x:Key="s_NotificationType_Info">Info</s:String>
-    <s:String x:Key="s_NotificationType_Done">Done</s:String>
-    <s:String x:Key="s_NotificationType_Error">Error</s:String>
+    <s:String x:Key="_NotificationType_Default">Default</s:String>
+    <s:String x:Key="_NotificationType_Info">Info</s:String>
+    <s:String x:Key="_NotificationType_Done">Done</s:String>
+    <s:String x:Key="_NotificationType_Error">Error</s:String>
     <!--  PauseType -->
-    <s:String x:Key="s_PauseType_Time">Pause for</s:String>
-    <s:String x:Key="s_PauseType_AudioEnd">Pause until audio ends</s:String>
+    <s:String x:Key="_PauseType_Time">Pause for</s:String>
+    <s:String x:Key="_PauseType_AudioEnd">Pause until audio ends</s:String>
     <!--  ScheduleEventType -->
-    <s:String x:Key="s_ScheduleEventType_At">at</s:String>
-    <s:String x:Key="s_ScheduleEventType_After">after</s:String>
+    <s:String x:Key="_ScheduleEventType_At">at</s:String>
+    <s:String x:Key="_ScheduleEventType_After">after</s:String>
     <!--  VoiceCommandMode -->
-    <s:String x:Key="s_VoiceCommandMode_Default">Default</s:String>
-    <s:String x:Key="s_VoiceCommandMode_Keyword">Require keyword</s:String>
+    <s:String x:Key="_VoiceCommandMode_Default">Default</s:String>
+    <s:String x:Key="_VoiceCommandMode_Keyword">Require keyword</s:String>
     <!--  TextTypingMode -->
-    <s:String x:Key="s_TextTypingMode_Default">Default</s:String>
-    <s:String x:Key="s_TextTypingMode_Prefix">Require keyword before dictation</s:String>
-    <s:String x:Key="s_TextTypingMode_Postfix">Require keyword after dictation</s:String>
+    <s:String x:Key="_TextTypingMode_Default">Default</s:String>
+    <s:String x:Key="_TextTypingMode_Prefix">Require keyword before dictation</s:String>
+    <s:String x:Key="_TextTypingMode_Postfix">Require keyword after dictation</s:String>
     <!--  StateSwitchingAction -->
-    <s:String x:Key="s_StateSwitchingAction_Toggle">Toggle</s:String>
-    <s:String x:Key="s_StateSwitchingAction_Enable">Enable</s:String>
-    <s:String x:Key="s_StateSwitchingAction_Disable">Disable</s:String>
+    <s:String x:Key="_StateSwitchingAction_Toggle">Toggle</s:String>
+    <s:String x:Key="_StateSwitchingAction_Enable">Enable</s:String>
+    <s:String x:Key="_StateSwitchingAction_Disable">Disable</s:String>
     <!--  HttpWebRequestMethod -->
-    <s:String x:Key="s_HttpWebRequestMethod_GET">GET</s:String>
-    <s:String x:Key="s_HttpWebRequestMethod_POST">POST</s:String>
+    <s:String x:Key="_HttpWebRequestMethod_GET">GET</s:String>
+    <s:String x:Key="_HttpWebRequestMethod_POST">POST</s:String>
     <!--  YandexMoneyPaymentType -->
-    <s:String x:Key="s_YandexMoneyPaymentType_YandexMoney">Yandex money</s:String>
-    <s:String x:Key="s_YandexMoneyPaymentType_CreditCard">Credit card</s:String>
-    <s:String x:Key="s_YandexMoneyPaymentType_MobileBalance">Mobile balance</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_YandexMoney">Yandex money</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_CreditCard">Credit card</s:String>
+    <s:String x:Key="_YandexMoneyPaymentType_MobileBalance">Mobile balance</s:String>
     <!--  CommandState -->
-    <s:String x:Key="s_CommandState_ModifiedByUser">You modified that command</s:String>
-    <s:String x:Key="s_CommandState_CreatedByUser">You created that command</s:String>
-    <s:String x:Key="s_CommandState_UpdateAvailable">Update available</s:String>
-    <s:String x:Key="s_CommandState_RemovedOnServer">Removed on Server</s:String>
+    <s:String x:Key="_CommandState_ModifiedByUser">You modified that command</s:String>
+    <s:String x:Key="_CommandState_CreatedByUser">You created that command</s:String>
+    <s:String x:Key="_CommandState_UpdateAvailable">Update available</s:String>
+    <s:String x:Key="_CommandState_RemovedOnServer">Removed on Server</s:String>
     <!--  SpeechState -->
-    <s:String x:Key="s_SpeechState_Working">Enabled</s:String>
-    <s:String x:Key="s_SpeechState_Recording">Recording</s:String>
-    <s:String x:Key="s_SpeechState_Saying">Saying</s:String>
-    <s:String x:Key="s_SpeechState_Paused">Paused</s:String>
+    <s:String x:Key="_SpeechState_Working">Enabled</s:String>
+    <s:String x:Key="_SpeechState_Recording">Recording</s:String>
+    <s:String x:Key="_SpeechState_Saying">Saying</s:String>
+    <s:String x:Key="_SpeechState_Paused">Paused</s:String>
     <!--  MouseMoveType -->
-    <s:String x:Key="s_MouseMoveType_Point">Point</s:String>
-    <s:String x:Key="s_MouseMoveType_Relative">Relative</s:String>
+    <s:String x:Key="_MouseMoveType_Point">Point</s:String>
+    <s:String x:Key="_MouseMoveType_Relative">Relative</s:String>
     <!--  MouseScrollType -->
-    <s:String x:Key="s_MouseScrollType_Vertical">Vertically</s:String>
-    <s:String x:Key="s_MouseScrollType_Horizontal">Horizontally</s:String>
+    <s:String x:Key="_MouseScrollType_Vertical">Vertically</s:String>
+    <s:String x:Key="_MouseScrollType_Horizontal">Horizontally</s:String>
     <!--  ActionType -->
-    <s:String x:Key="s_ActionType_OpenFile">Oper file or app</s:String>
-    <s:String x:Key="s_ActionType_CloseApp">Close app</s:String>
-    <s:String x:Key="s_ActionType_Hotkeys">Press hotkeys</s:String>
-    <s:String x:Key="s_ActionType_MouseMove">Move mouse cursor</s:String>
-    <s:String x:Key="s_ActionType_Say">Say</s:String>
-    <s:String x:Key="s_ActionType_Type">Type text</s:String>
-    <s:String x:Key="s_ActionType_PlayAudio">Play audio</s:String>
-    <s:String x:Key="s_ActionType_OpenURL">Open web-page</s:String>
-    <s:String x:Key="s_ActionType_WebPageScript">Execute javascript</s:String>
-    <s:String x:Key="s_ActionType_Pause">Wait</s:String>
-    <s:String x:Key="s_ActionType_IfProcessSelected">If active program is</s:String>
-    <s:String x:Key="s_ActionType_IfProcessExists">If program running</s:String>
-    <s:String x:Key="s_ActionType_IfWebsiteSelected">If active web-site is</s:String>
-    <s:String x:Key="s_ActionType_MouseButton">Press mouse button</s:String>
-    <s:String x:Key="s_ActionType_HttpWebRequest">Web-request</s:String>
-    <s:String x:Key="s_ActionType_SetVariableValue">Set variable value</s:String>
-    <s:String x:Key="s_ActionType_IfVariableValue">If variable value is</s:String>
-    <s:String x:Key="s_ActionType_IfWebsiteNavValue">If web-site selection is</s:String>
-    <s:String x:Key="s_ActionType_ShowWindow">Show window</s:String>
-    <s:String x:Key="s_ActionType_WebPageFocus">Focus</s:String>
-    <s:String x:Key="s_ActionType_WebPageClick">Click</s:String>
-    <s:String x:Key="s_ActionType_WebPageRead">Read</s:String>
-    <s:String x:Key="s_ActionType_WebPageNavigate">Select</s:String>
-    <s:String x:Key="s_ActionType_WebPageNavClick">Click on selection</s:String>
-    <s:String x:Key="s_ActionType_WebPagePopupOpen">Open web-page popup</s:String>
-    <s:String x:Key="s_ActionType_MouseMoveOn">Move mouse on element</s:String>
-    <s:String x:Key="s_ActionType_Else">Else</s:String>
-    <s:String x:Key="s_ActionType_EndBlock">End</s:String>
-    <s:String x:Key="s_ActionType_Comment">Comment</s:String>
-    <s:String x:Key="s_ActionType_MouseScroll">Wheel mouse scroll</s:String>
-    <s:String x:Key="s_ActionType_TogglePackActivity">Toggle pack activity</s:String>
-    <s:String x:Key="s_ActionType_RandomActionBlock">Random action block</s:String>
-    <s:String x:Key="s_ActionType_Loop">Loop</s:String>
-    <s:String x:Key="s_ActionType_JetAim">Jet aim mouse move</s:String>
-    <s:String x:Key="s_ActionType_BatchScript">.bat script</s:String>
-    <s:String x:Key="s_ActionType_VariableReplace">Replace in variable</s:String>
-    <s:String x:Key="s_ActionType_WaitNextCommand">Wait next command</s:String>
-    <s:String x:Key="s_ActionType_ScheduleEvent">Schedule event</s:String>
-    <s:String x:Key="s_ActionType_Notify">Notify</s:String>
-    <s:String x:Key="s_ActionType_VoiceCommand">Execute voice command</s:String>
+    <s:String x:Key="_ActionType_OpenFile">Oper file or app</s:String>
+    <s:String x:Key="_ActionType_CloseApp">Close app</s:String>
+    <s:String x:Key="_ActionType_Hotkeys">Press hotkeys</s:String>
+    <s:String x:Key="_ActionType_MouseMove">Move mouse cursor</s:String>
+    <s:String x:Key="_ActionType_Say">Say</s:String>
+    <s:String x:Key="_ActionType_Type">Type text</s:String>
+    <s:String x:Key="_ActionType_PlayAudio">Play audio</s:String>
+    <s:String x:Key="_ActionType_OpenURL">Open web-page</s:String>
+    <s:String x:Key="_ActionType_WebPageScript">Execute javascript</s:String>
+    <s:String x:Key="_ActionType_Pause">Wait</s:String>
+    <s:String x:Key="_ActionType_IfProcessSelected">If active program is</s:String>
+    <s:String x:Key="_ActionType_IfProcessExists">If program running</s:String>
+    <s:String x:Key="_ActionType_IfWebsiteSelected">If active web-site is</s:String>
+    <s:String x:Key="_ActionType_MouseButton">Press mouse button</s:String>
+    <s:String x:Key="_ActionType_HttpWebRequest">Web-request</s:String>
+    <s:String x:Key="_ActionType_SetVariableValue">Set variable value</s:String>
+    <s:String x:Key="_ActionType_IfVariableValue">If variable value is</s:String>
+    <s:String x:Key="_ActionType_IfWebsiteNavValue">If web-site selection is</s:String>
+    <s:String x:Key="_ActionType_ShowWindow">Show window</s:String>
+    <s:String x:Key="_ActionType_WebPageFocus">Focus</s:String>
+    <s:String x:Key="_ActionType_WebPageClick">Click</s:String>
+    <s:String x:Key="_ActionType_WebPageRead">Read</s:String>
+    <s:String x:Key="_ActionType_WebPageNavigate">Select</s:String>
+    <s:String x:Key="_ActionType_WebPageNavClick">Click on selection</s:String>
+    <s:String x:Key="_ActionType_WebPagePopupOpen">Open web-page popup</s:String>
+    <s:String x:Key="_ActionType_MouseMoveOn">Move mouse on element</s:String>
+    <s:String x:Key="_ActionType_Else">Else</s:String>
+    <s:String x:Key="_ActionType_EndBlock">End</s:String>
+    <s:String x:Key="_ActionType_Comment">Comment</s:String>
+    <s:String x:Key="_ActionType_MouseScroll">Wheel mouse scroll</s:String>
+    <s:String x:Key="_ActionType_TogglePackActivity">Toggle pack activity</s:String>
+    <s:String x:Key="_ActionType_RandomActionBlock">Random action block</s:String>
+    <s:String x:Key="_ActionType_Loop">Loop</s:String>
+    <s:String x:Key="_ActionType_JetAim">Jet aim mouse move</s:String>
+    <s:String x:Key="_ActionType_BatchScript">.bat script</s:String>
+    <s:String x:Key="_ActionType_VariableReplace">Replace in variable</s:String>
+    <s:String x:Key="_ActionType_WaitNextCommand">Wait next command</s:String>
+    <s:String x:Key="_ActionType_ScheduleEvent">Schedule event</s:String>
+    <s:String x:Key="_ActionType_Notify">Notify</s:String>
+    <s:String x:Key="_ActionType_VoiceCommand">Execute voice command</s:String>
     <!--  WebNavigateAction-->
-    <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
-    <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
-    <s:String x:Key="s_WebPageNavigateAction_SubstractIndex">Decrease position</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SetIndex">Set position</s:String>
+    <s:String x:Key="_WebPageNavigateAction_AddIndex">Increase position</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SubstractIndex">Decrease position</s:String>
     <!--  CloseAppBehaviour -->
-    <s:String x:Key="s_CloseAppBehaviour_Close">Close</s:String>
-    <s:String x:Key="s_CloseAppBehaviour_Kill">Kill</s:String>
+    <s:String x:Key="_CloseAppBehaviour_Close">Close</s:String>
+    <s:String x:Key="_CloseAppBehaviour_Kill">Kill</s:String>
     <!--  Mouse Button-->
-    <s:String x:Key="s_MouseButton_Left">Left mouse button</s:String>
-    <s:String x:Key="s_MouseButton_Right">Right mouse button</s:String>
-    <s:String x:Key="s_MouseButton_Middle">Middle mouse button</s:String>
-    <s:String x:Key="s_MouseButton_XButton1">Х1 mouse button</s:String>
-    <s:String x:Key="s_MouseButton_XButton2">Х2 mouse button</s:String>
+    <s:String x:Key="_MouseButton_Left">Left mouse button</s:String>
+    <s:String x:Key="_MouseButton_Right">Right mouse button</s:String>
+    <s:String x:Key="_MouseButton_Middle">Middle mouse button</s:String>
+    <s:String x:Key="_MouseButton_XButton1">Х1 mouse button</s:String>
+    <s:String x:Key="_MouseButton_XButton2">Х2 mouse button</s:String>
     <!--  Mouse Action-->
-    <s:String x:Key="s_ButtonAction_Click">Click</s:String>
-    <s:String x:Key="s_ButtonAction_Press">Press</s:String>
-    <s:String x:Key="s_ButtonAction_Release">Release</s:String>
-    <s:String x:Key="s_ButtonAction_LongClick">Long click</s:String>
+    <s:String x:Key="_ButtonAction_Click">Click</s:String>
+    <s:String x:Key="_ButtonAction_Press">Press</s:String>
+    <s:String x:Key="_ButtonAction_Release">Release</s:String>
+    <s:String x:Key="_ButtonAction_LongClick">Long click</s:String>
     <!--  Show Window Commands-->
-    <s:String x:Key="s_ShowWindowCommandType_Show">Show</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Maximize">Maximize</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Minimize">Minimize</s:String>
-    <s:String x:Key="s_ShowWindowCommandType_Hide">Hide</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Show">Show</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Maximize">Maximize</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Minimize">Minimize</s:String>
+    <s:String x:Key="_ShowWindowCommandType_Hide">Hide</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
 
-    <s:String x:Key="s_Service_Online">online</s:String>
-    <s:String x:Key="s_Service_Offline">offline</s:String>
-    <s:String x:Key="s_Service_Authorize">authorize</s:String>
-    <s:String x:Key="s_Service_BadQuality">bad quality</s:String>
-    <s:String x:Key="s_Service_GoodQuality">good quality</s:String>
-    <s:String x:Key="s_Service_Install">install</s:String>
-    <s:String x:Key="s_Service_Limited">limits</s:String>
+    <s:String x:Key="_Service_Online">online</s:String>
+    <s:String x:Key="_Service_Offline">offline</s:String>
+    <s:String x:Key="_Service_Authorize">authorize</s:String>
+    <s:String x:Key="_Service_BadQuality">bad quality</s:String>
+    <s:String x:Key="_Service_GoodQuality">good quality</s:String>
+    <s:String x:Key="_Service_Install">install</s:String>
+    <s:String x:Key="_Service_Limited">limits</s:String>
     
-    <s:String x:Key="s_Logger_Clear">Clear events</s:String>
-    <s:String x:Key="s_Logger_ExtendedMode">Extended mode</s:String>
+    <s:String x:Key="_Logger_Clear">Clear events</s:String>
+    <s:String x:Key="_Logger_ExtendedMode">Extended mode</s:String>
     
-    <s:String x:Key="s_Settings_Default_CommandStarter">Hey Siri/ОК Google/Hey bro/Jarvis</s:String>
-    <s:String x:Key="s_Settings_Default_TextInputStarter">type/dictate</s:String>
-    <s:String x:Key="s_Settings_Default_Language">en-US</s:String>
-    <s:String x:Key="s_Settings_ListenLastRecording">Listen last voice recording</s:String>
-    <s:String x:Key="s_Settings_ScheduledEvents">Scheduled events</s:String>
+    <s:String x:Key="_Settings_Default_CommandStarter">Hey Siri/ОК Google/Hey bro/Jarvis</s:String>
+    <s:String x:Key="_Settings_Default_TextInputStarter">type/dictate</s:String>
+    <s:String x:Key="_Settings_Default_Language">en-US</s:String>
+    <s:String x:Key="_Settings_ListenLastRecording">Listen last voice recording</s:String>
+    <s:String x:Key="_Settings_ScheduledEvents">Scheduled events</s:String>
 
     <!--#region Settings Labels-->
-    <s:String x:Key="s_Settings_Label_VoiceCommands">Voice commands</s:String>
-    <s:String x:Key="s_Settings_Label_VoiceDialing">Voice text typing</s:String>
-    <s:String x:Key="s_Settings_Label_IsPauseRecordingOnLoudSound">Pause recording on loud sound</s:String>
-    <s:String x:Key="s_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
-    <s:String x:Key="s_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
-    <s:String x:Key="s_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
-    <s:String x:Key="s_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
-    <s:String x:Key="s_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
-    <s:String x:Key="s_Settings_Label_RecognitionService">Recognition Service</s:String>
-    <s:String x:Key="s_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
-    <s:String x:Key="s_Settings_Label_TextToSpeechService">Text to Speech Service</s:String>
-    <s:String x:Key="s_Settings_Label_IsWebsiteControlEnabled">Is website control enabled</s:String>
-    <s:String x:Key="s_Settings_Label_UseCommunication">Communication</s:String>
-    <s:String x:Key="s_Settings_Label_IsAutomaticOrphographyEnabled">Automatically insert dots, comas, uppercase chars</s:String>
-    <s:String x:Key="s_Settings_Label_IsKeyboardInputEnabled">Type text using keyboard, rather than clipboard</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
-    <s:String x:Key="s_Settings_Label_RestoreFues">Show hint panels</s:String>
-    <s:String x:Key="s_Settings_Label_AlwaysRunAsAdministrator">Always run as administrator</s:String>
+    <s:String x:Key="_Settings_Label_VoiceCommands">Voice commands</s:String>
+    <s:String x:Key="_Settings_Label_VoiceDialing">Voice text typing</s:String>
+    <s:String x:Key="_Settings_Label_IsPauseRecordingOnLoudSound">Pause recording on loud sound</s:String>
+    <s:String x:Key="_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
+    <s:String x:Key="_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
+    <s:String x:Key="_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
+    <s:String x:Key="_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
+    <s:String x:Key="_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
+    <s:String x:Key="_Settings_Label_RecognitionService">Recognition Service</s:String>
+    <s:String x:Key="_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
+    <s:String x:Key="_Settings_Label_TextToSpeechService">Text to Speech Service</s:String>
+    <s:String x:Key="_Settings_Label_IsWebsiteControlEnabled">Is website control enabled</s:String>
+    <s:String x:Key="_Settings_Label_UseCommunication">Communication</s:String>
+    <s:String x:Key="_Settings_Label_IsAutomaticOrphographyEnabled">Automatically insert dots, comas, uppercase chars</s:String>
+    <s:String x:Key="_Settings_Label_IsKeyboardInputEnabled">Type text using keyboard, rather than clipboard</s:String>
+    <s:String x:Key="_Settings_Label_RestoreBackUp">Restore data backup from storage</s:String>
+    <s:String x:Key="_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
+    <s:String x:Key="_Settings_Label_RestoreFail">Data restore failed</s:String>
+    <s:String x:Key="_Settings_Label_RestoreFues">Show hint panels</s:String>
+    <s:String x:Key="_Settings_Label_AlwaysRunAsAdministrator">Always run as administrator</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
-    <ControlTemplate x:Key="s_Settings_Text_YandexService">
+    <ControlTemplate x:Key="_Settings_Text_YandexService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Yandex service you need:
   1) Yandex account <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
   2) Enter into developer account and recieve private SpeechKit key <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
   3) Paste key into textbox below</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_BingService">
+    <ControlTemplate x:Key="_Settings_Text_BingService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Bing service you need:
   1) Open link <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
   2) Select Speech, Bing Speech API, log in by one of available methods                  
   3) Paste first key into textbox below</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_WindowsService">
+    <ControlTemplate x:Key="_Settings_Text_WindowsService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To add languages you need to download and install Windows language packs</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_WindowsTtsService">
+    <ControlTemplate x:Key="_Settings_Text_WindowsTtsService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To add some voices you need to download and install Windows language packs or thirt-party voice engines, like Ivona</TextBlock>
     </ControlTemplate>
-    <ControlTemplate x:Key="s_Settings_Text_AcapelaService">
+    <ControlTemplate x:Key="_Settings_Text_AcapelaService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Acapela you need:
   1) Open link <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
   2) Press Sign up for free in right top corner
@@ -813,15 +813,15 @@
 
     <!--#region Settings Tooltips-->
     
-    <s:String x:Key="s_Settings_Tooltip_IsPauseRecordingOnLoudSound">
+    <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">
         To stop Laitis from recognizing audio from speakers (video, music)
     </s:String>
     
-    <TextBlock x:Key="s_Settings_Tooltip_NoiseProgress">
+    <TextBlock x:Key="_Settings_Tooltip_NoiseProgress">
         That indicator displays noise volume in microphone
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_TooLoud">
+    <TextBlock x:Key="_Settings_Tooltip_TooLoud">
         PC sound volume exceeds 30% limit
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -831,7 +831,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_VoiceDialing">
+    <TextBlock x:Key="_Settings_Tooltip_VoiceDialing">
         That option enables text typing using your voice
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -841,11 +841,11 @@
 
     
     
-    <s:String x:Key="s_Settings_Tooltip_RecordStarter">
+    <s:String x:Key="_Settings_Tooltip_RecordStarter">
         Select key
     </s:String>
 
-    <TextBlock x:Key="s_Settings_Tooltip_IsMuteOnCtrlClick">
+    <TextBlock x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">
         Mutes Windows sound on pressing start record button
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -853,7 +853,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_UseCommandStarter">
+    <TextBlock x:Key="_Settings_Tooltip_UseCommandStarter">
         All commands will start with keyword/phrase prefix
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -861,7 +861,7 @@
         </Span>
     </TextBlock>
 
-    <TextBlock x:Key="s_Settings_Tooltip_IsAutomaticOrphographyEnabled">
+    <TextBlock x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">
         Works only with automatic voice recording
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -875,7 +875,7 @@
     
     
     
-    <TextBlock x:Key="s_Settings_Tooltip_IsKeyboardInputEnabled">
+    <TextBlock x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">
         Beta version. Use at your own risk.
         <LineBreak />
         <Span FontSize="12" Foreground="{StaticResource br_Gray}">
@@ -889,17 +889,17 @@
 
     <!--#region Help-->
 
-    <s:String x:Key="s_Help_Updates">Updates</s:String>
-    <s:String x:Key="s_Help_Prepare">Preparation</s:String>
-    <s:String x:Key="s_Help_IOT">IOT and services (for developers)</s:String>
-    <s:String x:Key="s_Help_FAQ">FAQ</s:String>
-    <s:String x:Key="s_Help_Extra">Extras</s:String>
+    <s:String x:Key="_Help_Updates">Updates</s:String>
+    <s:String x:Key="_Help_Prepare">Preparation</s:String>
+    <s:String x:Key="_Help_IOT">IOT and services (for developers)</s:String>
+    <s:String x:Key="_Help_FAQ">FAQ</s:String>
+    <s:String x:Key="_Help_Extra">Extras</s:String>
 
-    <FlowDocument x:Key="s_HelpDocument">
+    <FlowDocument x:Key="_HelpDocument">
 
         <Section Margin="0,0,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Prepare}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Prepare}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 You need a <Run TextDecorations="Underline">good microphone</Run>.
@@ -922,7 +922,7 @@
         
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_FAQ}" />
+                <Run FontSize="20" Text="{StaticResource _Help_FAQ}" />
             </Paragraph>
             <Paragraph FontWeight="Bold" TextIndent="20">
                 Why voice recognition does not work?
@@ -1051,7 +1051,7 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_IOT}" />
+                <Run FontSize="20" Text="{StaticResource _Help_IOT}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 Laitis is able to send Web requests and execute commands that will be returned the server. 
@@ -1091,7 +1091,7 @@
         
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Extra}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Extra}" />
             </Paragraph>
             <Paragraph TextIndent="40">
                 If you have not read the
@@ -1145,14 +1145,14 @@
 
         <Section Margin="0,100,0,0">
             <Paragraph>
-                <Run FontSize="20" Text="{StaticResource s_Help_Updates}" />
+                <Run FontSize="20" Text="{StaticResource _Help_Updates}" />
             </Paragraph>
         </Section>
 
     </FlowDocument>
     <!--#endregion-->
     
-    <FlowDocument x:Key="s_PublisherFUE">
+    <FlowDocument x:Key="_PublisherFUE">
         <Paragraph FontSize="20" TextAlignment="Center">This is the functionality of publishing your changes and new commands to the community</Paragraph>
 
         <Paragraph>Process:</Paragraph>
