@@ -363,8 +363,8 @@
     <s:String x:Key="s_AndAHalf">and a half</s:String>
     <s:String x:Key="s_Half">half</s:String>
     <s:String x:Key="s_After">after,in,next</s:String>
-    <s:String x:Key="s_Mornings">a.m.,am</s:String>
-    <s:String x:Key="s_Evenings">p.m.,pm</s:String>
+    <s:String x:Key="s_Mornings" xml:space="preserve">a.m.,am</s:String>
+    <s:String x:Key="s_Evenings" xml:space="preserve">p.m.,pm</s:String>
     <s:String x:Key="s_DayParts">midnight,morning,afternoon,midday,evening,night</s:String>
     <s:String x:Key="s_Numbers">zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeed,eighteen,nineteen</s:String>
     <s:String x:Key="s_HighNumbers">twenty,thirty,forty,fifty,sixty,seventy,eighty,ninety</s:String>
@@ -375,6 +375,7 @@
     <!--#endregion-->
     
     <!--#region Common Labels-->
+    <s:String x:Key="s_Duration">Duration</s:String>
     <s:String x:Key="s_SelectImage">Select image</s:String>
     <s:String x:Key="s_From">from</s:String>
     <s:String x:Key="s_To">to</s:String>
@@ -392,7 +393,6 @@
     <s:String x:Key="s_Stop">Stop</s:String>
     <s:String x:Key="s_Send">Send</s:String>
     <s:String x:Key="s_Play">Play</s:String>
-    <s:String x:Key="s_Wait">Wait</s:String>
     <s:String x:Key="s_Open">Open</s:String>
     <s:String x:Key="s_Exit">Exit</s:String>
     <s:String x:Key="s_Copy">Copy</s:String>
@@ -423,7 +423,6 @@
     <s:String x:Key="s_Donated">Donated</s:String>
     <s:String x:Key="s_NewPack">New pack</s:String>
     <s:String x:Key="s_Unknown">Unknown</s:String>
-    <s:String x:Key="s_YouSaid">You said</s:String>
     <s:String x:Key="s_AddPack">Add pack</s:String>
     <s:String x:Key="s_Settings">Settings</s:String>
     <s:String x:Key="s_OnServer">On server</s:String>
@@ -431,9 +430,7 @@
     <s:String x:Key="s_EventHasCome">Event has come</s:String>
     <s:String x:Key="s_Confidant">Confidant</s:String>
     <s:String x:Key="s_Dublicate">Duplicate</s:String>
-    <s:String x:Key="s_Executing">Executing</s:String>
     <s:String x:Key="s_HttpWebRequest">Web-request</s:String>
-    <s:String x:Key="s_Responding">Responding</s:String>
     <s:String x:Key="s_Categories">categories</s:String>
     <s:String x:Key="s_Collection">Pack</s:String>
     <s:String x:Key="s_Reputation">Reputation</s:String>
@@ -519,7 +516,6 @@
     <s:String x:Key="s_CommandAction_Label_MouseMove_X">X:</s:String>
     <s:String x:Key="s_CommandAction_Label_MouseMove_Y">Y:</s:String>
     <s:String x:Key="s_CommandAction_Label_Say">Say:</s:String>
-    <s:String x:Key="s_CommandAction_Label_Pause">Wait:</s:String>
     <s:String x:Key="s_CommandAction_Label_IfProcessSelected">If active process is:</s:String>
     <s:String x:Key="s_CommandAction_Label_IfProcessExists">If process exists:</s:String>
     <s:String x:Key="s_CommandAction_Label_IfWebsiteSelected">If active website is:</s:String>
@@ -539,6 +535,7 @@
     <s:String x:Key="s_CommandAction_Label_MouseScroll">by:</s:String>
     <s:String x:Key="s_CommandAction_Label_TogglePackActivity">pack:</s:String>
     <s:String x:Key="s_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
+    <s:String x:Key="s_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
     
     <TextBlock x:Key="s_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
         Actions below will be executed after scheduled event DateTime
@@ -551,6 +548,22 @@
         Waits phrase from user
         <LineBreak />
         Sets phrase value into variable with selected name
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
+        How long to wait users command
+        <LineBreak />
+        Blank or 0 = infinite
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
+        1 second = 1000 milliseconds
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
+        In seconds
+    </TextBlock>
+    <TextBlock x:Key="s_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
+        Allows to execute actions from another voice command
+        <LineBreak />
+        Enter one phrase
     </TextBlock>
     <TextBlock x:Key="s_CommandAction_Tooltip_JetAim">
         Mouve move via voice feature
@@ -617,6 +630,14 @@
     <!--#endregion-->
 
     <!--#region Enums-->
+    <!--  NotificationType -->
+    <s:String x:Key="s_NotificationType_Default">Default</s:String>
+    <s:String x:Key="s_NotificationType_Info">Info</s:String>
+    <s:String x:Key="s_NotificationType_Done">Done</s:String>
+    <s:String x:Key="s_NotificationType_Error">Error</s:String>
+    <!--  PauseType -->
+    <s:String x:Key="s_PauseType_Time">Pause for</s:String>
+    <s:String x:Key="s_PauseType_AudioEnd">Pause until audio ends</s:String>
     <!--  ScheduleEventType -->
     <s:String x:Key="s_ScheduleEventType_At">at</s:String>
     <s:String x:Key="s_ScheduleEventType_After">after</s:String>
@@ -693,7 +714,8 @@
     <s:String x:Key="s_ActionType_VariableReplace">Replace in variable</s:String>
     <s:String x:Key="s_ActionType_WaitNextCommand">Wait next command</s:String>
     <s:String x:Key="s_ActionType_ScheduleEvent">Schedule event</s:String>
-    <s:String x:Key="s_ActionType_WaitAudioEnd">Wait audio end</s:String>
+    <s:String x:Key="s_ActionType_Notify">Notify</s:String>
+    <s:String x:Key="s_ActionType_VoiceCommand">Execute voice command</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="s_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="s_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -758,6 +780,7 @@
     <s:String x:Key="s_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFail">Data restore failed</s:String>
     <s:String x:Key="s_Settings_Label_RestoreFues">Show hint panels</s:String>
+    <s:String x:Key="s_Settings_Label_AlwaysRunAsAdministrator">Always run as administrator</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
