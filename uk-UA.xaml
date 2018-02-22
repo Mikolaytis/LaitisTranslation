@@ -460,7 +460,7 @@
     <s:String x:Key="s_Download">Завантажити</s:String>
     <s:String x:Key="s_DownloadStarted">завантаження розпочато</s:String>
     <s:String x:Key="s_DownloadCompleted">Завантаження завершено</s:String>
-    <s:String x:Key="s_HoldToConfirm">загрузка начата</s:String>
+    <s:String x:Key="s_HoldToConfirm">Утримати для підтвердження</s:String>
     <s:String x:Key="s_Cancel">Скасувати</s:String>
 
 
