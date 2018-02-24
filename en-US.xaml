@@ -389,7 +389,6 @@
     <s:String x:Key="_Well">Well</s:String>
     <s:String x:Key="_Say">Say</s:String>
     <s:String x:Key="_Cut">Cut</s:String>
-    <s:String x:Key="_Type">Type</s:String>
     <s:String x:Key="_Stop">Stop</s:String>
     <s:String x:Key="_Send">Send</s:String>
     <s:String x:Key="_Play">Play</s:String>
@@ -528,14 +527,14 @@
     <s:String x:Key="_CommandAction_Label_OpenURL">Open URL:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageClick">Click on web-page:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageFocus">Focus on web-page:</s:String>
-    <s:String x:Key="_CommandAction_Label_WebPageRead">Read on web-page:</s:String>
-    <s:String x:Key="_CommandAction_Label_WebPageNavigate">Select on web-page:</s:String>
-    <s:String x:Key="_CommandAction_Label_WebPageNavClick">Click on web-page selection:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavigate">Select on webpage:</s:String>
+    <s:String x:Key="_CommandAction_Label_WebPageNavClick">Click on webpage selection:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Open web-page popup window:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseScroll">by:</s:String>
     <s:String x:Key="_CommandAction_Label_TogglePackActivity">pack:</s:String>
     <s:String x:Key="_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
     <s:String x:Key="_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
+    
     
     <TextBlock x:Key="_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
         Actions below will be executed after scheduled event DateTime
@@ -630,6 +629,9 @@
     <!--#endregion-->
 
     <!--#region Enums-->
+    <!--  TextPasteMode -->
+    <s:String x:Key="_TextPasteMode_PasteText">Paste text</s:String>
+    <s:String x:Key="_TextPasteMode_TypeText">Type text</s:String>
     <!--  NotificationType -->
     <s:String x:Key="_NotificationType_Default">Default</s:String>
     <s:String x:Key="_NotificationType_Info">Info</s:String>
@@ -681,7 +683,7 @@
     <s:String x:Key="_ActionType_Hotkeys">Press hotkeys</s:String>
     <s:String x:Key="_ActionType_MouseMove">Move mouse cursor</s:String>
     <s:String x:Key="_ActionType_Say">Say</s:String>
-    <s:String x:Key="_ActionType_Type">Type text</s:String>
+    <s:String x:Key="_ActionType_TypeText">Type text</s:String>
     <s:String x:Key="_ActionType_PlayAudio">Play audio</s:String>
     <s:String x:Key="_ActionType_OpenURL">Open web-page</s:String>
     <s:String x:Key="_ActionType_WebPageScript">Execute javascript</s:String>
@@ -697,7 +699,7 @@
     <s:String x:Key="_ActionType_ShowWindow">Show window</s:String>
     <s:String x:Key="_ActionType_WebPageFocus">Focus</s:String>
     <s:String x:Key="_ActionType_WebPageClick">Click</s:String>
-    <s:String x:Key="_ActionType_WebPageRead">Read</s:String>
+    <s:String x:Key="_ActionType_WebPageGetText">Get text</s:String>
     <s:String x:Key="_ActionType_WebPageNavigate">Select</s:String>
     <s:String x:Key="_ActionType_WebPageNavClick">Click on selection</s:String>
     <s:String x:Key="_ActionType_WebPagePopupOpen">Open web-page popup</s:String>
@@ -716,6 +718,7 @@
     <s:String x:Key="_ActionType_ScheduleEvent">Schedule event</s:String>
     <s:String x:Key="_ActionType_Notify">Notify</s:String>
     <s:String x:Key="_ActionType_VoiceCommand">Execute voice command</s:String>
+    <s:String x:Key="_ActionType_GetUrlSelectorText">Get text by url</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -986,7 +989,7 @@
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Yandex</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Vivaldi</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/">Opera</controls:Hyperlink>,
-                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
+                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-browser-extension/">Firefox</controls:Hyperlink>.
                     </Paragraph>
                 </ListItem>
             </List>

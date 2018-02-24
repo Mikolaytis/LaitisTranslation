@@ -389,7 +389,6 @@
     <s:String x:Key="_Well">Хорошо</s:String>
     <s:String x:Key="_Say">Сказать</s:String>
     <s:String x:Key="_Cut">Вырезать</s:String>
-    <s:String x:Key="_Type">Напечатать</s:String>
     <s:String x:Key="_Stop">Стоп</s:String>
     <s:String x:Key="_Send">Отправить</s:String>
     <s:String x:Key="_Play">Воспроизвести</s:String>
@@ -528,7 +527,6 @@
     <s:String x:Key="_CommandAction_Label_OpenURL">Открыть веб-страницу:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageClick">Кликнуть на веб-странице:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageFocus">Сфокусировать на веб-странице:</s:String>
-    <s:String x:Key="_CommandAction_Label_WebPageRead">Прочитать на веб-странице:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageNavigate">Выбрать на веб-странице:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPageNavClick">Открыть выбранное на веб-странице:</s:String>
     <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Открыть всплывающее окно:</s:String>
@@ -630,6 +628,9 @@
     <!--#endregion-->
 
     <!--#region Enums-->
+    <!--  TextPasteMode -->
+    <s:String x:Key="_TextPasteMode_PasteText">Вставить текст</s:String>
+    <s:String x:Key="_TextPasteMode_TypeText">Напечатать текст</s:String>
     <!--  NotificationType -->
     <s:String x:Key="_NotificationType_Default">Обычная</s:String>
     <s:String x:Key="_NotificationType_Info">Инфо</s:String>
@@ -681,7 +682,7 @@
     <s:String x:Key="_ActionType_Hotkeys">Нажать сочетание клавиш</s:String>
     <s:String x:Key="_ActionType_MouseMove">Переместить курсор</s:String>
     <s:String x:Key="_ActionType_Say">Сказать</s:String>
-    <s:String x:Key="_ActionType_Type">Напечатать текст</s:String>
+    <s:String x:Key="_ActionType_TypeText">Напечатать текст</s:String>
     <s:String x:Key="_ActionType_PlayAudio">Звук/Аудио</s:String>
     <s:String x:Key="_ActionType_OpenURL">Открыть веб-страницу</s:String>
     <s:String x:Key="_ActionType_WebPageScript">Выполнить javascript</s:String>
@@ -697,7 +698,7 @@
     <s:String x:Key="_ActionType_ShowWindow">Показать окно</s:String>
     <s:String x:Key="_ActionType_WebPageFocus">Фокус</s:String>
     <s:String x:Key="_ActionType_WebPageClick">Клик</s:String>
-    <s:String x:Key="_ActionType_WebPageRead">Прочитать</s:String>
+    <s:String x:Key="_ActionType_WebPageGetText">Получить текст</s:String>
     <s:String x:Key="_ActionType_WebPageNavigate">Выбрать</s:String>
     <s:String x:Key="_ActionType_WebPageNavClick">Открыть выбор</s:String>
     <s:String x:Key="_ActionType_WebPagePopupOpen">Открыть всплывающее окно</s:String>
@@ -716,6 +717,7 @@
     <s:String x:Key="_ActionType_ScheduleEvent">Запланировать событие</s:String>
     <s:String x:Key="_ActionType_Notify">Уведомить</s:String>
     <s:String x:Key="_ActionType_VoiceCommand">Выполнить голосовую команду</s:String>
+    <s:String x:Key="_ActionType_GetUrlSelectorText">Получить текст по ссылке</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
@@ -986,7 +988,7 @@
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Yandex</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Vivaldi</controls:Hyperlink>,
                         <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/">Opera</controls:Hyperlink>,
-                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
+                        <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-browser-extension/">Firefox</controls:Hyperlink>.
                     </Paragraph>
                 </ListItem>
             </List>

@@ -389,7 +389,6 @@
   <s:String x:Key="_Well">Добре</s:String>
   <s:String x:Key="_Say">Сказати</s:String>
   <s:String x:Key="_Cut">Вирізати</s:String>
-  <s:String x:Key="_Type">Напечатати</s:String>
   <s:String x:Key="_Stop">Стоп</s:String>
   <s:String x:Key="_Send">Відправити</s:String>
   <s:String x:Key="_Play">Відтворити</s:String>
@@ -528,7 +527,6 @@
   <s:String x:Key="_CommandAction_Label_OpenURL">Відкрити веб-сторінку:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageClick">Клікнути на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageFocus">Сфокусувати на веб-сторінці:</s:String>
-  <s:String x:Key="_CommandAction_Label_WebPageRead">Прочитати на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageNavigate">Вибрати на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageNavClick">Відкрити вбранне на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Відкрити спливаюче вікно:</s:String>
@@ -630,6 +628,9 @@
   <!--#endregion-->
 
   <!--#region Enums-->
+  <!--  TextPasteMode -->
+  <s:String x:Key="_TextPasteMode_PasteText">Вставити текст</s:String>
+  <s:String x:Key="_TextPasteMode_TypeText">Надрукувати текст</s:String>
   <!--  NotificationType -->
   <s:String x:Key="_NotificationType_Default">Звичайна</s:String>
   <s:String x:Key="_NotificationType_Info">Інфо</s:String>
@@ -681,7 +682,7 @@
   <s:String x:Key="_ActionType_Hotkeys">Натиснути поєднання клавіш</s:String>
   <s:String x:Key="_ActionType_MouseMove">Перемістити курсор</s:String>
   <s:String x:Key="_ActionType_Say">Сказати</s:String>
-  <s:String x:Key="_ActionType_Type">Надрукувати текст</s:String>
+  <s:String x:Key="_ActionType_TypeText">Надрукувати текст</s:String>
   <s:String x:Key="_ActionType_PlayAudio">Звук/Аудіо</s:String>
   <s:String x:Key="_ActionType_OpenURL">Відкрити веб-сторінку</s:String>
   <s:String x:Key="_ActionType_WebPageScript">Виконати javascript</s:String>
@@ -697,7 +698,7 @@
   <s:String x:Key="_ActionType_ShowWindow">Показати вікно</s:String>
   <s:String x:Key="_ActionType_WebPageFocus">Фокус</s:String>
   <s:String x:Key="_ActionType_WebPageClick">Клік</s:String>
-  <s:String x:Key="_ActionType_WebPageRead">Прочитати</s:String>
+  <s:String x:Key="_ActionType_WebPageGetText">Отримати текст</s:String>
   <s:String x:Key="_ActionType_WebPageNavigate">Вибрати</s:String>
   <s:String x:Key="_ActionType_WebPageNavClick">Відкрити вибір</s:String>
   <s:String x:Key="_ActionType_WebPagePopupOpen">Відкрити спливаюче вікно</s:String>
@@ -716,6 +717,7 @@
   <s:String x:Key="_ActionType_ScheduleEvent">Затонувати подію</s:String>
   <s:String x:Key="_ActionType_Notify">Повідомити</s:String>
   <s:String x:Key="_ActionType_VoiceCommand">Виконати голосову команду</s:String>
+  <s:String x:Key="_ActionType_GetUrlSelectorText">Отримати текст за посиланням</s:String>
   <!--  WebNavigateAction-->
   <s:String x:Key="_WebPageNavigateAction_SetIndex">Задати позицію</s:String>
   <s:String x:Key="_WebPageNavigateAction_AddIndex">Додати до позиції</s:String>
@@ -989,7 +991,7 @@
             <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Yandex</controls:Hyperlink>,
             <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Vivaldi</controls:Hyperlink>,
             <controls:Hyperlink NavigateUri="https://addons.opera.com/ru/extensions/details/laitis-chromium-extension/">Opera</controls:Hyperlink>,
-            <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-chromium-extension/">Firefox</controls:Hyperlink>.
+            <controls:Hyperlink NavigateUri="https://addons.mozilla.org/ru/firefox/addon/laitis-browser-extension/">Firefox</controls:Hyperlink>.
           </Paragraph>
         </ListItem>
       </List>
