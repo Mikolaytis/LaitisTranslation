@@ -99,7 +99,7 @@
     <!--#region PublicApiHost-->
     <s:String x:Key="_PublicApiHost_HostOpened">External API channel is started</s:String>
     <s:String x:Key="_PublicApiHost_HostOpenError">Error occured on starting external API channel</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedVoiceCommand">External API channel recieved a message</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedPhrase">External API channel recieved a phrase</s:String>
     <s:String x:Key="_PublicApiHost_RecievedAction">External API channel recieved an action</s:String>
     <!--#endregion-->
 
@@ -174,6 +174,9 @@
     <s:String x:Key="_VoiceCommandsDisabled">Voice commands are disabled</s:String>
     <s:String x:Key="_DownloadSaveError">Download save error</s:String>
     <s:String x:Key="_Error">Error</s:String>
+    <s:String x:Key="_ThisOperationIsBlocked3Days">This operation is available only in 3 days after registration</s:String>
+    <s:String x:Key="_ThisOperationIsBlockedForYou">This operation is blocked for you</s:String>
+    <s:String x:Key="_ClickInBrowser">Click in browser</s:String>
     <s:String x:Key="_DataUploadError">Data upload error</s:String>
     <s:String x:Key="_DataIsToBig">Too big data to show</s:String>
     <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occured! It's description is sended to the developer!</s:String>
@@ -379,7 +382,7 @@
     <s:String x:Key="_SelectImage">Select image</s:String>
     <s:String x:Key="_From">from</s:String>
     <s:String x:Key="_To">to</s:String>
-    <s:String x:Key="_ReplaceIn">Replace in</s:String>
+    <s:String x:Key="_ReplaceWith">Replace with</s:String>
     <s:String x:Key="_In">in</s:String>
     <s:String x:Key="_Ms">ms</s:String>
     <s:String x:Key="_And">and</s:String>
@@ -434,7 +437,7 @@
     <s:String x:Key="_Collection">Pack</s:String>
     <s:String x:Key="_Reputation">Reputation</s:String>
     <s:String x:Key="_AddCommand">Add command</s:String>
-    <s:String x:Key="_Replacement">replacement</s:String>
+    <s:String x:Key="_WordReplaceWith">Replace words with</s:String>
     <s:String x:Key="_Publish">Publish</s:String>
     <s:String x:Key="_Publication">Publication</s:String>
     <s:String x:Key="_AddCategory">Add category</s:String>
@@ -496,9 +499,9 @@
     <s:String x:Key="_CommandEditor_Open_ErrorText">Cannot open editor. Details in the events tab.</s:String>
     <s:String x:Key="_CommandEditor_DublicateFounded">Dublicate voice command found</s:String>
     <s:String x:Key="_CommandEditor_DublicateTooltip">Application automatically recognizes word cases.</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommandExists">That voice command already exists in that command</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommandVariableNameError">Variable name is incorrect</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommands">Voice commands:</s:String>
+    <s:String x:Key="_CommandEditor_PhraseExists">That phrase already exists in that command</s:String>
+    <s:String x:Key="_CommandEditor_PhraseVariableNameError">Variable name is incorrect</s:String>
+    <s:String x:Key="_CommandEditor_Phrases">Phrases:</s:String>
     <s:String x:Key="_CommandEditor_Actions">Actions:</s:String>
     <s:String x:Key="_CommandEditor_Variables">Variables:</s:String>
     <s:String x:Key="_CommandEditor_SelectProcess">Select process</s:String>
@@ -519,7 +522,6 @@
     <s:String x:Key="_CommandAction_Label_IfProcessExists">If process exists:</s:String>
     <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">If active website is:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseButton">Mouse button:</s:String>
-    <s:String x:Key="_CommandAction_Label_HttpWebRequest">Web-request:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn">Mouse move on:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Action:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Element:</s:String>
@@ -615,6 +617,7 @@
             Random action will be picked from actions that can be executed
         </Span>
     </TextBlock>
+    <s:String x:Key="_CommandAction_Tooltip_Break">Stops loop</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Loop">Beginning a block of actions that will be executed multiple times</s:String>
     <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
     <s:String x:Key="_CommandAction_Tooltip_MouseMove">You can select with using &quot;Select&quot; button</s:String>
@@ -713,7 +716,7 @@
     <s:String x:Key="_ActionType_Loop">Loop</s:String>
     <s:String x:Key="_ActionType_JetAim">Jet aim mouse move</s:String>
     <s:String x:Key="_ActionType_BatchScript">.bat script</s:String>
-    <s:String x:Key="_ActionType_VariableReplace">Replace in variable</s:String>
+    <s:String x:Key="_ActionType_Break">Break</s:String>
     <s:String x:Key="_ActionType_WaitNextCommand">Wait next command</s:String>
     <s:String x:Key="_ActionType_ScheduleEvent">Schedule event</s:String>
     <s:String x:Key="_ActionType_Notify">Notify</s:String>
@@ -1015,6 +1018,26 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
+                Can I install offline Text-to-Speech engine?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Yes. I advise you to download voices from Ivona. After installation, they appear in the drop-down list if you select Windows Text-to-Speech service in Laitis settings.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Is it possible to install offline voice recognition?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Yes, Laitis supports all recognition engines installed in Windows. After installation select Windows Recognition service in Laitis settings.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
                 Why there is no support for OS X, iOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
@@ -1157,7 +1180,6 @@
     
     <FlowDocument x:Key="_PublisherFUE">
         <Paragraph FontSize="20" TextAlignment="Center">This is the functionality of publishing your changes and new commands to the community</Paragraph>
-
         <Paragraph>Process:</Paragraph>
         <List MarkerStyle="Decimal">
             <ListItem FontStyle="Italic">
@@ -1173,7 +1195,6 @@
                 <Paragraph>Changes and new commands from accepted publications is applied in the community.</Paragraph>
             </ListItem>
         </List>
-
         <Paragraph>Rules:</Paragraph>
         <List MarkerStyle="Decimal">
             <ListItem FontStyle="Italic">
@@ -1205,5 +1226,12 @@
             </ListItem>
         </List>
     </FlowDocument>
-
+    
+    <!--#region Actions Wiki -->
+    <!--<FlowDocument x:Key="_ActionWiki_OpenFile">
+        <Paragraph FontSize="20"><Run Text="{StaticResource _ActionType_OpenFile}"/></Paragraph>
+        <Paragraph>Allows you to open file.</Paragraph>
+    </FlowDocument>-->
+    <!--#endregion-->
+    
 </ResourceDictionary>

@@ -99,7 +99,7 @@
     <!--#region PublicApiHost-->
     <s:String x:Key="_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
     <s:String x:Key="_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedVoiceCommand">Канал API получил голосовую команду</s:String>
+    <s:String x:Key="_PublicApiHost_RecievedPhrase">Канал API получил фразу</s:String>
     <s:String x:Key="_PublicApiHost_RecievedAction">Канал API получил действие</s:String>
     <!--#endregion-->
 
@@ -174,6 +174,9 @@
     <s:String x:Key="_VoiceCommandsDisabled">Голосовые команды отключены</s:String>
     <s:String x:Key="_DownloadSaveError">Загрузка сохранения с сервера не удалась</s:String>
     <s:String x:Key="_Error">Ошибка</s:String>
+    <s:String x:Key="_ThisOperationIsBlocked3Days">Эта операция доступна только через 3 дня после регистрации</s:String>
+    <s:String x:Key="_ThisOperationIsBlockedForYou">Эта операция заблокирована для вас</s:String>
+    <s:String x:Key="_ClickInBrowser">Кликать надо в браузере</s:String>
     <s:String x:Key="_DataUploadError">Ошибка загрузки данных</s:String>
     <s:String x:Key="_DataIsToBig">Слишком много данных, чтобы их отобразить</s:String>
     <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
@@ -379,7 +382,7 @@
     <s:String x:Key="_SelectImage">Выбор изображения</s:String>
     <s:String x:Key="_From">с</s:String>
     <s:String x:Key="_To">на</s:String>
-    <s:String x:Key="_ReplaceIn">Заменить в</s:String>
+    <s:String x:Key="_ReplaceWith">Заменить на</s:String>
     <s:String x:Key="_In">в</s:String>
     <s:String x:Key="_Ms">мс</s:String>
     <s:String x:Key="_And">и</s:String>
@@ -434,7 +437,7 @@
     <s:String x:Key="_Collection">Коллекция</s:String>
     <s:String x:Key="_Reputation">Репутация</s:String>
     <s:String x:Key="_AddCommand">Добавить команду</s:String>
-    <s:String x:Key="_Replacement">Замена</s:String>
+    <s:String x:Key="_WordReplaceWith">Заменить слова на</s:String>
     <s:String x:Key="_Publish">Опубликовать</s:String>
     <s:String x:Key="_Publication">Публикация</s:String>
     <s:String x:Key="_AddCategory">Новая категория</s:String>
@@ -496,9 +499,9 @@
     <s:String x:Key="_CommandEditor_Open_ErrorText">Не удалось открыть редактор. Подробности в журнале событий.</s:String>
     <s:String x:Key="_CommandEditor_DublicateFounded">Уже есть точно такая же голосовая команда</s:String>
     <s:String x:Key="_CommandEditor_DublicateTooltip">Программа автоматически распознает многие вариации.</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommandExists">Эта голосовая команда уже используется в команде</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommandVariableNameError">Не корректное название переменной</s:String>
-    <s:String x:Key="_CommandEditor_VoiceCommands">Голосовые команды:</s:String>
+    <s:String x:Key="_CommandEditor_PhraseExists">Эта фраза уже используется в команде</s:String>
+    <s:String x:Key="_CommandEditor_PhraseVariableNameError">Не корректное название переменной</s:String>
+    <s:String x:Key="_CommandEditor_Phrases">Фразы:</s:String>
     <s:String x:Key="_CommandEditor_Actions">Действия:</s:String>
     <s:String x:Key="_CommandEditor_Variables">Переменные:</s:String>
     <s:String x:Key="_CommandEditor_SelectProcess">Выбрать процесс</s:String>
@@ -519,7 +522,6 @@
     <s:String x:Key="_CommandAction_Label_IfProcessExists">Если запущена программа:</s:String>
     <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">Если открыт вебсайт:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseButton">Кнопка мыши:</s:String>
-    <s:String x:Key="_CommandAction_Label_HttpWebRequest">Веб-запрос:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Действие:</s:String>
     <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Элемент:</s:String>
@@ -614,6 +616,7 @@
             Случайное действие будет выбрано из тех действий, которые реально выполнить
         </Span>
     </TextBlock>
+    <s:String x:Key="_CommandAction_Tooltip_Break">Останавливает цикл</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Loop">Начало блока действий, которые будет выполнены несколько раз</s:String>
     <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Оставьте поле пустым чтобы переключить все коллекции</s:String>
     <s:String x:Key="_CommandAction_Tooltip_MouseMove">Можно выбрать с помощью кнопки &quot;Выбрать&quot;</s:String>
@@ -712,7 +715,7 @@
     <s:String x:Key="_ActionType_Loop">Цикл</s:String>
     <s:String x:Key="_ActionType_JetAim">Прицелить курсор</s:String>
     <s:String x:Key="_ActionType_BatchScript">.bat скрипт</s:String>
-    <s:String x:Key="_ActionType_VariableReplace">Замена в переменной</s:String>
+    <s:String x:Key="_ActionType_Break">Прервать</s:String>
     <s:String x:Key="_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
     <s:String x:Key="_ActionType_ScheduleEvent">Запланировать событие</s:String>
     <s:String x:Key="_ActionType_Notify">Уведомить</s:String>
@@ -1014,6 +1017,26 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold" TextIndent="20">
+                Можно ли установить оффлайн голоса воспроизведения текста?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Да. Советую скачать голоса от Ivona. После установки они появятся в выпадающем списке, если выбрать сервис воспроизведения Windows в настройках Laitis.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
+                Можно ли установить оффлайн распознавание голоса?
+            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph FontStyle="Italic">
+                        Для русского языка вменяемого решения нет, для других популярных языков есть. Когда Microsoft сделают нормальное распознавание вольной русской речи - Laitis автоматически будет это поддерживать.
+                    </Paragraph>
+                </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold" TextIndent="20">
                 Почему нет поддержки OS X, IOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
@@ -1156,53 +1179,67 @@
     
     <FlowDocument x:Key="_PublisherFUE">
         <Paragraph FontSize="20" TextAlignment="Center">Это функционал публикации ваших изменений и новых команд в сообщество</Paragraph>
-
         <Paragraph>Процесс:</Paragraph>
-        <List MarkerStyle="Decimal">
-            <ListItem FontStyle="Italic">
+        <List MarkerStyle="Decimal" FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Вы публикуете новую коллекцию или изменения в какой-то из коллекций.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Сообщество оценивает вашу публикацию.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Модератор проверяет вашу публикацию на соответствие правилам и принимает/отклоняет ее.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Изменения и новые команды из принятых публикаций попадают в сообщество.</Paragraph>
             </ListItem>
         </List>
-
         <Paragraph>Правила:</Paragraph>
-        <List MarkerStyle="Decimal">
-            <ListItem FontStyle="Italic">
+        <List MarkerStyle="Decimal" FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Вы несете ответственность за контент, который публикуете.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Контент, который запрещен для детей может быть только в коллекциях с 18+ в названии.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Публикуйте только те команды, которыми хотите поделится с другими пользователями.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Команды должны корректно работать у любого пользователя.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Команды не должны ломать команды из других коллекций.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Команды не должны навредить компьютеру пользователей.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Команды не должны нарушать работу Laitis.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Ваши изменения и новые команды должны соответствовать коллекции.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Несоблюдение правил приведет к блокировке.</Paragraph>
             </ListItem>
         </List>
     </FlowDocument>
+    
+    <!--#region Actions Wiki -->
+    <s:String x:Key="_AWOF0">Если указать путь к файлу - действие откроет этот файл приложением по умолчанию</s:String>
+    <s:String x:Key="_AWOF1">Если указать путь к программе - действие запустит программу</s:String>
+    <s:String x:Key="_AWOF2">Действие поддерживает запуск команд из окна "Выполнить"</s:String>
+    <s:String x:Key="_AWCA0">Это действие закрывает любую запущенную программу на компьютере по имени его процесса. Если запущено несколько копий одной программы - закроются все</s:String>
+    <s:String x:Key="_AWCA1">Обычное закрытие программы корректно закрывает программу. Выбрав метод "Убить" программа закроется сразу, не сохраняя свое состояние</s:String>
+    <s:String x:Key="_AWSW0">Позволяет Свернуть/Развернуть и Показать/Спрятать главное окно программы. Программа идентифицируется по названию процесса</s:String>
+    <s:String x:Key="_AWWR0">Позволяет отправить HTTP GET/POST запрос. В POST запросе данные указываются как и в GET запросе</s:String>
+    <s:String x:Key="_AWWR1">Сервер может вернуть ответ с массивом действий, которые Laitis выполнит. Подробнее читайте в статье</s:String>
+    <s:String x:Key="_AWWR2">С помощью этого действия вы можете интегрировать команды Laitis с вашим сервисом или веб-сайтом. Например, можно привязать ваш сервис доставки пиццы или умный дом</s:String>
+    <s:String x:Key="_AWPS0">Проигрывает файл звука. Можно указать путь к файлу и он будет воспроизведен</s:String>
+    <s:String x:Key="_AWPS1">Можно указать имя одного из трендовых звуков или звуков Windows из выпадающего списка</s:String>
+    <s:String x:Key="_AWVC0">Позволяет выполнить действия из другой голосовой команды. Принимает одну из фраз команды, которую надо выполнить</s:String>
+    <s:String x:Key="_AWVC1">С помощью этого действия вы можете делить команды с большим количеством действий на несколько маленьких, тем самым создавать сложную функциональную логику голосовых команд</s:String>
+    <!--#endregion-->
 
 </ResourceDictionary>

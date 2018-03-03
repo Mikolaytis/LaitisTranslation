@@ -99,7 +99,7 @@
   <!--#region PublicApiHost-->
   <s:String x:Key="_PublicApiHost_HostOpened">Канал API успішно запущений</s:String>
   <s:String x:Key="_PublicApiHost_HostOpenError">Не вдалося запустити канал API</s:String>
-  <s:String x:Key="_PublicApiHost_RecievedVoiceCommand">Канал API отримав голосову команду</s:String>
+  <s:String x:Key="_PublicApiHost_RecievedPhrase">Канал API отримав фразу</s:String>
   <s:String x:Key="_PublicApiHost_RecievedAction">Канал API отримав дію</s:String>
   <!--#endregion-->
 
@@ -174,6 +174,9 @@
   <s:String x:Key="_VoiceCommandsDisabled">Голосові команди відключені</s:String>
   <s:String x:Key="_DownloadSaveError">Завантаження збереження з сервера не вдалася</s:String>
   <s:String x:Key="_Error">Помилка</s:String>
+  <s:String x:Key="_ThisOperationIsBlocked3Days">Ця операція доступна тільки через 3 дні після реєстрації</s:String>
+  <s:String x:Key="_ThisOperationIsBlockedForYou">Ця операція заблокована для вас</s:String>
+  <s:String x:Key="_ClickInBrowser">Кликати треба в браузері</s:String>
   <s:String x:Key="_DataUploadError">Помилка загрузки даних</s:String>
   <s:String x:Key="_DataIsToBig">Занадто багато даних, щоб їх відобразити</s:String>
   <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Ой! Виникла невідома помилка! Опис про неї відправлено розробнику!</s:String>
@@ -379,7 +382,7 @@
   <s:String x:Key="_SelectImage">Вибір зображення</s:String>
   <s:String x:Key="_From">з</s:String>
   <s:String x:Key="_To">на</s:String>
-  <s:String x:Key="_ReplaceIn">Замінити в</s:String>
+  <s:String x:Key="_ReplaceWith">Замінити на</s:String>
   <s:String x:Key="_In">в</s:String>
   <s:String x:Key="_Ms">мс</s:String>
   <s:String x:Key="_And">і</s:String>
@@ -434,7 +437,7 @@
   <s:String x:Key="_Collection">Колекція</s:String>
   <s:String x:Key="_Reputation">Репутація</s:String>
   <s:String x:Key="_AddCommand">Додати команду</s:String>
-  <s:String x:Key="_Replacement">Заміна</s:String>
+  <s:String x:Key="_WordReplaceWith">Замінити слова на</s:String>
   <s:String x:Key="_Publish">Опублікувати</s:String>
   <s:String x:Key="_Publication">Публікація</s:String>
   <s:String x:Key="_AddCategory">Нова категорія</s:String>
@@ -496,9 +499,9 @@
   <s:String x:Key="_CommandEditor_Open_ErrorText">Не вдалося відкрити редактор. Подробиці в журналі подій.</s:String>
   <s:String x:Key="_CommandEditor_DublicateFounded">Вже є точно така ж голосова команда</s:String>
   <s:String x:Key="_CommandEditor_DublicateTooltip">Програма автоматично розпізнає багато варіації.</s:String>
-  <s:String x:Key="_CommandEditor_VoiceCommandExists">Ця голосова команда вже використовується в команді</s:String>
-  <s:String x:Key="_CommandEditor_VoiceCommandVariableNameError">Некоректна назва змінної</s:String>
-  <s:String x:Key="_CommandEditor_VoiceCommands">Голосові команди:</s:String>
+  <s:String x:Key="_CommandEditor_PhraseExists">Ця фраза вже використовується в команді</s:String>
+  <s:String x:Key="_CommandEditor_PhraseVariableNameError">Некоректна назва змінної</s:String>
+  <s:String x:Key="_CommandEditor_Phrases">Фрази:</s:String>
   <s:String x:Key="_CommandEditor_Actions">Дії:</s:String>
   <s:String x:Key="_CommandEditor_Variables">Змінні:</s:String>
   <s:String x:Key="_CommandEditor_SelectProcess">Вибрати процес</s:String>
@@ -519,7 +522,6 @@
   <s:String x:Key="_CommandAction_Label_IfProcessExists">Якщо запущена програма:</s:String>
   <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">Якщо відкритий вебсайт:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseButton">Кнопка миші:</s:String>
-  <s:String x:Key="_CommandAction_Label_HttpWebRequest">Веб-запит:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Дія:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Елемент:</s:String>
@@ -614,6 +616,7 @@
       Випадкову дію буде вибрано з тих дій, які реально виконати
     </Span>
   </TextBlock>
+  <s:String x:Key="_CommandAction_Tooltip_Break">Зупиняє цикл</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Loop">Початок блоку дій, які буде виконано кілька разів</s:String>
   <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Залиште поле порожнім щоб переключити всю колекції</s:String>
   <s:String x:Key="_CommandAction_Tooltip_MouseMove">Можна вибрати за допомогою кнопки &quot;Вибрати&quot;</s:String>
@@ -712,7 +715,7 @@
   <s:String x:Key="_ActionType_Loop">Цикл</s:String>
   <s:String x:Key="_ActionType_JetAim">Прицілити курсор</s:String>
   <s:String x:Key="_ActionType_BatchScript">.bat скрипт</s:String>
-  <s:String x:Key="_ActionType_VariableReplace">Заміна в змінній</s:String>
+  <s:String x:Key="_ActionType_Break">Перервати</s:String>
   <s:String x:Key="_ActionType_WaitNextCommand">Почекати наступну команду</s:String>
   <s:String x:Key="_ActionType_ScheduleEvent">Затонувати подію</s:String>
   <s:String x:Key="_ActionType_Notify">Повідомити</s:String>
@@ -1016,6 +1019,26 @@
           </Paragraph>
         </ListItem>
       </List>
+        <Paragraph FontWeight="Bold" TextIndent="20">
+            Чи можна встановити оффлайн голоса відтворення тексту?
+        </Paragraph>
+        <List>
+            <ListItem>
+                <Paragraph FontStyle="Italic">
+                    Так. Раджу скачати голоса від Ivona. Після установки вони з'являться в списку, що випадає, якщо вибрати сервіс відтворення Windows в налаштуваннях Laitis.
+                </Paragraph>
+            </ListItem>
+        </List>
+        <Paragraph FontWeight="Bold" TextIndent="20">
+            Чи можна встановити оффлайн розпізнавання голоса?
+        </Paragraph>
+        <List>
+            <ListItem>
+                <Paragraph FontStyle="Italic">
+                    Для української мови осудного рішення немає, для інших популярних мов є. Коли Microsoft зроблять нормальне розпізнавання вільної української мови - Laitis автоматично буде це підтримувати.
+                </Paragraph>
+            </ListItem>
+        </List>
       <Paragraph FontWeight="Bold" TextIndent="20">
         Чому немає підтримки OS X, IOS, Android, Linux, Windows Phone, XBOX?
       </Paragraph>
@@ -1165,7 +1188,6 @@
 
   <FlowDocument x:Key="_PublisherFUE">
     <Paragraph FontSize="20" TextAlignment="Center">Це функціонал публікації ваших змін і нових команд в співтовариство</Paragraph>
-
     <Paragraph>Процес:</Paragraph>
     <List MarkerStyle="Decimal">
       <ListItem FontStyle="Italic">
@@ -1181,7 +1203,6 @@
         <Paragraph>Зміни та нові команди з прийнятих публікацій потрапляють в співтовариство.</Paragraph>
       </ListItem>
     </List>
-
     <Paragraph>Правила:</Paragraph>
     <List MarkerStyle="Decimal">
       <ListItem FontStyle="Italic">
@@ -1214,4 +1235,11 @@
     </List>
   </FlowDocument>
 
+    <!--#region Actions Wiki -->
+    <!--<FlowDocument x:Key="_ActionWiki_OpenFile">
+        <Paragraph FontSize="20"><Run Text="{StaticResource _ActionType_OpenFile}"/></Paragraph>
+        <Paragraph>Allows you to open file.</Paragraph>
+    </FlowDocument>-->
+    <!--#endregion-->
+    
 </ResourceDictionary>
