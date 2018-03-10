@@ -9,9 +9,6 @@
   <!--#region App Initialization-->
   <s:String x:Key="_Load_WaitForOtherInstanceClosing">Очікування закриття іншої копії програми</s:String>
   <s:String x:Key="_Load_Data">Завантаження даних</s:String>
-  <s:String x:Key="_Load_UpdateCancelledByUser">Ви скасували критичне оновлення. Будь ласка натисніть так, щоб оновити програму.</s:String>
-  <s:String x:Key="_Load_UpdaterFailRestart">Оновлення не вдалося. Перезапуск оновлення.</s:String>
-  <s:String x:Key="_Load_PerformingUpdate">Оновлення програми</s:String>
   <s:String x:Key="_Load_AppLoaded">запущений</s:String>
   <s:String x:Key="_Load_MandatoryUpdateNeeded">Критична помилка завантаження програми. Скачайте останню версію програми на веб-сайті laitis.ru, якщо не допоможе - пишіть в vk.com/mikolaytis або vk.com/laitisgroup.</s:String>
 
@@ -20,6 +17,12 @@
   <s:String x:Key="_Load_SettingsFail_OpenApp">Відкрити програму з даними за замовчуванням</s:String>
   <s:String x:Key="_Load_SettingsFail_LoadBackup">Завантажити попереднє збереження зі сховища</s:String>
   <s:String x:Key="_Load_SettingsFail_CloseApp">Закрити програму</s:String>
+    
+    <s:String x:Key="_Update_Performing">Оновлення програми</s:String>
+    <s:String x:Key="_Update_CancelledByUser">Ви скасували критичне оновлення. Будь ласка натисніть так, щоб оновити програму.</s:String>
+    <s:String x:Key="_Update_FailRestart">Оновлення не вдалося. Перезапуск оновлення.</s:String>
+    <s:String x:Key="_Update_LaitisUpdated">Laitis успішно оновлено</s:String>
+    <s:String x:Key="_Update_LaunchNewVersion">Запустити нову версію</s:String>
   <!--#endregion-->
 
   <!--#region Account-->
@@ -41,7 +44,7 @@
 
   <s:String x:Key="_Account_LogInFeature1">Публікація змін</s:String>
   <s:String x:Key="_Account_LogInFeature2">Синхронізація настройок</s:String>
-  <s:String x:Key="_Account_LogInFeature3">Доступ до системи рейтинга</s:String>
+  <s:String x:Key="_Account_LogInFeature3">Доступ до системи рейтингу</s:String>
   <s:String x:Key="_Account_LogInFeature4">Статистика</s:String>
   <s:String x:Key="_Account_LogInFeature5">Досягнення</s:String>
   <!--#endregion-->
@@ -81,7 +84,7 @@
   <s:String x:Key="_Ach_Dictate100000_Desc">Надиктувати 100,000 символів</s:String>
 
   <s:String x:Key="_Ach_Dictate500000_Name">Король диктовки</s:String>
-  <s:String x:Key="_Ach_Dictate500000_Desc">Надиктовать 500,000 символов</s:String>
+  <s:String x:Key="_Ach_Dictate500000_Desc">Надиктувати 500,000 символів</s:String>
 
   <s:String x:Key="_Ach_Publications5_Name">Серйозний внесок</s:String>
   <s:String x:Key="_Ach_Publications5_Desc">5 успішних публікацій</s:String>
@@ -92,7 +95,7 @@
   <s:String x:Key="_Ach_Publications50_Name">Величезний внесок</s:String>
   <s:String x:Key="_Ach_Publications50_Desc">50 успішних публікацій</s:String>
 
-  <s:String x:Key="_Ach_Publications200_Name">Колоссальний внесок</s:String>
+  <s:String x:Key="_Ach_Publications200_Name">Колосальний внесок</s:String>
   <s:String x:Key="_Ach_Publications200_Desc">200 успішних публікацій</s:String>
   <!--#endregion-->
 
@@ -212,7 +215,7 @@
   <!--#endregion-->
 
   <!--#region Commands List-->
-  <s:String x:Key="_CommandCopied">Командуа скопійована</s:String>
+  <s:String x:Key="_CommandCopied">Команда скопійована</s:String>
   <s:String x:Key="_CommandCutted">Команда вирізана</s:String>
   <s:String x:Key="_CommandPasted">Команда вставлена</s:String>
   <s:String x:Key="_CommandDeleted">Команда видалена</s:String>
@@ -222,8 +225,8 @@
   <s:String x:Key="_CategoryDeleted">Категорія видалена</s:String>
   <s:String x:Key="_PackCopied">Колекція скопійована</s:String>
   <s:String x:Key="_PackCutted">Колекція вирізана</s:String>
-  <s:String x:Key="_PackPasted">Коллекція вставлена</s:String>
-  <s:String x:Key="_PackDeleted">Коллекція видалена</s:String>
+  <s:String x:Key="_PackPasted">Колекція вставлена</s:String>
+  <s:String x:Key="_PackDeleted">Колекція видалена</s:String>
 
   <s:String x:Key="_CopyPack">Копіювати колекцію</s:String>
   <s:String x:Key="_CopyCommand">Копіювати команду</s:String>
@@ -255,12 +258,11 @@
   <s:String x:Key="_ConnectionDrop">Підключення розірвано</s:String>
   <s:String x:Key="_RecordEnded">Завершена запис голосу</s:String>
   <s:String x:Key="_RecordStarted">Розпочато запис голосу</s:String>
-  <s:String x:Key="_StartToSend">Розпочато відправку голоса</s:String>
+  <s:String x:Key="_StartToSend">Розпочато відправку голосу</s:String>
   <s:String x:Key="_EndSend">Завершено відправку голосу</s:String>
   <s:String x:Key="_TooLongRecordIsEnded">Запис було завершено бо був надто довгий. Щоб поліпшити якість розпізнавання вимкніть посилення мікрофона, якщо було включено.</s:String>
   <s:String x:Key="_TooShortRecordIsEnded">Запис було завершено бо був надто короткий</s:String>
 
-  <s:String x:Key="_DownloadOfUpdate">Завантаження оновлення</s:String>
   <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успішно оновлений з версії</s:String>
   <s:String x:Key="_ToVersion">до версії</s:String>
 
@@ -269,9 +271,9 @@
   <s:String x:Key="_FailToPlayPhrase">Неможливо відтворити фразу</s:String>
   <s:String x:Key="_FailToFindRecordingDevice">Не знайдено пристрій запису</s:String>
   <s:String x:Key="_RecordingStartedOnDevice">Запущено запис з пристрою</s:String>
-  <s:String x:Key="_RecordingStoppedOnDevice">Зупинено запис з пристрою</s:String>
-  <s:String x:Key="_SilenceTresholdIncreasedTo">Запис занадто довга або гучна. Поріг тиші збільшений до</s:String>
-  <s:String x:Key="_SilenceTresholdReducedTo">Дуже тихо. Поріг тиші зменшений до</s:String>
+  <s:String x:Key="_RecordingStoppedOnDevice">Зупинене запис з пристрою</s:String>
+  <s:String x:Key="_SilenceThresholdIncreasedTo">Запис занадто довга або гучна. Поріг тиші збільшений до</s:String>
+  <s:String x:Key="_SilenceThresholdReducedTo">Дуже тихо. Поріг тиші зменшений до</s:String>
 
   <s:String x:Key="_ClipboardIsBusy">Буфер обміну використовується іншою програмою</s:String>
   <s:String x:Key="_ClipboardIsBusyAffectedBy">Буфер обміну заблокований програмою</s:String>
@@ -309,7 +311,7 @@
   <s:String x:Key="_DaysWithUs">Днів з нами</s:String>
   <s:String x:Key="_RegistrationDate">Дата реєстрації</s:String>
   <s:String x:Key="_VoiceCommandsDone">Виконано команд</s:String>
-  <s:String x:Key="_TextDictated">Надиктовивано тексту</s:String>
+  <s:String x:Key="_TextDictated">Надиктоване тексту</s:String>
   <s:String x:Key="_WebsiteCommandsDone">Виконано команд управління веб-сайтами</s:String>
   <s:String x:Key="_CommunicationsDone">Спілкувань з ботом</s:String>
   <!--#endregion-->
@@ -355,7 +357,7 @@
   <s:String x:Key="_Day">День</s:String>
   <s:String x:Key="_Month">Місяць</s:String>
   <s:String x:Key="_Year">Рік</s:String>
-  <s:String x:Key="_DayOfWeek">День тиждня</s:String>
+  <s:String x:Key="_DayOfWeek">День тижня</s:String>
   <s:String x:Key="_Date">Дата</s:String>
   <s:String x:Key="_Time">Час</s:String>
   <s:String x:Key="_Version">Версія</s:String>
@@ -431,7 +433,7 @@
   <s:String x:Key="_Close">Закрита</s:String>
   <s:String x:Key="_EventHasCome">Подія настала</s:String>
   <s:String x:Key="_Confidant">Довірена особа</s:String>
-  <s:String x:Key="_Dublicate">Дублікат</s:String>
+  <s:String x:Key="_Duplicate">Дублікат</s:String>
   <s:String x:Key="_HttpWebRequest">Веб-запит</s:String>
   <s:String x:Key="_Categories">Категорії</s:String>
   <s:String x:Key="_Collection">Колекція</s:String>
@@ -497,8 +499,8 @@
   <s:String x:Key="_CommandEditor_Default_Category_Name">Загальні</s:String>
   <s:String x:Key="_CommandEditor_Default_Pack_Name">Нова колекція</s:String>
   <s:String x:Key="_CommandEditor_Open_ErrorText">Не вдалося відкрити редактор. Подробиці в журналі подій.</s:String>
-  <s:String x:Key="_CommandEditor_DublicateFounded">Вже є точно така ж голосова команда</s:String>
-  <s:String x:Key="_CommandEditor_DublicateTooltip">Програма автоматично розпізнає багато варіації.</s:String>
+  <s:String x:Key="_CommandEditor_DuplicateFounded">Вже є точно така ж голосова команда</s:String>
+  <s:String x:Key="_CommandEditor_DuplicateTooltip">Програма автоматично розпізнає багато варіації.</s:String>
   <s:String x:Key="_CommandEditor_PhraseExists">Ця фраза вже використовується в команді</s:String>
   <s:String x:Key="_CommandEditor_PhraseVariableNameError">Некоректна назва змінної</s:String>
   <s:String x:Key="_CommandEditor_Phrases">Фрази:</s:String>
@@ -520,17 +522,17 @@
   <s:String x:Key="_CommandAction_Label_Say">Сказати:</s:String>
   <s:String x:Key="_CommandAction_Label_IfProcessSelected">Якщо активна програма:</s:String>
   <s:String x:Key="_CommandAction_Label_IfProcessExists">Якщо запущена програма:</s:String>
-  <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">Якщо відкритий вебсайт:</s:String>
+  <s:String x:Key="_CommandAction_Label_IfWebsiteSelected">Якщо відкритий веб-сайт:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseButton">Кнопка миші:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn">Навести курсор на:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn_Action">Дія:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseMoveOn_Element">Елемент:</s:String>
 
   <s:String x:Key="_CommandAction_Label_OpenURL">Відкрити веб-сторінку:</s:String>
-  <s:String x:Key="_CommandAction_Label_WebPageClick">Клікнути на веб-сторінці:</s:String>
+  <s:String x:Key="_CommandAction_Label_WebPageClick">Кликнути на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageFocus">Сфокусувати на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPageNavigate">Вибрати на веб-сторінці:</s:String>
-  <s:String x:Key="_CommandAction_Label_WebPageNavClick">Відкрити вбранне на веб-сторінці:</s:String>
+  <s:String x:Key="_CommandAction_Label_WebPageNavClick">Відкрити вбране на веб-сторінці:</s:String>
   <s:String x:Key="_CommandAction_Label_WebPagePopupOpen">Відкрити спливаюче вікно:</s:String>
   <s:String x:Key="_CommandAction_Label_MouseScroll">на:</s:String>
   <s:String x:Key="_CommandAction_Label_TogglePackActivity">колекцію:</s:String>
@@ -552,7 +554,7 @@
   <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
     Скільки часу чекати відповіді від користувача
     <LineBreak />
-    Пустота або 0 = бесконечно
+    Пустота або 0 = безконечно
   </TextBlock>
   <TextBlock x:Key="_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
     1 секунда = 1000 мілісекунд
@@ -588,7 +590,7 @@
   <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Параметри запуску додатка (приклад: -game cstrike)</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Просто натисніть потрібне поєднання</s:String>
   <TextBlock x:Key="_CommandAction_Tooltip_HotkeysManualInput">
-    Вільне введення сполученя клавіш
+    Вільне введення сполучення клавіш
     <LineBreak />
     <Span FontSize="12" Foreground="{StaticResource br_Gray}">
       Якщо включений можна ввести поєднання з клавішею Win
@@ -597,7 +599,7 @@
     </Span>
   </TextBlock>
 
-  <s:String x:Key="_Click">Клікнути</s:String>
+  <s:String x:Key="_Click">Кликнути</s:String>
   <s:String x:Key="_Focus">Фокус</s:String>
   <s:String x:Key="_Navigate">Вибрати</s:String>
   <s:String x:Key="_NavClick">Відкрити вибір</s:String>
@@ -622,7 +624,7 @@
   <s:String x:Key="_CommandAction_Tooltip_MouseMove">Можна вибрати за допомогою кнопки &quot;Вибрати&quot;</s:String>
   <s:String x:Key="_CommandAction_Tooltip_OpenURL">Наприклад: http://ya.ru</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Pause">Час в мілісекундах</s:String>
-  <s:String x:Key="_CommandAction_Tooltip_IfWebsiteSelected">Початок url вебсайта</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_IfWebsiteSelected">Початок url веб-сайта</s:String>
   <s:String x:Key="_CommandAction_Tooltip_HttpWebRequest">Надіслати веб-запит без використання браузера</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Selector">CSS-selector. Якщо ви не знаєте CSS - ви не зможете правильно створити цю дію</s:String>
   <s:String x:Key="_CommandAction_Tooltip_NavClick">Це поле можна залишити порожнім або ввести CSS-selector</s:String>
@@ -660,7 +662,7 @@
   <s:String x:Key="_HttpWebRequestMethod_GET">GET</s:String>
   <s:String x:Key="_HttpWebRequestMethod_POST">POST</s:String>
   <!--  YandexMoneyPaymentType -->
-  <s:String x:Key="_YandexMoneyPaymentType_YandexMoney">Яндекс деньгами</s:String>
+  <s:String x:Key="_YandexMoneyPaymentType_YandexMoney">Яндекс грошима</s:String>
   <s:String x:Key="_YandexMoneyPaymentType_CreditCard">Кредитною карткою</s:String>
   <s:String x:Key="_YandexMoneyPaymentType_MobileBalance">З мобільного</s:String>
   <!--  CommandState -->
@@ -693,7 +695,7 @@
   <s:String x:Key="_ActionType_IfProcessSelected">Якщо активна програма</s:String>
   <s:String x:Key="_ActionType_IfProcessExists">Якщо запущена програма</s:String>
   <s:String x:Key="_ActionType_IfWebsiteSelected">Якщо відкритий веб сайт</s:String>
-  <s:String x:Key="_ActionType_MouseButton">Нажати кнопку миші</s:String>
+  <s:String x:Key="_ActionType_MouseButton">Натиснути кнопку миші</s:String>
   <s:String x:Key="_ActionType_HttpWebRequest">Веб-запит</s:String>
   <s:String x:Key="_ActionType_SetVariableValue">Задати значення змінної</s:String>
   <s:String x:Key="_ActionType_IfVariableValue">Якщо значення змінної</s:String>
@@ -717,7 +719,7 @@
   <s:String x:Key="_ActionType_BatchScript">.bat скрипт</s:String>
   <s:String x:Key="_ActionType_Break">Перервати</s:String>
   <s:String x:Key="_ActionType_WaitNextCommand">Почекати наступну команду</s:String>
-  <s:String x:Key="_ActionType_ScheduleEvent">Затонувати подію</s:String>
+  <s:String x:Key="_ActionType_ScheduleEvent">Запланувати подію</s:String>
   <s:String x:Key="_ActionType_Notify">Повідомити</s:String>
   <s:String x:Key="_ActionType_VoiceCommand">Виконати голосову команду</s:String>
   <s:String x:Key="_ActionType_GetUrlSelectorText">Отримати текст за посиланням</s:String>
@@ -802,17 +804,17 @@
   3) Вставити перший ключ в текстове поле нижче</TextBlock>
   </ControlTemplate>
   <ControlTemplate x:Key="_Settings_Text_WindowsService">
-    <TextBlock xml:space="preserve" TextWrapping="Wrap">Для додавання мов треба завантажувати мовні пакети Windows (укр і рус не поддерживается)</TextBlock>
+    <TextBlock xml:space="preserve" TextWrapping="Wrap">Для додавання мов треба завантажувати пакети мови Windows (укр і рус не поддерживается)</TextBlock>
   </ControlTemplate>
   <ControlTemplate x:Key="_Settings_Text_WindowsTtsService">
-    <TextBlock xml:space="preserve" TextWrapping="Wrap">Для додавання голосів треба завантажувати мовні пакети Windows або сторонні голосові движки, наприклад Ivona</TextBlock>
+    <TextBlock xml:space="preserve" TextWrapping="Wrap">Для додавання голосів треба завантажувати пакети мови Windows або сторонні голосові движки, наприклад Ivona</TextBlock>
   </ControlTemplate>
   <ControlTemplate x:Key="_Settings_Text_AcapelaService">
     <TextBlock xml:space="preserve" TextWrapping="Wrap">Для підключення до сервісу Acapela потрібно:
   1) Перейти за посиланням <controls:Hyperlink NavigateUri="http://www.acapela-vaas.com/">http://www.acapela-vaas.com/</controls:Hyperlink>
   2) Нажати Sign up for free в правому верхньому куті
-  3) Ввести запитувані дані (ім'я, емейл, пароль) і зареєструватися
-  4) На емейл вам прийдуть дані які потрібно ввести в поля нижче</TextBlock>
+  3) Ввести запитувані дані (ім'я, Email, пароль) і зареєструватися
+  4) На Email вам прийдуть дані які потрібно ввести в поля нижче</TextBlock>
   </ControlTemplate>
   <!--#endregion-->
 
@@ -830,7 +832,7 @@
     Рівень звуку в комп'ютері перевищив межу в 30%
     <LineBreak />
     <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Запис голосу припизупинена
+      Запис голосу призупинена
       <LineBreak />
       Відключити призупинення запису голосу можна в налаштуваннях
     </Span>
@@ -851,7 +853,7 @@
   </s:String>
 
   <TextBlock x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">
-    Вимикає звук в windows при натисканні клавіші
+    Вимикає звук в Windows при натисканні клавіші
     <LineBreak />
     <Span FontSize="12" Foreground="{StaticResource br_Gray}">
       Щоб музика яка грає в колонках не шуміла в мікрофон
@@ -916,14 +918,14 @@
       <Paragraph TextIndent="40">
         У Вас повинно бути <Run TextDecorations="Underline">гарне інтернет з'єднання</Run>.
         Швидкість повинна бути більше 1 мегабіта і затримка (пінг) не більше 200 мілісекунд.
-        Затримка грає дуже важливу роль, якщо ви скажете словосполучення і воно напишется через 100-600мс - то це буде прийнятно,
+        Затримка грає дуже важливу роль, якщо ви скажете словосполучення і воно напишеться через 100-600мс - то це буде прийнятне,
         але затримка в 1000 мс і більше має велику незручність роботи з програмою.
         Швидкості і затримки інтернету через модем абсолютно недостатньо для комфортної роботи програми.
       </Paragraph>
       <Paragraph TextIndent="40">
         Ви повинні перебувати в <Run TextDecorations="Underline">відносно тихому місці</Run>.
         Якщо у вас в кімнаті включений телевізор або з вами розмовляє співрозмовник,
-        або в стереоколонках грає гучна музика, то сервіс розпізнавання буде некоректно розпізнавати ваш голос.
+        або в колонках грає гучна музика, то сервіс розпізнавання буде некоректне розпізнавати ваш голос.
         Вирішити це можна або мікрофоном з шумозаглушенням, або самотою в тихому місці.
       </Paragraph>
     </Section>
@@ -1020,17 +1022,17 @@
         </ListItem>
       </List>
         <Paragraph FontWeight="Bold" TextIndent="20">
-            Чи можна встановити оффлайн голоса відтворення тексту?
+            Чи можна встановити оффлайн голосу відтворення тексту?
         </Paragraph>
         <List>
             <ListItem>
                 <Paragraph FontStyle="Italic">
-                    Так. Раджу скачати голоса від Ivona. Після установки вони з'являться в списку, що випадає, якщо вибрати сервіс відтворення Windows в налаштуваннях Laitis.
+                    Так. Раджу скачати голосу від Ivona. Після установки вони з'являться в списку, що випадає, якщо вибрати сервіс відтворення Windows в налаштуваннях Laitis.
                 </Paragraph>
             </ListItem>
         </List>
         <Paragraph FontWeight="Bold" TextIndent="20">
-            Чи можна встановити оффлайн розпізнавання голоса?
+            Чи можна встановити оффлайн розпізнавання голосу?
         </Paragraph>
         <List>
             <ListItem>
@@ -1215,7 +1217,7 @@
         <Paragraph>Публікуйте тільки ті команди, якими хочете поділитися з іншими користувачами.</Paragraph>
       </ListItem>
       <ListItem FontStyle="Italic">
-        <Paragraph>Команди повинні коректно працювати у будь-якого користувача.</Paragraph>
+        <Paragraph>Команди повинні коректне працювати у будь-якого користувача.</Paragraph>
       </ListItem>
       <ListItem FontStyle="Italic">
         <Paragraph>Команди не повинні ламати команди з інших колекцій.</Paragraph>
@@ -1234,12 +1236,95 @@
       </ListItem>
     </List>
   </FlowDocument>
-
+    
     <!--#region Actions Wiki -->
-    <!--<FlowDocument x:Key="_ActionWiki_OpenFile">
-        <Paragraph FontSize="20"><Run Text="{StaticResource _ActionType_OpenFile}"/></Paragraph>
-        <Paragraph>Allows you to open file.</Paragraph>
-    </FlowDocument>-->
+    <s:String x:Key="_AWOF0">Если указать путь к файлу - действие откроет этот файл приложением по умолчанию</s:String>
+    <s:String x:Key="_AWOF1">Если указать путь к программе - действие запустит программу</s:String>
+    <s:String x:Key="_AWOF2">Действие поддерживает запуск команд из окна "Выполнить"</s:String>
+    <s:String x:Key="_AWCA0">Закрывает любую запущенную программу на компьютере по имени его процесса. Если запущено несколько копий одной программы - закроются все</s:String>
+    <s:String x:Key="_AWCA1">Обычное закрытие программы корректно закрывает программу. Выбрав метод "Убить" программа закроется сразу, не сохраняя свое состояние</s:String>
+    <s:String x:Key="_AWSW0">Позволяет Свернуть/Развернуть и Показать/Спрятать главное окно программы. Программа идентифицируется по названию процесса</s:String>
+    <s:String x:Key="_AWWR0">Позволяет отправить HTTP GET/POST запрос. В POST запросе данные указываются, как и в GET запросе, после знака `?`</s:String>
+    <s:String x:Key="_AWWR1">Сервер может вернуть ответ с массивом действий, которые Laitis выполнит. Подробнее читайте в статье</s:String>
+    <s:String x:Key="_AWWR2">С помощью этого действия вы можете интегрировать команды Laitis с вашим сервисом или веб-сайтом. Например, можно привязать ваш сервис доставки пиццы или умный дом</s:String>
+    <s:String x:Key="_AWWR3">В фигурных скобках можно указать имя переменной, в которую запишется ответ от сервера. Этот ответ можно вывести уведомлением, а также воспользоваться им в других действиях</s:String>
+    <s:String x:Key="_AWWR4">Можно даже скачивать всю страницу сайта и с помощью регулярных выражений получать с нее данные</s:String>
+    <s:String x:Key="_AWPS0">Проигрывает файл звука. Можно указать путь к файлу, и он будет воспроизведен</s:String>
+    <s:String x:Key="_AWPS1">Можно указать имя одного из трендовых звуков или звуков Windows из выпадающего списка</s:String>
+    <s:String x:Key="_AWVC0">Позволяет выполнить действия из другой голосовой команды. Принимает одну из фраз команды, которую надо выполнить</s:String>
+    <s:String x:Key="_AWVC1">С помощью этого действия вы можете делить команды с большим количеством действий на несколько маленьких, тем самым создавать сложную функциональную логику голосовых команд</s:String>
+    <s:String x:Key="_AWPA0">Позволяет приостановить действие на некоторое время. Принимает кол-во миллисекунд. 1 секунда = 1000 миллисекунд</s:String>
+    <s:String x:Key="_AWPA1">Также с помощью этого действия можно дождаться окончания проигрывания звука</s:String>
+    <s:String x:Key="_AWWC0">Приостанавливает выполнение действий, пока пользователь не скажет какую-либо фразу. Как только пользователь что-то скажет - это будет записано в локальную переменную с заданным именем. Позже данные из этой переменной можно использовать в следующих действиях для полезных действий</s:String>
+    <s:String x:Key="_AWWC1">По умолчанию ожидание бесконечное. Можно указать максимальное время ожидания ответа от пользователя</s:String>
+    <s:String x:Key="_AWSE0">Останавливает выполнение действий до того момента, пока не произойдет указанное событие.</s:String>
+    <s:String x:Key="_AWSE1">Действие поддерживает почти все возможные варианты указания даты и времени поддерживаемых языков интерфейса. Малая часть возможных вариантов: "завтра в 5", "через полтора часа", "в пятницу утром", "без пятнадцати шесть", "через неделю", "через 3 минуты двадцать одну секунду", "27 февраля в полдень"</s:String>
+    <s:String x:Key="_AWSE2">При выполнении команды все действия ниже планируемого запоминаются и показываются с обратным отсчетом в настройках Laitis</s:String>
+    <s:String x:Key="_AWSE3">Если компьютер в режиме сна и происходит событие - компьютер проснется и выполнит требуемые команды. Компьютер может работать как будильник, выполнять особые поручения. Например, можно создать команду, которая разбудит компьютер, что-то сделает в конкретное время и заснет.</s:String>
+    <s:String x:Key="_AWSE4">Существуют полезные системные переменные, с помощью которых можно управлять событиями: {LastEventDateTime} - можно получить или задать время последнего события, полезно в случаях, когда пользователь неправильно назвал дату и хочет ее исправить; {CancelLastEvent} - если в него задать любое значение, то будет отменено последнее созданное пользователем событие.</s:String>
+    <s:String x:Key="_AWVV0">Переменная это объект, который имеет имя и хранит в себе данные. Обращаться к переменным в Laitis можно написав ее имя в фигурных скобках: {имя}. Переменные можно использовать в любых действиях. Например, если есть переменная {x} в которой хранится строка "Привет, друг!" то можно создать действие сказать, которое это скажет, указав переменную.</s:String>
+    <s:String x:Key="_AWVV1">Просто задать значение переменной можно следующим способом:</s:String>
+    <s:String x:Key="_AWVV2">Если переменной не существует - она будет создана в текущей коллекции. Если переменная существует - ее значение будет изменено на то, что вы укажете в действии.</s:String>
+    <s:String x:Key="_AWVV3">Это действие поддерживает арифметические операции и широкий спектр функций</s:String>
+    <s:String x:Key="_AWVV4">Если у вас уже есть переменная с заданным значением, и вы хотите добавить к ней какое-то число - сделайте так:</s:String>
+    <s:String x:Key="_AWVV5">Арифметика работает с целыми числами и числами с плавающей точкой:</s:String>
+    <s:String x:Key="_AWVV6">Математические функции: % - остаток от деления, ^ - возведение в степень, Sqrt - квадратный корень, Max - получить большее из двух чисел, Min - меньшее, Abs - получить абсолютное число (убирает минус, если он есть), Round - округление числа с плавающей точкой (указывается кол-во разрядов после запятой), Rand - получить случайное число между двух указанных:</s:String>
+    <s:String x:Key="_AWVV7">Функции работы со строками (Заменить на - замена, Заменить слова на - замена по словам, RegExReplace - замена регулярным выражением, RegExMatch - получение совпадений регулярного выражение, TextRange - поиск получение части текста по его соседним строкам) работают немного по-другому. Они работают с заранее созданными переменными и изменяют их значение напрямую. Например, у вас есть переменная {Hello} с значением "Привет, друг!", а вы хотите чтобы вместо друг, в значении было Вася - у вас есть несколько способов это сделать:</s:String>
+    <s:String x:Key="_AWVV8">Например, в переменной находится код веб-страницы, и вам нужно получить из нее строку в конкретном элементе:</s:String>
+    <s:String x:Key="_AWVV9">Для программистов, знающих JSON. Переменные Laitis поддерживают работу с JSON. С помощью JSON можно собирать массивы и сложные структуры, можно получать значение из JSON объекта.</s:String>
+    <s:String x:Key="_AWTP0">Включает/Выключает/Переключает коллекцию по ее имени</s:String>
+    <s:String x:Key="_AWNO0">Вызывает уведомление вверху экрана с указанным текстом</s:String>
+    <s:String x:Key="_AWHK0">Нажимает клавиши клавиатуры</s:String>
+    <s:String x:Key="_AWHK1">Поддерживаются всевозможные сочетания клавиш</s:String>
+    <s:String x:Key="_AWHK2">Нажатие некоторых сочетаний при вводе Laitis отловить не сможет - придется использовать переключатель свободного ввода и писать сочетание вручную</s:String>
+    <s:String x:Key="_AWHK3">Можно писать несколько клавиш/сочетаний через запятую</s:String>
+    <s:String x:Key="_AWHK4">Иногда требуется зажать клавишу на какое-то время, например в играх</s:String>
+    <s:String x:Key="_AWHK5">В некоторых играх будут работать только нажатия, похожие на нажатия пользователя, в таких случаях - используйте длинное нажатие</s:String>
+    <s:String x:Key="_AWHK6">Иногда надо уточнить, какой из шифтов нажать</s:String>
+    <s:String x:Key="_AWJA0">Запускает интерактив, позволяющий переместить курсор в любую точку на экране, назвав 5 цифр. Цифры можно называть как по одной, так и по несколько сразу, например: 123, 11. Можно сказать 0 - это значит, что текущего выбора достаточно и можно поставь курсор в центр текущего квадрата. Можно сказать "Назад", чтобы вернуться, если сказали не то число. Можно сказать "Открыть" или "Отмена" чтобы закрыть интерактив</s:String>
+    <s:String x:Key="_AWJA1">Цифры можно задать заранее в текстовом поле</s:String>
+    <s:String x:Key="_AWMM0">Перемещает курсор в точку на экране. Начало координат в дисплеях находится в левом верхнем углу экрана, Ордината(стрелка Y) направлена вниз</s:String>
+    <s:String x:Key="_AWMM1">Есть возможность переместить в какую-либо сторону на указанное кол-во пикселей.</s:String>
+    <s:String x:Key="_AWMO0">Находит на экране элемент с заданным текстом внутри и наводит на него курсор мыши. Работает в любых Windows приложениях, кроме игр. Если установлено расширение для браузера - действие будет искать также в активной странице браузера. С помощью этого действия можно создавать универсальные команды, которые будут работать в любой программе или на любом веб-сайте. Многими программами и сайтами можно пользоваться без предварительного создания каких-либо команд. Поле действие - вспомогательное и не обязательное</s:String>
+    <s:String x:Key="_AWMB0">Нажимает кнопку мыши</s:String>
+    <s:String x:Key="_AWMB1">В некоторых случаях может понадобится перетаскивание элемента мышкой. Сделать это можно следующим образом</s:String>
+    <s:String x:Key="_AWMS0">Прокручивает колесо мышки. Есть два колеса: вертикальное и горизонтальное. Указывайте число прокрутки в диапазоне от -10 до 10</s:String>
+    <s:String x:Key="_AWTT0">Вставляет или печатает заданный текст. При вставке текст помещается в буфер обмена и имитируется нажатие Ctrl+V. Печатается текст имитацией нажатия клавиш клавиатуры для каждого символа строки. Поддерживаются клавиатуры: US, RU, UA.</s:String>
+    <s:String x:Key="_AWOU0">Открывает ссылку в браузере по умолчанию. Если браузер запущен и в нем установлено расширение от Laitis - страница откроется в текущей вкладке</s:String>
+    <s:String x:Key="_AWWS0">Загружает скрипт на активную страницу браузера и выполняет его</s:String>
+    <s:String x:Key="_AWPC0">Кликает на элемент страницы в активной странице активного браузера. Элемент указывается CSS селектором</s:String>
+    <s:String x:Key="_AWWW0">Не работает без расширения для браузера</s:String>
+    <s:String x:Key="_AWPF0">Перемещает фокус на элемент страницы в активной странице активного браузера. Элемент указывается CSS селектором</s:String>
+    <s:String x:Key="_AWPN0">Когда на странице много элементов одного типа и вам нужно выбрать один из них - воспользуйтесь этим действием. Оно позволяет выделить на странице один элемент из списка элементов с одинаковым CSS-селектором</s:String>
+    <s:String x:Key="_AWPN1">Выделение можно перемещать этой же командой</s:String>
+    <s:String x:Key="_AWPN2">Можно переместить выделение сразу на конкретный элемент в списке по его номеру</s:String>
+    <s:String x:Key="_AWPN3">Кликнуть на выбранном элементе можно с помощью другой команды "Открыть выбранное на веб-странице"</s:String>
+    <s:String x:Key="_AWPN4">В системных переменных Laitis есть полезные переменные {BrowserCurrentSelector} - возвращает селектор текущего выделения, {BrowserCurrentSelectorIndex} - возвращает индекс текущего выделения, {BrowserCurrentSelectorText} - возвращает текстовое представление выделенного элемента</s:String>
+    <s:String x:Key="_AWNC0">Кликает на выделенный элемент веб-страницы, если CSS-селектор пустой. Если CSS-селектор указан - находит элемент в выделении по селектору и кликает на него.</s:String>
+    <s:String x:Key="_AWPT0">Позволяет получить текстовое представление любого элемента на активной странице браузера по его селектору</s:String>
+    <s:String x:Key="_AWPO0">Открывает в отдельном маленьком окне браузера часть веб-сайта, указанную по CSS-селектору. Из веб-сайта все будет удалено, кроме элемента, найденного по CSS-селектору</s:String>
+    <s:String x:Key="_AWST0">Скачивает страницу веб-сайта по ссылке и записывает результат в переменную. Если указан CSS-selector - вернется внутреннее содержание выбранного элемента страницы. С помощью этого действия можно получить полезную информацию с веб-сайта, не открывая его</s:String>
+    <s:String x:Key="_AWST1">Иногда полезная информация находится вне разметки сайта. Тогда скачиваем всю страницу и получаем нужные нам данные через TextRange</s:String>
+    <s:String x:Key="_AWST2">С помощью этой команды можно делать запросы на API, получать ответ в формате JSON и с помощью команды "Задать значение переменной" получать полезные данные из JSON объектов</s:String>
+    <s:String x:Key="_AWST3">При POST запросах отправляйте данные, как в GET запросе, через знак `?`</s:String>
+    <s:String x:Key="_AWIP0">Условие для выполнения действий, которое выполнит действия ниже только если активная программа имеет указанное имя процесса</s:String>
+    <s:String x:Key="_AWIP1">Можно указывать несколько процессов через `/`</s:String>
+    <s:String x:Key="_AWIE0">Условие для выполнения действий, которое выполнит действия ниже только если хотя бы одна из запущенных программ имеет указанное имя процесса</s:String>
+    <s:String x:Key="_AWIW0">Условие для выполнения действий, которое выполнит действия ниже только если открытый веб-сайт в активном браузере имеет адрес, часть которого написана в действии</s:String>
+    <s:String x:Key="_AWIN0">Условие для выполнения действий, которое выполнит действия ниже только если открытый веб-сайт в активном браузере имеет выделение с селектором, который указан в действии</s:String>
+    <s:String x:Key="_AWIV0">Условие для выполнения действий, которое выполнит действия ниже только если значение переменной удовлетворяет заданное условие</s:String>
+    <s:String x:Key="_AWRA0">Блок, который выполнит одно из случайных действий</s:String>
+    <s:String x:Key="_AWLP0">Блок, который выполнит содержащиеся в нем действия, указанное кол-во раз</s:String>
+    <s:String x:Key="_AWEL0">Обозначение блока действий, который выполнится при невыполнении условия выше</s:String>
+    <s:String x:Key="_AWEB0">Обозначение конца блока условия, случайного выполнения, цикла.</s:String>
+    <s:String x:Key="_AWBR0">Действие, прерывающее цикл. Полезен, если запущен бесконечно долгий цикл и требуется остановить при выполнении какого-либо условия</s:String>
+    
+    <s:String x:Key="_AW_HelloFriend">Привет, друг!</s:String>
+    <s:String x:Key="_AW_OpenChrome">Открыть хром</s:String>
+    <s:String x:Key="_AW_3SecondsLeft">Прошло 3 секунды</s:String>
+    <s:String x:Key="_AW_SayAnything">Скажите что-нибудь</s:String>
+    <s:String x:Key="_AW_InvokesAnyway">Это действие будет выполнено в любом случае</s:String>
+    <s:String x:Key="_AW_Comment">В этом случае ничего выполнять не надо</s:String>
     <!--#endregion-->
     
 </ResourceDictionary>
