@@ -186,6 +186,7 @@
   <s:String x:Key="_UnknownErrorOccured">Ой! Виникла невідома помилка!</s:String>
   <s:String x:Key="_OutOfMemoryException">Недостатньо пам'яті для продовження виконання Laitis. Перезапуск Laitis...</s:String>
   <s:String x:Key="_DiskIsFull">Недостатньо місця на диску для роботи Laitis</s:String>
+  <s:String x:Key="_NETFrameworkCorrupted">.Net Framework поламаний. Будь ласка переустановите його</s:String>
   <s:String x:Key="_UIAutomationDllMissing">Не знайдена бібліотека UIAutomation.dll. Дія працювати не буде.</s:String>
   <s:String x:Key="_BrowserExtensionNotFound">Не знайдено запущене розширення для браузера. Установіть і включіть розширення LaitisChromiumExtension для вашого браузера.</s:String>
   <!--#endregion-->
@@ -263,6 +264,7 @@
   <s:String x:Key="_TooLongRecordIsEnded">Запис було завершено бо був надто довгий. Щоб поліпшити якість розпізнавання вимкніть посилення мікрофона, якщо було включено.</s:String>
   <s:String x:Key="_TooShortRecordIsEnded">Запис було завершено бо був надто короткий</s:String>
 
+  <s:String x:Key="_AgeRestriction">Вам вже виповнилося 18?</s:String>
   <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успішно оновлений з версії</s:String>
   <s:String x:Key="_ToVersion">до версії</s:String>
 
@@ -367,6 +369,7 @@
   <s:String x:Key="_Prefixes">в,у,з</s:String>
   <s:String x:Key="_AndAHalf">з половиною</s:String>
   <s:String x:Key="_Half">пів</s:String>
+  <s:String x:Key="_OneHalfs">півтор</s:String>
   <s:String x:Key="_After">через,на,на наступний,у наступний</s:String>
   <s:String x:Key="_Mornings" xml:space="preserve"> ранку, ночі</s:String>
   <s:String x:Key="_Evenings" xml:space="preserve"> години дня, часа дня, часу дня, вечора</s:String>
@@ -380,6 +383,8 @@
   <!--#endregion-->
 
   <!--#region Common Labels-->
+  <s:String x:Key="_Yes">Так</s:String>
+  <s:String x:Key="_No">Ні</s:String>
   <s:String x:Key="_Duration">Тривалість</s:String>
   <s:String x:Key="_SelectImage">Вибір зображення</s:String>
   <s:String x:Key="_From">з</s:String>
@@ -1137,10 +1142,10 @@
       </Paragraph>
       <List>
         <ListItem Margin="0,10,0,0">
-          <BlockUIContainer>
-            <laitis:YandexMoneyDonation Width="240" HorizontalAlignment="Left"/>
-          </BlockUIContainer>
-          <Paragraph></Paragraph>
+            <Paragraph TextAlignment="Left">
+                <Run FontWeight="Bold">Yandex Money:</Run>
+                410013809890154
+            </Paragraph>
         </ListItem>
         <ListItem>
           <Paragraph TextAlignment="Left">
@@ -1243,7 +1248,7 @@
     <s:String x:Key="_AWOF2">Дія підтримує запуск команд з вікна "Виконати"</s:String>
     <s:String x:Key="_AWCA0">Закриває будь-яку запущену програму на комп'ютері на ім'я його процесу. Якщо запущено кілька копій однієї програми - закриються всі</s:String>
     <s:String x:Key="_AWCA1">Звичайне закриття програми коректно закриває програму. Вибравши метод "Вбити" програма закриється відразу, не зберігаючи свій стан</s:String>
-    <s:String x:Key="_AWSW0">Дозволяє Згорнути / Розгорнути і Показати / Сховати головне вікно програми. Програма ідентифікується за назвою процесу</s:String>
+    <s:String x:Key="_AWSW0">Дозволяє Згорнути/Розгорнути і Показати/Сховати головне вікно програми. Програма ідентифікується за назвою процесу</s:String>
     <s:String x:Key="_AWWR0">Дозволяє відправити HTTP GET/POST запит. У POST запиті дані вказуються, як і в GET запиті, після знака `?`</s:String>
     <s:String x:Key="_AWWR1">Сервер може повернути відповідь з масивом дій, які Laitis виконає. Детальніше читайте в статті</s:String>
     <s:String x:Key="_AWWR2">За допомогою цієї дії ви можете інтегрувати команди Laitis з вашим сервісом або веб-сайтом. Наприклад, можна прив'язати ваш сервіс доставки піци або розумний будинок</s:String>
@@ -1290,7 +1295,7 @@
     <s:String x:Key="_AWMB1">У деяких випадках може знадобиться перетягування елемента мишкою. Зробити це можна в такий спосіб</s:String>
     <s:String x:Key="_AWMS0">Прокручує колесо мишки. Є два колеса: вертикальний і горизонтальний. Вказуйте число прокрутки в діапазоні від -10 до 10</s:String>
     <s:String x:Key="_AWTT0">Вставляє або друкує заданий текст. При вставці текст поміщається в буфер обміну і імітується натискання Ctrl + V. Друкується текст імітацією натискання клавіш клавіатури для кожного символу рядка. підтримуються клавіатури: US, RU, UA.</s:String>
-    <s:String x:Key="_AWOU0">Відкриває посилання в браузері за замовчуванням. Якщо браузер запущений і в ньому встановлено розширення від Laitis - сторінка відкриється в поточній вкладці</s:String>
+    <s:String x:Key="_AWOU0">Відкриває посилання в браузері за замовчуванням. Якщо браузер запущений, активний, і в ньому встановлено розширення від Laitis - сторінка відкриється в поточній вкладці</s:String>
     <s:String x:Key="_AWWS0">Завантажує скрипт на активну сторінку браузера і виконує його</s:String>
     <s:String x:Key="_AWPC0">Клікає на елемент сторінки в активній сторінці активного браузера. Елемент вказується CSS селектором</s:String>
     <s:String x:Key="_AWWW0">Не працює без розширення для браузера</s:String>

@@ -186,6 +186,7 @@
     <s:String x:Key="_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
     <s:String x:Key="_OutOfMemoryException">Недостаточно памяти для продолжения выполнения Laitis. Перезапуск Laitis...</s:String>
     <s:String x:Key="_DiskIsFull">Недостаточно места на диске для работы Laitis</s:String>
+    <s:String x:Key="_NETFrameworkCorrupted">.Net Framework поломан. Пожалуйста переустановите его</s:String>
     <s:String x:Key="_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
     <s:String x:Key="_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
     <!--#endregion-->
@@ -263,6 +264,7 @@
     <s:String x:Key="_TooLongRecordIsEnded">Запись была завершена потому что она была слишком длинной. Чтобы улучшить качество распознавания выключите усиление микрофона, если оно включено.</s:String>
     <s:String x:Key="_TooShortRecordIsEnded">Запись была завершена потому что она была слишком короткой</s:String>
 
+    <s:String x:Key="_AgeRestriction">Вам уже исполнилось 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успешно обновлен с версии</s:String>
     <s:String x:Key="_ToVersion">до версии</s:String>
 
@@ -367,6 +369,7 @@
     <s:String x:Key="_Prefixes">в,во,с</s:String>
     <s:String x:Key="_AndAHalf">с половиной</s:String>
     <s:String x:Key="_Half">пол</s:String>
+    <s:String x:Key="_OneHalfs">полтор</s:String>
     <s:String x:Key="_After">через,на,на следующий,на следующей</s:String>
     <s:String x:Key="_Mornings" xml:space="preserve"> утра, ночи</s:String>
     <s:String x:Key="_Evenings" xml:space="preserve"> дня, вечера</s:String>
@@ -380,6 +383,8 @@
     <!--#endregion-->
     
     <!--#region Common Labels-->
+    <s:String x:Key="_Yes">Да</s:String>
+    <s:String x:Key="_No">Нет</s:String>
     <s:String x:Key="_Duration">Длительность</s:String>
     <s:String x:Key="_SelectImage">Выбор изображения</s:String>
     <s:String x:Key="_From">с</s:String>
@@ -1134,10 +1139,10 @@
             </Paragraph>
             <List>
                 <ListItem Margin="0,10,0,0">
-                    <BlockUIContainer>
-                        <laitis:YandexMoneyDonation Width="240" HorizontalAlignment="Left"/>
-                    </BlockUIContainer>
-                    <Paragraph></Paragraph>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Yandex Money:</Run>
+                        410013809890154
+                    </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph TextAlignment="Left">
@@ -1281,7 +1286,7 @@
     <s:String x:Key="_AWMB1">В некоторых случаях может понадобится перетаскивание элемента мышкой. Сделать это можно следующим образом</s:String>
     <s:String x:Key="_AWMS0">Прокручивает колесо мышки. Есть два колеса: вертикальное и горизонтальное. Указывайте число прокрутки в диапазоне от -10 до 10</s:String>
     <s:String x:Key="_AWTT0">Вставляет или печатает заданный текст. При вставке текст помещается в буфер обмена и имитируется нажатие Ctrl+V. Печатается текст имитацией нажатия клавиш клавиатуры для каждого символа строки. Поддерживаются клавиатуры: US, RU, UA.</s:String>
-    <s:String x:Key="_AWOU0">Открывает ссылку в браузере по умолчанию. Если браузер запущен и в нем установлено расширение от Laitis - страница откроется в текущей вкладке</s:String>
+    <s:String x:Key="_AWOU0">Открывает ссылку в браузере по умолчанию. Если браузер запущен, активен, и в нем установлено расширение от Laitis - страница откроется в текущей вкладке</s:String>
     <s:String x:Key="_AWWS0">Загружает скрипт на активную страницу браузера и выполняет его</s:String>
     <s:String x:Key="_AWPC0">Кликает на элемент страницы в активной странице активного браузера. Элемент указывается CSS селектором</s:String>
     <s:String x:Key="_AWWW0">Не работает без расширения для браузера</s:String>

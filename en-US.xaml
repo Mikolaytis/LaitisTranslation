@@ -186,6 +186,7 @@
     <s:String x:Key="_UnknownErrorOccured">Oops! Unknown error occurred!</s:String>
     <s:String x:Key="_OutOfMemoryException">Out of memory to continue work of Laitis. Restarting Laitis...</s:String>
     <s:String x:Key="_DiskIsFull">Disk is full to continue work of Laitis</s:String>
+    <s:String x:Key="_NETFrameworkCorrupted">.Net Framework is corrupted. Please reinstall it</s:String>
     <s:String x:Key="_UIAutomationDllMissing">UIAutomation.dll library not found. Mouse Move Actions will not work.</s:String>
     <s:String x:Key="_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
     <!--#endregion-->
@@ -263,6 +264,7 @@
     <s:String x:Key="_TooLongRecordIsEnded">Record was stopped because its too long. To improve recognition quality disable microphone boost if it is enabled.</s:String>
     <s:String x:Key="_TooShortRecordIsEnded">Record was stopped because its too short</s:String>
 
+    <s:String x:Key="_AgeRestriction">Have you already turned 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis successfully updated from version</s:String>
     <s:String x:Key="_ToVersion">to version</s:String>
 
@@ -367,6 +369,7 @@
     <s:String x:Key="_Prefixes">at,on,the,a,of,from,for</s:String>
     <s:String x:Key="_AndAHalf">and a half</s:String>
     <s:String x:Key="_Half">half</s:String>
+    <s:String x:Key="_OneHalfs">one and half/one and a half</s:String>
     <s:String x:Key="_After">after,in,next</s:String>
     <s:String x:Key="_Mornings" xml:space="preserve">a.m.,am</s:String>
     <s:String x:Key="_Evenings" xml:space="preserve">p.m.,pm</s:String>
@@ -380,6 +383,8 @@
     <!--#endregion-->
     
     <!--#region Common Labels-->
+    <s:String x:Key="_Yes">Yes</s:String>
+    <s:String x:Key="_No">No</s:String>
     <s:String x:Key="_Duration">Duration</s:String>
     <s:String x:Key="_SelectImage">Select image</s:String>
     <s:String x:Key="_From">from</s:String>
@@ -1135,10 +1140,10 @@
             </Paragraph>
             <List>
                 <ListItem Margin="0,10,0,0">
-                    <BlockUIContainer>
-                        <laitis:YandexMoneyDonation Width="240" HorizontalAlignment="Left"/>
-                    </BlockUIContainer>
-                    <Paragraph></Paragraph>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontWeight="Bold">Yandex Money:</Run>
+                        410013809890154
+                    </Paragraph>
                 </ListItem>
                 <ListItem>
                     <Paragraph TextAlignment="Left">
