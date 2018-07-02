@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:common="clr-namespace:Laitis.Common;assembly=Laitis.Common"
     xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
-    xmlns:laitis="clr-namespace:Laitis"
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
     <!--#region App Initialization-->
@@ -117,9 +116,20 @@
     <s:String x:Key="_FUE_Initial_HelloDearUser">Hello, dear user!</s:String>
     <s:String x:Key="_FUE_Initial_ThanksForInstall">Thanks for install of</s:String>
     <s:String x:Key="_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- app that provides voice control over PC and voice text typing</s:String>
+    <s:String x:Key="_FUE_Initial_IfYouHaveNotReadThe">Using this program, you agree with its</s:String>
+    <s:String x:Key="_FUE_Initial_UserAgreement">user agreement</s:String>
     <s:String x:Key="_FUE_Initial_TakeMicrophoneAndSayHello">Bring to your microphone and say &quot;Hello&quot;</s:String>
     <s:String x:Key="_FUE_Initial_ThanksMaybeNextTime">Thanks, maybe next time</s:String>
-
+    <s:String x:Key="_FUE_Initial_YouNeed">To achieve the best speech recognition quality you need:</s:String>
+    <s:String x:Key="_FUE_Initial_GoodInternetConnection">Good internet connection</s:String>
+    <s:String x:Key="_FUE_Initial_InternetDescription">Low latency. Stable speed. No packet loss.</s:String>
+    <s:String x:Key="_FUE_Initial_GoodMicrophone">Good microphone</s:String>
+    <s:String x:Key="_FUE_Initial_MicDescription">No noise or crackling. Close to you.</s:String>
+    <s:String x:Key="_FUE_Initial_ClearPronunciation">Clear pronunciation</s:String>
+    <s:String x:Key="_FUE_Initial_PronunciationDescription">Pronounce the words completely</s:String>
+    <s:String x:Key="_FUE_Initial_WhiteList">Add Laitis to the White List</s:String>
+    <s:String x:Key="_FUE_Initial_WhiteListDescription">Some antiviruses can block recognition</s:String>
+    
     <s:String x:Key="_FUE_Browser_Setup">Browser configuration</s:String>
     <s:String x:Key="_FUE_Browser_Info">You need to install a browser extension to allow Laitis perform web-site actions</s:String>
     <s:String x:Key="_FUE_Browser_Skip">Skip</s:String>
@@ -159,15 +169,7 @@
     <s:String x:Key="_QA_ConnectedFrom">Connected from</s:String>
     <s:String x:Key="_Question_Tooltip_AddChildQuestion">Add question to this answer</s:String>
     <s:String x:Key="_Question_Tooltip_AddChildAnswer">Add answer to this question</s:String>
-    <TextBlock x:Key="_Question_Tooltip_IsRoot">
-        Is root question
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Conversation can start only from root question.
-            <LineBreak />
-            If question is not root question - you can come to it only after connected answers.
-        </Span>
-    </TextBlock>
+    <s:String x:Key="_Question_Tooltip_IsRoot">Is root question^Conversation can start only from root question.|If question is not root question - you can come to it only after connected answers.</s:String>
     <!--#endregion-->
 
     <!--#region Exceptions-->
@@ -208,8 +210,10 @@
     <s:String x:Key="_Logger">Events</s:String>
 
     <s:String x:Key="_Hide">Hide</s:String>
+    <s:String x:Key="_Minimize">Minimize</s:String>
     <s:String x:Key="_Pause">Pause</s:String>
-    <s:String x:Key="_Buttons_Hide">Hide</s:String>
+    <s:String x:Key="_Buttons_Minimize">Minimize into taskbar</s:String>
+    <s:String x:Key="_Buttons_HideToTray">Hide into system tray</s:String>
     <s:String x:Key="_Buttons_Pause">Disable voice commands</s:String>
     <s:String x:Key="_Buttons_Unpause">Enable voice commands</s:String>
     <s:String x:Key="_Buttons_Stop">Stop playing</s:String>
@@ -299,6 +303,8 @@
     <s:String x:Key="_ComaWaitTime">Adding coma, because wait time was short</s:String>
     <s:String x:Key="_DotWaitTime">Adding dot, because there was a long wait time</s:String>
     <s:String x:Key="_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
+    <s:String x:Key="_PreviousPaste">Previous paste was</s:String>
+    <s:String x:Key="_WaitingTime">Waiting time was</s:String>
     <!--#endregion-->
 
     <!--#region Community-->
@@ -352,6 +358,7 @@
     <s:String x:Key="_VariableOperator_Smaller">smaller than</s:String>
     <s:String x:Key="_VariableOperator_BiggerOrEquals">bigger or equals</s:String>
     <s:String x:Key="_VariableOperator_SmallerOrEquals">smaller of equals</s:String>
+    <s:String x:Key="_VariableOperator_Contains">contains</s:String>
 
     <s:String x:Key="_Second">Second</s:String>
     <s:String x:Key="_Minute">Minute</s:String>
@@ -383,6 +390,7 @@
     <!--#endregion-->
     
     <!--#region Common Labels-->
+    <s:String x:Key="_MyCommands">My commands</s:String>
     <s:String x:Key="_Yes">Yes</s:String>
     <s:String x:Key="_No">No</s:String>
     <s:String x:Key="_Duration">Duration</s:String>
@@ -410,7 +418,6 @@
     <s:String x:Key="_Times">times</s:String>
     <s:String x:Key="_Email">Email</s:String>
     <s:String x:Key="_Opera">Opera</s:String>
-    <s:String x:Key="_Upload">upload</s:String>
     <s:String x:Key="_Chrome">Chrome</s:String>
     <s:String x:Key="_FireFox">Firefox</s:String>
     <s:String x:Key="_Yandex">Yandex</s:String>
@@ -450,6 +457,7 @@
     <s:String x:Key="_AddCategory">Add category</s:String>
     <s:String x:Key="_NewCategory">New category</s:String>
     <s:String x:Key="_Save">Save</s:String>
+    <s:String x:Key="_ExecuteActions">Execute actions after 2 seconds</s:String>
     <s:String x:Key="_Achievements">Achievements</s:String>
     <s:String x:Key="_IfProcessOpen">If process is open</s:String>
     <s:String x:Key="_IfWebsiteOpen">If web-site is open</s:String>
@@ -458,6 +466,7 @@
     <s:String x:Key="_NothingSelected">Nothing selected</s:String>
     <s:String x:Key="_DataTransferCompleted">Data transfer is completed</s:String>
     <s:String x:Key="_Everything">Everything</s:String>
+    <s:String x:Key="_DonateToProject">Love Laitis? Donate to project!</s:String>
 
     <s:String x:Key="_Questions">Questions</s:String>
     <s:String x:Key="_Answers">Answers</s:String>
@@ -469,9 +478,7 @@
     <s:String x:Key="_Download">Download</s:String>
     <s:String x:Key="_DownloadStarted">download started</s:String>
     <s:String x:Key="_DownloadCompleted">download completed</s:String>
-    <s:String x:Key="_HoldToConfirm">Press and hold to confirm</s:String>
     <s:String x:Key="_Cancel">Cancel</s:String>
-
 
     <s:String x:Key="_Variables">Variables</s:String>
 
@@ -480,20 +487,8 @@
     <!--#endregion-->
 
     <!--#region Common Tooltips-->
-    <TextBlock x:Key="_Tooltip_CancelButton">
-        <Run Text="{StaticResource _Cancel}" />
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource _HoldToConfirm}" />
-        </Span>
-    </TextBlock>
-    <TextBlock x:Key="_Tooltip_RemoveButton">
-        <Run Text="{StaticResource _Remove}" />
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            <Run Text="{StaticResource _HoldToConfirm}" />
-        </Span>
-    </TextBlock>
+    <s:String x:Key="_Tooltip_CancelButton">Cancel^Press and hold to confirm</s:String>
+    <s:String x:Key="_Tooltip_RemoveButton">Remove^Press and hold to confirm</s:String>
     <!--#endregion-->
 
     <!--#region Browser Controller-->
@@ -512,6 +507,7 @@
     <s:String x:Key="_CommandEditor_Actions">Actions:</s:String>
     <s:String x:Key="_CommandEditor_Variables">Variables:</s:String>
     <s:String x:Key="_CommandEditor_SelectProcess">Select process</s:String>
+    <s:String x:Key="_CommandEditor_RecentPhrases">Recent phrases:</s:String>
 
     <s:String x:Key="_CommandAction_AddCondition">Add Condition</s:String>
     <s:String x:Key="_CommandAction_AddAction">Add Action</s:String>
@@ -544,66 +540,17 @@
     <s:String x:Key="_CommandAction_Label_JetAim">Jet aim mouse move. Digits:</s:String>
     <s:String x:Key="_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
     
-    
-    <TextBlock x:Key="_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
-        Actions below will be executed after scheduled event DateTime
-        <LineBreak />
-        If PC is sleeping and Laitis was enabled - PC will wake up if event time is not 00:00
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
-        Pauses actions execution
-        <LineBreak />
-        Waits phrase from user
-        <LineBreak />
-        Sets phrase value into variable with selected name
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
-        How long to wait users command
-        <LineBreak />
-        Blank or 0 = infinite
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
-        1 second = 1000 milliseconds
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
-        In seconds
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
-        Allows to execute actions from another voice command
-        <LineBreak />
-        Enter one phrase
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_JetAim">
-        Mouse move via voice feature
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Screen is split by 9 parts
-            <LineBreak />
-            You need to pronounce part digit 5 times to move cursor precisely
-            <LineBreak />
-            When showing you can say: Back, Cancel, Close, Zero(to choose in advance)
-        </Span>
-    </TextBlock>
-    <TextBlock x:Key="_CommandAction_Tooltip_JetAim_Numbers">
-        Digits can be set in advance
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Digits can be separated by space or comma
-            <LineBreak />
-            That field can be empty
-        </Span>
-    </TextBlock>
+    <s:String x:Key="_CommandAction_Tooltip_ScheduleEvent">Actions below will be executed after scheduled event DateTime|If PC is sleeping and Laitis was enabled - PC will wake up if event time is not 00:00</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand">Pauses actions execution|Waits phrase from user|Sets phrase value into variable with selected name</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand2">How long to wait users command|Blank or 0 = infinite</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Ms">^1 second = 1000 milliseconds</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_Duration">^In seconds</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_VoiceCommand">^Allows to execute actions from another voice command|Enter one phrase</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_JetAim">Mouse move via voice feature^Screen is split by 9 parts|You need to pronounce part digit 5 times to move cursor precisely|When showing you can say: Back, Cancel, Close, Zero(to choose in advance)</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_JetAim_Numbers">Digits can be set in advance^Digits can be separated by space or comma|That field can be empty</s:String>
     <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
-    <TextBlock x:Key="_CommandAction_Tooltip_HotkeysManualInput">
-        Free hotkeys input
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Allows enter hotkeys with Win button
-            <LineBreak />
-            Allows enter some hotkeys over coma
-        </Span>
-    </TextBlock>
+    <s:String x:Key="_CommandAction_Tooltip_HotkeysManualInput">Free hotkeys input^Allows enter hotkeys with Win button|Allows enter some hotkeys over coma</s:String>
     
     <s:String x:Key="_Click">Click</s:String>
     <s:String x:Key="_Focus">Focus</s:String>
@@ -611,19 +558,7 @@
     <s:String x:Key="_NavClick">Click on selection</s:String>
     <s:String x:Key="_OpenPopup">Open popup</s:String>
     
-    <TextBlock x:Key="_CommandAction_Tooltip_RandomActionBlock">
-        Beginning a block of random actions
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Allows to execute random action
-            <LineBreak />
-            Only one question in block will be executed
-            <LineBreak />
-            You can close block by End action and do another actions after
-            <LineBreak />
-            Random action will be picked from actions that can be executed
-        </Span>
-    </TextBlock>
+    <s:String x:Key="_CommandAction_Tooltip_RandomActionBlock">Beginning a block of random actions^Allows to execute random action|Only one question in block will be executed|You can close block by End action and do another actions after|Random action will be picked from actions that can be executed</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Break">Stops loop</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Loop">Beginning a block of actions that will be executed multiple times</s:String>
     <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Leave empty to toggle all collections</s:String>
@@ -684,6 +619,7 @@
     <!--  MouseMoveType -->
     <s:String x:Key="_MouseMoveType_Point">Point</s:String>
     <s:String x:Key="_MouseMoveType_Relative">Relative</s:String>
+    <s:String x:Key="_MouseMoveType_Scribble">Scribble</s:String>
     <!--  MouseScrollType -->
     <s:String x:Key="_MouseScrollType_Vertical">Vertically</s:String>
     <s:String x:Key="_MouseScrollType_Horizontal">Horizontally</s:String>
@@ -771,7 +707,6 @@
     <s:String x:Key="_Settings_Default_TextInputStarter">type/dictate</s:String>
     <s:String x:Key="_Settings_Default_Language">en-US</s:String>
     <s:String x:Key="_Settings_ListenLastRecording">Listen last voice recording</s:String>
-    <s:String x:Key="_Settings_ScheduledEvents">Scheduled events</s:String>
 
     <!--#region Settings Labels-->
     <s:String x:Key="_Settings_Label_VoiceCommands">Voice commands</s:String>
@@ -793,7 +728,6 @@
     <s:String x:Key="_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="_Settings_Label_RestoreFail">Data restore failed</s:String>
     <s:String x:Key="_Settings_Label_RestoreFues">Show hint panels</s:String>
-    <s:String x:Key="_Settings_Label_AlwaysRunAsAdministrator">Always run as administrator</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -825,77 +759,14 @@
     <!--#endregion-->
 
     <!--#region Settings Tooltips-->
-    
-    <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">
-        To stop Laitis from recognizing audio from speakers (video, music)
-    </s:String>
-    
-    <TextBlock x:Key="_Settings_Tooltip_NoiseProgress">
-        That indicator displays noise volume in microphone
-    </TextBlock>
-
-    <TextBlock x:Key="_Settings_Tooltip_TooLoud">
-        PC sound volume exceeds 30% limit
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Voice recording is stopped
-            <LineBreak />
-            You can disable this feature in settings
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="_Settings_Tooltip_VoiceDialing">
-        That option enables text typing using your voice
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            You can type text in any text field in Windows
-        </Span>
-    </TextBlock>
-
-    
-    
-    <s:String x:Key="_Settings_Tooltip_RecordStarter">
-        Select key
-    </s:String>
-
-    <TextBlock x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">
-        Mutes Windows sound on pressing start record button
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            That is used to not record music or video sound
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="_Settings_Tooltip_UseCommandStarter">
-        All commands will start with keyword/phrase prefix
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            To execute command &quot;accept&quot;, you'll need to say &quot;&lt;keyword&gt; accept&quot;
-        </Span>
-    </TextBlock>
-
-    <TextBlock x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">
-        Works only with automatic voice recording
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Text is typed from upper case if you change textbox focus or if you type a new sentence;
-            <LineBreak />
-            The comma is typed if you pause for a period of 2 to 4 seconds (default values);
-            <LineBreak />
-            The dot is typed if you pause for 4 seconds (default value) or more.
-        </Span>
-    </TextBlock>
-    
-    
-    
-    <TextBlock x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">
-        Beta version. Use at your own risk.
-        <LineBreak />
-        <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-            Supported keyboard layouts: US, Russian, Ukrainian.
-        </Span>
-    </TextBlock>
-    
+    <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">To stop Laitis from recognizing audio from speakers (video, music)</s:String>
+    <s:String x:Key="_Settings_Tooltip_NoiseProgress">That indicator displays noise volume in microphone</s:String>
+    <s:String x:Key="_Settings_Tooltip_TooLoud">PC sound volume exceeds 30% limit^Voice recording is stopped|You can disable this feature in settings</s:String>
+    <s:String x:Key="_Settings_Tooltip_VoiceDialing">That option enables text typing using your voice^You can type text in any text field in Windows</s:String>
+    <s:String x:Key="_Settings_Tooltip_RecordStarter">Select key</s:String>
+    <s:String x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">Mutes Windows sound on pressing start record button^That is used to not record music or video sound</s:String>
+    <s:String x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">Works only with automatic voice recording^Text is typed from upper case if you change textbox focus or if you type a new sentence;|The comma is typed if you pause for a period of 2 to 4 seconds (default values);|The dot is typed if you pause for 4 seconds (default value) or more.</s:String>
+    <s:String x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">Beta version. Use at your own risk.^Supported keyboard layouts: US, Russian, Ukrainian.</s:String>
     <!--#endregion-->
 
     <!--#endregion-->
@@ -903,96 +774,66 @@
     <!--#region Help-->
 
     <s:String x:Key="_Help_Updates">Updates</s:String>
-    <s:String x:Key="_Help_Prepare">Preparation</s:String>
-    <s:String x:Key="_Help_IOT">IOT and services (for developers)</s:String>
-    <s:String x:Key="_Help_FAQ">FAQ</s:String>
-    <s:String x:Key="_Help_Extra">Extras</s:String>
 
     <FlowDocument x:Key="_HelpDocument">
-
-        <Section Margin="0,0,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource _Help_Prepare}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                You need a <Run TextDecorations="Underline">good microphone</Run>.
-                It must record the sound without much noise and crackling. More suitable is desktop microphones and
-                microphones with headphones.
-                The microphone, which is located in a cheap webcam far from you
-                cannot provide sufficient quality of sound recording.</Paragraph>
-            <Paragraph TextIndent="40">
-                You need to have a <Run TextDecorations="Underline">good internet connection</Run>.
-                The speed should be more than 1mbps and ping should be lower than 200 milliseconds.
-                Latency is very important, if you say the phrase and it will be written in 100-600ms - then it will be acceptable,
-                But the delay of 1000+ms makes a huge inconvenience to work with the program.
-                The speed and latency of Internet via modem is absolutely not enough for comfortable work.</Paragraph>
-            <Paragraph TextIndent="40">
-                You need to be in a <Run TextDecorations="Underline">quiet place</Run>.
-                If your TV is on, or somebody is talking to you
-                or stereo speakers make loud music, the recognition of the service will not correctly recognize your voice.
-                You can solve this problem by either a microphone with noise reduction, or seclusion.</Paragraph>
-        </Section>
         
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource _Help_FAQ}" />
-            </Paragraph>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+        <Section>
+            <Paragraph FontWeight="Bold">
                 Why voice recognition does not work?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Your microphone is not connected/not working/turned off.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You did not enabled &quot;voice commands&quot; or &quot;voice text typing&quot; in the settings.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         The installed antivirus program blocks the application.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You do not have an internet connection, or it is too slow.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Why does voice recognition work bad?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You pronounce the words poorly.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You have something with a microphone. Maybe he's scratching/creaking/too quiet.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You are in a noisy environment and the recognition algorithm is difficult to distinguish your voice from extraneous noise.
                     </Paragraph>
                 </ListItem>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         You have selected a poor-quality recognition service.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Why website control commands do not work?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Check if your browser has the Laitis extension installed. Without extension website control voice commands will not work. 
                         You can download it here: 
                         <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Chrome</controls:Hyperlink>,
@@ -1003,88 +844,49 @@
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Can I use my Bluetooth headset to work with Laitis?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Yes. Connect it to the computer and select in Laitis your headset, as a voice recording device.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Can I use my phone as a microphone for Laitis?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Yes. Download and install <controls:Hyperlink NavigateUri="http://www.wirelessorange.com/womic/">WO Mic</controls:Hyperlink> app on your PC and phone. 
                         Don't forget to install their mic driver to your PC. Works over Bluetooth, Wifi, and even USB cable.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Can I install offline Text-to-Speech engine?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Yes. I advise you to download voices from Ivona. After installation, they appear in the drop-down list if you select Windows Text-to-Speech service in Laitis settings.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
+            <Paragraph FontWeight="Bold">
                 Is it possible to install offline voice recognition?
             </Paragraph>
             <List>
                 <ListItem>
-                    <Paragraph FontStyle="Italic">
+                    <Paragraph>
                         Yes, Laitis supports all recognition engines installed in Windows. After installation select Windows Recognition service in Laitis settings.
                     </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Why there is no support for OS X, iOS, Android, Linux, Windows Phone, XBOX?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        Because the project is not cross-platform and can not be. Because Computer management on all operating systems is different. 
-                        There will not be any development for other OS's.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Can I disable automatic updates?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        No. All updates weigh less than 1 megabyte. They can go out a few times a day. 
-                        In order not to bother the user with annoying questions about the update, they will be applied automatically.
-                    </Paragraph>
-                </ListItem>
-            </List>
-            <Paragraph FontWeight="Bold" TextIndent="20">
-                Can I get the source code of the program?
-            </Paragraph>
-            <List>
-                <ListItem>
-                    <Paragraph FontStyle="Italic">
-                        No. &quot;It is forbidden to decrypt, emulate, modify, decompile, disassemble 
-                        the source code of «Laitis» and its components for the purpose of unauthorized use and/or obtaining 
-                        information about the implementation of the algorithms used in them. The illegal use of intellectual 
-                        property objects specified in the user agreement Entails civil, 
-                        administrative and criminal liability.&quot; - an excerpt from the user agreement.
-                    </Paragraph>
-                </ListItem>
-            </List>
-        </Section>
-
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource _Help_IOT}" />
+            <Paragraph FontWeight="Bold">
+                Can i connect Laitis to my app/website or service?
             </Paragraph>
             <Paragraph TextIndent="40">
                 Laitis is able to send Web requests and execute commands that will be returned the server. 
@@ -1118,62 +920,46 @@
                 </ListItem>
             </List>
             <Paragraph TextIndent="40">
-                <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration/wiki">All info and examples are in gitHub repository</controls:Hyperlink>
+                <controls:Hyperlink NavigateUri="https://github.com/Mikolaytis/LaitisIntegration/wiki">
+                    All info and examples are in gitHub repository
+                </controls:Hyperlink>
             </Paragraph>
-        </Section>
-        
-        <Section Margin="0,100,0,0">
-            <Paragraph>
-                <Run FontSize="20" Text="{StaticResource _Help_Extra}" />
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                If you have not read the
-                <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">user agreement</controls:Hyperlink>
-                before installing the program, then do it now. If you do not agree with the agreement, then delete this program.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                If you want to thank the developer or advise him something, you can do it personally by sending 
-                a message to blasterloremaster@gmail.com email.
-            </Paragraph>
-            <Paragraph TextIndent="40">
-                If you want to thank the developer and give him money, then use any of the methods listed below:
+            <Paragraph FontWeight="Bold">
+                Why there is no support for OS X, iOS, Android, Linux, Windows Phone, XBOX?
             </Paragraph>
             <List>
-                <ListItem Margin="0,10,0,0">
-                    <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Yandex Money:</Run>
-                        410013809890154
+                <ListItem>
+                    <Paragraph>
+                        Because the project is not cross-platform and can not be. Because Computer management on all operating systems is different. 
+                        There will not be any development for other OS's.
                     </Paragraph>
                 </ListItem>
+            </List>
+            <Paragraph FontWeight="Bold">
+                Can I disable automatic updates?
+            </Paragraph>
+            <List>
                 <ListItem>
-                    <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Sberbank credit card:</Run>
-                        <Run Text="{x:Static common:LaitisConst.SberbankCard}"/> Mikolaytis Sergey</Paragraph>
-                </ListItem>
-                <ListItem>
-                    <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Tinkoff credit card:</Run>
-                        <Run Text="{x:Static common:LaitisConst.TinkoffCard}"/> Mikolaytis Sergey</Paragraph>
-                </ListItem>
-                <ListItem Margin="0,10,0,0">
-                    <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Webmoney:</Run>
-                        X128078209734(bitcoins), Z152356853702(dollars), E471475057900(euros))</Paragraph>
-                </ListItem>
-                <ListItem Margin="0,10,0,0">
-                    <Paragraph TextAlignment="Left">
-                        <Run FontWeight="Bold">Qiwi:</Run>
-                        you can send a voucher to the blasterloremaster@gmail.com</Paragraph>
+                    <Paragraph>
+                        No. All updates weigh less than 1 megabyte. They can go out a few times a day. 
+                        In order not to bother the user with annoying questions about the update, they will be applied automatically.
+                    </Paragraph>
                 </ListItem>
             </List>
-            <Paragraph TextIndent="40">
-                All donations go to the hosting and code sign of the program.
+            <Paragraph FontWeight="Bold">
+                Can I get the source code of the program?
             </Paragraph>
-            <Paragraph TextIndent="40">
-                Used services:
-                <controls:Hyperlink NavigateUri="http://google.com/">Google Web Speech API</controls:Hyperlink>,
-                <controls:Hyperlink NavigateUri="https://tech.yandex.ru/speechkit/cloud/"><Image Source="{Binding YandexLogo}" Height="11"></Image> SpeechKit Cloud</controls:Hyperlink>
-            </Paragraph>
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        No. &quot;It is forbidden to decrypt, emulate, modify, decompile, disassemble 
+                        the source code of «Laitis» and its components for the purpose of unauthorized use and/or obtaining 
+                        information about the implementation of the algorithms used in them. The illegal use of intellectual 
+                        property objects specified in the user agreement Entails civil, 
+                        administrative and criminal liability.&quot; - an excerpt from the user agreement.
+                    </Paragraph>
+                </ListItem>
+            </List>
         </Section>
 
         <Section Margin="0,100,0,0">
@@ -1189,49 +975,140 @@
         <Paragraph FontSize="20" TextAlignment="Center">This is the functionality of publishing your changes and new commands to the community</Paragraph>
         <Paragraph>Process:</Paragraph>
         <List MarkerStyle="Decimal">
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>You publish a new collection or changes in one of the collections.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Community evaluates your publication.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Moderator checks your publication for compliance with the rules and accepts/rejects it.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Changes and new commands from accepted publications is applied in the community.</Paragraph>
             </ListItem>
         </List>
         <Paragraph>Rules:</Paragraph>
         <List MarkerStyle="Decimal">
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>You are responsible for the content you publish.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Content that is prohibited for children can only be in collections with 18+ in the title.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Publish only commands you want to share with other users.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Commands should work correctly for any user.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Commands should not break commands from other collections.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Commands should not harm the users PC's.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Commands should not disrupt the work of Laitis.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Your changes and new commands must match the collection.</Paragraph>
             </ListItem>
-            <ListItem FontStyle="Italic">
+            <ListItem>
                 <Paragraph>Failure to comply rules will result in blocking.</Paragraph>
             </ListItem>
         </List>
     </FlowDocument>
+    
+    <!--#region Actions Wiki -->
+    <s:String x:Key="_AWOF0">If you specify the path to the file, the action will open the file by default</s:String>
+    <s:String x:Key="_AWOF1">If you specify the path to the program, the action will start the program</s:String>
+    <s:String x:Key="_AWOF2">The action supports the launch of commands from the "Run" window</s:String>
+    <s:String x:Key="_AWCA0">Closes any running program on the computer by the name of its process. If several copies of the same program are running, all will be closed</s:String>
+    <s:String x:Key="_AWCA1">The normal closing of the program closes the program correctly. If you chose "Kill" the program will be closed immediately, without saving its state</s:String>
+    <s:String x:Key="_AWSW0">Allows to Collapse/Expand and Show/Hide the main application window. The program is identified by the name of the process</s:String>
+    <s:String x:Key="_AWWR0">Allows you to send an HTTP GET/POST request. In the POST request, the data is specified, as in the GET request, after the `?`</s:String>
+    <s:String x:Key="_AWWR1">The server can return a response with an array of actions that Laitis will perform. Read more in the article</s:String>
+    <s:String x:Key="_AWWR2">With this action, you can integrate Laitis commands with your service or website. For example, you can link your pizza delivery service or smart house</s:String>
+    <s:String x:Key="_AWWR3">In curly brackets, you can specify the name of the variable to which the response from the server will be written. This answer can be displayed by notification, as well as using it in other actions</s:String>
+    <s:String x:Key="_AWWR4">You can even download the whole page of the site and use regular expressions to get data from it</s:String>
+    <s:String x:Key="_AWPS0">Plays the sound file. You can specify the path to the file and it will be played</s:String>
+    <s:String x:Key="_AWPS1">You can specify the name of one of the trend sounds or Windows sounds from the drop-down list</s:String>
+    <s:String x:Key="_AWVC0">Allows you to perform actions from another voice command. Accepts one of the phrases of the command to be executed</s:String>
+    <s:String x:Key="_AWVC1">With this action, you can divide commands with a large number of actions into several small ones, thereby creating a complex functional logic of voice commands</s:String>
+    <s:String x:Key="_AWPA0">Allows you to pause the action for a while. It takes milliseconds. 1 second = 1000 milliseconds</s:String>
+    <s:String x:Key="_AWPA1">Also, with this action, you can wait for the sound to stop playing</s:String>
+    <s:String x:Key="_AWWC0">Suspends the action until the user says a phrase. As soon as the user says something, this will be written to a local variable with the given name. Later, data from this variable can be used in the following actions for useful actions</s:String>
+    <s:String x:Key="_AWWC1">By default, the wait is infinite. You can specify a maximum response time from the user</s:String>
+    <s:String x:Key="_AWSE0">Stops the execution of actions until the specified event occurs.</s:String>
+    <s:String x:Key="_AWSE1">The action supports almost all possible options for specifying the date and time of the supported interface languages. A small part of the possible options: "tomorrow at 5", "in an hour and a half," "Friday morning," "without fifteen six," "in a week," "after 3 minutes twenty-one seconds," "February 27 at noon"</s:String>
+    <s:String x:Key="_AWSE2">When the command is executed, all actions below the planned one are stored and shown with a countdown in the Laitis settings</s:String>
+    <s:String x:Key="_AWSE3">If the computer is in sleep mode and an event occurs, the computer wakes up and executes the required commands. The computer can work as an alarm clock, perform special tasks. For example, you can create a command that will wake up the computer, do something at a particular time and fall asleep.</s:String>
+    <s:String x:Key="_AWSE4">There are useful system variables with which you can manage events: {LastEventDateTime} - you can get or set the time of the last event, it is useful in cases when the user incorrectly named the date and wants to fix it; {CancelLastEvent} - if you specify any value in it, the last user-generated event will be canceled.</s:String>
+    <s:String x:Key="_AWVV0">A variable is an object that has a name and stores data in itself. You can refer to variables in Laitis by writing its name in curly brackets: {name}. Variables can be used in any action. For example, if there is a variable {x} that stores the string "Hello, friend!" then you can create an action to say which it will say by specifying a variable.</s:String>
+    <s:String x:Key="_AWVV1">Just set the value of the variable in the following way:</s:String>
+    <s:String x:Key="_AWVV2">If the variable does not exist, it will be created in the current collection. If the variable exists, its value will be changed to what you specify in the action.</s:String>
+    <s:String x:Key="_AWVV3">This action supports arithmetic operations and a wide range of functions</s:String>
+    <s:String x:Key="_AWVV4">If you already have a variable with a given value, and you want to add a number to it, do this:</s:String>
+    <s:String x:Key="_AWVV5">Arithmetic works with integers and floating-point numbers:</s:String>
+    <s:String x:Key="_AWVV6">Mathematical functions:% is the remainder of division, ^ is raising to a power, Sqrt is the square root, Max is to get the larger of two numbers, Min is smaller, Abs is to get an absolute number (removes the minus if it is), Round is the rounding of the number with a floating point (the number of digits after the comma is indicated), Rand - get a random number between the two specified:</s:String>
+    <s:String x:Key="_AWVV7">String functions (Replace with - replace, Replace words with - replace by words, RegExReplace - replace with regular expression, RegExMatch - get matches of regular expression, TextRange - search for getting a piece of text on its adjacent lines) work a little differently. They work with pre-created variables and change their meaning directly. For example, you have a variable {Hello} with the value "Hello, friend!", And you want that instead of a friend, in the meaning was Vasya - you have several ways to do this:</s:String>
+    <s:String x:Key="_AWVV8">For example, in a variable there is a code of a web page, and you need to receive from it a line in a specific element:</s:String>
+    <s:String x:Key="_AWVV9">For programmers who know JSON. The variables Laitis support work with JSON. Using JSON, you can collect arrays and complex structures, you can get a value from the JSON object.</s:String>
+    <s:String x:Key="_AWTP0">Enables/Disables/Switches the collection by its name</s:String>
+    <s:String x:Key="_AWNO0">Calls a notification at the top of the screen with the specified text</s:String>
+    <s:String x:Key="_AWHK0">Presses the keyboard keys</s:String>
+    <s:String x:Key="_AWHK1">All kinds of keyboard shortcuts are supported</s:String>
+    <s:String x:Key="_AWHK2">Pressing some combinations while typing Laitis can not catch - you'll have to use the free input switch and write the combination manually</s:String>
+    <s:String x:Key="_AWHK3">You can write several keys/combinations separated by commas</s:String>
+    <s:String x:Key="_AWHK4">Sometimes you need to hold down the key for a while, for example in games</s:String>
+    <s:String x:Key="_AWHK5">In some games, only those that are similar to the user's actions will work, in such cases - use a long press</s:String>
+    <s:String x:Key="_AWHK6">Sometimes it is necessary to specify which of the keys to click</s:String>
+    <s:String x:Key="_AWJA0">Launches an interactive, allowing you to move the cursor to any point on the screen, calling 5 digits. Numbers can be called one by one or several at once, for example: 123, 11. You can say 0 - this means that the current selection is sufficient and you can put the cursor in the center of the current square. You can say "Back" to go back, if you said the wrong number. You can say "Open" or "Cancel" to close the interactive</s:String>
+    <s:String x:Key="_AWJA1">You can specify the numbers in advance in the text box</s:String>
+    <s:String x:Key="_AWMM0">Moves the cursor to the point on the screen. The origin in the displays is in the upper left corner of the screen, the ordinate (arrow Y) is pointing downwards</s:String>
+    <s:String x:Key="_AWMM1">It is possible to move in any direction to the specified number of pixels.</s:String>
+    <s:String x:Key="_AWMM2">You can record any scribble as mouse movement and play it from any point if x and y is empty or from specified x/y point.</s:String>
+    <s:String x:Key="_AWMO0">Finds on the screen an element with the given text inside and points the mouse at it. Works in any Windows applications except games. If an extension is installed for the browser, the action will also be searched in the active browser page. With this action, you can create universal commands that will work in any program or on any website. Many programs and sites can be used without first creating any commands. Field action - auxiliary and optional</s:String>
+    <s:String x:Key="_AWMB0">Click the mouse button</s:String>
+    <s:String x:Key="_AWMB1">In some cases, you may need to drag the item with the mouse. You can do this as follows</s:String>
+    <s:String x:Key="_AWMS0">Scrolls the mouse wheel. There are two wheels: vertical and horizontal. Specify the number of scrolls in the range from -10 to 10</s:String>
+    <s:String x:Key="_AWTT0">Inserts or prints the specified text. When pasted, the text is placed on the clipboard and simulated by pressing Ctrl+V. The text is printed by simulating keystrokes of the keyboard for each character of the line. Keyboards are supported: US, RU, UA.</s:String>
+    <s:String x:Key="_AWOU0">Opens the link in the default browser. If the browser is running, is active, and it has an extension from Laitis - the page will open in the current tab</s:String>
+    <s:String x:Key="_AWWS0">Loads the script on the active browser page and executes it</s:String>
+    <s:String x:Key="_AWPC0">Clicks on the page element in the active page of the active browser. The element is indicated by a CSS selector</s:String>
+    <s:String x:Key="_AWWW0">Does not work without the browser extension</s:String>
+    <s:String x:Key="_AWPF0">Moves focus to the page element in the active page of the active browser. The element is indicated by a CSS selector</s:String>
+    <s:String x:Key="_AWPN0">When a page has many elements of the same type and you need to select one of them - use this action. It allows you to select on the page one element from the list of elements with the same CSS selector</s:String>
+    <s:String x:Key="_AWPN1">Selection can be moved by the same command</s:String>
+    <s:String x:Key="_AWPN2">You can move the selection directly to a specific item in the list by its number</s:String>
+    <s:String x:Key="_AWPN3">You can click on the selected item with the help of another command "Open selected on the web page"</s:String>
+    <s:String x:Key="_AWPN4">In the system variables Laitis there are useful variables {BrowserCurrentSelector} - returns the current selection selector, {BrowserCurrentSelectorIndex} - returns the current selection index, {BrowserCurrentSelectorText} - returns the text representation of the selected item</s:String>
+    <s:String x:Key="_AWNC0">Clicks on the selected element of the web page if the CSS selector is empty. If the CSS selector is specified, it finds the element in the selection by the selector and clicks on it.</s:String>
+    <s:String x:Key="_AWPT0">Allows you to get a textual representation of any element on the active browser page by its selector</s:String>
+    <s:String x:Key="_AWPO0">Opens a part of the website specified in the CSS selector in a separate small browser window. From the website, everything will be deleted, except for the element found by the CSS selector</s:String>
+    <s:String x:Key="_AWST0">It downloads the page of the website by reference and writes the result to a variable. If CSS-selector is specified, the internal content of the selected page element will be returned. With this action, you can get useful information from a website without opening it</s:String>
+    <s:String x:Key="_AWST1">Sometimes useful information is out of the markup of the site. Then download the entire page and get the data we need via TextRange</s:String>
+    <s:String x:Key="_AWST2">Using this command, you can make API requests, receive a response in JSON format, and use the command "Set variable value" to get useful data from JSON objects</s:String>
+    <s:String x:Key="_AWST3">For POST requests, send the data, as in the GET request, via the `?`</s:String>
+    <s:String x:Key="_AWIP0">A condition for performing actions that will perform the actions below only if the active program has the specified process name</s:String>
+    <s:String x:Key="_AWIP1">You can specify multiple processes via `/`</s:String>
+    <s:String x:Key="_AWIE0">A condition for performing actions that will perform the actions below only if at least one of the running programs has the specified process name</s:String>
+    <s:String x:Key="_AWIW0">A condition for performing actions that will perform the actions below only if the open website in the active browser has an address the part of which is written in action</s:String>
+    <s:String x:Key="_AWIN0">A condition for performing actions that will perform the actions below only if the open website in the active browser has a selection with the selector that is specified in the action</s:String>
+    <s:String x:Key="_AWIV0">A condition for performing actions that will perform the actions below only if the value of the variable satisfies the specified condition</s:String>
+    <s:String x:Key="_AWRA0">A block that will perform one of the random actions</s:String>
+    <s:String x:Key="_AWLP0">The block that will perform the actions contained in it, the specified number of times</s:String>
+    <s:String x:Key="_AWEL0">The notation of the action block, which will be executed if the condition is not fulfilled above</s:String>
+    <s:String x:Key="_AWEB0">Designation of the end of the condition block, random execution, cycle.</s:String>
+    <s:String x:Key="_AWBR0">An action that interrupts a cycle. It is useful if an infinitely long cycle is started and it is required to stop when some condition is satisfied</s:String>
+    
+    <s:String x:Key="_AW_HelloFriend">Hello friend!</s:String>
+    <s:String x:Key="_AW_OpenChrome">Open chrome</s:String>
+    <s:String x:Key="_AW_3SecondsLeft">3 seconds left</s:String>
+    <s:String x:Key="_AW_SayAnything">Say anything</s:String>
+    <s:String x:Key="_AW_InvokesAnyway">Invokes anyway</s:String>
+    <s:String x:Key="_AW_Comment">In that case we do not want to do something</s:String>
+    <!--#endregion-->
     
 </ResourceDictionary>

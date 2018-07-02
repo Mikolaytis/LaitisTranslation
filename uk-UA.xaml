@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:common="clr-namespace:Laitis.Common;assembly=Laitis.Common"
     xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
-    xmlns:laitis="clr-namespace:Laitis"
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
   <!--#region App Initialization-->
@@ -117,9 +116,20 @@
   <s:String x:Key="_FUE_Initial_HelloDearUser">Привіт, дорогий користувач!</s:String>
   <s:String x:Key="_FUE_Initial_ThanksForInstall">Дякуємо за установку</s:String>
   <s:String x:Key="_FUE_Initial_ProgramOfComputerVoiceControlAndTextTyping">- програми голосового управління комп'ютером і набору тексту</s:String>
+    <s:String x:Key="_FUE_Initial_IfYouHaveNotReadThe">Використовуючи цю програму ви погоджуєтеся з її</s:String>
+    <s:String x:Key="_FUE_Initial_UserAgreement">призначеною для користувача угодою</s:String>
   <s:String x:Key="_FUE_Initial_TakeMicrophoneAndSayHello">Піднесіть до себе мікрофон і скажіть &quot;Привіт&quot;</s:String>
   <s:String x:Key="_FUE_Initial_ThanksMaybeNextTime">Дякою, іншим разом</s:String>
-
+    <s:String x:Key="_FUE_Initial_YouNeed">Щоб отримати кращу якість розпізнавання, вам потрібно:</s:String>
+    <s:String x:Key="_FUE_Initial_GoodInternetConnection">Гарне інтернет з'єднання</s:String>
+    <s:String x:Key="_FUE_Initial_InternetDescription">Низька затримка. Стабільна швидкість.</s:String>
+    <s:String x:Key="_FUE_Initial_GoodMicrophone">Хороший мікрофон</s:String>
+    <s:String x:Key="_FUE_Initial_MicDescription">Без шуму і тріску. Знаходиться близько до вас.</s:String>
+    <s:String x:Key="_FUE_Initial_ClearPronunciation">Чиста вимова</s:String>
+    <s:String x:Key="_FUE_Initial_PronunciationDescription">Повністю вимовляєте слова</s:String>
+    <s:String x:Key="_FUE_Initial_WhiteList">Додати Laitis в білий список</s:String>
+    <s:String x:Key="_FUE_Initial_WhiteListDescription">Деякі антивіруси блокують розпізнавання</s:String>
+    
   <s:String x:Key="_FUE_Browser_Setup">Настройка браузера</s:String>
   <s:String x:Key="_FUE_Browser_Info">Для того щоб працювали команди управління веб-сайтами, потрібно встановити розширення для вашого браузера</s:String>
   <s:String x:Key="_FUE_Browser_Skip">Пропустити</s:String>
@@ -159,15 +169,7 @@
   <s:String x:Key="_QA_ConnectedFrom">Стежить з</s:String>
   <s:String x:Key="_Question_Tooltip_AddChildQuestion">Додати питання до цієї відповіді</s:String>
   <s:String x:Key="_Question_Tooltip_AddChildAnswer">Додати відповідь до цього питання</s:String>
-  <TextBlock x:Key="_Question_Tooltip_IsRoot">
-    Чи кореневе питання
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Розмова починається тільки з кореневого питання.
-      <LineBreak />
-      Якщо питання не кореневої - до нього можна перейти лише після обраних відповідей.
-    </Span>
-  </TextBlock>
+  <s:String x:Key="_Question_Tooltip_IsRoot">Чи кореневе питання^Розмова починається тільки з кореневого питання.|Якщо питання не кореневої - до нього можна перейти лише після обраних відповідей.</s:String>
   <!--#endregion-->
 
   <!--#region Exceptions-->
@@ -207,9 +209,11 @@
   <s:String x:Key="_Other">Решта</s:String>
   <s:String x:Key="_Logger">Журнал</s:String>
 
-  <s:String x:Key="_Hide">Згорнути</s:String>
+  <s:String x:Key="_Hide">Сховати</s:String>
+  <s:String x:Key="_Minimize">Згорнути</s:String>
   <s:String x:Key="_Pause">Пауза</s:String>
-  <s:String x:Key="_Buttons_Hide">Згорнути</s:String>
+  <s:String x:Key="_Buttons_Minimize">Згорнути в панель задач</s:String>
+  <s:String x:Key="_Buttons_HideToTray">Сховати в системний трей</s:String>
   <s:String x:Key="_Buttons_Pause">Призупинити виконання команд</s:String>
   <s:String x:Key="_Buttons_Unpause">Відновити виконання команд</s:String>
   <s:String x:Key="_Buttons_Stop">Зупинити відтворення</s:String>
@@ -299,6 +303,8 @@
   <s:String x:Key="_ComaWaitTime">Так як час очікування було досить малим, вставляю в початок фрази кому</s:String>
   <s:String x:Key="_DotWaitTime">Так як час очікування було досить великим, вставляю в початок фрази точку</s:String>
   <s:String x:Key="_SpaceBeforeSeparator">Так як текстове поле залишилося колишнім, додам в початок фрази пробіл</s:String>
+    <s:String x:Key="_PreviousPaste">так як попередня вставка була</s:String>
+    <s:String x:Key="_WaitingTime">час чекання був</s:String>
   <!--#endregion-->
 
   <!--#region Community-->
@@ -352,6 +358,7 @@
   <s:String x:Key="_VariableOperator_Smaller">менше</s:String>
   <s:String x:Key="_VariableOperator_BiggerOrEquals">більше або дорівнює</s:String>
   <s:String x:Key="_VariableOperator_SmallerOrEquals">менше або дорівнює</s:String>
+  <s:String x:Key="_VariableOperator_Contains">містить</s:String>
 
   <s:String x:Key="_Second">Секунда</s:String>
   <s:String x:Key="_Minute">Хвилина</s:String>
@@ -383,6 +390,7 @@
   <!--#endregion-->
 
   <!--#region Common Labels-->
+  <s:String x:Key="_MyCommands">Мої команди</s:String>
   <s:String x:Key="_Yes">Так</s:String>
   <s:String x:Key="_No">Ні</s:String>
   <s:String x:Key="_Duration">Тривалість</s:String>
@@ -410,7 +418,6 @@
   <s:String x:Key="_Times">раз</s:String>
   <s:String x:Key="_Email">Email</s:String>
   <s:String x:Key="_Opera">Опера</s:String>
-  <s:String x:Key="_Upload">загрузити</s:String>
   <s:String x:Key="_Chrome">Chrome</s:String>
   <s:String x:Key="_FireFox">Firefox</s:String>
   <s:String x:Key="_Yandex">Яндекс</s:String>
@@ -450,6 +457,7 @@
   <s:String x:Key="_AddCategory">Нова категорія</s:String>
   <s:String x:Key="_NewCategory">Нова категорія</s:String>
   <s:String x:Key="_Save">Зберегти</s:String>
+    <s:String x:Key="_ExecuteActions">Виконати дії через 2 секунди</s:String>
   <s:String x:Key="_Achievements">Досягнення</s:String>
   <s:String x:Key="_IfProcessOpen">Якщо відкрита програма</s:String>
   <s:String x:Key="_IfWebsiteOpen">Якщо відкритий веб-сайт</s:String>
@@ -458,6 +466,7 @@
   <s:String x:Key="_NothingSelected">Нічого не вибрано</s:String>
   <s:String x:Key="_DataTransferCompleted">Дані відправлені на сервер</s:String>
   <s:String x:Key="_Everything">Усе</s:String>
+    <s:String x:Key="_DonateToProject">Подобається Laitis? Підтримайте проект!</s:String>
 
   <s:String x:Key="_Questions">Питання</s:String>
   <s:String x:Key="_Answers">Відповіді</s:String>
@@ -469,9 +478,7 @@
   <s:String x:Key="_Download">Завантажити</s:String>
   <s:String x:Key="_DownloadStarted">завантаження розпочато</s:String>
   <s:String x:Key="_DownloadCompleted">Завантаження завершено</s:String>
-  <s:String x:Key="_HoldToConfirm">Утримати для підтвердження</s:String>
   <s:String x:Key="_Cancel">Скасувати</s:String>
-
 
   <s:String x:Key="_Variables">Змінні</s:String>
 
@@ -480,20 +487,8 @@
   <!--#endregion-->
 
   <!--#region Common Tooltips-->
-  <TextBlock x:Key="_Tooltip_CancelButton">
-    <Run Text="{StaticResource _Cancel}" />
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      <Run Text="{StaticResource _HoldToConfirm}" />
-    </Span>
-  </TextBlock>
-  <TextBlock x:Key="_Tooltip_RemoveButton">
-    <Run Text="{StaticResource _Remove}" />
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      <Run Text="{StaticResource _HoldToConfirm}" />
-    </Span>
-  </TextBlock>
+  <s:String x:Key="_Tooltip_CancelButton">Скасувати^Утримати для підтвердження</s:String>
+  <s:String x:Key="_Tooltip_RemoveButton">Видалити^Утримати для підтвердження</s:String>
   <!--#endregion-->
 
   <!--#region Browser Controller-->
@@ -512,6 +507,7 @@
   <s:String x:Key="_CommandEditor_Actions">Дії:</s:String>
   <s:String x:Key="_CommandEditor_Variables">Змінні:</s:String>
   <s:String x:Key="_CommandEditor_SelectProcess">Вибрати процес</s:String>
+    <s:String x:Key="_CommandEditor_RecentPhrases">Недавні фрази:</s:String>
 
   <s:String x:Key="_CommandAction_AddCondition">Додати Умову</s:String>
   <s:String x:Key="_CommandAction_AddAction">Додати Дію</s:String>
@@ -544,65 +540,17 @@
   <s:String x:Key="_CommandAction_Label_JetAim">Прицілити курсор. Цифри:</s:String>
   <s:String x:Key="_CommandAction_Label_VoiceCommand">Виконати голосову команду:</s:String>
 
-  <TextBlock x:Key="_CommandAction_Tooltip_ScheduleEvent" FontSize="12" Foreground="{StaticResource br_Gray}">
-    Дії нижче будуть виконані поза часом, визначеним у заплановану подію
-    <LineBreak />
-    Якщо комп'ютер в стані сну і Laitis був включений - комп прокинеться якщо час події не 00:00.
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
-    Призупиняє виконання дій
-    <LineBreak />
-    Чекає фразу від користувача
-    <LineBreak />
-    Записує значення в змінну з вказаним ім'ям
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_WaitNextCommand2" FontSize="12" Foreground="{StaticResource br_Gray}">
-    Скільки часу чекати відповіді від користувача
-    <LineBreak />
-    Пустота або 0 = безконечно
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_Ms" FontSize="12" Foreground="{StaticResource br_Gray}">
-    1 секунда = 1000 мілісекунд
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_Duration" FontSize="12" Foreground="{StaticResource br_Gray}">
-    В секундах
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_VoiceCommand" FontSize="12" Foreground="{StaticResource br_Gray}">
-    Дозволяє викликати дії з іншої голосової команди
-    <LineBreak />
-    Вкажіть одну з фраз
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_JetAim">
-    Відкриває інтерактивний інтерфейс переміщення курсору за допомогою голосу
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Екран ділиться на 9 частин
-      <LineBreak />
-      5 раз потрібно назвати частину, в яку треба перемістити курсор
-      <LineBreak />
-      Під час вибору можна сказати: Назад, Скасувати, Закрити, Нуль(вибрати заздалегідь)
-    </Span>
-  </TextBlock>
-  <TextBlock x:Key="_CommandAction_Tooltip_JetAim_Numbers">
-    Цифри можна задати заздалегідь
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Можна поспіль, можна через кому або пробіл
-      <LineBreak />
-      Цей параметр можна залишити порожнім
-    </Span>
-  </TextBlock>
+  <s:String x:Key="_CommandAction_Tooltip_ScheduleEvent">^Дії нижче будуть виконані поза часом, визначеним у заплановану подію|Якщо комп'ютер в стані сну і Laitis був включений - комп прокинеться якщо час події не 00:00.</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand">^Призупиняє виконання дій|Чекає фразу від користувача|Записує значення в змінну з вказаним ім'ям</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand2">^Скільки часу чекати відповіді від користувача|Пустота або 0 = безконечно</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_Ms">^1 секунда = 1000 мілісекунд</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_Duration">^В секундах</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_VoiceCommand">^Дозволяє викликати дії з іншої голосової команди|Вкажіть одну з фраз</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_JetAim">Відкриває інтерактивний інтерфейс переміщення курсору за допомогою голосу^Екран ділиться на 9 частин^5 раз потрібно назвати частину, в яку треба перемістити курсор^Під час вибору можна сказати: Назад, Скасувати, Закрити, Нуль(вибрати заздалегідь)</s:String>
+  <s:String x:Key="_CommandAction_Tooltip_JetAim_Numbers">Цифри можна задати заздалегідь^Можна поспіль, можна через кому або пробіл|Цей параметр можна залишити порожнім</s:String>
   <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Параметри запуску додатка (приклад: -game cstrike)</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Просто натисніть потрібне поєднання</s:String>
-  <TextBlock x:Key="_CommandAction_Tooltip_HotkeysManualInput">
-    Вільне введення сполучення клавіш
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Якщо включений можна ввести поєднання з клавішею Win
-      <LineBreak />
-      Якщо включений можна вводити кілька поєднань через кому
-    </Span>
-  </TextBlock>
+  <s:String x:Key="_CommandAction_Tooltip_HotkeysManualInput">Вільне введення сполучення клавіш^Якщо включений можна ввести поєднання з клавішею Win|Якщо включений можна вводити кілька поєднань через кому|</s:String>
 
   <s:String x:Key="_Click">Кликнути</s:String>
   <s:String x:Key="_Focus">Фокус</s:String>
@@ -610,19 +558,7 @@
   <s:String x:Key="_NavClick">Відкрити вибір</s:String>
   <s:String x:Key="_OpenPopup">Відкрити спливаюче вікно</s:String>
 
-  <TextBlock x:Key="_CommandAction_Tooltip_RandomActionBlock">
-    Почала блоку випадкових дій
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Дозволяє виконати випадкову дію
-      <LineBreak />
-      Тільки одну дію в блоці буде виконано
-      <LineBreak />
-      Закрити блок можна дією Кінець і виконати інші дії після
-      <LineBreak />
-      Випадкову дію буде вибрано з тих дій, які реально виконати
-    </Span>
-  </TextBlock>
+  <s:String x:Key="_CommandAction_Tooltip_RandomActionBlock">Почала блоку випадкових дій^Дозволяє виконати випадкову дію|Тільки одну дію в блоці буде виконано|Закрити блок можна дією Кінець і виконати інші дії після|Випадкову дію буде вибрано з тих дій, які реально виконати</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Break">Зупиняє цикл</s:String>
   <s:String x:Key="_CommandAction_Tooltip_Loop">Початок блоку дій, які буде виконано кілька разів</s:String>
   <s:String x:Key="_CommandAction_Tooltip_TogglePackActivity">Залиште поле порожнім щоб переключити всю колекції</s:String>
@@ -683,6 +619,7 @@
   <!--  MouseMoveType -->
   <s:String x:Key="_MouseMoveType_Point">Пересунути курсор в точку</s:String>
   <s:String x:Key="_MouseMoveType_Relative">Посунути курсор</s:String>
+    <s:String x:Key="_MouseMoveType_Scribble">Каракуля</s:String>
   <!--  MouseScrollType -->
   <s:String x:Key="_MouseScrollType_Vertical">Вертикально</s:String>
   <s:String x:Key="_MouseScrollType_Horizontal">Горизонтально</s:String>
@@ -770,7 +707,6 @@
   <s:String x:Key="_Settings_Default_TextInputStarter">написати/надрукувати/диктувати</s:String>
   <s:String x:Key="_Settings_Default_Language">uk-UK</s:String>
   <s:String x:Key="_Settings_ListenLastRecording">Послухати останній запис голосу</s:String>
-  <s:String x:Key="_Settings_ScheduledEvents">Майбутні дії</s:String>
 
   <!--#region Settings Labels-->
   <s:String x:Key="_Settings_Label_VoiceCommands">Голосові команди</s:String>
@@ -792,7 +728,6 @@
   <s:String x:Key="_Settings_Label_RestoreSuccess">Відновлення даних пройшло успішно</s:String>
   <s:String x:Key="_Settings_Label_RestoreFail">Відновлення не вдалося</s:String>
   <s:String x:Key="_Settings_Label_RestoreFues">Показати панелі підказок</s:String>
-  <s:String x:Key="_Settings_Label_AlwaysRunAsAdministrator">Завжди запускати від імені адміністратора</s:String>
   <!--#endregion-->
 
   <!--#region Template Texts-->
@@ -824,77 +759,14 @@
   <!--#endregion-->
 
   <!--#region Settings Tooltips-->
-
-  <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">
-    Для того щоб Laitis не записував і виконував почуті слова з відео і музики
-  </s:String>
-
-  <TextBlock x:Key="_Settings_Tooltip_NoiseProgress">
-    Цей індикатор відображає рівень шуму в мікрофоні
-  </TextBlock>
-
-  <TextBlock x:Key="_Settings_Tooltip_TooLoud">
-    Рівень звуку в комп'ютері перевищив межу в 30%
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Запис голосу призупинена
-      <LineBreak />
-      Відключити призупинення запису голосу можна в налаштуваннях
-    </Span>
-  </TextBlock>
-
-  <TextBlock x:Key="_Settings_Tooltip_VoiceDialing">
-    За допомогою цієї опції можна включити набір тексту за допомогою голосу
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Набір тексту може проводитися в будь-яке активне текстове поле
-      <LineBreak />
-      в операційній системі Windows
-    </Span>
-  </TextBlock>
-
-  <s:String x:Key="_Settings_Tooltip_RecordStarter">
-    Вибрати клавішу
-  </s:String>
-
-  <TextBlock x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">
-    Вимикає звук в Windows при натисканні клавіші
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Щоб музика яка грає в колонках не шуміла в мікрофон
-    </Span>
-  </TextBlock>
-
-  <TextBlock x:Key="_Settings_Tooltip_UseCommandStarter">
-    Всі команди будуть починатися з ключового слова
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Щоб викликати команду &quot;підтвердити&quot;, треба буде сказати &quot;&lt;спеціальне слово&gt; підтвердити&quot;
-    </Span>
-  </TextBlock>
-
-  <TextBlock x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">
-    Автоматично розставляти крапки і коми, писати з великої літери
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Працює тільки при автоматичному запису звука;
-      <LineBreak />
-      Текст буде писатися з великої літери при зміні текстового поля і при наборі нової пропозиції;
-      <LineBreak />
-      Кома ставиться, якщо ви зробите паузу на проміжок від 2 до 4 секунд(стандартні значення);
-      <LineBreak />
-      Точка ставиться, якщо ви зробите паузу на 4 секунди (встановлено за умовчанням) і більш.
-    </Span>
-  </TextBlock>
-
-  <TextBlock x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">
-    Набирати текст натискаючи клавіші, а не вставляти через буфер обміну
-    <LineBreak />
-    <Span FontSize="12" Foreground="{StaticResource br_Gray}">
-      Підтримуються розкладки клавіатури: US, Russian, Ukrainian.
-    </Span>
-  </TextBlock>
-
+  <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">Для того щоб Laitis не записував і виконував почуті слова з відео і музики</s:String>
+  <s:String x:Key="_Settings_Tooltip_NoiseProgress">Цей індикатор відображає рівень шуму в мікрофоні</s:String>
+  <s:String x:Key="_Settings_Tooltip_TooLoud">Рівень звуку в комп'ютері перевищив межу в 30%^Запис голосу призупинена|Відключити призупинення запису голосу можна в налаштуваннях</s:String>
+  <s:String x:Key="_Settings_Tooltip_VoiceDialing">За допомогою цієї опції можна включити набір тексту за допомогою голосу^Набір тексту може проводитися в будь-яке активне текстове поле|в операційній системі Windows</s:String>
+  <s:String x:Key="_Settings_Tooltip_RecordStarter">Вибрати клавішу</s:String>
+  <s:String x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">Вимикає звук в Windows при натисканні клавіші^Щоб музика яка грає в колонках не шуміла в мікрофон</s:String>
+  <s:String x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">Автоматично розставляти крапки і коми, писати з великої літери^Працює тільки при автоматичному запису звука;|Текст буде писатися з великої літери при зміні текстового поля і при наборі нової пропозиції;|Кома ставиться, якщо ви зробите паузу на проміжок від 2 до 4 секунд(стандартні значення);|Точка ставиться, якщо ви зробите паузу на 4 секунди (встановлено за умовчанням) і більш.</s:String>
+  <s:String x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">Набирати текст натискаючи клавіші, а не вставляти через буфер обміну^Підтримуються розкладки клавіатури: US, Russian, Ukrainian.</s:String>
   <!--#endregion-->
 
   <!--#endregion-->
@@ -902,99 +774,66 @@
   <!--#region Help-->
 
   <s:String x:Key="_Help_Updates">Оновлення</s:String>
-  <s:String x:Key="_Help_Prepare">Підготовка</s:String>
-  <s:String x:Key="_Help_IOT">Розумний будинок і сервіси (для розробників)</s:String>
-  <s:String x:Key="_Help_FAQ">Поширені запитання</s:String>
-  <s:String x:Key="_Help_Extra">Додаткова інформація</s:String>
 
   <FlowDocument x:Key="_HelpDocument">
 
-    <Section Margin="0,0,0,0">
-      <Paragraph>
-        <Run FontSize="20" Text="{StaticResource _Help_Prepare}" />
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Вам потрібен <Run TextDecorations="Underline">хороший мікрофон</Run>.
-        Він повинен записувати звук без зайвого шуму і тріску. Більше підходять настільні мікрофони,
-        мікрофони з навушниками.
-        Мікрофон, який знаходиться в дешевій веб-камері за півметра від Вас
-        не зможе забезпечити достатню якість запису звуку.
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        У Вас повинно бути <Run TextDecorations="Underline">гарне інтернет з'єднання</Run>.
-        Швидкість повинна бути більше 1 мегабіта і затримка (пінг) не більше 200 мілісекунд.
-        Затримка грає дуже важливу роль, якщо ви скажете словосполучення і воно напишеться через 100-600мс - то це буде прийнятне,
-        але затримка в 1000 мс і більше має велику незручність роботи з програмою.
-        Швидкості і затримки інтернету через модем абсолютно недостатньо для комфортної роботи програми.
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Ви повинні перебувати в <Run TextDecorations="Underline">відносно тихому місці</Run>.
-        Якщо у вас в кімнаті включений телевізор або з вами розмовляє співрозмовник,
-        або в колонках грає гучна музика, то сервіс розпізнавання буде некоректне розпізнавати ваш голос.
-        Вирішити це можна або мікрофоном з шумозаглушенням, або самотою в тихому місці.
-      </Paragraph>
-    </Section>
-
-    <Section Margin="0,100,0,0">
-      <Paragraph>
-        <Run FontSize="20" Text="{StaticResource _Help_FAQ}" />
-      </Paragraph>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+    <Section>
+      <Paragraph FontWeight="Bold">
         Чому розпізнавання голосу не працює?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ваш мікрофон не підключений/не працює/вимкнений.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ви не включили в настройках &quot;голосові команди&quot; або &quot;голосовий набір&quot;.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Встановлена антивірусна програма блокує роботу додатка.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             У вас немає підключення до інтернету, або воно занадто повільне.
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чому розпізнавання голосу працює дуже погано?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ви погано вимовляєте слова.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             У вас щось з мікрофоном. Може бути він торохтить/скрипить/занадто тихий.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ви перебуваєте в галасливій обстановці і алгоритму розпізнавання важко відрізнити ваш голос від сторонніх шумів.
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ви вибрали неякісний сервіс розпізнавання.
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чому не працюють команди управління веб-сайтами?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Перевірте, чи встановлено в вашому браузері розширення Laitis. Без розширення команди управління веб-сайтами працювати не будуть.
             Завантажити його можна тут:
             <controls:Hyperlink NavigateUri="https://chrome.google.com/webstore/detail/laitis-chromium-extension/kkfnfemdemphdadfolkmoimpeibeiadc">Chrome</controls:Hyperlink>,
@@ -1005,75 +844,114 @@
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чи можу я використовувати мою Bluetooth гарнітуру для роботи з Laitis?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Так. Підключайте її до комп'ютера і виберіть в Laitis вашу гарнітуру, як пристрій запису голосу.
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чи можу я використовувати мій телефон як мікрофон для Laitis?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Так. Скачайте на телефон і комп'ютер додаток <controls:Hyperlink NavigateUri="http://www.wirelessorange.com/womic/">WO Mic</controls:Hyperlink> і встановіть їх драйвер мікрофона.
             Працює і через Bluetooth, і через Wifi, і навіть по USB кабелю.
           </Paragraph>
         </ListItem>
       </List>
-        <Paragraph FontWeight="Bold" TextIndent="20">
+        <Paragraph FontWeight="Bold">
             Чи можна встановити оффлайн голосу відтворення тексту?
         </Paragraph>
         <List>
             <ListItem>
-                <Paragraph FontStyle="Italic">
+                <Paragraph>
                     Так. Раджу скачати голосу від Ivona. Після установки вони з'являться в списку, що випадає, якщо вибрати сервіс відтворення Windows в налаштуваннях Laitis.
                 </Paragraph>
             </ListItem>
         </List>
-        <Paragraph FontWeight="Bold" TextIndent="20">
+        <Paragraph FontWeight="Bold">
             Чи можна встановити оффлайн розпізнавання голосу?
         </Paragraph>
         <List>
             <ListItem>
-                <Paragraph FontStyle="Italic">
+                <Paragraph>
                     Для української мови осудного рішення немає, для інших популярних мов є. Коли Microsoft зроблять нормальне розпізнавання вільної української мови - Laitis автоматично буде це підтримувати.
                 </Paragraph>
             </ListItem>
         </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+        <Paragraph FontWeight="Bold">
+            Чи можу я підключити Laitis до свого вебсайту або сервісу?
+        </Paragraph>
+        <Paragraph TextIndent="40">
+            Laitis уміє відправляти веб запити і виконувати команди, які поверне сервер.
+            Завдяки цьому можна налаштувати Laitis для:
+        </Paragraph>
+        <List>
+            <ListItem>
+                <Paragraph>
+                    Управління розумним будинком
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Як створити чату бота
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Спілкування у вашому мессенджері
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Підключення вашого сервісу доставки піци/запису до лікаря
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Підключення інформаційних сервісів погоди/анекдотів/новин
+                </Paragraph>
+            </ListItem>
+        </List>
+        <Paragraph TextIndent="40">
+            <controls:Hyperlink NavigateUri="https://github.com/Mikolaytis/LaitisIntegration/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F">
+                Вся інформація та приклади знаходиться в gitHub репозиторії
+            </controls:Hyperlink>
+        </Paragraph>
+      <Paragraph FontWeight="Bold">
         Чому немає підтримки OS X, IOS, Android, Linux, Windows Phone, XBOX?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Тому що проект не багатоплатформовий і їм не може бути. Оскільки управління комп'ютером на всіх ОС різний.
             Для інших ОС розробки не буде.
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чи можу я відмовитися від автоматичних оновлень програми?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ні. Всі оновлення важать менше 1 мегабайта. Вони можуть виходити за кілька штук в день. Щоб не обтяжувати користувача
             надокучливими питаннями про оновлення, вони будуть застосовуватися автоматично.
           </Paragraph>
         </ListItem>
       </List>
-      <Paragraph FontWeight="Bold" TextIndent="20">
+      <Paragraph FontWeight="Bold">
         Чи можу я отримати вихідний код програми?
       </Paragraph>
       <List>
         <ListItem>
-          <Paragraph FontStyle="Italic">
+          <Paragraph>
             Ні. &quot;заборонено дешифрувати, емулювати, змінювати, декомпілювати, аналізувати
             вихідний код «Laitis» і його компонентів з метою несанкціонованого використання і/або отримання інформації про
             реалізацію використовуваних в них алгоритмів. Незаконне використання зазначених в призначеному для користувача угоді об'єктів
@@ -1082,106 +960,6 @@
           </Paragraph>
         </ListItem>
       </List>
-    </Section>
-
-    <Section Margin="0,100,0,0">
-      <Paragraph>
-        <Run FontSize="20" Text="{StaticResource _Help_IOT}" />
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Laitis уміє відправляти веб запити і виконувати команди, які поверне сервер.
-        Завдяки цьому можна налаштувати Laitis для:
-      </Paragraph>
-      <List>
-        <ListItem>
-          <Paragraph>
-            Управління розумним будинком
-          </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph>
-            Як створити чату бота
-          </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph>
-            Спілкування у вашому мессенджері
-          </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph>
-            Підключення вашого сервісу доставки піци/запису до лікаря
-          </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph>
-            Підключення інформаційних сервісів погоди/анекдотів/новин
-          </Paragraph>
-        </ListItem>
-      </List>
-      <Paragraph TextIndent="40">
-        <controls:Hyperlink TextDecorations="None" NavigateUri="https://github.com/Mikolaytis/LaitisIntegration/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F">Вся інформація та приклади знаходиться в gitHub репозиторії</controls:Hyperlink>
-      </Paragraph>
-    </Section>
-
-    <Section Margin="0,100,0,0">
-      <Paragraph>
-        <Run FontSize="20" Text="{StaticResource _Help_Extra}" />
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Якщо ви не ознайомилися з
-        <controls:Hyperlink NavigateUri="http://laitis.ru/Home/Legal">призначеним для користувача угодою</controls:Hyperlink>
-        перед установкою програми, то зробіть це зараз. Якщо ви не згодні з угодою, то видаліть цю програму.
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Якщо ви хочете віддячити розробника або порадити йому щось, ви можете зробити це особисто, відправивши йому повідомлення
-        <controls:Hyperlink NavigateUri="https://vk.com/im?sel=16663300">Вконтакті</controls:Hyperlink>.
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Якщо ви хочете віддячити розробника грошовою винагородою, то скористайтеся будь-яким способом, з перерахованих нижче:
-      </Paragraph>
-      <List>
-        <ListItem Margin="0,10,0,0">
-            <Paragraph TextAlignment="Left">
-                <Run FontWeight="Bold">Yandex Money:</Run>
-                410013809890154
-            </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph TextAlignment="Left">
-            <Run FontWeight="Bold">Sberbank credit card:</Run>
-            <Run Text="{x:Static common:LaitisConst.SberbankCard}"/> Миколайтис Сергей
-          </Paragraph>
-        </ListItem>
-        <ListItem>
-          <Paragraph TextAlignment="Left">
-            <Run FontWeight="Bold">Tinkoff credit card:</Run>
-            <Run Text="{x:Static common:LaitisConst.TinkoffCard}"/> Миколайтис Сергей
-          </Paragraph>
-        </ListItem>
-        <ListItem Margin="0,10,0,0">
-          <Paragraph TextAlignment="Left">
-            <Run FontWeight="Bold">Webmoney:</Run>
-            R340805744805(рублі), X128078209734(біткоіни), Z152356853702(долари), E471475057900(євро), U248920972085(гривні)
-          </Paragraph>
-        </ListItem>
-        <ListItem Margin="0,10,0,0">
-          <Paragraph TextAlignment="Left">
-            <Run FontWeight="Bold">Qiwi:</Run>
-            можна відправити ваучер на blasterloremaster@gmail.com
-          </Paragraph>
-        </ListItem>
-      </List>
-      <Paragraph TextIndent="40">
-        Усі пожертви йдуть на оплату хостингу і електронного підпису програми.
-      </Paragraph>
-      <Paragraph TextIndent="40">
-        Використовувані сервіси:
-        <controls:Hyperlink NavigateUri="http://google.com/">Google Web Speech API</controls:Hyperlink>,
-        <controls:Hyperlink NavigateUri="https://tech.yandex.ru/speechkit/cloud/">
-          <Image Source="{Binding YandexLogo}" Height="11"></Image> SpeechKit Cloud
-        </controls:Hyperlink>
-      </Paragraph>
     </Section>
 
     <Section Margin="0,100,0,0">
@@ -1197,46 +975,46 @@
     <Paragraph FontSize="20" TextAlignment="Center">Це функціонал публікації ваших змін і нових команд в співтовариство</Paragraph>
     <Paragraph>Процес:</Paragraph>
     <List MarkerStyle="Decimal">
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Ви публікуєте нову колекцію або зміни в якійсь із колекцій.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Спільнота оцінює вашу публікацію.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Модератор перевіряє вашу публікацію на відповідність правилам і приймає/відхиляє її.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Зміни та нові команди з прийнятих публікацій потрапляють в співтовариство.</Paragraph>
       </ListItem>
     </List>
     <Paragraph>Правила:</Paragraph>
     <List MarkerStyle="Decimal">
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Ви несете відповідальність за контент, який публікуєте.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Контент, який заборонений для дітей може бути тільки в колекціях з 18+ в назві.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Публікуйте тільки ті команди, якими хочете поділитися з іншими користувачами.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Команди повинні коректне працювати у будь-якого користувача.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Команди не повинні ламати команди з інших колекцій.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Команди не повинні зашкодити комп'ютеру користувачів.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Команди не повинні порушувати роботу Laitis.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Ваші зміни і нові команди повинні відповідати колекції.</Paragraph>
       </ListItem>
-      <ListItem FontStyle="Italic">
+      <ListItem>
         <Paragraph>Недотримання правил призведе до блокування.</Paragraph>
       </ListItem>
     </List>
@@ -1290,6 +1068,7 @@
     <s:String x:Key="_AWJA1">Цифри можна задати заздалегідь в текстовому полі</s:String>
     <s:String x:Key="_AWMM0">Переміщує курсор в точку на екрані. Початок координат в дисплеях знаходиться в лівому верхньому кутку екрану, Ордината (стрілка Y) спрямована вниз</s:String>
     <s:String x:Key="_AWMM1">Є можливість перемістити в будь-яку сторону на вказану кількість пікселів.</s:String>
+    <s:String x:Key="_AWMM2">Можна записати любую каракулу як рух миші і відтворити її. Каракуля може відтворюватися з поточної точки, якщо x і y пусті або з заданою x/y точкою.</s:String>
     <s:String x:Key="_AWMO0">Знаходить на екрані елемент із заданим текстом всередині і наводить на нього курсор миші. Працює в будь-яких Windows додатках, крім ігор. Якщо встановлено розширення для браузера - дія буде шукати також в активній сторінці браузера. За допомогою цієї дії можна створювати універсальні команди, які будуть працювати в будь-якій програмі або на будь-якому веб-сайті. Багатьма програмами і сайтами можна користуватися без попереднього створення будь-яких команд. Поле дія - допоміжне і не обов'язкове</s:String>
     <s:String x:Key="_AWMB0">Натискає кнопку миші</s:String>
     <s:String x:Key="_AWMB1">У деяких випадках може знадобиться перетягування елемента мишкою. Зробити це можна в такий спосіб</s:String>
