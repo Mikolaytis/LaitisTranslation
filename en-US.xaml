@@ -22,6 +22,8 @@
     <s:String x:Key="_Update_FailRestart">Update failed. Application restart.</s:String>
     <s:String x:Key="_Update_LaitisUpdated">Laitis is successfully updated</s:String>
     <s:String x:Key="_Update_LaunchNewVersion">Launch new version</s:String>
+
+    <s:String x:Key="_Install_InstallAndLaunch">Install and Launch</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
@@ -97,13 +99,6 @@
     <s:String x:Key="_Ach_Publications200_Name">Colossal contribution</s:String>
     <s:String x:Key="_Ach_Publications200_Desc">200 successful publications</s:String>
     <!--#endregion-->
-    
-    <!--#region PublicApiHost-->
-    <s:String x:Key="_PublicApiHost_HostOpened">External API channel is started</s:String>
-    <s:String x:Key="_PublicApiHost_HostOpenError">Error occurred on starting external API channel</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedPhrase">External API channel received a phrase</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedAction">External API channel received an action</s:String>
-    <!--#endregion-->
 
     <!--#region UIAutomation-->
     <s:String x:Key="_UIAutomation_ElementFoundInActiveWindow">Element {0} is found in active windows</s:String>
@@ -175,10 +170,12 @@
     <!--#region Exceptions-->
     <s:String x:Key="_ExecutionRestricted">Execution is restricted in these conditions</s:String>
     <s:String x:Key="_ConnectionProblems">Server connection problem</s:String>
+    <s:String x:Key="_TimeoutProblems">Server connection timeout</s:String>
     <s:String x:Key="_WrongCredentials">Wrong credentials</s:String>
     <s:String x:Key="_VoiceCommandsDisabled">Voice commands are disabled</s:String>
     <s:String x:Key="_DownloadSaveError">Download save error</s:String>
     <s:String x:Key="_Error">Error</s:String>
+    <s:String x:Key="_DragDropFailed">DragDrop failed</s:String>
     <s:String x:Key="_ThisOperationIsBlocked3Days">This operation is available only in 3 days after registration</s:String>
     <s:String x:Key="_ThisOperationIsBlockedForYou">This operation is blocked for you</s:String>
     <s:String x:Key="_ClickInBrowser">Click in browser</s:String>
@@ -220,6 +217,7 @@
     <!--#endregion-->
 
     <!--#region Commands List-->
+    <s:String x:Key="_URLCopied">URL is copied</s:String>
     <s:String x:Key="_CommandCopied">Command is copied</s:String>
     <s:String x:Key="_CommandCutted">Command is cut out</s:String>
     <s:String x:Key="_CommandPasted">Command is pasted</s:String>
@@ -305,6 +303,7 @@
     <s:String x:Key="_SpaceBeforeSeparator">Adding space, because focus is not changed</s:String>
     <s:String x:Key="_PreviousPaste">Previous paste was</s:String>
     <s:String x:Key="_WaitingTime">Waiting time was</s:String>
+    <s:String x:Key="_BotAnswered">Bot answered</s:String>
     <!--#endregion-->
 
     <!--#region Community-->
@@ -339,11 +338,26 @@
     <!--#endregion-->
 
     <!--#region Variables-->
-    <s:String x:Key="_Common">Common</s:String>
-    <s:String x:Key="_Custom">Custom</s:String>
-    <s:String x:Key="_DateTime">DateTime</s:String>
-    <s:String x:Key="_Account">Account</s:String>
-    <s:String x:Key="_Environment">Environment</s:String>
+    <s:String x:Key="_Variables_Settings">Settings</s:String>
+    <s:String x:Key="_Variables_BrowserURL">URL of current browser tab</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelector">Current navigation selector</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelectorIndex">Navigation index</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelectorText">Text of current navigation element</s:String>
+    <s:String x:Key="_Variables_BrowserSelectedText">Selected text on page</s:String>
+    <s:String x:Key="_Variables_CurrentTime">Current time</s:String>
+    <s:String x:Key="_Variables_Phrase">Text of the last phrase</s:String>
+    <s:String x:Key="_Variables_Clipboard">Get/Set windows clipboard text</s:String>
+    <s:String x:Key="_Variables_Version">Current version of Laitis</s:String>
+    <s:String x:Key="_Variables_Name">Current user name</s:String>
+    <s:String x:Key="_Variables_Email">Current user email</s:String>
+    <s:String x:Key="_Variables_LastEventDateTime">Date of the last planned event</s:String>
+    <s:String x:Key="_Variables_CancelLastEvent">Set value to cancel last event</s:String>
+    <s:String x:Key="_Variables_WindowsFolderPath">Windows folder path</s:String>
+    <s:String x:Key="_Variables_MousePosition">Current mouse postion</s:String>
+    <s:String x:Key="_Variables_MachineName">Computer name</s:String>
+    <s:String x:Key="_Variables_WindowsUser">Windows user name</s:String>
+    <s:String x:Key="_Variables_IsWindowHidden">Set/Get visibility of Laitis window true/false</s:String>
+    <s:String x:Key="_Variables_IsMuteVoice">Enable/Disable pronunciation by Laitis true/false</s:String>
 
     <s:String x:Key="_SetVariable">Set variable</s:String>
     <s:String x:Key="_Value">value</s:String>
@@ -416,6 +430,8 @@
     <s:String x:Key="_Edit">Edit</s:String>
     <s:String x:Key="_Name">Name</s:String>
     <s:String x:Key="_Times">times</s:String>
+    <s:String x:Key="_Pack">Pack</s:String>
+    <s:String x:Key="_CurrentCommand">Поточна команда</s:String>
     <s:String x:Key="_Email">Email</s:String>
     <s:String x:Key="_Opera">Opera</s:String>
     <s:String x:Key="_Chrome">Chrome</s:String>
@@ -614,7 +630,6 @@
     <!--  SpeechState -->
     <s:String x:Key="_SpeechState_Working">Enabled</s:String>
     <s:String x:Key="_SpeechState_Recording">Recording</s:String>
-    <s:String x:Key="_SpeechState_Saying">Saying</s:String>
     <s:String x:Key="_SpeechState_Paused">Paused</s:String>
     <!--  MouseMoveType -->
     <s:String x:Key="_MouseMoveType_Point">Point</s:String>
@@ -728,6 +743,7 @@
     <s:String x:Key="_Settings_Label_RestoreSuccess">Data restored successfully</s:String>
     <s:String x:Key="_Settings_Label_RestoreFail">Data restore failed</s:String>
     <s:String x:Key="_Settings_Label_RestoreFues">Show hint panels</s:String>
+    <s:String x:Key="_Settings_Label_WebSource">External phrase source</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -767,6 +783,9 @@
     <s:String x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">Mutes Windows sound on pressing start record button^That is used to not record music or video sound</s:String>
     <s:String x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">Works only with automatic voice recording^Text is typed from upper case if you change textbox focus or if you type a new sentence;|The comma is typed if you pause for a period of 2 to 4 seconds (default values);|The dot is typed if you pause for 4 seconds (default value) or more.</s:String>
     <s:String x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">Beta version. Use at your own risk.^Supported keyboard layouts: US, Russian, Ukrainian.</s:String>
+    <s:String x:Key="_Settings_Tooltip_WebSource">Allows to receive voice commands from external devices by URL^For example, you can control Laitis on your PC using an iPhone via Siri shortcut</s:String>
+    <s:String x:Key="_Settings_Tooltip_WebSourceURL">URL which accepts Laitis phrases</s:String>
+    <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Generate a new key^For security reasons</s:String>
     <!--#endregion-->
 
     <!--#endregion-->

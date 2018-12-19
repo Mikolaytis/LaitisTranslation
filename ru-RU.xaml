@@ -22,6 +22,8 @@
     <s:String x:Key="_Update_FailRestart">Обновление не удалось. Перезапуск обновления.</s:String>
     <s:String x:Key="_Update_LaitisUpdated">Laitis успешно обновлен</s:String>
     <s:String x:Key="_Update_LaunchNewVersion">Запустить новую версию</s:String>
+    
+    <s:String x:Key="_Install_InstallAndLaunch">Установить и запустить</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
@@ -98,13 +100,6 @@
     <s:String x:Key="_Ach_Publications200_Desc">200 успешных публикаций</s:String>
     <!--#endregion-->
     
-    <!--#region PublicApiHost-->
-    <s:String x:Key="_PublicApiHost_HostOpened">Канал API успешно запущен</s:String>
-    <s:String x:Key="_PublicApiHost_HostOpenError">Не удалось запустить канал API</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedPhrase">Канал API получил фразу</s:String>
-    <s:String x:Key="_PublicApiHost_RecievedAction">Канал API получил действие</s:String>
-    <!--#endregion-->
-
     <!--#region UIAutomation-->
     <s:String x:Key="_UIAutomation_ElementFoundInActiveWindow">Элемент {0} найден в активном окне</s:String>
     <s:String x:Key="_UIAutomation_ElementFoundInTaskBar">Элемент {0} найден в панели задач</s:String>
@@ -175,10 +170,12 @@
     <!--#region Exceptions-->
     <s:String x:Key="_ExecutionRestricted">Выполнение запрещено в данных условиях</s:String>
     <s:String x:Key="_ConnectionProblems">Проблемы с подключением к серверу</s:String>
+    <s:String x:Key="_TimeoutProblems">Не дождались ответа от сервера</s:String>
     <s:String x:Key="_WrongCredentials">Авторизация не успешна</s:String>
     <s:String x:Key="_VoiceCommandsDisabled">Голосовые команды отключены</s:String>
     <s:String x:Key="_DownloadSaveError">Загрузка сохранения с сервера не удалась</s:String>
     <s:String x:Key="_Error">Ошибка</s:String>
+    <s:String x:Key="_DragDropFailed">Перетаскивание не удалось</s:String>
     <s:String x:Key="_ThisOperationIsBlocked3Days">Эта операция доступна только через 3 дня после регистрации</s:String>
     <s:String x:Key="_ThisOperationIsBlockedForYou">Эта операция заблокирована для вас</s:String>
     <s:String x:Key="_ClickInBrowser">Кликать надо в браузере</s:String>
@@ -220,6 +217,7 @@
     <!--#endregion-->
 
     <!--#region Commands List-->
+    <s:String x:Key="_URLCopied">Ссылка скопирована</s:String>
     <s:String x:Key="_CommandCopied">Команда скопирована</s:String>
     <s:String x:Key="_CommandCutted">Команда вырезана</s:String>
     <s:String x:Key="_CommandPasted">Команда вставлена</s:String>
@@ -305,6 +303,7 @@
     <s:String x:Key="_SpaceBeforeSeparator">т.к. текстовое поле осталось прежним, добавлю в начало фразы пробел</s:String>
     <s:String x:Key="_PreviousPaste">т.к. предыдущая вставка была</s:String>
     <s:String x:Key="_WaitingTime">время ожидания было</s:String>
+    <s:String x:Key="_BotAnswered">Бот ответил</s:String>
     <!--#endregion-->
 
     <!--#region Community-->
@@ -339,11 +338,26 @@
     <!--#endregion-->
 
     <!--#region Variables-->
-    <s:String x:Key="_Common">Общие</s:String>
-    <s:String x:Key="_Custom">Пользовательские</s:String>
-    <s:String x:Key="_DateTime">Дата и время</s:String>
-    <s:String x:Key="_Account">Аккаунт</s:String>
-    <s:String x:Key="_Environment">Окружение</s:String>
+    <s:String x:Key="_Variables_Settings">Настройки</s:String>
+    <s:String x:Key="_Variables_BrowserURL">URL текущей вкладки браузера</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelector">Текущий селектор навигации</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelectorIndex">Индекс навигации</s:String>
+    <s:String x:Key="_Variables_BrowserCurrentSelectorText">Текст текущего элемента навигации</s:String>
+    <s:String x:Key="_Variables_BrowserSelectedText">Текст выделенного элемента</s:String>
+    <s:String x:Key="_Variables_CurrentTime">Текущее время</s:String>
+    <s:String x:Key="_Variables_Phrase">Текст последней фразы</s:String>
+    <s:String x:Key="_Variables_Clipboard">Задать/Получить текст из буфера обмена</s:String>
+    <s:String x:Key="_Variables_Version">Текущая версия Laitis</s:String>
+    <s:String x:Key="_Variables_Name">Имя текущего пользователя</s:String>
+    <s:String x:Key="_Variables_Email">Почта текущего пользователя</s:String>
+    <s:String x:Key="_Variables_LastEventDateTime">Дата последнего запланированного события</s:String>
+    <s:String x:Key="_Variables_CancelLastEvent">Задав значение отменяется последнее событие</s:String>
+    <s:String x:Key="_Variables_WindowsFolderPath">Путь папки windows</s:String>
+    <s:String x:Key="_Variables_MousePosition">Позиция курсора мыши</s:String>
+    <s:String x:Key="_Variables_MachineName">Имя компьютера</s:String>
+    <s:String x:Key="_Variables_WindowsUser">Имя текущего пользователя Windows</s:String>
+    <s:String x:Key="_Variables_IsWindowHidden">Задать/Получить скрыто ли окно Laitis true/false</s:String>
+    <s:String x:Key="_Variables_IsMuteVoice">Отключить/Включить воспроизведение голоса true/false</s:String>
 
     <s:String x:Key="_SetVariable">Задать переменной</s:String>
     <s:String x:Key="_Value">значение</s:String>
@@ -416,6 +430,8 @@
     <s:String x:Key="_Edit">Редактировать</s:String>
     <s:String x:Key="_Name">Имя</s:String>
     <s:String x:Key="_Times">раз</s:String>
+    <s:String x:Key="_Pack">Коллекция</s:String>
+    <s:String x:Key="_CurrentCommand">Текущая команда</s:String>
     <s:String x:Key="_Email">Email</s:String>
     <s:String x:Key="_Opera">Опера</s:String>
     <s:String x:Key="_Chrome">Chrome</s:String>
@@ -614,7 +630,6 @@
     <!--  SpeechState -->
     <s:String x:Key="_SpeechState_Working">Включен</s:String>
     <s:String x:Key="_SpeechState_Recording">Записываю</s:String>
-    <s:String x:Key="_SpeechState_Saying">Говорю</s:String>
     <s:String x:Key="_SpeechState_Paused">На паузе</s:String>
     <!--  MouseMoveType -->
     <s:String x:Key="_MouseMoveType_Point">Передвинуть курсор в точку</s:String>
@@ -728,6 +743,7 @@
     <s:String x:Key="_Settings_Label_RestoreSuccess">Восстановление данных прошло успешно</s:String>
     <s:String x:Key="_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
     <s:String x:Key="_Settings_Label_RestoreFues">Показать панели подсказок</s:String>
+    <s:String x:Key="_Settings_Label_WebSource">Внешний источник фраз</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -767,6 +783,9 @@
     <s:String x:Key="_Settings_Tooltip_IsMuteOnCtrlClick">Выключает звук в Windows при зажатии клавиши^Чтобы играемая в колонках музыка не шумела в микрофон</s:String>
     <s:String x:Key="_Settings_Tooltip_IsAutomaticOrphographyEnabled">Автоматически расставлять точки и запятые, писать с большой буквы^Работает только при автоматической записи звука;|Текст будет писаться с большой буквы при смене текстового поля и при наборе нового предложения;|Запятая ставится, если вы сделаете паузу на промежуток от 2 до 4 секунд(стандартные значения);|Точка ставится, если вы сделаете паузу на 4 секунды(стандартное значение) и более.</s:String>
     <s:String x:Key="_Settings_Tooltip_IsKeyboardInputEnabled">Набирать текст нажимая клавиши, а не вставлять через буфер обмена^Поддерживаются раскладки клавиатуры: US, Russian, Ukrainian.</s:String>
+    <s:String x:Key="_Settings_Tooltip_WebSource">Позволяет принимать голосовые команды с внешних устройств по URL^Например, можно управлять Laitis на компьютере с помощью iPhone через Siri shortcut</s:String>
+    <s:String x:Key="_Settings_Tooltip_WebSourceURL">Ссылка по которой Laitis принимает фразы</s:String>
+    <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Сгенерировать новый ключ доступа^В целях безопасности</s:String>
     <!--#endregion-->
 
     <!--#endregion-->
