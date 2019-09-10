@@ -5,10 +5,14 @@
     xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
+    
+    <!-- ReSharper disable InconsistentNaming -->
+
     <!--#region App Initialization-->
     <s:String x:Key="_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
     <s:String x:Key="_Load_Data">Downloading Data</s:String>
     <s:String x:Key="_Load_AppLoaded">started</s:String>
+    <s:String x:Key="_Load_AsAdministrator">as administrator</s:String>
     <s:String x:Key="_Load_MandatoryUpdateNeeded">Critical application load failure. Download the latest version of Laitis on laitis.ru, if it will not help - send a message into vk.com/mikolaytis or vk.com/laitisgroup.</s:String>
 
     <s:String x:Key="_Load_SettingsFail">Fail of user's data loading</s:String>
@@ -16,7 +20,9 @@
     <s:String x:Key="_Load_SettingsFail_OpenApp">Open application with default data</s:String>
     <s:String x:Key="_Load_SettingsFail_LoadBackup">Load previous data save from storage</s:String>
     <s:String x:Key="_Load_SettingsFail_CloseApp">Close app</s:String>
-    
+
+    <s:String x:Key="_Update_Checking">Checking for updates</s:String>
+    <s:String x:Key="_Update_Downloading">Downloading update</s:String>
     <s:String x:Key="_Update_Performing">Updating</s:String>
     <s:String x:Key="_Update_CancelledByUser">You are rejected a critical update. Please press yes, to update the application.</s:String>
     <s:String x:Key="_Update_FailRestart">Update failed. Application restart.</s:String>
@@ -24,6 +30,21 @@
     <s:String x:Key="_Update_LaunchNewVersion">Launch new version</s:String>
 
     <s:String x:Key="_Install_InstallAndLaunch">Install and Launch</s:String>
+    <s:String x:Key="_Gift_GoToVK">The main source of information about Laitis is the VK group</s:String>
+    <!--#endregion-->
+
+    <!--#region Handler-->
+    <s:String x:Key="_Handler_JustRestartLaitis">Just restart Laitis</s:String>
+    <s:String x:Key="_Handler_HighRamUsage">High RAM usage</s:String>
+    <s:String x:Key="_Handler_HighCpuUsage">High CPU usage</s:String>
+    <s:String x:Key="_Handler_SendDetailsToDeveloper">Send details to Laitis developer</s:String>
+    <s:String x:Key="_Handler_CreatingMemoryDump">Creating memory dump</s:String>
+    <s:String x:Key="_Handler_ArchivingMemoryDump">Archiving memory dump</s:String>
+    <s:String x:Key="_Handler_DownloadingProfilingTool">Downloading profiling tool</s:String>
+    <s:String x:Key="_Handler_CollectingData">Collecting data</s:String>
+    <s:String x:Key="_Handler_ArchivingCollectedData">Archiving collected data</s:String>
+    <s:String x:Key="_Handler_SendingArchiveToDeveloper">Sending archive to developer</s:String>
+    <s:String x:Key="_Handler_Thanks">Thanks!</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
@@ -98,6 +119,21 @@
     
     <s:String x:Key="_Ach_Publications200_Name">Colossal contribution</s:String>
     <s:String x:Key="_Ach_Publications200_Desc">200 successful publications</s:String>
+
+    <s:String x:Key="_Ach_Superhero_Name">Superhero</s:String>
+    <s:String x:Key="_Ach_Superhero_Desc">For helping users</s:String>
+
+    <s:String x:Key="_Ach_MegaMind_Name">Megamind</s:String>
+    <s:String x:Key="_Ach_MegaMind_Desc">For tips in developing</s:String>
+
+    <s:String x:Key="_Ach_IdeaGenerator_Name">IdeaGenerator</s:String>
+    <s:String x:Key="_Ach_IdeaGenerator_Desc">For useful ideas</s:String>
+
+    <s:String x:Key="_Ach_Critic_Name">Critic</s:String>
+    <s:String x:Key="_Ach_Critic_Desc">For the help in design</s:String>
+
+    <s:String x:Key="_Ach_Exterminator_Name">Exterminator</s:String>
+    <s:String x:Key="_Ach_Exterminator_Desc">For finding major bugs</s:String>
     <!--#endregion-->
 
     <!--#region UIAutomation-->
@@ -180,6 +216,7 @@
     <s:String x:Key="_ThisOperationIsBlockedForYou">This operation is blocked for you</s:String>
     <s:String x:Key="_ClickInBrowser">Click in browser</s:String>
     <s:String x:Key="_DataUploadError">Data upload error</s:String>
+    <s:String x:Key="_FileNotFound">File not found</s:String>
     <s:String x:Key="_DataIsToBig">Too big data to show</s:String>
     <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Oops! Unknown error occurred! It's description is sent to the developer!</s:String>
     <s:String x:Key="_UnknownErrorOccured">Oops! Unknown error occurred!</s:String>
@@ -188,6 +225,7 @@
     <s:String x:Key="_NETFrameworkCorrupted">.Net Framework is corrupted. Please reinstall it</s:String>
     <s:String x:Key="_UIAutomationDllMissing">UIAutomation.dll library not found. Mouse Move Actions will not work.</s:String>
     <s:String x:Key="_BrowserExtensionNotFound">Running browser extension is not found. Install and enable LaitisChromiumExtension for your browser.</s:String>
+    <s:String x:Key="_PlatformNotSupported">Functionality is not supported on this Windows version.</s:String>
     <!--#endregion-->
 
     <!--#region Main Tabs and Buttons-->
@@ -204,16 +242,24 @@
     <s:String x:Key="_Actions">Actions</s:String>
     <s:String x:Key="_Phrases">Phrases</s:String>
     <s:String x:Key="_Other">Other</s:String>
-    <s:String x:Key="_Logger">Events</s:String>
+    <s:String x:Key="_Logger">Event Log</s:String>
+    <s:String x:Key="_Events">Events</s:String>
+    <s:String x:Key="_SupportUs">Support us!</s:String>
+    <s:String x:Key="_WhatsNew">What's new?</s:String>
 
     <s:String x:Key="_Hide">Hide</s:String>
     <s:String x:Key="_Minimize">Minimize</s:String>
     <s:String x:Key="_Pause">Pause</s:String>
-    <s:String x:Key="_Buttons_Minimize">Minimize into taskbar</s:String>
+    <s:String x:Key="_Restore">Restore</s:String>
+    <s:String x:Key="_Maximize">Maximize</s:String>
+    <s:String x:Key="_Buttons_Restore">Restore down</s:String>
+    <s:String x:Key="_Buttons_Maximize">Maximize</s:String>
+    <s:String x:Key="_Buttons_Minimize">Minimize</s:String>
     <s:String x:Key="_Buttons_HideToTray">Hide into system tray</s:String>
     <s:String x:Key="_Buttons_Pause">Disable voice commands</s:String>
     <s:String x:Key="_Buttons_Unpause">Enable voice commands</s:String>
     <s:String x:Key="_Buttons_Stop">Stop playing</s:String>
+    <s:String x:Key="_Buttons_TopMost">Keep Laitis above all windows</s:String>
     <!--#endregion-->
 
     <!--#region Commands List-->
@@ -269,6 +315,7 @@
     <s:String x:Key="_AgeRestriction">Have you already turned 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis successfully updated from version</s:String>
     <s:String x:Key="_ToVersion">to version</s:String>
+    <s:String x:Key="_ApiRequestRecieved">API request recieved</s:String>
 
     <s:String x:Key="_YandexKeyEmpty">Yandex key is empty. Trying Google</s:String>
     <s:String x:Key="_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
@@ -317,7 +364,7 @@
 
     <s:String x:Key="_DaysWithUs">Days with us</s:String>
     <s:String x:Key="_RegistrationDate">Registration date</s:String>
-    <s:String x:Key="_VoiceCommandsDone">Commands done:</s:String>
+    <s:String x:Key="_VoiceCommandsDone">Commands done</s:String>
     <s:String x:Key="_TextDictated">Text dictated</s:String>
     <s:String x:Key="_WebsiteCommandsDone">Website commands done</s:String>
     <s:String x:Key="_CommunicationsDone">Communications done</s:String>
@@ -357,7 +404,8 @@
     <s:String x:Key="_Variables_MachineName">Computer name</s:String>
     <s:String x:Key="_Variables_WindowsUser">Windows user name</s:String>
     <s:String x:Key="_Variables_IsWindowHidden">Set/Get visibility of Laitis window true/false</s:String>
-    <s:String x:Key="_Variables_IsMuteVoice">Enable/Disable pronunciation by Laitis true/false</s:String>
+    <s:String x:Key="_Variables_IsMuteVoice">Enable/Disable pronunciation true/false</s:String>
+    <s:String x:Key="_Variables_ActiveProcess">Active process name</s:String>
 
     <s:String x:Key="_SetVariable">Set variable</s:String>
     <s:String x:Key="_Value">value</s:String>
@@ -421,6 +469,7 @@
     <s:String x:Key="_Well">Well</s:String>
     <s:String x:Key="_Say">Say</s:String>
     <s:String x:Key="_Cut">Cut</s:String>
+    <s:String x:Key="_New">New</s:String>
     <s:String x:Key="_Stop">Stop</s:String>
     <s:String x:Key="_Send">Send</s:String>
     <s:String x:Key="_Play">Play</s:String>
@@ -462,6 +511,7 @@
     <s:String x:Key="_EventHasCome">Event has come</s:String>
     <s:String x:Key="_Confidant">Confidant</s:String>
     <s:String x:Key="_Duplicate">Duplicate</s:String>
+    <s:String x:Key="_RecentlySayed">Recently sayed</s:String>
     <s:String x:Key="_HttpWebRequest">Web-request</s:String>
     <s:String x:Key="_Categories">categories</s:String>
     <s:String x:Key="_Collection">Pack</s:String>
@@ -478,12 +528,13 @@
     <s:String x:Key="_IfProcessOpen">If process is open</s:String>
     <s:String x:Key="_IfWebsiteOpen">If web-site is open</s:String>
     <s:String x:Key="_WithParameters">with parameters</s:String>
-    <s:String x:Key="w_IfProcessActive">If process is active</s:String>
+    <s:String x:Key="_IfProcessActive">If process is active</s:String>
     <s:String x:Key="_NothingSelected">Nothing selected</s:String>
     <s:String x:Key="_DataTransferCompleted">Data transfer is completed</s:String>
     <s:String x:Key="_Everything">Everything</s:String>
     <s:String x:Key="_DonateToProject">Love Laitis? Donate to project!</s:String>
-
+    <s:String x:Key="_CollapseAll">Collapse All</s:String>
+    
     <s:String x:Key="_Questions">Questions</s:String>
     <s:String x:Key="_Answers">Answers</s:String>
     <s:String x:Key="_MouseMoveOn">Move mouse on element</s:String>
@@ -512,9 +563,8 @@
     <!--#endregion-->
 
     <!--#region Command Editor-->
-    <s:String x:Key="_CommandEditor_Default_Category_Name">Common</s:String>
+    <s:String x:Key="_Common">Common</s:String>
     <s:String x:Key="_CommandEditor_Default_Pack_Name">New pack</s:String>
-    <s:String x:Key="_CommandEditor_Open_ErrorText">Cannot open editor. Details in the events tab.</s:String>
     <s:String x:Key="_CommandEditor_DuplicateFounded">Duplicate voice command found</s:String>
     <s:String x:Key="_CommandEditor_DuplicateTooltip">Application automatically recognizes word cases.</s:String>
     <s:String x:Key="_CommandEditor_PhraseExists">That phrase already exists in that command</s:String>
@@ -557,8 +607,8 @@
     <s:String x:Key="_CommandAction_Label_VoiceCommand">Execute voice command:</s:String>
     
     <s:String x:Key="_CommandAction_Tooltip_ScheduleEvent">Actions below will be executed after scheduled event DateTime|If PC is sleeping and Laitis was enabled - PC will wake up if event time is not 00:00</s:String>
-    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand">Pauses actions execution|Waits phrase from user|Sets phrase value into variable with selected name</s:String>
-    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand2">How long to wait users command|Blank or 0 = infinite</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextPhrase">Pauses actions execution|Waits phrase from user|Sets phrase value into variable with selected name</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextPhrase2">How long to wait users phrase|Blank or 0 = infinite</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Ms">^1 second = 1000 milliseconds</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Duration">^In seconds</s:String>
     <s:String x:Key="_CommandAction_Tooltip_VoiceCommand">^Allows to execute actions from another voice command|Enter one phrase</s:String>
@@ -633,8 +683,11 @@
     <s:String x:Key="_SpeechState_Paused">Paused</s:String>
     <!--  MouseMoveType -->
     <s:String x:Key="_MouseMoveType_Point">Point</s:String>
-    <s:String x:Key="_MouseMoveType_Relative">Relative</s:String>
+    <s:String x:Key="_MouseMoveType_Relative">Move</s:String>
     <s:String x:Key="_MouseMoveType_Scribble">Scribble</s:String>
+    <!--  MouseMoveTranslation -->
+    <s:String x:Key="_MouseMoveTranslation_WorkArea">Work Area</s:String>
+    <s:String x:Key="_MouseMoveTranslation_ActiveWindow">Active Window</s:String>
     <!--  MouseScrollType -->
     <s:String x:Key="_MouseScrollType_Vertical">Vertically</s:String>
     <s:String x:Key="_MouseScrollType_Horizontal">Horizontally</s:String>
@@ -675,11 +728,12 @@
     <s:String x:Key="_ActionType_JetAim">Jet aim mouse move</s:String>
     <s:String x:Key="_ActionType_BatchScript">.bat script</s:String>
     <s:String x:Key="_ActionType_Break">Break</s:String>
-    <s:String x:Key="_ActionType_WaitNextCommand">Wait next command</s:String>
+    <s:String x:Key="_ActionType_WaitNextPhrase">Wait next phrase</s:String>
     <s:String x:Key="_ActionType_ScheduleEvent">Schedule event</s:String>
     <s:String x:Key="_ActionType_Notify">Notify</s:String>
     <s:String x:Key="_ActionType_VoiceCommand">Execute voice command</s:String>
     <s:String x:Key="_ActionType_GetUrlSelectorText">Get text by url</s:String>
+    <s:String x:Key="_ActionType_While">While Loop</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Increase position</s:String>
@@ -724,13 +778,18 @@
     <s:String x:Key="_Settings_ListenLastRecording">Listen last voice recording</s:String>
 
     <!--#region Settings Labels-->
+    <s:String x:Key="_Settings_Label_Restrictions">Restrictions</s:String>
+    <s:String x:Key="_Settings_Label_RestrictVoiceCommands">Restrict voice commands</s:String>
+    <s:String x:Key="_Settings_Label_RestrictVoiceDialing">Restrict voice text typing</s:String>
+    <s:String x:Key="_Settings_Label_Restore">Restore</s:String>
+    <s:String x:Key="_Settings_Label_VoiceRecording">Voice recording</s:String>
     <s:String x:Key="_Settings_Label_VoiceCommands">Voice commands</s:String>
     <s:String x:Key="_Settings_Label_VoiceDialing">Voice text typing</s:String>
     <s:String x:Key="_Settings_Label_IsPauseRecordingOnLoudSound">Pause recording on loud sound</s:String>
     <s:String x:Key="_Settings_Label_CtrlRecordStarter">Press button to record</s:String>
     <s:String x:Key="_Settings_Label_IsMuteOnCtrlClick">Mute sound on record button press</s:String>
     <s:String x:Key="_Settings_Label_UseCommandStarter">Run commands only if they are starts with</s:String>
-    <s:String x:Key="_Settings_Label_AutoRun">Autorun Laitis on Windows startup</s:String>
+    <s:String x:Key="_Settings_Label_AutoRun">Autorun on Windows startup</s:String>
     <s:String x:Key="_Settings_Label_UseStatusWindow">Enable status notifications</s:String>
     <s:String x:Key="_Settings_Label_RecognitionService">Recognition Service</s:String>
     <s:String x:Key="_Settings_Label_RecognitionLanguage">Recognition Language</s:String>
@@ -744,15 +803,10 @@
     <s:String x:Key="_Settings_Label_RestoreFail">Data restore failed</s:String>
     <s:String x:Key="_Settings_Label_RestoreFues">Show hint panels</s:String>
     <s:String x:Key="_Settings_Label_WebSource">External phrase source</s:String>
+    <s:String x:Key="_Settings_Label_IsMuteVoice">Mute voice</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
-    <ControlTemplate x:Key="_Settings_Text_YandexService">
-        <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Yandex service you need:
-  1) Yandex account <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
-  2) Enter into developer account and receive private SpeechKit key <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
-  3) Paste key into textbox below</TextBlock>
-    </ControlTemplate>
     <ControlTemplate x:Key="_Settings_Text_BingService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">To use Bing service you need:
   1) Open link <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
@@ -775,6 +829,7 @@
     <!--#endregion-->
 
     <!--#region Settings Tooltips-->
+    <s:String x:Key="_Settings_Tooltip_RestrictByProcessName">List the names of programs processes you want to restrict</s:String>
     <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">To stop Laitis from recognizing audio from speakers (video, music)</s:String>
     <s:String x:Key="_Settings_Tooltip_NoiseProgress">That indicator displays noise volume in microphone</s:String>
     <s:String x:Key="_Settings_Tooltip_TooLoud">PC sound volume exceeds 30% limit^Voice recording is stopped|You can disable this feature in settings</s:String>
@@ -786,6 +841,7 @@
     <s:String x:Key="_Settings_Tooltip_WebSource">Allows to receive voice commands from external devices by URL^For example, you can control Laitis on your PC using an iPhone via Siri shortcut</s:String>
     <s:String x:Key="_Settings_Tooltip_WebSourceURL">URL which accepts Laitis phrases</s:String>
     <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Generate a new key^For security reasons</s:String>
+    <s:String x:Key="_Settings_Tooltip_IsMuteVoice">Instead of pronouncing phrases, show a notification</s:String>
     <!--#endregion-->
 
     <!--#endregion-->
@@ -1071,9 +1127,13 @@
     <s:String x:Key="_AWVV4">If you already have a variable with a given value, and you want to add a number to it, do this:</s:String>
     <s:String x:Key="_AWVV5">Arithmetic works with integers and floating-point numbers:</s:String>
     <s:String x:Key="_AWVV6">Mathematical functions:% is the remainder of division, ^ is raising to a power, Sqrt is the square root, Max is to get the larger of two numbers, Min is smaller, Abs is to get an absolute number (removes the minus if it is), Round is the rounding of the number with a floating point (the number of digits after the comma is indicated), Rand - get a random number between the two specified:</s:String>
-    <s:String x:Key="_AWVV7">String functions (Replace with - replace, Replace words with - replace by words, RegExReplace - replace with regular expression, RegExMatch - get matches of regular expression, TextRange - search for getting a piece of text on its adjacent lines) work a little differently. They work with pre-created variables and change their meaning directly. For example, you have a variable {Hello} with the value "Hello, friend!", And you want that instead of a friend, in the meaning was Vasya - you have several ways to do this:</s:String>
+    <s:String x:Key="_AWVV7">String functions (Replace with - replace, Replace words with - replace by words, RegExReplace - replace with regular expression, RegExMatch - get matches of regular expression, TextRange - search for getting a piece of text on its adjacent lines) work a little differently. They work with pre-created variables and change their meaning directly. For example, you have a variable {Hello} with the value "Hello, friend!", And you want that instead of a friend, in the meaning was Kate - you have several ways to do this:</s:String>
     <s:String x:Key="_AWVV8">For example, in a variable there is a code of a web page, and you need to receive from it a line in a specific element:</s:String>
     <s:String x:Key="_AWVV9">For programmers who know JSON. The variables Laitis support work with JSON. Using JSON, you can collect arrays and complex structures, you can get a value from the JSON object.</s:String>
+    <s:String x:Key="_AWVV10">An example of getting a value from an array:</s:String>
+    <s:String x:Key="_AWVV11">String case functions:</s:String>
+    <s:String x:Key="_AWVV12">The function of splitting a string into an array of values by string:</s:String>
+
     <s:String x:Key="_AWTP0">Enables/Disables/Switches the collection by its name</s:String>
     <s:String x:Key="_AWNO0">Calls a notification at the top of the screen with the specified text</s:String>
     <s:String x:Key="_AWHK0">Presses the keyboard keys</s:String>
@@ -1121,7 +1181,10 @@
     <s:String x:Key="_AWEL0">The notation of the action block, which will be executed if the condition is not fulfilled above</s:String>
     <s:String x:Key="_AWEB0">Designation of the end of the condition block, random execution, cycle.</s:String>
     <s:String x:Key="_AWBR0">An action that interrupts a cycle. It is useful if an infinitely long cycle is started and it is required to stop when some condition is satisfied</s:String>
-    
+    <s:String x:Key="_AWWH0">A block that will perform the actions contained in it while the condition specified in it is true. Be careful with command design because your condition can fail and invoke loop endlessly!</s:String>
+
+    <s:String x:Key="_AW_Friend">friend</s:String>
+    <s:String x:Key="_AW_Vasya">Kate</s:String>
     <s:String x:Key="_AW_HelloFriend">Hello friend!</s:String>
     <s:String x:Key="_AW_OpenChrome">Open chrome</s:String>
     <s:String x:Key="_AW_3SecondsLeft">3 seconds left</s:String>

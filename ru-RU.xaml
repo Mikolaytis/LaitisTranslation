@@ -5,10 +5,14 @@
     xmlns:controls="clr-namespace:Mikolaitis.WPF.Controls;assembly=Mikolaitis.WPF.Controls"
     xmlns:s="clr-namespace:System;assembly=mscorlib">
 
+    <!-- ReSharper disable MarkupTextTypo -->
+    <!-- ReSharper disable InconsistentNaming -->
+
     <!--#region App Initialization-->
     <s:String x:Key="_Load_WaitForOtherInstanceClosing">Ожидание закрытия другой копии программы</s:String>
     <s:String x:Key="_Load_Data">Загрузка данных</s:String>
     <s:String x:Key="_Load_AppLoaded">запущен</s:String>
+    <s:String x:Key="_Load_AsAdministrator">от администратора</s:String>
     <s:String x:Key="_Load_MandatoryUpdateNeeded">Критическая ошибка загрузки программы. Скачайте последнюю версию программы на веб-сайте laitis.ru, если не поможет - пишите в vk.com/mikolaytis или vk.com/laitisgroup.</s:String>
 
     <s:String x:Key="_Load_SettingsFail">Сбой загрузки пользовательских данных</s:String>
@@ -16,14 +20,31 @@
     <s:String x:Key="_Load_SettingsFail_OpenApp">Открыть программу с данными по умолчанию</s:String>
     <s:String x:Key="_Load_SettingsFail_LoadBackup">Загрузить предыдущее сохранение из хранилища</s:String>
     <s:String x:Key="_Load_SettingsFail_CloseApp">Закрыть программу</s:String>
-    
+
+    <s:String x:Key="_Update_Checking">Проверка на обновления</s:String>
+    <s:String x:Key="_Update_Downloading">Загружается обновление</s:String>
     <s:String x:Key="_Update_Performing">Обновление программы</s:String>
     <s:String x:Key="_Update_CancelledByUser">Вы отменили критическое обновление. Пожалуйста нажмите да, чтобы обновить программу.</s:String>
     <s:String x:Key="_Update_FailRestart">Обновление не удалось. Перезапуск обновления.</s:String>
     <s:String x:Key="_Update_LaitisUpdated">Laitis успешно обновлен</s:String>
     <s:String x:Key="_Update_LaunchNewVersion">Запустить новую версию</s:String>
-    
+
     <s:String x:Key="_Install_InstallAndLaunch">Установить и запустить</s:String>
+    <s:String x:Key="_Gift_GoToVK">Главный источник информации о Laitis - группа ВКонтакте</s:String>
+    <!--#endregion-->
+
+    <!--#region Handler-->
+    <s:String x:Key="_Handler_JustRestartLaitis">Просто перезапустить Laitis</s:String>
+    <s:String x:Key="_Handler_HighRamUsage">Большое использование оперативной памяти</s:String>
+    <s:String x:Key="_Handler_HighCpuUsage">Большая нагрузка на процессор</s:String>
+    <s:String x:Key="_Handler_SendDetailsToDeveloper">Отправить детали разработчику Laitis</s:String>
+    <s:String x:Key="_Handler_CreatingMemoryDump">Создается дамп памяти</s:String>
+    <s:String x:Key="_Handler_ArchivingMemoryDump">Архивируется дамп памяти</s:String>
+    <s:String x:Key="_Handler_DownloadingProfilingTool">Загружается инструмент профилирования</s:String>
+    <s:String x:Key="_Handler_CollectingData">Собираются данные работы процесса</s:String>
+    <s:String x:Key="_Handler_ArchivingCollectedData">Архивируются собранные данные</s:String>
+    <s:String x:Key="_Handler_SendingArchiveToDeveloper">Архив отправляется разработчику</s:String>
+    <s:String x:Key="_Handler_Thanks">Спасибо!</s:String>
     <!--#endregion-->
 
     <!--#region Account-->
@@ -98,6 +119,21 @@
     
     <s:String x:Key="_Ach_Publications200_Name">Колоссальный вклад</s:String>
     <s:String x:Key="_Ach_Publications200_Desc">200 успешных публикаций</s:String>
+
+    <s:String x:Key="_Ach_Superhero_Name">Супергерой</s:String>
+    <s:String x:Key="_Ach_Superhero_Desc">За помощь пользователям</s:String>
+
+    <s:String x:Key="_Ach_MegaMind_Name">Мегамозг</s:String>
+    <s:String x:Key="_Ach_MegaMind_Desc">За подсказки в разработке</s:String>
+
+    <s:String x:Key="_Ach_IdeaGenerator_Name">Генератор идей</s:String>
+    <s:String x:Key="_Ach_IdeaGenerator_Desc">За полезные идеи</s:String>
+
+    <s:String x:Key="_Ach_Critic_Name">Критик</s:String>
+    <s:String x:Key="_Ach_Critic_Desc">За помощь в дизайне</s:String>
+
+    <s:String x:Key="_Ach_Exterminator_Name">Дизенсектор</s:String>
+    <s:String x:Key="_Ach_Exterminator_Desc">За нахождение крупных багов</s:String>
     <!--#endregion-->
     
     <!--#region UIAutomation-->
@@ -180,6 +216,7 @@
     <s:String x:Key="_ThisOperationIsBlockedForYou">Эта операция заблокирована для вас</s:String>
     <s:String x:Key="_ClickInBrowser">Кликать надо в браузере</s:String>
     <s:String x:Key="_DataUploadError">Ошибка загрузки данных</s:String>
+    <s:String x:Key="_FileNotFound">Файл не найден</s:String>
     <s:String x:Key="_DataIsToBig">Слишком много данных, чтобы их отобразить</s:String>
     <s:String x:Key="_UnknownErrorOccuredAndSentToServer">Ой! Произошла неизвестная ошибка! Описание о ней отправлено разработчику!</s:String>
     <s:String x:Key="_UnknownErrorOccured">Ой! Произошла неизвестная ошибка!</s:String>
@@ -188,6 +225,7 @@
     <s:String x:Key="_NETFrameworkCorrupted">.Net Framework поломан. Пожалуйста переустановите его</s:String>
     <s:String x:Key="_UIAutomationDllMissing">Не найдена библиотека UIAutomation.dll. Действие работать не будет.</s:String>
     <s:String x:Key="_BrowserExtensionNotFound">Не найдено запущенное расширение для браузера. Установите и включите расширение LaitisChromiumExtension для вашего браузера.</s:String>
+    <s:String x:Key="_PlatformNotSupported">Функционал не работает на данной версии Windows.</s:String>
     <!--#endregion-->
 
     <!--#region Main Tabs and Buttons-->
@@ -205,15 +243,23 @@
     <s:String x:Key="_Phrases">Фразы</s:String>
     <s:String x:Key="_Other">Остальное</s:String>
     <s:String x:Key="_Logger">Журнал</s:String>
+    <s:String x:Key="_Events">События</s:String>
+    <s:String x:Key="_SupportUs">Поддержите нас!</s:String>
+    <s:String x:Key="_WhatsNew">Что нового?</s:String>
 
     <s:String x:Key="_Hide">Спрятать</s:String>
     <s:String x:Key="_Minimize">Свернуть</s:String>
     <s:String x:Key="_Pause">Пауза</s:String>
+    <s:String x:Key="_Restore">Восстановить</s:String>
+    <s:String x:Key="_Maximize">Развернуть</s:String>
+    <s:String x:Key="_Buttons_Restore">Восстановить размер окна</s:String>
+    <s:String x:Key="_Buttons_Maximize">Развернуть на весь экран</s:String>
     <s:String x:Key="_Buttons_Minimize">Свернуть в панель задач</s:String>
     <s:String x:Key="_Buttons_HideToTray">Спрятать в системный трей</s:String>
     <s:String x:Key="_Buttons_Pause">Приостановить выполнение команд</s:String>
     <s:String x:Key="_Buttons_Unpause">Возобновить выполнение команд</s:String>
     <s:String x:Key="_Buttons_Stop">Остановить воспроизведение</s:String>
+    <s:String x:Key="_Buttons_TopMost">Поверх всех окон</s:String>
     <!--#endregion-->
 
     <!--#region Commands List-->
@@ -269,6 +315,7 @@
     <s:String x:Key="_AgeRestriction">Вам уже исполнилось 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успешно обновлен с версии</s:String>
     <s:String x:Key="_ToVersion">до версии</s:String>
+    <s:String x:Key="_ApiRequestRecieved">Получен апи запрос</s:String>
 
     <s:String x:Key="_YandexKeyEmpty">Ключ от Яндекса пуст. Пробуем Google</s:String>
     <s:String x:Key="_AcapelaKeyEmpty">Ключ от Acapela пуст. Пробуем Google</s:String>
@@ -357,7 +404,8 @@
     <s:String x:Key="_Variables_MachineName">Имя компьютера</s:String>
     <s:String x:Key="_Variables_WindowsUser">Имя текущего пользователя Windows</s:String>
     <s:String x:Key="_Variables_IsWindowHidden">Задать/Получить скрыто ли окно Laitis true/false</s:String>
-    <s:String x:Key="_Variables_IsMuteVoice">Отключить/Включить воспроизведение голоса true/false</s:String>
+    <s:String x:Key="_Variables_IsMuteVoice">Отключить/Включить произношение текста true/false</s:String>
+    <s:String x:Key="_Variables_ActiveProcess">Имя активного процесса</s:String>
 
     <s:String x:Key="_SetVariable">Задать переменной</s:String>
     <s:String x:Key="_Value">значение</s:String>
@@ -421,6 +469,7 @@
     <s:String x:Key="_Well">Хорошо</s:String>
     <s:String x:Key="_Say">Сказать</s:String>
     <s:String x:Key="_Cut">Вырезать</s:String>
+    <s:String x:Key="_New">Новая</s:String>
     <s:String x:Key="_Stop">Стоп</s:String>
     <s:String x:Key="_Send">Отправить</s:String>
     <s:String x:Key="_Play">Воспроизвести</s:String>
@@ -462,6 +511,7 @@
     <s:String x:Key="_EventHasCome">Событие настало</s:String>
     <s:String x:Key="_Confidant">Доверенное лицо</s:String>
     <s:String x:Key="_Duplicate">Дубликат</s:String>
+    <s:String x:Key="_RecentlySayed">Недавно сказана</s:String>
     <s:String x:Key="_HttpWebRequest">Веб-запрос</s:String>
     <s:String x:Key="_Categories">Категории</s:String>
     <s:String x:Key="_Collection">Коллекция</s:String>
@@ -478,11 +528,12 @@
     <s:String x:Key="_IfProcessOpen">Если открыта программа</s:String>
     <s:String x:Key="_IfWebsiteOpen">Если открыт веб-сайт</s:String>
     <s:String x:Key="_WithParameters">с параметрами</s:String>
-    <s:String x:Key="w_IfProcessActive">Если активна программа</s:String>
+    <s:String x:Key="_IfProcessActive">Если активна программа</s:String>
     <s:String x:Key="_NothingSelected">Ничего не выбрано</s:String>
     <s:String x:Key="_DataTransferCompleted">Данные отправлены на сервер</s:String>
     <s:String x:Key="_Everything">Всё</s:String>
     <s:String x:Key="_DonateToProject">Нравится Laitis? Поддержите проект!</s:String>
+    <s:String x:Key="_CollapseAll">Свернуть все</s:String>
 
     <s:String x:Key="_Questions">Вопросы</s:String>
     <s:String x:Key="_Answers">Ответы</s:String>
@@ -512,9 +563,8 @@
     <!--#endregion-->
 
     <!--#region Command Editor-->
-    <s:String x:Key="_CommandEditor_Default_Category_Name">Общие</s:String>
+    <s:String x:Key="_Common">Общие</s:String>
     <s:String x:Key="_CommandEditor_Default_Pack_Name">Новая коллекция</s:String>
-    <s:String x:Key="_CommandEditor_Open_ErrorText">Не удалось открыть редактор. Подробности в журнале событий.</s:String>
     <s:String x:Key="_CommandEditor_DuplicateFounded">Уже есть точно такая же голосовая команда</s:String>
     <s:String x:Key="_CommandEditor_DuplicateTooltip">Программа автоматически распознает многие вариации.</s:String>
     <s:String x:Key="_CommandEditor_PhraseExists">Эта фраза уже используется в команде</s:String>
@@ -557,8 +607,8 @@
     <s:String x:Key="_CommandAction_Label_VoiceCommand">Выполнить голосовую команду:</s:String>
     
     <s:String x:Key="_CommandAction_Tooltip_ScheduleEvent">^Действия ниже будут выполнены после времени, указанного в запланированном событии|Если компьютер в состоянии сна и Laitis был включен - комп проснется если время события не 00:00.</s:String>
-    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand">^Приостанавливает выполнение действий|Ожидает фразу от пользователя|Записывает значение в переменную с указанным именем</s:String>
-    <s:String x:Key="_CommandAction_Tooltip_WaitNextCommand2">^Сколько времени ждать ответа от пользователя|Пустота или 0 = бесконечно</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextPhrase">^Приостанавливает выполнение действий|Ожидает фразу от пользователя|Записывает значение в переменную с указанным именем</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitNextPhrase2">^Сколько времени ждать ответа от пользователя|Пустота или 0 = бесконечно</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Ms">^1 секунда = 1000 миллисекунд</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Duration">^В секундах</s:String>
     <s:String x:Key="_CommandAction_Tooltip_VoiceCommand">^Позволяет вызвать действия из другой голосовой команды|Укажите одну из фраз</s:String>
@@ -635,6 +685,9 @@
     <s:String x:Key="_MouseMoveType_Point">Передвинуть курсор в точку</s:String>
     <s:String x:Key="_MouseMoveType_Relative">Подвинуть курсор</s:String>
     <s:String x:Key="_MouseMoveType_Scribble">Каракуля</s:String>
+    <!--  MouseMoveTranslation -->
+    <s:String x:Key="_MouseMoveTranslation_WorkArea">всех экранах</s:String>
+    <s:String x:Key="_MouseMoveTranslation_ActiveWindow">активном окне</s:String>
     <!--  MouseScrollType -->
     <s:String x:Key="_MouseScrollType_Vertical">Вертикально</s:String>
     <s:String x:Key="_MouseScrollType_Horizontal">Горизонтально</s:String>
@@ -645,8 +698,8 @@
     <s:String x:Key="_ActionType_MouseMove">Переместить курсор</s:String>
     <s:String x:Key="_ActionType_Say">Сказать</s:String>
     <s:String x:Key="_ActionType_TypeText">Напечатать текст</s:String>
-    <s:String x:Key="_ActionType_PlayAudio">Звук/Аудио</s:String>
-    <s:String x:Key="_ActionType_OpenURL">Открыть веб-страницу</s:String>
+    <s:String x:Key="_ActionType_PlayAudio">Произнести Звук/Аудио</s:String>
+    <s:String x:Key="_ActionType_OpenURL">Открыть ссылку</s:String>
     <s:String x:Key="_ActionType_WebPageScript">Выполнить javascript</s:String>
     <s:String x:Key="_ActionType_Pause">Подождать</s:String>
     <s:String x:Key="_ActionType_IfProcessSelected">Если активна программа</s:String>
@@ -675,11 +728,12 @@
     <s:String x:Key="_ActionType_JetAim">Прицелить курсор</s:String>
     <s:String x:Key="_ActionType_BatchScript">.bat скрипт</s:String>
     <s:String x:Key="_ActionType_Break">Прервать</s:String>
-    <s:String x:Key="_ActionType_WaitNextCommand">Подождать следующую команду</s:String>
+    <s:String x:Key="_ActionType_WaitNextPhrase">Подождать следующую фразу</s:String>
     <s:String x:Key="_ActionType_ScheduleEvent">Запланировать событие</s:String>
     <s:String x:Key="_ActionType_Notify">Уведомить</s:String>
     <s:String x:Key="_ActionType_VoiceCommand">Выполнить голосовую команду</s:String>
     <s:String x:Key="_ActionType_GetUrlSelectorText">Получить текст по ссылке</s:String>
+    <s:String x:Key="_ActionType_While">Цикл Пока</s:String>
     <!--  WebNavigateAction-->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Задать позицию</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Добавить к позиции</s:String>
@@ -724,17 +778,22 @@
     <s:String x:Key="_Settings_ListenLastRecording">Послушать последнюю запись голоса</s:String>
     
     <!--#region Settings Labels-->
+    <s:String x:Key="_Settings_Label_Restrictions">Ограничения</s:String>
+    <s:String x:Key="_Settings_Label_RestrictVoiceCommands">Запретить голосовые команды</s:String>
+    <s:String x:Key="_Settings_Label_RestrictVoiceDialing">Запретить диктовку текста</s:String>
+    <s:String x:Key="_Settings_Label_Restore">Восстановление</s:String>
+    <s:String x:Key="_Settings_Label_VoiceRecording">Запись голоса</s:String>
     <s:String x:Key="_Settings_Label_VoiceCommands">Голосовые команды</s:String>
     <s:String x:Key="_Settings_Label_VoiceDialing">Голосовой набор текста</s:String>
     <s:String x:Key="_Settings_Label_IsPauseRecordingOnLoudSound">Приостанавливать запись при громкой музыке</s:String>
     <s:String x:Key="_Settings_Label_CtrlRecordStarter">Запись только при зажатии</s:String>
     <s:String x:Key="_Settings_Label_IsMuteOnCtrlClick">Выключать звук при зажатии клавиши</s:String>
     <s:String x:Key="_Settings_Label_UseCommandStarter">Запускать команды только если фразы начинаются с</s:String>
-    <s:String x:Key="_Settings_Label_AutoRun">Запускать Laitis при старте Windows</s:String>
+    <s:String x:Key="_Settings_Label_AutoRun">Запускать при старте Windows</s:String>
     <s:String x:Key="_Settings_Label_UseStatusWindow">Всплывающие уведомления вверху экрана</s:String>
     <s:String x:Key="_Settings_Label_RecognitionService">Сервис распознавания голоса</s:String>
     <s:String x:Key="_Settings_Label_RecognitionLanguage">Язык распознавания</s:String>
-    <s:String x:Key="_Settings_Label_TextToSpeechService">Сервис произношения голоса</s:String>
+    <s:String x:Key="_Settings_Label_TextToSpeechService">Сервис произношения текста</s:String>
     <s:String x:Key="_Settings_Label_IsWebsiteControlEnabled">Голосовое управление сайтами</s:String>
     <s:String x:Key="_Settings_Label_UseCommunication">Общение</s:String>
     <s:String x:Key="_Settings_Label_IsAutomaticOrphographyEnabled">Автоматическая орфография</s:String>
@@ -744,15 +803,10 @@
     <s:String x:Key="_Settings_Label_RestoreFail">Восстановление не удалось</s:String>
     <s:String x:Key="_Settings_Label_RestoreFues">Показать панели подсказок</s:String>
     <s:String x:Key="_Settings_Label_WebSource">Внешний источник фраз</s:String>
+    <s:String x:Key="_Settings_Label_IsMuteVoice">Приглушить голос</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
-    <ControlTemplate x:Key="_Settings_Text_YandexService">
-        <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключения к сервису Яндекса требуется:
-  1) Аккаунт Яндекс <controls:Hyperlink NavigateUri="https://passport.yandex.ru/registration?mode=register">https://passport.yandex.ru/registration?mode=register</controls:Hyperlink>
-  2) Войти в кабинет разработчика и получить личный ключ на использование SpeechKit <controls:Hyperlink NavigateUri="https://developer.tech.yandex.ru">https://developer.tech.yandex.ru</controls:Hyperlink>                                    
-  3) Вставить ключ в текстовое поле ниже</TextBlock>
-    </ControlTemplate>
     <ControlTemplate x:Key="_Settings_Text_BingService">
         <TextBlock xml:space="preserve" TextWrapping="Wrap">Для подключения к сервису Bing требуется:
   1) Открыть ссылку <controls:Hyperlink NavigateUri="https://azure.microsoft.com/en-us/try/cognitive-services/">https://azure.microsoft.com/en-us/try/cognitive-services/</controls:Hyperlink>
@@ -775,6 +829,7 @@
     <!--#endregion-->
 
     <!--#region Settings Tooltips-->
+    <s:String x:Key="_Settings_Tooltip_RestrictByProcessName">Перечислите названия процессов программ, в которых вы хотите сделать запрет</s:String>
     <s:String x:Key="_Settings_Tooltip_IsPauseRecordingOnLoudSound">Для того чтобы Laitis не записывал и выполнял услышанные слова из видео и музыки</s:String>
     <s:String x:Key="_Settings_Tooltip_NoiseProgress">Этот индикатор отображает уровень шума в микрофоне</s:String>
     <s:String x:Key="_Settings_Tooltip_TooLoud">Уровень звука в компьютере превысил предел в 30%^Запись голоса приостановлена|Отключить приостановление записи голоса можно в настройках</s:String>
@@ -786,6 +841,7 @@
     <s:String x:Key="_Settings_Tooltip_WebSource">Позволяет принимать голосовые команды с внешних устройств по URL^Например, можно управлять Laitis на компьютере с помощью iPhone через Siri shortcut</s:String>
     <s:String x:Key="_Settings_Tooltip_WebSourceURL">Ссылка по которой Laitis принимает фразы</s:String>
     <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Сгенерировать новый ключ доступа^В целях безопасности</s:String>
+    <s:String x:Key="_Settings_Tooltip_IsMuteVoice">Вместо произношения фраз показывать нотификацию</s:String>
     <!--#endregion-->
 
     <!--#endregion-->
@@ -885,12 +941,12 @@
                 </ListItem>
             </List>
             <Paragraph FontWeight="Bold">
-                Можно ли установить офлайн голоса воспроизведения текста?
+                Можно ли установить офлайн голоса произношения текста?
             </Paragraph>
             <List>
                 <ListItem>
                     <Paragraph>
-                        Да. Советую скачать голоса от Ivona. После установки они появятся в выпадающем списке, если выбрать сервис воспроизведения Windows в настройках Laitis.
+                        Да. Советую скачать голоса от Ivona. После установки они появятся в выпадающем списке, если выбрать сервис произношения Windows в настройках Laitis.
                     </Paragraph>
                 </ListItem>
             </List>
@@ -1074,6 +1130,10 @@
     <s:String x:Key="_AWVV7">Функции работы со строками (Заменить на - замена, Заменить слова на - замена по словам, RegExReplace - замена регулярным выражением, RegExMatch - получение совпадений регулярного выражение, TextRange - поиск получение части текста по его соседним строкам) работают немного по-другому. Они работают с заранее созданными переменными и изменяют их значение напрямую. Например, у вас есть переменная {Hello} с значением "Привет, друг!", а вы хотите чтобы вместо друг, в значении было Вася - у вас есть несколько способов это сделать:</s:String>
     <s:String x:Key="_AWVV8">Например, в переменной находится код веб-страницы, и вам нужно получить из нее строку в конкретном элементе:</s:String>
     <s:String x:Key="_AWVV9">Для программистов, знающих JSON. Переменные Laitis поддерживают работу с JSON. С помощью JSON можно собирать массивы и сложные структуры, можно получать значение из JSON объекта.</s:String>
+    <s:String x:Key="_AWVV10">Пример получения значения из массива:</s:String>
+    <s:String x:Key="_AWVV11">Функции работы с регистром строк (В верхний регистр, В нижний регистр, Как в предложении):</s:String>
+    <s:String x:Key="_AWVV12">Функция разбиения строки на массив значений по строке:</s:String>
+
     <s:String x:Key="_AWTP0">Включает/Выключает/Переключает коллекцию по ее имени</s:String>
     <s:String x:Key="_AWNO0">Вызывает уведомление вверху экрана с указанным текстом</s:String>
     <s:String x:Key="_AWHK0">Нажимает клавиши клавиатуры</s:String>
@@ -1121,7 +1181,10 @@
     <s:String x:Key="_AWEL0">Обозначение блока действий, который выполнится при невыполнении условия выше</s:String>
     <s:String x:Key="_AWEB0">Обозначение конца блока условия, случайного выполнения, цикла.</s:String>
     <s:String x:Key="_AWBR0">Действие, прерывающее цикл. Полезен, если запущен бесконечно долгий цикл и требуется остановить при выполнении какого-либо условия</s:String>
-    
+    <s:String x:Key="_AWWH0">Блок, который будет выполнять содержащиеся в нем действия, пока выполняется указанное в нем условие. Будьте осторожны при создании команды, а то можно создать бесконечный цикл!</s:String>
+
+    <s:String x:Key="_AW_Friend">друг</s:String>
+    <s:String x:Key="_AW_Vasya">Вася</s:String>
     <s:String x:Key="_AW_HelloFriend">Привет, друг!</s:String>
     <s:String x:Key="_AW_OpenChrome">Открыть хром</s:String>
     <s:String x:Key="_AW_3SecondsLeft">Прошло 3 секунды</s:String>
