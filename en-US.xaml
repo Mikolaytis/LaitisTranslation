@@ -9,7 +9,6 @@
     <!-- ReSharper disable InconsistentNaming -->
 
     <!--#region App Initialization-->
-    <s:String x:Key="_Load_WaitForOtherInstanceClosing">Waiting for other application instance closing</s:String>
     <s:String x:Key="_Load_Data">Downloading Data</s:String>
     <s:String x:Key="_Load_AppLoaded">started</s:String>
     <s:String x:Key="_Load_AsAdministrator">as administrator</s:String>
@@ -27,6 +26,8 @@
     <s:String x:Key="_Update_CancelledByUser">You are rejected a critical update. Please press yes, to update the application.</s:String>
     <s:String x:Key="_Update_FailRestart">Update failed. Application restart.</s:String>
     <s:String x:Key="_Update_LaitisUpdated">Laitis is successfully updated</s:String>
+    <s:String x:Key="_Update_UpdateFailed">Update failed</s:String>
+    <s:String x:Key="_Update_DownloadLatestVersion">Download latest version from website</s:String>
     <s:String x:Key="_Update_LaunchNewVersion">Launch new version</s:String>
 
     <s:String x:Key="_Install_InstallAndLaunch">Install and Launch</s:String>
@@ -204,6 +205,8 @@
     <!--#endregion-->
 
     <!--#region Exceptions-->
+    <s:String x:Key="_PhraseNotStartedWithKeyword">Phrase is not started with keyword</s:String>
+    <s:String x:Key="_PhraseHighlightedInEditor">Phrase said in editor to highlight it</s:String>
     <s:String x:Key="_ExecutionRestricted">Execution is restricted in these conditions</s:String>
     <s:String x:Key="_ConnectionProblems">Server connection problem</s:String>
     <s:String x:Key="_TimeoutProblems">Server connection timeout</s:String>
@@ -232,7 +235,7 @@
     <s:String x:Key="_Profile">Profile</s:String>
     <s:String x:Key="_Community">Community</s:String>
     <s:String x:Key="_Commands">Commands</s:String>
-    <s:String x:Key="_Autoreplace">Autoreplace</s:String>
+    <s:String x:Key="_Autoreplace">Auto-Replace</s:String>
     <s:String x:Key="_Packs">Packs</s:String>
     <s:String x:Key="_Communication">Communication</s:String>
     <s:String x:Key="_Help">Help</s:String>
@@ -303,7 +306,8 @@
 
     <!--#region Notifications-->
     <s:String x:Key="_Details">Details</s:String>
-    <s:String x:Key="_EndRecieve">Data receive ended</s:String>
+    <s:String x:Key="_StartReceive">Data receive started</s:String>
+    <s:String x:Key="_EndReceive">Data receive ended</s:String>
     <s:String x:Key="_ConnectionDrop">Connection drop</s:String>
     <s:String x:Key="_RecordEnded">Record ended</s:String>
     <s:String x:Key="_RecordStarted">Record started</s:String>
@@ -315,7 +319,7 @@
     <s:String x:Key="_AgeRestriction">Have you already turned 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis successfully updated from version</s:String>
     <s:String x:Key="_ToVersion">to version</s:String>
-    <s:String x:Key="_ApiRequestRecieved">API request recieved</s:String>
+    <s:String x:Key="_ApiRequestReceived">API request received</s:String>
 
     <s:String x:Key="_YandexKeyEmpty">Yandex key is empty. Trying Google</s:String>
     <s:String x:Key="_AcapelaKeyEmpty">Acapela key is empty. Trying Google</s:String>
@@ -338,10 +342,12 @@
     <s:String x:Key="_ApplicationVersion">Application version</s:String>
     <s:String x:Key="_UnderstoodText">understood text</s:String>
     <s:String x:Key="_UnderstoodCommand">understood command</s:String>
-    <s:String x:Key="_CommandNotStartsWithKeyword">Command is not started with keyword</s:String>
+    <s:String x:Key="_TextNotEndsWithKeyword">Text is not ended with keyword</s:String>
     <s:String x:Key="_TextNotStartsWithKeyword">Text is not started with keyword</s:String>
     <s:String x:Key="_CommandDone">Command executed</s:String>
     <s:String x:Key="_TypingText">Typing text</s:String>
+    <s:String x:Key="_CommandStatus">Command status</s:String>
+    <s:String x:Key="_RecordingStatus">Recording status</s:String>
     
     <s:String x:Key="_RemovingErrorTyping">Removing previous error typing</s:String>
     <s:String x:Key="_TypingUpperFirstChar">First char of phrase is upper case because previous text was separator or focus changed</s:String>
@@ -355,12 +361,13 @@
 
     <!--#region Community-->
     <s:String x:Key="_SharePromotion">Control your PC and type by voice using Laitis. Install now and try it for free and without ads.</s:String>
-    <s:String x:Key="_UsersPublications">Users publications:</s:String>
+    <s:String x:Key="_UsersPublications">Users publications</s:String>
     <s:String x:Key="_Downloads">Downloads</s:String>
     <s:String x:Key="_LaitisDescription">Laitis donation: Controlling PC with your voice</s:String>
     <s:String x:Key="_Like">Like</s:String>
     <s:String x:Key="_Dislike">Dislike</s:String>
-    <s:String x:Key="_RecieveDate">Recieve date</s:String>
+    <s:String x:Key="_ReceiveDate">Receive date</s:String>
+    <s:String x:Key="_UsersOnline">Users online</s:String>
 
     <s:String x:Key="_DaysWithUs">Days with us</s:String>
     <s:String x:Key="_RegistrationDate">Registration date</s:String>
@@ -372,13 +379,13 @@
 
     <!--#region Publisher-->
     <s:String x:Key="_IAcceptThisRules">I accept this rules</s:String>
-    <s:String x:Key="_AutorizationNeeded">Authorization needed</s:String>
+    <s:String x:Key="_AuthorizationNeeded">Authorization needed</s:String>
     <s:String x:Key="_CollectionNameIsTooShort">Pack name is too short</s:String>
     <s:String x:Key="_ChangesNotFound">0 changes found</s:String>
-    <s:String x:Key="_PublicationSendedToTheServer">Your publication is sent to the server</s:String>
+    <s:String x:Key="_PublicationSentToTheServer">Your publication is sent to the server</s:String>
     <s:String x:Key="_PublishNewCollection">Publish new pack</s:String>
     <s:String x:Key="_PublishSomeChanges">Publish some changes</s:String>
-    <s:String x:Key="_ChangeAppliedSuccesfully">Changes are successfully applied</s:String>
+    <s:String x:Key="_ChangeAppliedSuccessfully">Changes are successfully applied</s:String>
     <s:String x:Key="_ToRemove">to remove</s:String>
     <s:String x:Key="_ConnectionsToAnswers">Connections to answers</s:String>
     <s:String x:Key="_ConnectionsToQuestions">Connections to questions</s:String>
@@ -400,12 +407,13 @@
     <s:String x:Key="_Variables_LastEventDateTime">Date of the last planned event</s:String>
     <s:String x:Key="_Variables_CancelLastEvent">Set value to cancel last event</s:String>
     <s:String x:Key="_Variables_WindowsFolderPath">Windows folder path</s:String>
-    <s:String x:Key="_Variables_MousePosition">Current mouse postion</s:String>
+    <s:String x:Key="_Variables_MousePosition">Current mouse position</s:String>
     <s:String x:Key="_Variables_MachineName">Computer name</s:String>
     <s:String x:Key="_Variables_WindowsUser">Windows user name</s:String>
     <s:String x:Key="_Variables_IsWindowHidden">Set/Get visibility of Laitis window true/false</s:String>
     <s:String x:Key="_Variables_IsMuteVoice">Enable/Disable pronunciation true/false</s:String>
     <s:String x:Key="_Variables_ActiveProcess">Active process name</s:String>
+    <s:String x:Key="_Variables_MsAfterPhrase">Time elapsed in milliseconds since the previous phrase was processed</s:String>
 
     <s:String x:Key="_SetVariable">Set variable</s:String>
     <s:String x:Key="_Value">value</s:String>
@@ -455,6 +463,9 @@
     <s:String x:Key="_MyCommands">My commands</s:String>
     <s:String x:Key="_Yes">Yes</s:String>
     <s:String x:Key="_No">No</s:String>
+    <s:String x:Key="_On">On</s:String>
+    <s:String x:Key="_Sec">sec</s:String>
+    <s:String x:Key="_Off">Off</s:String>
     <s:String x:Key="_Duration">Duration</s:String>
     <s:String x:Key="_SelectImage">Select image</s:String>
     <s:String x:Key="_From">from</s:String>
@@ -480,7 +491,7 @@
     <s:String x:Key="_Name">Name</s:String>
     <s:String x:Key="_Times">times</s:String>
     <s:String x:Key="_Pack">Pack</s:String>
-    <s:String x:Key="_CurrentCommand">Поточна команда</s:String>
+    <s:String x:Key="_CurrentCommand">Current Command</s:String>
     <s:String x:Key="_Email">Email</s:String>
     <s:String x:Key="_Opera">Opera</s:String>
     <s:String x:Key="_Chrome">Chrome</s:String>
@@ -511,7 +522,7 @@
     <s:String x:Key="_EventHasCome">Event has come</s:String>
     <s:String x:Key="_Confidant">Confidant</s:String>
     <s:String x:Key="_Duplicate">Duplicate</s:String>
-    <s:String x:Key="_RecentlySayed">Recently sayed</s:String>
+    <s:String x:Key="_RecentlySaid">Recently said</s:String>
     <s:String x:Key="_HttpWebRequest">Web-request</s:String>
     <s:String x:Key="_Categories">categories</s:String>
     <s:String x:Key="_Collection">Pack</s:String>
@@ -617,6 +628,7 @@
     <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Open file parameters (example: -game cstrike)</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Just press hotkeys you need to input</s:String>
     <s:String x:Key="_CommandAction_Tooltip_HotkeysManualInput">Free hotkeys input^Allows enter hotkeys with Win button|Allows enter some hotkeys over coma</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitForSoundPlay">Wait until the sound plays out</s:String>
     
     <s:String x:Key="_Click">Click</s:String>
     <s:String x:Key="_Focus">Focus</s:String>
@@ -661,6 +673,7 @@
     <s:String x:Key="_TextTypingMode_Default">Default</s:String>
     <s:String x:Key="_TextTypingMode_Prefix">Require keyword before dictation</s:String>
     <s:String x:Key="_TextTypingMode_Postfix">Require keyword after dictation</s:String>
+    <s:String x:Key="_TextTypingMode_Programs">Only in listed programs</s:String>
     <!--  StateSwitchingAction -->
     <s:String x:Key="_StateSwitchingAction_Toggle">Toggle</s:String>
     <s:String x:Key="_StateSwitchingAction_Enable">Enable</s:String>
@@ -737,7 +750,7 @@
     <!--  WebNavigateAction-->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Set position</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Increase position</s:String>
-    <s:String x:Key="_WebPageNavigateAction_SubstractIndex">Decrease position</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SubtractIndex">Decrease position</s:String>
     <!--  CloseAppBehaviour -->
     <s:String x:Key="_CloseAppBehaviour_Close">Close</s:String>
     <s:String x:Key="_CloseAppBehaviour_Kill">Kill</s:String>
@@ -757,6 +770,34 @@
     <s:String x:Key="_ShowWindowCommandType_Maximize">Maximize</s:String>
     <s:String x:Key="_ShowWindowCommandType_Minimize">Minimize</s:String>
     <s:String x:Key="_ShowWindowCommandType_Hide">Hide</s:String>
+    <!--  StatusWindowLocation -->
+    <s:String x:Key="_StatusWindowLocation_Top">Top</s:String>
+    <s:String x:Key="_StatusWindowLocation_Bottom">Bottom</s:String>
+    <!--  RecordingStatus -->
+    <s:String x:Key="_RecordingStatus_Waiting">Waiting</s:String>
+    <s:String x:Key="_RecordingStatus_Preparing">Preparing</s:String>
+    <s:String x:Key="_RecordingStatus_CancelledBecauseTooShort">Cancelled (too short)</s:String>
+    <s:String x:Key="_RecordingStatus_Recording">Recording</s:String>
+    <s:String x:Key="_RecordingStatus_CancelledBecauseOfLoudSound">Cancelled (loud sound)</s:String>
+    <s:String x:Key="_RecordingStatus_StoppedBecauseTooLong">Stopped (too long)</s:String>
+    <s:String x:Key="_RecordingStatus_Stopped">Stopped</s:String>
+    <s:String x:Key="_RecordingStatus_ReceivedFromExternalSource">Received from external source</s:String>
+    <s:String x:Key="_RecordingStatus_ReceivedFromCommandLineArgs">Received from command line args</s:String>
+    <s:String x:Key="_RecordingStatus_LaunchedByAction">Launched by action</s:String>
+    <s:String x:Key="_RecordingStatus_LaunchedManually">Launched manually</s:String>
+    <s:String x:Key="_RecordingStatus_Scheduled">Scheduled</s:String>
+    <!--  CommandStatus -->
+    <s:String x:Key="_CommandStatus_NotReceivedAnyData">Not received any data</s:String>
+    <s:String x:Key="_CommandStatus_ReceivedResponse">Received response</s:String>
+    <s:String x:Key="_CommandStatus_ReceivedPhrase">Received phrase</s:String>
+    <s:String x:Key="_CommandStatus_ExecutingCommand">Executing command</s:String>
+    <s:String x:Key="_CommandStatus_CommandExecuted">Command executed</s:String>
+    <s:String x:Key="_CommandStatus_NoCommandsFound">No commands found</s:String>
+    <s:String x:Key="_CommandStatus_SettingsConditionsFailed">Settings conditions failed</s:String>
+    <s:String x:Key="_CommandStatus_TextTyped">Text typed</s:String>
+    <s:String x:Key="_CommandStatus_ErrorConnectingToServer">Error connecting to server</s:String>
+    <s:String x:Key="_CommandStatus_NothingDone">Nothing done</s:String>
+    <s:String x:Key="_CommandStatus_TalkDone">Talk done</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
@@ -804,6 +845,7 @@
     <s:String x:Key="_Settings_Label_RestoreFues">Show hint panels</s:String>
     <s:String x:Key="_Settings_Label_WebSource">External phrase source</s:String>
     <s:String x:Key="_Settings_Label_IsMuteVoice">Mute voice</s:String>
+    <s:String x:Key="_Settings_Label_AdvancedHotkeys">Global settings hotkeys</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -842,6 +884,7 @@
     <s:String x:Key="_Settings_Tooltip_WebSourceURL">URL which accepts Laitis phrases</s:String>
     <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Generate a new key^For security reasons</s:String>
     <s:String x:Key="_Settings_Tooltip_IsMuteVoice">Instead of pronouncing phrases, show a notification</s:String>
+    <s:String x:Key="_Settings_Tooltip_AdvancedHotkeys">^F12 - toggle voice commands|F11 - toggle dictation|F10 - toggle communication</s:String>
     <!--#endregion-->
 
     <!--#endregion-->

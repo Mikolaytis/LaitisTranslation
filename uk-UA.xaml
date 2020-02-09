@@ -9,7 +9,6 @@
     <!-- ReSharper disable InconsistentNaming -->
 
     <!--#region App Initialization-->
-    <s:String x:Key="_Load_WaitForOtherInstanceClosing">Очікування закриття іншої копії програми</s:String>
     <s:String x:Key="_Load_Data">Завантаження даних</s:String>
     <s:String x:Key="_Load_AppLoaded">запущений</s:String>
     <s:String x:Key="_Load_AsAdministrator">від адміністратора</s:String>
@@ -27,6 +26,8 @@
     <s:String x:Key="_Update_CancelledByUser">Ви скасували критичне оновлення. Будь ласка натисніть так, щоб оновити програму.</s:String>
     <s:String x:Key="_Update_FailRestart">Оновлення не вдалося. Перезапуск оновлення.</s:String>
     <s:String x:Key="_Update_LaitisUpdated">Laitis успішно оновлено</s:String>
+    <s:String x:Key="_Update_UpdateFailed">Оновлення не вдалося</s:String>
+    <s:String x:Key="_Update_DownloadLatestVersion">Завантажити останню версію з сайту</s:String>
     <s:String x:Key="_Update_LaunchNewVersion">Запустити нову версію</s:String>
 
     <s:String x:Key="_Install_InstallAndLaunch">Встановити і запустити</s:String>
@@ -204,6 +205,8 @@
     <!--#endregion-->
 
     <!--#region Exceptions-->
+    <s:String x:Key="_PhraseNotStartedWithKeyword">Фраза починається не з ключового слова</s:String>
+    <s:String x:Key="_PhraseHighlightedInEditor">Фраза сказана в редакторі щоб її підсвітити</s:String>
     <s:String x:Key="_ExecutionRestricted">Виконання заборонено в даних умовах</s:String>
     <s:String x:Key="_ConnectionProblems">Проблеми з підключенням до серверу</s:String>
     <s:String x:Key="_TimeoutProblems">Не дочекалися підключення до серверу</s:String>
@@ -303,7 +306,8 @@
 
     <!--#region Notifications-->
     <s:String x:Key="_Details">Детальніше</s:String>
-    <s:String x:Key="_EndRecieve">Завершення отримання даних</s:String>
+    <s:String x:Key="_StartReceive">Розпочато отримання даних</s:String>
+    <s:String x:Key="_EndReceive">Завершення отримання даних</s:String>
     <s:String x:Key="_ConnectionDrop">Підключення розірвано</s:String>
     <s:String x:Key="_RecordEnded">Завершена запис голосу</s:String>
     <s:String x:Key="_RecordStarted">Розпочато запис голосу</s:String>
@@ -315,7 +319,7 @@
     <s:String x:Key="_AgeRestriction">Вам вже виповнилося 18?</s:String>
     <s:String x:Key="_LaitisDownloadSuccessfullyCompletedFromVersion">Laitis успішно оновлений з версії</s:String>
     <s:String x:Key="_ToVersion">до версії</s:String>
-    <s:String x:Key="_ApiRequestRecieved">Отримано апі запит</s:String>
+    <s:String x:Key="_ApiRequestReceived">Отримано апі запит</s:String>
 
     <s:String x:Key="_YandexKeyEmpty">Ключ від Яндекса порожній. пробуємо Google</s:String>
     <s:String x:Key="_AcapelaKeyEmpty">Ключ від Acapela порожній. пробуємо Google</s:String>
@@ -338,10 +342,12 @@
     <s:String x:Key="_ApplicationVersion">Версія програми</s:String>
     <s:String x:Key="_UnderstoodText">зрозумів текст</s:String>
     <s:String x:Key="_UnderstoodCommand">зрозумів команду</s:String>
-    <s:String x:Key="_CommandNotStartsWithKeyword">Команда не починається з ключового слова</s:String>
+    <s:String x:Key="_TextNotEndsWithKeyword">Текст не закінчується ключовим словом</s:String>
     <s:String x:Key="_TextNotStartsWithKeyword">Текст не починається з ключового слова</s:String>
     <s:String x:Key="_CommandDone">Виконана команда</s:String>
     <s:String x:Key="_TypingText">Вставляю текст</s:String>
+    <s:String x:Key="_CommandStatus">Статус команди</s:String>
+    <s:String x:Key="_RecordingStatus">Статус запису</s:String>
 
     <s:String x:Key="_RemovingErrorTyping">Видаляю попередню вставку тексту</s:String>
     <s:String x:Key="_TypingUpperFirstChar">Так як попередня команда була сепаратором або змінився фокус текстового поля, пишу фразу з великої літери</s:String>
@@ -355,12 +361,13 @@
 
     <!--#region Community-->
     <s:String x:Key="_SharePromotion">Голосове управління комп'ютером і набір тексту за допомогою Laitis. Установи зараз і спробуй. Безкоштовно і без реклами.</s:String>
-    <s:String x:Key="_UsersPublications">Публікації користувачів:</s:String>
+    <s:String x:Key="_UsersPublications">Публікації користувачів</s:String>
     <s:String x:Key="_Downloads">Завантажень</s:String>
     <s:String x:Key="_LaitisDescription">Пожертвування Laitis: Голосове управління комп'ютером</s:String>
     <s:String x:Key="_Like">Мені подобається</s:String>
     <s:String x:Key="_Dislike">Мені не подобається</s:String>
-    <s:String x:Key="_RecieveDate">Дата отримання</s:String>
+    <s:String x:Key="_ReceiveDate">Дата отримання</s:String>
+    <s:String x:Key="_UsersOnline">Користувачі онлайн</s:String>
 
     <s:String x:Key="_DaysWithUs">Днів з нами</s:String>
     <s:String x:Key="_RegistrationDate">Дата реєстрації</s:String>
@@ -372,13 +379,13 @@
 
     <!--#region Publisher-->
     <s:String x:Key="_IAcceptThisRules">Я приймаю ці правила</s:String>
-    <s:String x:Key="_AutorizationNeeded">Авторизуйтесь в систему</s:String>
+    <s:String x:Key="_AuthorizationNeeded">Авторизуйтесь в систему</s:String>
     <s:String x:Key="_CollectionNameIsTooShort">Назва колекції занадто коротка</s:String>
     <s:String x:Key="_ChangesNotFound">Не знайдено змін для публікацій</s:String>
-    <s:String x:Key="_PublicationSendedToTheServer">Ваша публікація успішно відправлена на сервер</s:String>
+    <s:String x:Key="_PublicationSentToTheServer">Ваша публікація успішно відправлена на сервер</s:String>
     <s:String x:Key="_PublishNewCollection">Публікація нової колекції</s:String>
     <s:String x:Key="_PublishSomeChanges">Публікація змін колекції</s:String>
-    <s:String x:Key="_ChangeAppliedSuccesfully">Зміни успішно застосовані</s:String>
+    <s:String x:Key="_ChangeAppliedSuccessfully">Зміни успішно застосовані</s:String>
     <s:String x:Key="_ToRemove">які будуть видалені з колекції</s:String>
     <s:String x:Key="_ConnectionsToAnswers">Зв'язків з відповідями</s:String>
     <s:String x:Key="_ConnectionsToQuestions">Зв'язків з питаннями</s:String>
@@ -406,6 +413,7 @@
     <s:String x:Key="_Variables_IsWindowHidden">Задати/Отримати чи приховано вікно Laitis true/false</s:String>
     <s:String x:Key="_Variables_IsMuteVoice">Відключити/Включити вимову тексту true/false</s:String>
     <s:String x:Key="_Variables_ActiveProcess">Ім'я активного процесу</s:String>
+    <s:String x:Key="_Variables_MsAfterPhrase">Пройшло часу в мілісекундах з моменту обробки попередньої фрази</s:String>
 
     <s:String x:Key="_SetVariable">Задати змінної</s:String>
     <s:String x:Key="_Value">значення</s:String>
@@ -455,6 +463,9 @@
     <s:String x:Key="_MyCommands">Мої команди</s:String>
     <s:String x:Key="_Yes">Так</s:String>
     <s:String x:Key="_No">Ні</s:String>
+    <s:String x:Key="_On">Вкл</s:String>
+    <s:String x:Key="_Sec">сек</s:String>
+    <s:String x:Key="_Off">Викл</s:String>
     <s:String x:Key="_Duration">Тривалість</s:String>
     <s:String x:Key="_SelectImage">Вибір зображення</s:String>
     <s:String x:Key="_From">з</s:String>
@@ -511,7 +522,7 @@
     <s:String x:Key="_EventHasCome">Подія настала</s:String>
     <s:String x:Key="_Confidant">Довірена особа</s:String>
     <s:String x:Key="_Duplicate">Дублікат</s:String>
-    <s:String x:Key="_RecentlySayed">Недавно сказана</s:String>
+    <s:String x:Key="_RecentlySaid">Недавно сказана</s:String>
     <s:String x:Key="_HttpWebRequest">Веб-запит</s:String>
     <s:String x:Key="_Categories">Категорії</s:String>
     <s:String x:Key="_Collection">Колекція</s:String>
@@ -616,7 +627,8 @@
     <s:String x:Key="_CommandAction_Tooltip_JetAim_Numbers">Цифри можна задати заздалегідь^Можна поспіль, можна через кому або пробіл|Цей параметр можна залишити порожнім</s:String>
     <s:String x:Key="_CommandAction_Tooltip_OpenFileParams">Параметри запуску додатка (приклад: -game cstrike)</s:String>
     <s:String x:Key="_CommandAction_Tooltip_Hotkeys">Просто натисніть потрібне поєднання</s:String>
-    <s:String x:Key="_CommandAction_Tooltip_HotkeysManualInput">Вільне введення сполучення клавіш^Якщо включений можна ввести поєднання з клавішею Win|Якщо включений можна вводити кілька поєднань через кому|</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_HotkeysManualInput">Вільне введення сполучення клавіш^Якщо включений можна ввести поєднання з клавішею Win|Якщо включений можна вводити кілька поєднань через кому</s:String>
+    <s:String x:Key="_CommandAction_Tooltip_WaitForSoundPlay">Чекати, поки дограє звук</s:String>
 
     <s:String x:Key="_Click">Кликнути</s:String>
     <s:String x:Key="_Focus">Фокус</s:String>
@@ -661,6 +673,7 @@
     <s:String x:Key="_TextTypingMode_Default">Звичайне диктування тексту</s:String>
     <s:String x:Key="_TextTypingMode_Prefix">Ключове слово перед текстом</s:String>
     <s:String x:Key="_TextTypingMode_Postfix">Ключове слово після тексту</s:String>
+    <s:String x:Key="_TextTypingMode_Programs">Тільки в перерахованих програмах</s:String>
     <!--  StateSwitchingAction  -->
     <s:String x:Key="_StateSwitchingAction_Toggle">Переключити</s:String>
     <s:String x:Key="_StateSwitchingAction_Enable">Увімкнути</s:String>
@@ -737,7 +750,7 @@
     <!--  WebNavigateAction  -->
     <s:String x:Key="_WebPageNavigateAction_SetIndex">Задати позицію</s:String>
     <s:String x:Key="_WebPageNavigateAction_AddIndex">Додати до позиції</s:String>
-    <s:String x:Key="_WebPageNavigateAction_SubstractIndex">Прибрати з позиції</s:String>
+    <s:String x:Key="_WebPageNavigateAction_SubtractIndex">Прибрати з позиції</s:String>
     <!--  CloseAppBehaviour  -->
     <s:String x:Key="_CloseAppBehaviour_Close">Закрити</s:String>
     <s:String x:Key="_CloseAppBehaviour_Kill">Вбити</s:String>
@@ -757,6 +770,34 @@
     <s:String x:Key="_ShowWindowCommandType_Maximize">Розтягнути</s:String>
     <s:String x:Key="_ShowWindowCommandType_Minimize">Згорнути</s:String>
     <s:String x:Key="_ShowWindowCommandType_Hide">Сховати</s:String>
+    <!--  StatusWindowLocation -->
+    <s:String x:Key="_StatusWindowLocation_Top">Зверху</s:String>
+    <s:String x:Key="_StatusWindowLocation_Bottom">Знизу</s:String>
+    <!--  RecordingStatus -->
+    <s:String x:Key="_RecordingStatus_Waiting">Очікування</s:String>
+    <s:String x:Key="_RecordingStatus_Preparing">Підготовка</s:String>
+    <s:String x:Key="_RecordingStatus_CancelledBecauseTooShort">Скасовано (занадто коротке)</s:String>
+    <s:String x:Key="_RecordingStatus_Recording">Запис</s:String>
+    <s:String x:Key="_RecordingStatus_CancelledBecauseOfLoudSound">Скасовано (гучний звук)</s:String>
+    <s:String x:Key="_RecordingStatus_StoppedBecauseTooLong">Завершено (занадто довго)</s:String>
+    <s:String x:Key="_RecordingStatus_Stopped">Завершено</s:String>
+    <s:String x:Key="_RecordingStatus_ReceivedFromExternalSource">Отримано з зовнішнього джерела</s:String>
+    <s:String x:Key="_RecordingStatus_ReceivedFromCommandLineArgs">Отримано з аргументів командного рядка</s:String>
+    <s:String x:Key="_RecordingStatus_LaunchedByAction">Запущено з дії</s:String>
+    <s:String x:Key="_RecordingStatus_LaunchedManually">Запущено вручну</s:String>
+    <s:String x:Key="_RecordingStatus_Scheduled">Заплановано</s:String>
+    <!--  CommandStatus -->
+    <s:String x:Key="_CommandStatus_NotReceivedAnyData">Немає даних</s:String>
+    <s:String x:Key="_CommandStatus_ReceivedResponse">Отримано відповідь</s:String>
+    <s:String x:Key="_CommandStatus_ReceivedPhrase">Отримано фраза</s:String>
+    <s:String x:Key="_CommandStatus_ExecutingCommand">Виконується команда</s:String>
+    <s:String x:Key="_CommandStatus_CommandExecuted">Команда виконана</s:String>
+    <s:String x:Key="_CommandStatus_NoCommandsFound">Невідома команда</s:String>
+    <s:String x:Key="_CommandStatus_SettingsConditionsFailed">Не виконано через налаштування</s:String>
+    <s:String x:Key="_CommandStatus_TextTyped">Текст набраний</s:String>
+    <s:String x:Key="_CommandStatus_ErrorConnectingToServer">Помилка підключення до сервера</s:String>
+    <s:String x:Key="_CommandStatus_NothingDone">Нічого не зроблено</s:String>
+    <s:String x:Key="_CommandStatus_TalkDone">Сказано відповідь</s:String>
     <!--#endregion-->
 
     <!--#region Settings-->
@@ -804,6 +845,7 @@
     <s:String x:Key="_Settings_Label_RestoreFues">Показати панелі підказок</s:String>
     <s:String x:Key="_Settings_Label_WebSource">Зовнішнє джерело фраз</s:String>
     <s:String x:Key="_Settings_Label_IsMuteVoice">Приглушити голос</s:String>
+    <s:String x:Key="_Settings_Label_AdvancedHotkeys">Глобальні хоткеі управління настройками</s:String>
     <!--#endregion-->
 
     <!--#region Template Texts-->
@@ -842,6 +884,7 @@
     <s:String x:Key="_Settings_Tooltip_WebSourceURL">Посилання по якій Laitis приймає фрази</s:String>
     <s:String x:Key="_Settings_Tooltip_GenerateNewConnectKey">Згенерувати новий ключ доступу^З метою безпеки</s:String>
     <s:String x:Key="_Settings_Tooltip_IsMuteVoice">Замість вимови фраз показувати нотифікацію</s:String>
+    <s:String x:Key="_Settings_Tooltip_AdvancedHotkeys">^F12 - вкл/викл голосові команди|F11 - вкл/викл диктовку тексту|F10 - вкл/викл спілкування</s:String>
     <!--#endregion-->
 
     <!--#endregion-->
